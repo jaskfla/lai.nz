@@ -1,0 +1,35 @@
+html {
+	background-color: #f6f6f6;
+	background-color: lch(97% 0 0);
+	color: #303030;
+	color: lch(20% 0 0);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, 'IBM Plex Sans', 'Source Sans Pro', 'Segoe UI',
+		Roboto, sans-serif;
+	font-size: min(calc(100vh / 25), calc(100vw / 15));
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-weight: 435;
+	margin-trim: block-start;
+	max-width: 50ch;
+	overflow-wrap: break-word;
+	padding-block: 2em;
+	padding-inline: 1.5em;
+}
+
+a {
+	color: rgb(0% 47.16% 67.35%);
+	color: lch(47% 47 248.485);
+	transition: all 0.2s ease-in-out;
+	text-decoration-color: rgb(0% 47.16% 67.35%);
+	text-decoration-color: lch(47% 47 248.485);
+	text-decoration-line: underline;
+}
+
+a:hover {
+	color: rgb(96.81% 67.09% 0%);
+	color: lch(76% 108 75);
+}
