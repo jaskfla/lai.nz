@@ -23,7 +23,7 @@ body {
 a {
 	color: rgb(0% 47.16% 67.35%);
 	color: lch(47% 47 248.485);
-	transition: all 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
 	text-decoration-color: rgb(0% 47.16% 67.35%);
 	text-decoration-color: lch(47% 47 248.485);
 	text-decoration-line: underline;
