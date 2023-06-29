@@ -41,7 +41,7 @@ body {
 a {
 	color: rgb(0% 47.16% 67.35%);
 	color: lch(47% 47 248.485);
-	transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
 	text-decoration-color: rgb(0% 47.16% 67.35%);
 	text-decoration-color: lch(47% 47 248.485);
 	text-decoration-line: underline;
@@ -50,4 +50,10 @@ a {
 a:hover {
 	color: rgb(96.81% 67.09% 0%);
 	color: lch(76% 108 75);
+}
+
+@supports (font-variation-settings: 'wght' 400) {
+	a:hover {
+		font-weight: 600;
+	}
 }
