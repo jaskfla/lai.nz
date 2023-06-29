@@ -3,12 +3,19 @@ html {
 	background-color: lch(97% 0 0);
 	color: #303030;
 	color: lch(20% 0 0);
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, 'IBM Plex Sans', 'Source Sans Pro', 'Segoe UI',
-		Roboto, sans-serif;
-	font-size: min(calc(100vh / 25), calc(100vw / 15));
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+	font-size: min(calc(4vh), calc(6.67vw));
+	letter-spacing: 0;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
+}
+
+@supports (font-variation-settings: 'wght' 400) {
+	html {
+		font-family: 'iA Writer Quattro V', system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+		letter-spacing: -0.03em;
+	}
 }
 
 body {
