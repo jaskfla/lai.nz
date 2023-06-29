@@ -4,7 +4,6 @@ html {
 	color: #303030;
 	color: lch(20% 0 0);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-	font-size: min(calc(4vh), calc(6.67vw));
 	letter-spacing: 0;
 	line-height: 1.5;
 	margin: 0;
@@ -25,6 +24,18 @@ body {
 	overflow-wrap: break-word;
 	padding-block: 2em;
 	padding-inline: 1.5em;
+}
+
+@media (orientation: landscape) {
+	html {
+		font-size: max(16pt, 4vh);
+	}
+}
+
+@media (orientation: portrait) {
+	html {
+		font-size: max(16px, 3.5vw);
+	}
 }
 
 a {
