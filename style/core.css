@@ -22,6 +22,7 @@ body {
 	margin-trim: block-start;
 	max-width: 50ch;
 	overflow-wrap: break-word;
+	padding: 2em 1.5em 4em;
 	padding-top: max(2em, env(safe-area-inset-top));
 	padding-bottom: max(4em, env(safe-area-inset-bottom));
 	padding-left: max(1.5em, env(safe-area-inset-left));
