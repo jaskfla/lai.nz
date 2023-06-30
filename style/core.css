@@ -17,6 +17,18 @@ html {
 	}
 }
 
+@media (orientation: landscape) {
+	html {
+		font-size: max(16px, 4vh);
+	}
+}
+
+@media (orientation: portrait) {
+	html {
+		font-size: max(16px, 3.5vw);
+	}
+}
+
 body {
 	font-weight: 435;
 	margin-trim: block-start;
@@ -27,18 +39,6 @@ body {
 	padding-bottom: max(4em, env(safe-area-inset-bottom));
 	padding-left: max(1.5em, env(safe-area-inset-left));
 	padding-right: max(1.5em, env(safe-area-inset-right));
-}
-
-@media (orientation: landscape) {
-	html {
-		font-size: max(16pt, 4vh);
-	}
-}
-
-@media (orientation: portrait) {
-	html {
-		font-size: max(16px, 3.5vw);
-	}
 }
 
 /* Links */
