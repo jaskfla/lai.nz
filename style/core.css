@@ -1,11 +1,16 @@
+:root {
+	--base-ptsz: max(16px, min(3.5vw, 4vh));
+}
+
 html {
 	background-color: var(--white);
 	color: var(--black);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-	font-size: max(16px, min(3.5vw, 4vh));
+	font-size: var(--base-ptsz);
 	font-weight: 400;
 	hanging-punctuation: first allow-end last;
 	line-height: 1.5;
+	overflow-wrap: break-word;
 	text-rendering: geometricPrecision;
 }
 
@@ -18,18 +23,7 @@ html {
 }
 
 body {
-	margin-trim: block-start;
-	max-width: 50ch; /* Acceptable proxy due to Quattro’s metrics */
-	overflow-wrap: break-word;
-	padding: 2em 1.5em 4em;
-	padding-top: max(2em, env(safe-area-inset-top));
-	padding-bottom: max(4em, env(safe-area-inset-bottom));
-	padding-left: max(1.5em, env(safe-area-inset-left));
-	padding-right: max(1.5em, env(safe-area-inset-right));
-}
-
-main {
-	min-height: 100vh; /* Push footer below the fold */
+	padding-bottom: max(1rem, env(safe-area-inset-bottom));
 }
 
 /* Links */
@@ -56,13 +50,71 @@ a:hover {
 	}
 }
 
+/* Header */
+
+header {
+	align-items: center;
+	background-color: var(--white-85);
+	display: block flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 50ch;
+	padding: 1.5rem 1.5rem 0;
+	padding-top: max(1.5rem, env(safe-area-inset-top));
+	padding-left: max(1.5rem, env(safe-area-inset-left));
+	padding-right: max(1.5rem, env(safe-area-inset-right));
+}
+
+header .logo {
+	height: 28px;
+	transition: opacity 0.15s ease-in-out;
+}
+
+header .logo:hover {
+	opacity: 0.6;
+}
+
+header a {
+	color: var(--gray);
+	font-weight: 550;
+	letter-spacing: -0.01em;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: var(--black);
+	font-weight: 700;
+}
+
+nav {
+	align-items: baseline;
+	display: block flex;
+	font-size: min(24px, var(--base-ptsz));
+	gap: clamp(0.6em, 2.5vw, 1.5em);
+}
+
+/* Main content */
+
+main {
+	margin-trim: block-start;
+	max-width: 50ch; /* Acceptable proxy due to Quattro’s metrics */
+	min-height: 100vh; /* Push footer below the fold */
+	padding: 1rem 1.5rem 4rem;
+	padding-left: max(1.5rem, env(safe-area-inset-left));
+	padding-right: max(1.5rem, env(safe-area-inset-right));
+}
+
 /* Footer */
+
+footer {
+	padding-left: max(1.5rem, env(safe-area-inset-left));
+	padding-right: max(1.5rem, env(safe-area-inset-right));
+}
 
 #signoff {
 	color: var(--gray);
 	font-size: 16px;
 	letter-spacing: 0;
-	translate: 0 1.5em;
 }
 
 #signoff a {
