@@ -16,7 +16,7 @@ html {
 @supports (font-variation-settings: 'wght' 400) {
 	html {
 		font-family: 'iA Writer Quattro V', system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-		font-weight: 425;
+		font-weight: 430;
 		letter-spacing: -0.03em;
 	}
 }
