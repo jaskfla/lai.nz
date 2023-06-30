@@ -4,6 +4,8 @@ html {
 	color: #303030;
 	color: lch(20% 0 0);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+	font-size: max(16px, min(3.5vw, 4vh));
+	font-weight: 400;
 	hanging-punctuation: first allow-end last;
 	letter-spacing: 0;
 	line-height: 1.5;
@@ -14,26 +16,14 @@ html {
 @supports (font-variation-settings: 'wght' 400) {
 	html {
 		font-family: 'iA Writer Quattro V', system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+		font-weight: 425;
 		letter-spacing: -0.03em;
 	}
 }
 
-@media (orientation: landscape) {
-	html {
-		font-size: max(16px, 4vh);
-	}
-}
-
-@media (orientation: portrait) {
-	html {
-		font-size: max(16px, 3.5vw);
-	}
-}
-
 body {
-	font-weight: 435;
 	margin-trim: block-start;
-	max-width: 50ch;
+	max-width: 50ch; /* Acceptable proxy due to Quattro’s metrics */
 	overflow-wrap: break-word;
 	padding: 2em 1.5em 4em;
 	padding-top: max(2em, env(safe-area-inset-top));
