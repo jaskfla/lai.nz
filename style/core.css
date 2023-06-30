@@ -4,6 +4,9 @@ html {
 	color: #303030;
 	color: lch(20% 0 0);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+	font-size: max(16px, min(3.5vw, 4vh));
+	font-weight: 400;
+	hanging-punctuation: first allow-end last;
 	letter-spacing: 0;
 	line-height: 1.5;
 	margin: 0;
@@ -13,14 +16,14 @@ html {
 @supports (font-variation-settings: 'wght' 400) {
 	html {
 		font-family: 'iA Writer Quattro V', system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+		font-weight: 425;
 		letter-spacing: -0.03em;
 	}
 }
 
 body {
-	font-weight: 435;
 	margin-trim: block-start;
-	max-width: 50ch;
+	max-width: 50ch; /* Acceptable proxy due to Quattro’s metrics */
 	overflow-wrap: break-word;
 	padding: 2em 1.5em 4em;
 	padding-top: max(2em, env(safe-area-inset-top));
@@ -29,16 +32,8 @@ body {
 	padding-right: max(1.5em, env(safe-area-inset-right));
 }
 
-@media (orientation: landscape) {
-	html {
-		font-size: max(16pt, 4vh);
-	}
-}
-
-@media (orientation: portrait) {
-	html {
-		font-size: max(16px, 3.5vw);
-	}
+main {
+	min-height: 100vh; /* Push footer below the fold */
 }
 
 /* Links */
@@ -63,7 +58,31 @@ a:hover {
 
 	@media not (prefers-reduced-motion) {
 		a {
-			transition: color 0.12s ease-in-out, font-weight 0.2s ease-in-out;
+			transition: color 0.15s ease-in-out, font-weight 0.15s ease-in-out;
 		}
 	}
+}
+
+/* Footer */
+
+#signoff {
+	color: rgb(55% 55% 55%);
+	color: lch(55% 0 0);
+	font-size: 16px;
+	letter-spacing: 0;
+	translate: 0 1.5em;
+}
+
+#signoff a {
+	color: rgb(55% 55% 55%);
+	color: lch(55% 0 0);
+	text-decoration-color: rgb(55% 55% 55%);
+	text-decoration-color: lch(55% 0 0);
+}
+
+/* Odds & sods */
+
+::selection {
+	background-color: rgb(0% 47.16% 67.35% / 30%);
+	background-color: lch(47% 47 248.485 / 20%);
 }
