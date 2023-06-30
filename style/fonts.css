@@ -9,16 +9,16 @@
 	font-family: 'iA Writer Quattro V';
 	font-style: normal;
 	font-weight: 400 700;
-	src: url('../resources/fonts/iAWriterQuattroV.woff2') format('woff2'),
-		url('../resources/fonts/iAWriterQuattroV.woff') format('woff'),
-		url('../resources/fonts/iAWriterQuattroV.ttf') format('truetype');
+	src: url('/resources/fonts/iAWriterQuattroV.woff2') format('woff2'),
+		url('/resources/fonts/iAWriterQuattroV.woff') format('woff'),
+		url('/resources/fonts/iAWriterQuattroV.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'iA Writer Quattro V';
 	font-style: italic;
 	font-weight: 400 700;
-	src: url('../resources/fonts/iAWriterQuattroV-Italic.woff2') format('woff2'),
-		url('../resources/fonts/iAWriterQuattroV-Italic.woff') format('woff'),
-		url('../resources/fonts/iAWriterQuattroV-Italic.ttf') format('truetype');
+	src: url('/resources/fonts/iAWriterQuattroV-Italic.woff2') format('woff2'),
+		url('/resources/fonts/iAWriterQuattroV-Italic.woff') format('woff'),
+		url('/resources/fonts/iAWriterQuattroV-Italic.ttf') format('truetype');
 }

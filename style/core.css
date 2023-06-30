@@ -4,7 +4,6 @@ html {
 	color: #303030;
 	color: lch(20% 0 0);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-	font-size: min(calc(4vh), calc(6.67vw));
 	letter-spacing: 0;
 	line-height: 1.5;
 	margin: 0;
@@ -23,14 +22,30 @@ body {
 	margin-trim: block-start;
 	max-width: 50ch;
 	overflow-wrap: break-word;
-	padding-block: 2em;
-	padding-inline: 1.5em;
+	padding: 2em 1.5em 4em;
+	padding-top: max(2em, env(safe-area-inset-top));
+	padding-bottom: max(4em, env(safe-area-inset-bottom));
+	padding-left: max(1.5em, env(safe-area-inset-left));
+	padding-right: max(1.5em, env(safe-area-inset-right));
 }
+
+@media (orientation: landscape) {
+	html {
+		font-size: max(16pt, 4vh);
+	}
+}
+
+@media (orientation: portrait) {
+	html {
+		font-size: max(16px, 3.5vw);
+	}
+}
+
+/* Links */
 
 a {
 	color: rgb(0% 47.16% 67.35%);
 	color: lch(47% 47 248.485);
-	transition: color 0.2s ease-in-out;
 	text-decoration-color: rgb(0% 47.16% 67.35%);
 	text-decoration-color: lch(47% 47 248.485);
 	text-decoration-line: underline;
@@ -39,4 +54,16 @@ a {
 a:hover {
 	color: rgb(96.81% 67.09% 0%);
 	color: lch(76% 108 75);
+}
+
+@supports (font-variation-settings: 'wght' 400) {
+	a:hover {
+		font-weight: 575;
+	}
+
+	@media not (prefers-reduced-motion) {
+		a {
+			transition: color 0.12s ease-in-out, font-weight 0.2s ease-in-out;
+		}
+	}
 }
