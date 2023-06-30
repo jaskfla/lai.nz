@@ -4,6 +4,7 @@ html {
 	color: #303030;
 	color: lch(20% 0 0);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+	hanging-punctuation: first allow-end last;
 	letter-spacing: 0;
 	line-height: 1.5;
 	margin: 0;
