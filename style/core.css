@@ -7,10 +7,7 @@ html {
 	font-size: max(16px, min(3.5vw, 4vh));
 	font-weight: 400;
 	hanging-punctuation: first allow-end last;
-	letter-spacing: 0;
 	line-height: 1.5;
-	margin: 0;
-	padding: 0;
 }
 
 @supports (font-variation-settings: 'wght' 400) {
