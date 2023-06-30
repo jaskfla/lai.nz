@@ -6,6 +6,7 @@ html {
 	font-weight: 400;
 	hanging-punctuation: first allow-end last;
 	line-height: 1.5;
+	text-rendering: geometricPrecision;
 }
 
 @supports (font-variation-settings: 'wght' 400) {
