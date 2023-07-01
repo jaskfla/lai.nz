@@ -5,6 +5,11 @@ html {
 	padding: 0;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 nav {
 	margin: 0;
 	padding: 0;
@@ -18,4 +23,10 @@ p {
 
 abbr {
 	text-decoration: none;
+}
+
+picture {
+	display: block;
+	margin: 0;
+	padding: 0;
 }

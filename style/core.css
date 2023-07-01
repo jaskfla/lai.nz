@@ -1,9 +1,9 @@
 :root {
-	--base-ptsz: max(16px, min(3.5vw, 4vh));
-	--top-level-padding-top: max(1.5rem, env(safe-area-inset-top));
+	--base-ptsz: max(16px, min(3.5vw, 3.5vh));
+	--top-level-padding-top: max(2rem, env(safe-area-inset-top));
 	--top-level-padding-bottom: max(1rem, env(safe-area-inset-bottom));
-	--top-level-padding-left: max(1.5rem, env(safe-area-inset-left));
-	--top-level-padding-right: max(1.5rem, env(safe-area-inset-right));
+	--top-level-padding-left: max(2rem, env(safe-area-inset-left));
+	--top-level-padding-right: max(2rem, env(safe-area-inset-right));
 }
 
 html {
@@ -104,18 +104,22 @@ nav {
 main {
 	margin-trim: block-start;
 	max-width: 50ch; /* Acceptable proxy due to Quattro’s metrics */
-	padding: 1rem 1.5rem 4rem;
+	padding: 1rem 1.5rem 2rem;
 	padding-left: var(--top-level-padding-left);
 	padding-right: var(--top-level-padding-right);
 }
 
 .hero img {
-	width: 100vw;
+	box-shadow: 0px 2px 16px var(--shadow-color), 0px 8px 100px var(--shadow-color);
+	display: block;
+	width: 100%;
 }
 
 /* Footer */
 
 footer {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	padding-left: var(--top-level-padding-left);
 	padding-right: var(--top-level-padding-right);
 }
