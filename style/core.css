@@ -9,6 +9,7 @@
 html {
 	accent-color: var(--aquamarine);
 	background-color: var(--white);
+	caret-color: var(--aquamarine);
 	color: var(--black);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
 	font-size: var(--base-ptsz);
