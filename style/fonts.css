@@ -24,3 +24,9 @@
 	font-weight: 400 700;
 	font-display: swap;
 }
+
+@font-feature-values 'iA Writer Quattro V' {
+	@styleset {
+		double-storey-g: 2;
+	}
+}
