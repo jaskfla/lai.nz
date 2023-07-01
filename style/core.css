@@ -1,6 +1,5 @@
 :root {
 	--font-size-base: max(16px, min(3.5vw, 3.5vh));
-	--font-size-small: min(24px, var(--font-size-base));
 	--top-level-padding-top: max(2rem, env(safe-area-inset-top));
 	--top-level-padding-bottom: max(1rem, env(safe-area-inset-bottom));
 	--top-level-padding-left: max(2rem, env(safe-area-inset-left));
@@ -98,7 +97,7 @@ header a:hover {
 nav {
 	align-items: baseline;
 	display: block flex;
-	font-size: var(--small-ptsz);
+	font-size: min(24px, var(--font-size-base));
 	gap: clamp(0.6em, 2.5vw, 1.5em);
 }
 
@@ -130,7 +129,7 @@ footer {
 
 #signoff {
 	color: var(--gray);
-	font-size: var(--small-ptsz);
+	font-size: min(16px, var(--font-size-base));
 	letter-spacing: 0;
 }
 
