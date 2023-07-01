@@ -6,6 +6,7 @@ html {
 	margin: 0;
 	orphans: 2;
 	padding: 0;
+	print-color-adjust: exact;
 	tab-size: 4;
 }
 
