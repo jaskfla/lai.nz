@@ -1,0 +1,25 @@
+:root {
+	--white: rgb(96.6% 96.6% 96.6%);
+	--white-85: rgb(96.6% 96.6% 96.6% / 85%);
+	--gray: rgb(51.62% 51.62% 51.62%);
+	--black: rgb(18.94% 18.94% 18.94%);
+	--aquamarine: rgb(0% 47.16% 67.35%);
+	--aquamarine-30: rgb(0% 47.16% 67.35% / 30%);
+	--gold: rgb(96.81% 67.09% 0%);
+	--shadow-color: rgb(0 0 0 / 6%);
+}
+
+@media (color-gamut: p3) {
+	@supports (color: lch(0% 0 0)) {
+		:root {
+			--white: lch(97% 0 0);
+			--white-85: lch(97% 0 0 / 85%);
+			--gray: lch(55% 0 0);
+			--black: lch(20% 0 0);
+			--aquamarine: lch(47% 47 248.485);
+			--aquamarine-30: lch(47% 47 248.485 / 30%);
+			--gold: lch(76% 108 75);
+			--shadow-color: lch(0% 0 0 / 6%);
+		}
+	}
+}

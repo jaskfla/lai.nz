@@ -17,4 +17,4 @@ const signoffs = [
 	`You don’t have to be a prodigy to be unique. (<a href="https://songwhip.com/cavetown/talk-to-me">Cavetown,&nbsp;2019</a>)`,
 ]
 
-const signoff = (document.getElementById('signoff').innerHTML = signoffs[Math.floor(Math.random() * signoffs.length)])
+document.getElementById('signoff').innerHTML = signoffs[Math.floor(Math.random() * signoffs.length)]
