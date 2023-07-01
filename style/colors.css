@@ -23,3 +23,24 @@
 		}
 	}
 }
+
+@media print {
+	:root {
+		--black: black;
+		--white: white;
+	}
+
+	@supports (color: lch(0% 0 0)) {
+		root {
+			--black: lch(0% 0 0);
+			--white: lch(100% 0 0);
+		}
+	}
+
+	@supports (device-cmyk(0 0 0 100%)) {
+		:root {
+			--black: device-cmyk(0 0 0 100%);
+			--gray: device-cmyk(0 0 0 45%);
+		}
+	}
+}
