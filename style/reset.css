@@ -1,8 +1,12 @@
 html {
+	color-scheme: light dark;
 	font-synthesis: none;
+	hyphenate-character: '‐'; /* Unambiguous hyphen U+2010 */
 	letter-spacing: 0;
 	margin: 0;
+	orphans: 2;
 	padding: 0;
+	tab-size: 4;
 }
 
 body {
