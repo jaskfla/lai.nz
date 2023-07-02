@@ -26,6 +26,19 @@ p {
 	margin-inline: 0;
 }
 
+em,
+i,
+var {
+	font-style: italic;
+}
+
+em > em,
+em > i,
+i > em,
+i > i {
+	font-style: normal;
+}
+
 abbr {
 	text-decoration: none;
 }
