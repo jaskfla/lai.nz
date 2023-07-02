@@ -26,6 +26,11 @@ p {
 	margin-inline: 0;
 }
 
+b,
+strong {
+	font-weight: bolder;
+}
+
 em,
 i,
 var {
@@ -39,8 +44,20 @@ i > i {
 	font-style: normal;
 }
 
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+}
+
 abbr {
 	text-decoration: none;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
 }
 
 picture {
