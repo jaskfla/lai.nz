@@ -25,8 +25,23 @@ html {
 		font-family: 'iA Writer Quattro V', system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
 		font-feature-settings: 'ss02'; /* iA Writer quattro double-storey g */
 		font-variant-alternates: styleset(double-storey-g);
+		font-variation-settings: 'SPCG' 0; /* Default anyway, for explicitness */
 		font-weight: 430;
 		letter-spacing: -0.03em;
+	}
+
+	em,
+	i {
+		font-feature-settings: normal;
+		font-variant-alternates: normal;
+	}
+
+	em > em,
+	em > i,
+	i > em,
+	i > i {
+		font-feature-settings: 'ss02';
+		font-variant-alternates: styleset(double-storey-g);
 	}
 }
 
@@ -40,21 +55,21 @@ a {
 	color: var(--aquamarine);
 	text-decoration-color: var(--aquamarine);
 	text-decoration-line: underline;
+	/* text-decoration-thickness: ; */
 }
 
 a:hover {
 	color: var(--gold);
+	font-variation-settings: 'GRAD' 525;
 }
 
 @supports (font-variation-settings: 'wght' 400) {
-	a:hover {
-		font-weight: 575;
+	a {
+		transition: color 0.15s ease-in-out, font-weight 0.15s ease-in-out;
 	}
 
-	@media not (prefers-reduced-motion) {
-		a {
-			transition: color 0.15s ease-in-out, font-weight 0.15s ease-in-out;
-		}
+	a:hover {
+		font-weight: 575;
 	}
 }
 

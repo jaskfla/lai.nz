@@ -28,7 +28,7 @@
 			property="og:description"
 			content="Jasper Lai is penultimate software engineering student at the University of Auckland, and a UX/UI design graduate."
 		/>
-		<meta property="og:image" content="resources/hero_landscape.webp" />
+		<meta property="og:image" content="resources/open-graph-image.webp" />
 		<meta
 			property="og:image:alt"
 			content="An Asian young adult walking down a marble staircase outside an art gallery."
@@ -38,7 +38,7 @@
 		<meta property="og:locale" content="en_NZ" />
 
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:image" content="resources/hero_landscape.webp" />
+		<meta name="twitter:image" content="resources/open-graph-image.webp" />
 		<meta
 			name="twitter:image:alt"
 			content="An Asian young adult walking down a marble staircase outside an art gallery."
@@ -57,7 +57,12 @@
 	</head>
 	<body>
 		<header>
-			<a href="/"><img class="logo" src="/assets/avatar.svg" /></a>
+			<a href="/"
+				><img
+					class="logo"
+					src="/assets/avatar.svg"
+					alt="Line drawing of the front profile of Jasper’s face. It depicts an oval face shape and short hair; all other facial features, including eyes, are omitted."
+			/></a>
 			<!-- <nav>
 				<a href="/values.html">Values</a>
 				<a href="/work.html">Work</a>
@@ -80,19 +85,20 @@
 				This ✌️site✌️ is a little barebones, as you can see (working on it!). In the meantime, feel free to
 				contact me at
 				<a href="&#109;&#97;&#73;&#108;&#116;&#111;&#58;&#106;&#64;&#108;&#97;&#105;&#46;&#110;&#122;"
-					>j@lai.nz</a
-				>, or have a squiz at <a href="https://www.linkedin.com/in/jasperlai/">my profile on LinkedIn</a>. I’m
+					>&#106;&#64;&#108;&#97;&#105;&#46;&#110;&#122;</a
+				>, or have a squiz at <a href="https://www.linkedin.com/in/jasperlai">my profile on LinkedIn</a>. I’m
 				also <a rel="me" href="https://mastodon.online/@jasperlai">@jasperlai@mastodon.online</a> on Mastodon.
 			</p>
 		</main>
 		<picture class="hero">
 			<source srcset="/assets/hero.avif" type="image/avif" />
+			<source srcset="/assets/hero.heic" type="image/heif" />
 			<source srcset="/assets/hero.webp" type="image/webp" />
 			<img
 				src="/assets/hero.jpg"
 				alt="An Asian young adult walking down a marble staircase outside an art gallery."
 			/>
-			<!-- With thanks to J. Bhanabhai for this photo. -->
+			<!-- With thanks to Jeramy B. for this photo. -->
 		</picture>
 		<footer>
 			<p id="signoff">Thanks for stopping by!</p>
