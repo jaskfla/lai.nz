@@ -55,7 +55,9 @@ a {
 	color: var(--aquamarine);
 	text-decoration-color: var(--aquamarine);
 	text-decoration-line: underline;
-	/* text-decoration-thickness: ; */
+	text-decoration-skip-ink: all;
+	text-decoration-thickness: 0.06em;
+	text-underline-offset: 0.06em;
 }
 
 a:hover {
