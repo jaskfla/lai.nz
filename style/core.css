@@ -91,6 +91,7 @@ header {
 }
 
 header .logo {
+	aspect-ratio: 1; /* To reduce cumulative layout shift */
 	height: 28px;
 	transition: opacity 0.15s ease-in-out;
 }
