@@ -24,23 +24,44 @@
 	}
 }
 
+@media (prefers-contrast: more) {
+	:root {
+		--white: rgb(97.73% 97.73% 97.73%);
+		--white-85: rgb(97.73% 97.73% 97.73%); /* Also reduce transparency */
+		--gray: rgb(32.27% 32.27% 32.27%);
+		--black: rgb(0 0 0);
+	}
+
+	@media (color-gamut: p3) {
+		@supports (color: lch(0% 0 0)) {
+			:root {
+				--white: lch(98% 0 0);
+				--white-85: lch(98% 0 0); /* Also reduce transparency */
+				--gray: lch(35% 0 0);
+				--black: lch(0% 0 0);
+			}
+		}
+	}
+}
+
 @media print {
 	:root {
-		--black: black;
 		--white: white;
+		--white-85: rgb(100% 100% 100% / 85%);
+		--black: black;
 	}
 
 	@supports (color: lch(0% 0 0)) {
 		root {
-			--black: lch(0% 0 0);
 			--white: lch(100% 0 0);
+			--black: lch(0% 0 0);
 		}
 	}
 
 	@supports (device-cmyk(0 0 0 100%)) {
 		:root {
+			--gray: device-cmyk(0 0 0 46%);
 			--black: device-cmyk(0 0 0 100%);
-			--gray: device-cmyk(0 0 0 45%);
 		}
 	}
 }
