@@ -79,6 +79,8 @@ a:hover {
 
 header {
 	align-items: center;
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--white-85);
 	display: block flex;
 	flex-direction: row;
