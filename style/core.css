@@ -55,7 +55,9 @@ a {
 	color: var(--aquamarine);
 	text-decoration-color: var(--aquamarine);
 	text-decoration-line: underline;
-	/* text-decoration-thickness: ; */
+	text-decoration-skip-ink: all;
+	text-decoration-thickness: 0.06em;
+	text-underline-offset: 0.06em;
 }
 
 a:hover {
@@ -89,6 +91,7 @@ header {
 }
 
 header .logo {
+	aspect-ratio: 1; /* To reduce CLS */
 	height: 28px;
 	transition: opacity 0.15s ease-in-out;
 }
@@ -127,6 +130,7 @@ main {
 }
 
 .hero img {
+	aspect-ratio: 2;
 	box-shadow: 0px 2px 16px var(--shadow-color), 0px 8px 100px var(--shadow-color);
 	display: block;
 	width: 100%;
@@ -157,49 +161,4 @@ footer {
 
 ::selection {
 	background-color: var(--aquamarine-30);
-}
-
-/* Print */
-
-@media print {
-	:root {
-		--top-level-padding-left: 70pt;
-		--top-level-padding-right: 70pt;
-	}
-
-	html,
-	body {
-		font-size: 14pt;
-		font-weight: 400;
-		line-height: 1.45;
-	}
-
-	body,
-	header,
-	footer,
-	nav {
-		background-color: transparent;
-	}
-
-	a {
-		color: var(--gray);
-		text-decoration-color: var(--gray);
-	}
-
-	main {
-		padding-bottom: 1rem;
-	}
-
-	.hero img {
-		border-radius: 16pt;
-		box-shadow: none;
-	}
-
-	#signoff {
-		font-size: 10pt;
-	}
-
-	#signoff a {
-		text-decoration: none;
-	}
 }
