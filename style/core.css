@@ -79,6 +79,8 @@ a:hover {
 
 header {
 	align-items: center;
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--white-85);
 	display: block flex;
 	flex-direction: row;
@@ -129,11 +131,23 @@ main {
 	padding-right: var(--top-level-padding-right);
 }
 
-.hero img {
-	aspect-ratio: 2;
+.hero {
+	/* aspect-ratio: 2.5; */
 	box-shadow: 0px 2px 16px var(--shadow-color), 0px 8px 100px var(--shadow-color);
+}
+
+.hero img {
+	aspect-ratio: 2.5;
 	display: block;
+	object-fit: cover;
 	width: 100%;
+	max-height: 90vh; /* TODO: Make respond fluidly with vh? */
+}
+
+@media (orientation: portrait) {
+	.hero img {
+		aspect-ratio: 1.5;
+	}
 }
 
 /* Footer */
