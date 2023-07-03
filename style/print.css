@@ -1,0 +1,42 @@
+@media print {
+	:root {
+		--top-level-padding-left: 70pt;
+		--top-level-padding-right: 70pt;
+	}
+
+	html,
+	body {
+		font-size: 14pt;
+		font-weight: 400;
+		line-height: 1.45;
+	}
+
+	body,
+	header,
+	footer,
+	nav {
+		background-color: transparent;
+	}
+
+	a {
+		color: var(--gray);
+		text-decoration-color: var(--gray);
+	}
+
+	main {
+		padding-bottom: 1rem;
+	}
+
+	.hero img {
+		border-radius: 16pt;
+		box-shadow: none;
+	}
+
+	#signoff {
+		font-size: 10pt;
+	}
+
+	#signoff a {
+		text-decoration: none;
+	}
+}
