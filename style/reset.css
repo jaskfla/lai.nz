@@ -1,5 +1,6 @@
 html {
 	color-scheme: light dark;
+	font-kerning: normal;
 	font-synthesis: none;
 	hyphenate-character: '‐'; /* Unambiguous hyphen U+2010 */
 	letter-spacing: 0;
