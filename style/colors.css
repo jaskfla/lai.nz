@@ -43,25 +43,3 @@
 		}
 	}
 }
-
-@media print {
-	:root {
-		--white: white;
-		--white-85: rgb(100% 100% 100% / 85%);
-		--black: black;
-	}
-
-	@supports (color: lch(0% 0 0)) {
-		root {
-			--white: lch(100% 0 0);
-			--black: lch(0% 0 0);
-		}
-	}
-
-	@supports (device-cmyk(0 0 0 100%)) {
-		:root {
-			--gray: device-cmyk(0 0 0 46%);
-			--black: device-cmyk(0 0 0 100%);
-		}
-	}
-}
