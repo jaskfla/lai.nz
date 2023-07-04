@@ -8,9 +8,9 @@
 
 html {
 	accent-color: var(--aquamarine);
-	background-color: var(--white);
+	background-color: var(--bg);
 	caret-color: var(--aquamarine);
-	color: var(--black);
+	color: var(--fg);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
 	font-size: var(--font-size-base);
 	font-weight: 400;
@@ -67,11 +67,20 @@ a:hover {
 
 @supports (font-variation-settings: 'wght' 400) {
 	a {
-		transition: color 0.15s ease-in-out, font-weight 0.15s ease-in-out;
+		transition: color 0.15s ease-in-out, font-weight 0.15s ease-in-out, text-underline-offset 0.15s ease-in-out;
 	}
 
 	a:hover {
 		font-weight: 575;
+	}
+}
+
+/* Dark mode links */
+
+@media (prefers-color-scheme: dark) {
+	a {
+		color: var(--gray);
+		text-decoration-color: var(--gold);
 	}
 }
 
@@ -81,7 +90,7 @@ header {
 	align-items: center;
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	backdrop-filter: saturate(180%) blur(20px);
-	background-color: var(--white-85);
+	background-color: var(--bg-translucent);
 	display: block flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -110,7 +119,7 @@ header a {
 }
 
 header a:hover {
-	color: var(--black);
+	color: var(--fg);
 	font-weight: 700;
 }
 
