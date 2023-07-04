@@ -1,5 +1,6 @@
 :root {
-	--font-size-base: max(16px, min(3.5vw, 3.5vh));
+	--base-ptsz: max(16px, min(3.5vw, 3.5vh));
+	--header-ptsz: min(24px, var(--base-ptsz));
 	--top-level-padding-top: 1rem;
 	--top-level-padding-bottom: 1rem;
 	--top-level-padding-left: 2rem;
@@ -16,7 +17,7 @@ html {
 	caret-color: var(--aquamarine);
 	color: var(--fg);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-	font-size: var(--font-size-base);
+	font-size: var(--base-ptsz);
 	font-weight: 400;
 	hanging-punctuation: first allow-end last;
 	line-height: 1.5;
@@ -100,6 +101,7 @@ a.unavailable {
 	backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--bg-translucent);
 	padding-top: var(--top-level-padding-top);
+	padding-bottom: calc(var(--top-level-padding-top) * 0.75);
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -107,7 +109,7 @@ a.unavailable {
 
 header {
 	align-items: center;
-	display: block flex;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	max-width: 50ch;
@@ -115,14 +117,18 @@ header {
 	padding-right: var(--top-level-padding-right);
 }
 
-header .logo {
-	aspect-ratio: 1; /* To reduce CLS */
-	height: 28px;
+header a .logo {
 	transition: opacity 0.15s ease-in-out;
 }
 
-header .logo:hover {
+header a .logo:hover {
 	opacity: 0.6;
+}
+
+header .logo img {
+	aspect-ratio: 1; /* To reduce CLS */
+	object-fit: scale-down;
+	width: calc(var(--header-ptsz) * 1.5);
 }
 
 header a {
@@ -145,7 +151,7 @@ header a.unavailable {
 nav {
 	align-items: baseline;
 	display: block flex;
-	font-size: min(24px, var(--font-size-base));
+	font-size: var(--header-ptsz);
 	gap: clamp(0.6em, 2.5vw, 1.5em);
 }
 
@@ -154,6 +160,8 @@ nav {
 main {
 	margin-trim: block-start;
 	max-width: 50ch; /* Acceptable proxy due to Quattro’s metrics */
+	padding-top: var(--top-level-padding-top);
+	padding-bottom: var(--top-level-padding-bottom);
 	padding-left: var(--top-level-padding-left);
 	padding-right: var(--top-level-padding-right);
 }
@@ -166,10 +174,9 @@ main {
 	display: block;
 	object-fit: cover;
 	width: 100%;
-	--height: 70vmax;
-	height: var(--height);
-	min-height: 33vw;
-	max-height: min(90vh, 40vw);
+	height: 50cqw;
+	min-height: 33cqw; /* ~3:1 aspect ratio */
+	max-height: 90vh;
 }
 
 /* Footer */

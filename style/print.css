@@ -20,6 +20,8 @@
 	}
 
 	:root {
+		--top-level-padding-top: 35pt;
+		--top-level-padding-bottom: 35pt;
 		--top-level-padding-left: 70pt;
 		--top-level-padding-right: 70pt;
 	}
@@ -43,13 +45,31 @@
 		text-decoration-color: var(--fg-secondary);
 	}
 
+	nav {
+		display: none;
+	}
+
+	#header-wrapper {
+		position: static;
+	}
+
 	main {
+		padding-top: 0;
 		padding-bottom: 1rem;
 	}
 
-	.hero img {
-		border-radius: 16pt;
+	.hero {
 		box-shadow: none;
+	}
+
+	.hero img {
+		aspect-ratio: 4;
+		border-radius: 16pt;
+		width: 100%;
+
+		/* Override height values from core.css, which uses `vw` unit (undefined with `@media print`) */
+		min-height: 0;
+		max-height: 280pt;
 	}
 
 	#signoff {
