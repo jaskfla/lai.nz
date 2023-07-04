@@ -1,10 +1,10 @@
 :root {
-	--white: rgb(96.6% 96.6% 96.6%);
-	--white-85: rgb(96.6% 96.6% 96.6% / 85%);
+	--bg: rgb(96.6% 96.6% 96.6%);
+	--bg-translucent: rgb(96.6% 96.6% 96.6% / 85%);
 	--gray: rgb(50.61% 50.61% 50.61%);
-	--black: rgb(18.94% 18.94% 18.94%);
-	--aquamarine: rgb(0% 47.16% 67.35%);
-	--aquamarine-30: rgb(0% 47.16% 67.35% / 30%);
+	--fg: rgb(18.94% 18.94% 18.94%);
+	--aquamarine: rgb(0% 47.19% 67.12%);
+	--aquamarine-30: rgb(0% 47.19% 67.12% / 30%);
 	--gold: rgb(96.81% 67.09% 0%);
 	--shadow-color: rgb(0 0 0 / 6%);
 }
@@ -12,33 +12,81 @@
 @media (color-gamut: p3) {
 	@supports (color: lch(0% 0 0)) {
 		:root {
-			--white: lch(97% 0 0);
-			--white-85: lch(97% 0 0 / 85%);
+			--bg: lch(97% 0 0);
+			--bg-translucent: lch(97% 0 0 / 85%);
 			--gray: lch(54% 0 0);
-			--black: lch(20% 0 0);
-			--aquamarine: lch(47% 47 248.485);
-			--aquamarine-30: lch(47% 47 248.485 / 30%);
+			--fg: lch(20% 0 0);
+			--aquamarine: lch(47% 47 248);
+			--aquamarine-30: lch(47% 47 248 / 30%);
 			--gold: lch(76% 108 75);
 			--shadow-color: lch(0% 0 0 / 6%);
 		}
 	}
 }
 
+/* Increase contrast (and decrease transparency) */
+
 @media (prefers-contrast: more) {
 	:root {
-		--white: rgb(97.73% 97.73% 97.73%);
-		--white-85: rgb(97.73% 97.73% 97.73%); /* Also reduce transparency */
+		--bg: rgb(97.73% 97.73% 97.73%);
+		--bg-translucent: rgb(97.73% 97.73% 97.73%);
 		--gray: rgb(32.27% 32.27% 32.27%);
-		--black: rgb(0 0 0);
+		--fg: rgb(0 0 0);
 	}
 
 	@media (color-gamut: p3) {
 		@supports (color: lch(0% 0 0)) {
 			:root {
-				--white: lch(98% 0 0);
-				--white-85: lch(98% 0 0); /* Also reduce transparency */
+				--bg: lch(98% 0 0);
+				--bg-translucent: lch(98% 0 0);
 				--gray: lch(35% 0 0);
-				--black: lch(0% 0 0);
+				--fg: lch(0% 0 0);
+			}
+		}
+	}
+}
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: rgb(0% 10.77% 11.73%);
+		--bg-translucent: rgb(0% 10.77% 11.73% / 85%);
+		--gray: rgb(41.3% 52.2% 53.44%);
+		--fg: rgb(78.27% 84.53% 85.22%);
+		--shadow-color: rgb(0 0 0 / 24%);
+	}
+
+	@media (color-gamut: p3) {
+		@supports (color: lch(0% 0 0)) {
+			:root {
+				--bg: lch(8% 11 208);
+				--bg-translucent: lch(8% 11 208 / 85%);
+				--gray: lch(53.5% 11 208);
+				--fg: lch(85% 6 208);
+				--shadow-color: lch(0% 0 0 / 24%);
+			}
+		}
+	}
+
+	/* Increase contrast (and decrease transparency) */
+
+	@media (prefers-contrast: more) {
+		:root {
+			--bg: rgb(0% 6.7% 7.24%);
+			--bg-translucent: rgb(0% 6.7% 7.24%);
+			--gray: rgb(54.87% 66.13% 67.41%);
+			--fg: rgb(85.95% 92.3% 93.01%);
+		}
+
+		@media (color-gamut: p3) {
+			@supports (color: lch(0% 0 0)) {
+				:root {
+					--bg: lch(4% 7 208);
+					--bg-translucent: lch(4% 7 208);
+					--gray: lch(67% 11 208);
+					--fg: lch(92% 6 208);
+				}
 			}
 		}
 	}
