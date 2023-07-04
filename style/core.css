@@ -1,6 +1,6 @@
 :root {
 	--font-size-base: max(16px, min(3.5vw, 3.5vh));
-	--top-level-padding-top: max(2rem, env(safe-area-inset-top));
+	--top-level-padding-top: max(1rem, env(safe-area-inset-top));
 	--top-level-padding-bottom: max(1rem, env(safe-area-inset-bottom));
 	--top-level-padding-left: max(2rem, env(safe-area-inset-left));
 	--top-level-padding-right: max(2rem, env(safe-area-inset-right));
@@ -75,6 +75,11 @@ a:hover {
 	}
 }
 
+a.unavailable {
+	cursor: not-allowed;
+	text-decoration-style: wavy;
+}
+
 /* Dark mode links */
 
 @media (prefers-color-scheme: dark) {
@@ -86,17 +91,24 @@ a:hover {
 
 /* Header */
 
-header {
-	align-items: center;
+#header-wrapper {
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--bg-translucent);
+	padding-top: 1.5rem;
+	padding-top: var(--top-level-padding-top);
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
+header {
+	align-items: center;
 	display: block flex;
 	flex-direction: row;
 	justify-content: space-between;
 	max-width: 50ch;
-	padding: 1.5rem 1.5rem 0;
-	padding-top: var(--top-level-padding-top);
+	padding: 0 1.5rem 0;
 	padding-left: var(--top-level-padding-left);
 	padding-right: var(--top-level-padding-right);
 }
@@ -121,6 +133,11 @@ header a {
 header a:hover {
 	color: var(--fg);
 	font-weight: 700;
+}
+
+header a.unavailable {
+	color: var(--gray);
+	font-weight: 550;
 }
 
 nav {
