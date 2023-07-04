@@ -29,7 +29,7 @@
 @media (prefers-contrast: more) {
 	:root {
 		--bg: rgb(97.73% 97.73% 97.73%);
-		--bg-translucent: rgb(97.73% 97.73% 97.73%); /* Also reduce transparency */
+		--bg-translucent: rgb(97.73% 97.73% 97.73%);
 		--gray: rgb(32.27% 32.27% 32.27%);
 		--fg: rgb(0 0 0);
 	}
@@ -38,7 +38,7 @@
 		@supports (color: lch(0% 0 0)) {
 			:root {
 				--bg: lch(98% 0 0);
-				--bg-translucent: lch(98% 0 0); /* Also reduce transparency */
+				--bg-translucent: lch(98% 0 0);
 				--gray: lch(35% 0 0);
 				--fg: lch(0% 0 0);
 			}
