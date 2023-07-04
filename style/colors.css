@@ -24,6 +24,8 @@
 	}
 }
 
+/* Increase contrast (and decrease transparency) */
+
 @media (prefers-contrast: more) {
 	:root {
 		--bg: rgb(97.73% 97.73% 97.73%);
@@ -67,10 +69,12 @@
 		}
 	}
 
+	/* Increase contrast (and decrease transparency) */
+
 	@media (prefers-contrast: more) {
 		:root {
 			--bg: rgb(0% 6.7% 7.24%);
-			--bg-translucent: rgb(0% 6.7% 7.24%); /* Also reduce transparency */
+			--bg-translucent: rgb(0% 6.7% 7.24%);
 			--gray: rgb(54.87% 66.13% 67.41%);
 			--fg: rgb(85.95% 92.3% 93.01%);
 		}
@@ -79,7 +83,7 @@
 			@supports (color: lch(0% 0 0)) {
 				:root {
 					--bg: lch(4% 7 208);
-					--bg-translucent: lch(4% 7 208); /* Also reduce transparency */
+					--bg-translucent: lch(4% 7 208);
 					--gray: lch(67% 11 208);
 					--fg: lch(92% 6 208);
 				}
