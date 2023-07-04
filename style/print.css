@@ -1,21 +1,21 @@
 @media print {
 	:root {
-		--white: white;
-		--white-85: rgb(100% 100% 100% / 85%);
-		--black: black;
+		--bg: white;
+		--bg-translucent: rgb(100% 100% 100% / 85%);
+		--fg: black;
 	}
 
 	@supports (color: lch(0% 0 0)) {
 		:root {
-			--white: lch(100% 0 0);
-			--black: lch(0% 0 0);
+			--bg: lch(100% 0 0);
+			--fg: lch(0% 0 0);
 		}
 	}
 
 	@supports (device-cmyk(0 0 0 100%)) {
 		:root {
 			--gray: device-cmyk(0 0 0 46%);
-			--black: device-cmyk(0 0 0 100%);
+			--fg: device-cmyk(0 0 0 100%);
 		}
 	}
 
