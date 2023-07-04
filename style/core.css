@@ -128,7 +128,7 @@ header a .logo:hover {
 header .logo img {
 	aspect-ratio: 1; /* To reduce CLS */
 	object-fit: scale-down;
-	width: calc(var(--header-ptsz) * 1.5);
+	width: calc(var(--header-ptsz) * 1.25);
 }
 
 header a {
