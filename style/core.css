@@ -57,7 +57,7 @@ a {
 	text-decoration-line: underline;
 	text-decoration-skip-ink: all;
 	text-decoration-thickness: max(1px, 0.06em);
-	text-underline-offset: max(1px, 0.06em);
+	text-underline-offset: max(1px, 0.085em);
 }
 
 a:hover {
