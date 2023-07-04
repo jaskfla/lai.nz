@@ -14,7 +14,7 @@
 
 	@supports (device-cmyk(0 0 0 100%)) {
 		:root {
-			--gray: device-cmyk(0 0 0 46%);
+			--fg-secondary: device-cmyk(0 0 0 46%);
 			--fg: device-cmyk(0 0 0 100%);
 		}
 	}
@@ -39,8 +39,8 @@
 	}
 
 	a {
-		color: var(--gray);
-		text-decoration-color: var(--gray);
+		color: var(--fg-secondary);
+		text-decoration-color: var(--fg-secondary);
 	}
 
 	main {
