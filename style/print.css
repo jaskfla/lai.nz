@@ -63,13 +63,11 @@
 	}
 
 	.hero img {
-		aspect-ratio: 4;
+		aspect-ratio: 2;
 		border-radius: 16pt;
 		width: 100%;
-
-		/* Override height values from core.css, which uses `vw` unit (undefined with `@media print`) */
-		min-height: 0;
-		max-height: 280pt;
+		height: auto; /* Reset to initial value so `aspect-ratio` is honoured*/
+		min-height: 0; /* Override value from core.css, which uses `vw` unit (undefined with `@media print`) */
 	}
 
 	#signoff {
