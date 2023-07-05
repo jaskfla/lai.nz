@@ -10,18 +10,16 @@
 	--selection-color: var(--aquamarine-30);
 }
 
-@media (color-gamut: p3) {
-	@supports (color: lch(0% 0 0)) {
-		:root {
-			--bg: lch(97% 0 0);
-			--bg-translucent: lch(97% 0 0 / 85%);
-			--fg-secondary: lch(54% 0 0);
-			--fg: lch(20% 0 0);
-			--aquamarine: lch(47% 47 248);
-			--aquamarine-30: lch(47% 47 248 / 30%);
-			--gold: lch(76% 108 75);
-			--shadow-color: lch(0% 0 0 / 6%);
-		}
+@supports (color: lch(0% 0 0)) {
+	:root {
+		--bg: lch(97% 0 0);
+		--bg-translucent: lch(97% 0 0 / 85%);
+		--fg-secondary: lch(54% 0 0);
+		--fg: lch(20% 0 0);
+		--aquamarine: lch(47% 47 248);
+		--aquamarine-30: lch(47% 47 248 / 30%);
+		--gold: lch(76% 108 75);
+		--shadow-color: lch(0% 0 0 / 6%);
 	}
 }
 
@@ -35,14 +33,12 @@
 		--fg-secondary: rgb(32.27% 32.27% 32.27%);
 	}
 
-	@media (color-gamut: p3) {
-		@supports (color: lch(0% 0 0)) {
-			:root {
-				--bg: lch(98% 0 0);
-				--bg-translucent: lch(98% 0 0);
-				--fg: lch(0% 0 0);
-				--fg-secondary: lch(35% 0 0);
-			}
+	@supports (color: lch(0% 0 0)) {
+		:root {
+			--bg: lch(98% 0 0);
+			--bg-translucent: lch(98% 0 0);
+			--fg: lch(0% 0 0);
+			--fg-secondary: lch(35% 0 0);
 		}
 	}
 }
@@ -59,16 +55,14 @@
 		--selection-color: rgb(100% 100% 100% / 12%);
 	}
 
-	@media (color-gamut: p3) {
-		@supports (color: lch(0% 0 0)) {
-			:root {
-				--bg: lch(8% 11 208);
-				--bg-translucent: lch(8% 11 208 / 85%);
-				--fg-secondary: lch(53.5% 11 208);
-				--fg: lch(85% 6 208);
-				--shadow-color: lch(0% 0 0 / 24%);
-				--selection-color: lch(100% 0 0 / 12%);
-			}
+	@supports (color: lch(0% 0 0)) {
+		:root {
+			--bg: lch(8% 11 208);
+			--bg-translucent: lch(8% 11 208 / 85%);
+			--fg-secondary: lch(53.5% 11 208);
+			--fg: lch(85% 6 208);
+			--shadow-color: lch(0% 0 0 / 24%);
+			--selection-color: lch(100% 0 0 / 12%);
 		}
 	}
 
@@ -82,14 +76,12 @@
 			--fg-secondary: rgb(54.87% 66.13% 67.41%);
 		}
 
-		@media (color-gamut: p3) {
-			@supports (color: lch(0% 0 0)) {
-				:root {
-					--bg: lch(4% 7 208);
-					--bg-translucent: lch(4% 7 208);
-					--fg: lch(92% 6 208);
-					--fg-secondary: lch(67% 11 208);
-				}
+		@supports (color: lch(0% 0 0)) {
+			:root {
+				--bg: lch(4% 7 208);
+				--bg-translucent: lch(4% 7 208);
+				--fg: lch(92% 6 208);
+				--fg-secondary: lch(67% 11 208);
 			}
 		}
 	}
