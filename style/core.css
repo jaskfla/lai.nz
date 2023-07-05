@@ -1,6 +1,7 @@
 :root {
 	--base-ptsz: max(16px, min(3.5vw, 3.5vh));
 	--header-ptsz: min(24px, var(--base-ptsz));
+	--content-width: 29rem; /* ≈ 50ch in iA Writer Quattro */
 	--top-level-padding-top: 1rem;
 	--top-level-padding-bottom: 1rem;
 	--top-level-padding-left: 2rem;
@@ -112,7 +113,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	max-width: 50ch;
+	max-width: var(--content-width);
 	padding-left: var(--top-level-padding-left);
 	padding-right: var(--top-level-padding-right);
 }
@@ -159,7 +160,7 @@ nav {
 
 main {
 	margin-trim: block-start;
-	max-width: 50ch; /* Acceptable proxy due to Quattro’s metrics */
+	max-width: var(--content-width);
 	padding-top: var(--top-level-padding-top);
 	padding-bottom: var(--top-level-padding-bottom);
 	padding-left: var(--top-level-padding-left);
@@ -182,21 +183,61 @@ main {
 /* Footer */
 
 footer {
+	align-content: start;
+	display: flex;
+	flex-direction: row;
+	gap: 4em;
+	justify-content: space-between;
+	font-size: calc(var(--header-ptsz) * 0.75);
+	letter-spacing: -0.01em;
+	max-width: var(--content-width);
 	padding-top: var(--top-level-padding-top);
 	padding-bottom: var(--top-level-padding-bottom);
 	padding-left: var(--top-level-padding-left);
 	padding-right: var(--top-level-padding-right);
 }
 
+footer a {
+	color: var(--fg-secondary);
+	text-decoration-color: var(--fg-secondary);
+}
+
+footer a:hover {
+	color: var(--fg-secondary);
+}
+
+footer a.external::after {
+	content: '↗';
+	margin-inline-start: 0.5ch;
+	opacity: 80%;
+}
+
 #signoff {
 	color: var(--fg-secondary);
-	font-size: 16px;
+	/* font-size: 16px; */
 	letter-spacing: 0;
 }
 
-#signoff a {
-	color: var(--fg-secondary);
-	text-decoration-color: var(--fg-secondary);
+.links {
+	align-content: start;
+	display: grid;
+	gap: 0 4ch;
+	grid-auto-flow: row;
+	grid-template-columns: 1fr;
+	line-height: 2em;
+	margin: 0;
+	padding: 0;
+	place-items: baseline start;
+	list-style: none;
+}
+
+@media (width > 720px) {
+	.links {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.links a {
+	text-decoration: none;
 }
 
 /* Odds & sods */
