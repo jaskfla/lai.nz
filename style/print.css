@@ -14,12 +14,14 @@
 
 	@supports (device-cmyk(0 0 0 100%)) {
 		:root {
-			--gray: device-cmyk(0 0 0 46%);
+			--fg-secondary: device-cmyk(0 0 0 46%);
 			--fg: device-cmyk(0 0 0 100%);
 		}
 	}
 
 	:root {
+		--top-level-padding-top: 35pt;
+		--top-level-padding-bottom: 35pt;
 		--top-level-padding-left: 70pt;
 		--top-level-padding-right: 70pt;
 	}
@@ -39,17 +41,33 @@
 	}
 
 	a {
-		color: var(--gray);
-		text-decoration-color: var(--gray);
+		color: var(--fg-secondary);
+		text-decoration-color: var(--fg-secondary);
+	}
+
+	nav {
+		display: none;
+	}
+
+	#header-wrapper {
+		position: static;
 	}
 
 	main {
+		padding-top: 0;
 		padding-bottom: 1rem;
 	}
 
-	.hero img {
-		border-radius: 16pt;
+	.hero {
 		box-shadow: none;
+	}
+
+	.hero img {
+		aspect-ratio: 2;
+		border-radius: 16pt;
+		width: 100%;
+		height: auto; /* Reset to initial value so `aspect-ratio` is honoured*/
+		min-height: 0; /* Override value from core.css, which uses `vw` unit (undefined with `@media print`) */
 	}
 
 	#signoff {

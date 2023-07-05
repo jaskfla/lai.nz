@@ -1,26 +1,26 @@
 :root {
 	--bg: rgb(96.6% 96.6% 96.6%);
 	--bg-translucent: rgb(96.6% 96.6% 96.6% / 85%);
-	--gray: rgb(50.61% 50.61% 50.61%);
 	--fg: rgb(18.94% 18.94% 18.94%);
+	--fg-secondary: rgb(50.61% 50.61% 50.61%);
 	--aquamarine: rgb(0% 47.19% 67.12%);
 	--aquamarine-30: rgb(0% 47.19% 67.12% / 30%);
 	--gold: rgb(96.81% 67.09% 0%);
 	--shadow-color: rgb(0 0 0 / 6%);
+	--accent-color: var(--aquamarine);
+	--selection-color: var(--aquamarine-30);
 }
 
-@media (color-gamut: p3) {
-	@supports (color: lch(0% 0 0)) {
-		:root {
-			--bg: lch(97% 0 0);
-			--bg-translucent: lch(97% 0 0 / 85%);
-			--gray: lch(54% 0 0);
-			--fg: lch(20% 0 0);
-			--aquamarine: lch(47% 47 248);
-			--aquamarine-30: lch(47% 47 248 / 30%);
-			--gold: lch(76% 108 75);
-			--shadow-color: lch(0% 0 0 / 6%);
-		}
+@supports (color: lch(0% 0 0)) {
+	:root {
+		--bg: lch(97% 0 0);
+		--bg-translucent: lch(97% 0 0 / 85%);
+		--fg-secondary: lch(54% 0 0);
+		--fg: lch(20% 0 0);
+		--aquamarine: lch(47% 47 248);
+		--aquamarine-30: lch(47% 47 248 / 30%);
+		--gold: lch(76% 108 75);
+		--shadow-color: lch(0% 0 0 / 6%);
 	}
 }
 
@@ -30,18 +30,16 @@
 	:root {
 		--bg: rgb(97.73% 97.73% 97.73%);
 		--bg-translucent: rgb(97.73% 97.73% 97.73%);
-		--gray: rgb(32.27% 32.27% 32.27%);
 		--fg: rgb(0 0 0);
+		--fg-secondary: rgb(32.27% 32.27% 32.27%);
 	}
 
-	@media (color-gamut: p3) {
-		@supports (color: lch(0% 0 0)) {
-			:root {
-				--bg: lch(98% 0 0);
-				--bg-translucent: lch(98% 0 0);
-				--gray: lch(35% 0 0);
-				--fg: lch(0% 0 0);
-			}
+	@supports (color: lch(0% 0 0)) {
+		:root {
+			--bg: lch(98% 0 0);
+			--bg-translucent: lch(98% 0 0);
+			--fg: lch(0% 0 0);
+			--fg-secondary: lch(35% 0 0);
 		}
 	}
 }
@@ -52,20 +50,21 @@
 	:root {
 		--bg: rgb(0% 10.77% 11.73%);
 		--bg-translucent: rgb(0% 10.77% 11.73% / 85%);
-		--gray: rgb(41.3% 52.2% 53.44%);
 		--fg: rgb(78.27% 84.53% 85.22%);
+		--fg-secondary: rgb(41.3% 52.2% 53.44%);
 		--shadow-color: rgb(0 0 0 / 24%);
+		--accent-color: var(--gold);
+		--selection-color: rgb(100% 100% 100% / 12%);
 	}
 
-	@media (color-gamut: p3) {
-		@supports (color: lch(0% 0 0)) {
-			:root {
-				--bg: lch(8% 11 208);
-				--bg-translucent: lch(8% 11 208 / 85%);
-				--gray: lch(53.5% 11 208);
-				--fg: lch(85% 6 208);
-				--shadow-color: lch(0% 0 0 / 24%);
-			}
+	@supports (color: lch(0% 0 0)) {
+		:root {
+			--bg: lch(8% 11 208);
+			--bg-translucent: lch(8% 11 208 / 85%);
+			--fg-secondary: lch(53.5% 11 208);
+			--fg: lch(85% 6 208);
+			--shadow-color: lch(0% 0 0 / 24%);
+			--selection-color: lch(100% 0 0 / 12%);
 		}
 	}
 
@@ -75,18 +74,16 @@
 		:root {
 			--bg: rgb(0% 6.7% 7.24%);
 			--bg-translucent: rgb(0% 6.7% 7.24%);
-			--gray: rgb(54.87% 66.13% 67.41%);
 			--fg: rgb(85.95% 92.3% 93.01%);
+			--fg-secondary: rgb(54.87% 66.13% 67.41%);
 		}
 
-		@media (color-gamut: p3) {
-			@supports (color: lch(0% 0 0)) {
-				:root {
-					--bg: lch(4% 7 208);
-					--bg-translucent: lch(4% 7 208);
-					--gray: lch(67% 11 208);
-					--fg: lch(92% 6 208);
-				}
+		@supports (color: lch(0% 0 0)) {
+			:root {
+				--bg: lch(4% 7 208);
+				--bg-translucent: lch(4% 7 208);
+				--fg: lch(92% 6 208);
+				--fg-secondary: lch(67% 11 208);
 			}
 		}
 	}

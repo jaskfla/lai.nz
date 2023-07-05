@@ -65,33 +65,36 @@
 		<script src="/scripts/main.js" defer></script>
 	</head>
 	<body>
-		<header>
-			<a href="/">
-				<picture>
-					<source media="(prefers-color-scheme: light)" srcset="/assets/avatar.svg" />
-					<source media="(prefers-color-scheme: dark)" srcset="/assets/avatar~dark.svg" />
-					<source
-						media="(prefers-color-scheme: light) and (prefers-contrast: more)"
-						srcset="/assets/avatar~light~contrast.svg"
-					/>
-					<source
-						media="(prefers-color-scheme: dark) and (prefers-contrast: more)"
-						srcset="/assets/avatar~dark~contrast.svg"
-					/>
-					<img
-						class="logo"
-						decoding="async"
-						alt="Line drawing of the front profile of Jasper’s face. It depicts an oval face shape and short hair; all other facial features, including eyes, are omitted."
-						src="/assets/avatar.svg"
-					/>
-				</picture>
-			</a>
-			<!-- <nav>
-				<a href="/values.html">Values</a>
-				<a href="/work.html">Work</a>
-				<a href="/cv.html">Résumé</a>
-			</nav> -->
-		</header>
+		<div id="header-wrapper">
+			<header>
+				<a href="/">
+					<picture class="logo">
+						<source media="(prefers-color-scheme: light)" srcset="/assets/avatar.svg" />
+						<source media="(prefers-color-scheme: dark)" srcset="/assets/avatar~dark.svg" />
+						<source
+							media="print or ((prefers-color-scheme: light) and (prefers-contrast: more))"
+							srcset="/assets/avatar~light~contrast.svg"
+						/>
+						<source
+							media="(prefers-color-scheme: dark) and (prefers-contrast: more)"
+							srcset="/assets/avatar~dark~contrast.svg"
+						/>
+						<img
+							decoding="async"
+							alt="Line drawing of the front profile of Jasper’s face. It depicts an oval face shape and short hair; all other facial features, including eyes, are omitted."
+							src="/assets/avatar.svg"
+						/>
+					</picture>
+				</a>
+				<!-- <nav>
+					<a class="unavailable" title="I promise I have these! This page just isn’t quite ready yet."
+						>Values</a
+					>
+					<a class="unavailable" title="🚧👷‍♂️ Page under construction.">Work</a>
+					<a class="unavailable">Résumé</a>
+				</nav> -->
+			</header>
+		</div>
 		<main>
 			<p>
 				Hiya! Jasper here 👋. I’m a penultimate software engineering student, student representative and
@@ -187,6 +190,21 @@
 		</picture>
 		<footer>
 			<p id="signoff">Thanks for stopping by!</p>
+			<ul class="links">
+				<li><a class="external" title="jaskfla" href="https://github.com/jaskfla">GitHub</a></li>
+				<li>
+					<a class="external" title="@jasperlai@mastodon.online" href="https://mastodon.online/@jasperlai"
+						>Mastodon</a
+					>
+				</li>
+				<li><a class="external" title="@_JasperLai" href="https://twitter.com/_JasperLai">Twitter</a></li>
+				<li>
+					<a class="external" title="jasperlai" href="https://discordapp.com/users/228441721246056449"
+						>Discord</a
+					>
+				</li>
+				<li><a class="external" title="jasperlai" href="https://www.linkedin.com/in/jasperlai">LinkedIn</a></li>
+			</ul>
 		</footer>
 	</body>
 </html>
