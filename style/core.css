@@ -13,9 +13,9 @@
 }
 
 html {
-	accent-color: var(--aquamarine);
+	accent-color: var(--accent-color);
 	background-color: var(--bg);
-	caret-color: var(--aquamarine);
+	caret-color: var(--accent-color);
 	color: var(--fg);
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
 	font-size: var(--base-ptsz);
