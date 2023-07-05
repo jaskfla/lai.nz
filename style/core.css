@@ -103,9 +103,14 @@ a.unavailable {
 	background-color: var(--bg-translucent);
 	padding-top: var(--top-level-padding-top);
 	padding-bottom: calc(var(--top-level-padding-top) * 0.75);
-	position: sticky;
-	top: 0;
 	width: 100%;
+}
+
+@media (height > 1000px) {
+	#header-wrapper {
+		position: sticky;
+		top: 0;
+	}
 }
 
 header {
