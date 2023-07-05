@@ -235,6 +235,7 @@ footer a.external::after {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+
 .links a {
 	text-decoration: none;
 }
@@ -242,5 +243,5 @@ footer a.external::after {
 /* Odds & sods */
 
 ::selection {
-	background-color: var(--aquamarine-30);
+	background-color: var(--selection-color);
 }
