@@ -3,6 +3,7 @@ const signoffs = [
 	`<a href="https://nerdfighteria.info/v/307598550/">Memento mori</a>&nbsp;😊`,
 	`<a href="https://overcast.fm/+BmEPOwtek">Keep moving <em>and</em> get out of the way.</a>`,
 	`<a href="https://youtu.be/FyQi79aYfxU?t=73">Don’t forget to be awesome!</a>&nbsp;🎃🐧`,
+	`<span title="Any ideas? Please contact me!">Still brainstorming a name-specific sign-off,<br />—Jasper</span>`,
 	`Awaiting the next episode of <a href="https://www.relay.fm/bonanza">BONANZA</a>.&nbsp;🛟`,
 	`Curating pixels since 2018.`,
 	`Farm-to-table pixels since 2018.`,
