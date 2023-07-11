@@ -6,6 +6,7 @@ const signoffs = [
 	`<span title="Any ideas? Please contact me!">Still brainstorming a name-specific sign-off,<br />—Jasper</span>`,
 	`Awaiting the next episode of <a href="https://www.relay.fm/bonanza">BONANZA</a>.&nbsp;🛟`,
 	`Curating pixels since 2018.`,
+	`Eternally browsing for fonts.`,
 	`Farm-to-table pixels since 2018.`,
 	`Half the battle is giving a shit.`,
 	`Hand-coded in downtown Auckland, New Zealand.`,
