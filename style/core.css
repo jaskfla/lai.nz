@@ -1,5 +1,5 @@
 :root {
-	--base-ptsz: max(16px, min(3.5vw, 3.5vh));
+	--base-ptsz: max(16px, 4vmin);
 	--header-ptsz: min(24px, var(--base-ptsz));
 	--content-width: 29rem; /* ≈ 50ch in iA Writer Quattro */
 	--top-level-padding-top: 1rem;
