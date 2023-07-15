@@ -33,7 +33,6 @@ html {
 		font-family: 'iA Writer Quattro V', system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
 		font-feature-settings: 'ss02'; /* iA Writer quattro double-storey g */
 		font-variant-alternates: styleset(double-storey-g);
-		font-variation-settings: 'SPCG' 0; /* Default anyway, for explicitness */
 		font-weight: 430;
 		letter-spacing: -0.035em;
 	}
