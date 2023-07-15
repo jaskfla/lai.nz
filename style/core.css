@@ -95,6 +95,18 @@ a.unavailable {
 	}
 }
 
+/* Finger quotes */
+
+.finger-quotes::before,
+.finger-quotes::after {
+	content: '✌️';
+	display: inline-block;
+}
+
+.finger-quotes::after {
+	transform: scaleX(-1);
+}
+
 /* Header */
 
 #header-wrapper {
