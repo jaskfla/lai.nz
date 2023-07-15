@@ -33,7 +33,7 @@ html {
 		font-variant-alternates: styleset(double-storey-g);
 		font-variation-settings: 'SPCG' 0; /* Default anyway, for explicitness */
 		font-weight: 430;
-		letter-spacing: -0.03em;
+		letter-spacing: -0.035em;
 	}
 
 	em,
@@ -194,7 +194,7 @@ footer {
 	gap: 4em;
 	justify-content: space-between;
 	font-size: calc(var(--header-ptsz) * 0.75);
-	letter-spacing: -0.01em;
+	letter-spacing: 0;
 	max-width: var(--content-width);
 	padding-top: var(--top-level-padding-top);
 	padding-bottom: var(--top-level-padding-bottom);
@@ -219,7 +219,6 @@ footer a.external::after {
 
 #signoff {
 	color: var(--fg-secondary);
-	letter-spacing: 0;
 }
 
 .links {
