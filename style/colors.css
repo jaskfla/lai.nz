@@ -6,9 +6,9 @@
 	--aquamarine: rgb(0% 47.19% 67.12%);
 	--aquamarine-30: rgb(0% 47.19% 67.12% / 30%);
 	--gold: rgb(96.81% 67.09% 0%);
-	--shadow-color: rgb(0 0 0 / 6%);
 	--accent-color: var(--aquamarine);
-	--selection-color: var(--aquamarine-30);
+	--selection-color: rgb(83.23% 83.23% 83.23% / 30%);
+	--shadow-color: rgb(0 0 0 / 6%);
 }
 
 @supports (color: lch(0% 0 0)) {
@@ -20,6 +20,7 @@
 		--aquamarine: lch(47% 47 248);
 		--aquamarine-30: lch(47% 47 248 / 30%);
 		--gold: lch(76% 108 75);
+		--selection-color: lch(85% 0 0 / 30%);
 		--shadow-color: lch(0% 0 0 / 6%);
 	}
 }
@@ -32,6 +33,7 @@
 		--bg-translucent: rgb(97.73% 97.73% 97.73%);
 		--fg: rgb(0 0 0);
 		--fg-secondary: rgb(32.27% 32.27% 32.27%);
+		--selection-color: var(--aquamarine-30);
 	}
 
 	@supports (color: lch(0% 0 0)) {
@@ -54,7 +56,7 @@
 		--fg-secondary: rgb(41.3% 52.2% 53.44%);
 		--shadow-color: rgb(0 0 0 / 24%);
 		--accent-color: var(--gold);
-		--selection-color: rgb(100% 100% 100% / 12%);
+		--selection-color: rgb(42.77% 53.72% 54.97% / 12%);
 	}
 
 	@supports (color: lch(0% 0 0)) {
@@ -64,7 +66,7 @@
 			--fg-secondary: lch(53.5% 11 208);
 			--fg: lch(85% 6 208);
 			--shadow-color: lch(0% 0 0 / 24%);
-			--selection-color: lch(100% 0 0 / 12%);
+			--selection-color: lch(55% 11 208 / 12%);
 		}
 	}
 
