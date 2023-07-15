@@ -10,6 +10,8 @@
 	--top-level-padding-bottom: max(1rem, env(safe-area-inset-bottom));
 	--top-level-padding-left: max(2rem, env(safe-area-inset-left));
 	--top-level-padding-right: max(2rem, env(safe-area-inset-right));
+	--transition-duration-small: 0.17s;
+	--transition-timing-small: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -73,11 +75,13 @@ a:hover {
 
 @supports (font-variation-settings: 'wght' 400) {
 	a {
-		transition: color 0.15s ease-in-out, font-weight 0.15s ease-in-out, text-underline-offset 0.15s ease-in-out;
+		transition-property: color, font-weight;
+		transition-duration: var(--transition-duration-small);
+		transition-timing-function: var(--transition-timing-small);
 	}
 
 	a:hover {
-		font-weight: 575;
+		font-weight: 580;
 	}
 }
 
@@ -136,7 +140,7 @@ header {
 }
 
 header a .logo {
-	transition: opacity 0.15s ease-in-out;
+	transition: opacity var(--transition-duration-small) var(--transition-timing-small);
 }
 
 header a .logo:hover {
@@ -182,6 +186,10 @@ main {
 	padding-bottom: var(--top-level-padding-bottom);
 	padding-left: var(--top-level-padding-left);
 	padding-right: var(--top-level-padding-right);
+}
+
+#hiya {
+	font-style: italic;
 }
 
 .hero {
