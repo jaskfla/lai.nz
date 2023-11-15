@@ -3,6 +3,11 @@
 		--bg: white;
 		--bg-translucent: rgb(100% 100% 100% / 85%);
 		--fg: black;
+
+		--top-level-padding-top: 35pt;
+		--top-level-padding-bottom: 35pt;
+		--top-level-padding-left: 70pt;
+		--top-level-padding-right: 70pt;
 	}
 
 	@supports (color: lch(0% 0 0)) {
@@ -17,13 +22,6 @@
 			--fg-secondary: device-cmyk(0 0 0 46%);
 			--fg: device-cmyk(0 0 0 100%);
 		}
-	}
-
-	:root {
-		--top-level-padding-top: 35pt;
-		--top-level-padding-bottom: 35pt;
-		--top-level-padding-left: 70pt;
-		--top-level-padding-right: 70pt;
 	}
 
 	html,
