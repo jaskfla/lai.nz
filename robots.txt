@@ -1,0 +1,9 @@
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: FacebookBot
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: omgili
+User-agent: omgilibot
+Disallow: /
