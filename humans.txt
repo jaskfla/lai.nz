@@ -1,0 +1,41 @@
+# lai.nz humansTXT
+humanstxt.org
+
+## One-person team
+
+Jasper Lai
+📧 j @ lai . nz
+📍 Tāmaki Makaurau, Aotearoa (Auckland, New Zealand)
+
+## Thanks
+
+Jeramy B., Maryanne C. and my fellow software engineering nerds.
+
+## Site
+
+- Standards
+  - HTML (w3.org/TR/html5)
+  - CSS (w3.org/Style/CSS)
+  - JavaScript (tc39.es/ecma262)
+  - Markdown (daringfireball.net/projects/markdown)
+
+- Design
+	- Figma (figma.com)
+	- Good ol’ pen & paper (studioneat.com)
+	- Butterick’s Practical Typography (practicaltypography.com)
+
+- Writing
+	- iA Writer (ia.net/writer)
+
+- Development
+	- BBEdit (barebones.com/products/bbedit)
+	- Visual Studio Code (code.visualstudio.com)
+	- Warp (warp.dev)
+	- Git (git-scm.com)
+	- GitHub (github.com)
+	- MDN Web Docs (developer.mozilla.org)
+
+- Hardware
+	- MacBook Pro, 13-inch, 2019
+	- Wacom Intuos Pro, Medium
+	- Mode Eighty
