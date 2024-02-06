@@ -3,7 +3,7 @@ title: Privacy
 layout: 'wall_of_text.njk'
 ---
 
-Let’s be honest, this page is completely unwarranted on a site so spartan. I just wanted the excuse to have a bunch of text to typeset.
+Let’s be honest, this page is <em>completely</em> unnecessary on a site so spartan. I just wanted more text to typeset.
 
 The gist is that you use this site—and anything hosted here—at your own risk. That includes anything you download from here to your own device. However, I’m not going to intentionally host or share anything here that would compromise your device or be otherwise unsavoury. I do my best not to be an asshole.
 
