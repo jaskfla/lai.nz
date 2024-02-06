@@ -1,0 +1,62 @@
+<style>
+	#opsz_playground {
+		display: grid;
+		align-content: center;
+		justify-content: center;
+		min-block-size: 55dvh;
+
+		::selection {
+			background-color: transparent;
+		}
+	}
+
+	#opsz_hero {
+		cursor: default;
+		font: clamp(40px, min(8vw, 45vh), 4.5rem) / 1.2 'Warbler Variable', ui-serif;
+		font-optical-sizing: none;
+		-webkit-font-smoothing: antialiased;
+		font-variation-settings: 'opsz' 15;
+		hanging-punctuation: first force-end last;
+		text-align: center;
+		text-rendering: geometricPrecision;
+		transition: font-variation-settings, left;
+		transition-duration: 1.1s;
+		transition-timing-function: cubic-bezier(0.64, 0.045, 0.35, 1);
+
+		.fullstop {
+			color: var(--color-accent);
+		}
+	}
+
+	#opsz_hero:hover {
+		font-variation-settings: 'opsz' 26;
+	}
+
+	@supports not (hanging-punctuation: force-end) {
+		#opsz_hero {
+			position: relative;
+			left: 0.124em;
+		}
+		#opsz_hero:hover {
+			left: 0.103em; /* Width of hanging full stop varies with opsz */
+		}
+	}
+</style>
+<section id="opsz_playground">
+	<h1 id="opsz_hero">Hiya! Jasper here<span class="fullstop">.</span></h1>
+</section>
+<script>
+	const doesSupportHangingPunctuation = CSS.supports(
+		'hanging-punctuation',
+		'force-end'
+	)
+
+	opszIsSmall = true
+	opsz_hero.addEventListener('touchend', (e) => {
+		opsz_hero.style.fontVariationSettings = `'opsz' ${opszIsSmall ? 26 : 15}`
+		if (!doesSupportHangingPunctuation) {
+			opsz_hero.style.left = opszIsSmall ? '0.103em' : '0.124em'
+		}
+		opszIsSmall = !opszIsSmall
+	})
+</script>

@@ -1,0 +1,156 @@
+<style>
+	footer {
+		border-block-start: var(--delineation);
+		inline-size: 100%;
+
+		> * {
+			margin-inline: auto;
+			max-inline-size: var(--content-width);
+		}
+
+		nav {
+			display: grid;
+			font-size: 1rem;
+			gap: 1rem 2rem;
+			grid-template-columns: repeat(2, 1fr);
+			line-height: 1.8;
+			padding-block: 4rem;
+
+			h3 {
+				color: var(--color-accent);
+				font-size: inherit;
+				line-height: inherit;
+				font-variant-caps: all-small-caps;
+				font-weight: 400;
+			}
+
+			ul {
+				list-style-type: none;
+				padding-inline: 0;
+			}
+
+			a {
+				color: var(--color-fg);
+				text-decoration: none;
+				transition: color 0.15s ease;
+			}
+			a:hover {
+				color: var(--color-fg-2);
+			}
+
+			@media (min-width: 40rem) {
+				grid-template-columns: 1fr repeat(2, minmax(7rem, auto));
+
+				#quip {
+					grid-column: unset;
+				}
+			}
+		}
+
+		#quip {
+			font: 1.4rem / 1.3 var(--font-stack-serif);
+			grid-column: 1 / -1;
+			max-inline-size: 22rem;
+		}
+
+		#signoff {
+			color: var(--color-fg-2);
+			filter: saturate(70%);
+			font: 300 1rem / 1.2 var(--font-stack-sans);
+			font-variant-caps: all-small-caps;
+			padding-block: 2rem;
+			text-align: center;
+			text-wrap: balance;
+		}
+	}
+</style>
+<footer>
+	<nav>
+		<p id="quip"></p>
+		<div>
+			<h3>Here</h3>
+			<ul class="internal-links">
+				<li><a title="About" href="/about">About</a></li>
+				<li><a title="Now" href="/Now">Now</a></li>
+				<li><a title="Blogroll" href="/blogroll">Blogroll</a></li>
+				<li>
+					<a title="Accessibility" href="/accessibility">Accessibility</a>
+				</li>
+				<li><a title="Colophon" href="/colophon">Colophon</a></li>
+			</ul>
+		</div>
+		<div>
+			<h3>Elsewhere</h3>
+			<ul class="social-links">
+				<li>
+					<a class="external" title="jaskfla" href="https://github.com/jaskfla"
+						>GitHub</a
+					>
+				</li>
+				<li>
+					<a
+						class="external"
+						title="@jasperlai@mastodon.online"
+						href="https://mastodon.online/@jasperlai"
+						>Mastodon</a
+					>
+				</li>
+				<li>
+					<a
+						class="external"
+						title="@_JasperLai"
+						href="https://twitter.com/_JasperLai"
+						>Twitter</a
+					>
+				</li>
+				<li>
+					<a
+						class="external"
+						title="jasperlai"
+						href="https://discordapp.com/users/228441721246056449"
+						>Discord</a
+					>
+				</li>
+				<li>
+					<a
+						class="external"
+						title="jasperlai"
+						href="https://www.linkedin.com/in/jasperlai"
+						>LinkedIn</a
+					>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<p id="signoff">
+		Hand-coded in big-little Tāmaki Makaurau&ensp;—&ensp;thanks for dropping by
+	</p>
+</footer>
+<script>
+	const quips = [
+		`<a href="https://github.com/merlinmann/wisdom/blob/master/wisdom.md">Looking for the chimneys</a>`,
+		`<a href="https://nerdfighteria.info/v/307598550/">Memento mori</a>&nbsp;😊`,
+		`<a href="https://overcast.fm/+BmEPOwtek">Keep moving <em>and</em> get out of the way</a>`,
+		`<a href="https://youtu.be/FyQi79aYfxU?t=73">Don’t forget to be awesome!</a>&nbsp;🎃🐧`,
+		`<span title="Any ideas? Please contact me!">Still brainstorming a name-specific sign-off,<br />—Jasper</span>`,
+		`Anticipating the next episode of <a href="https://www.relay.fm/bonanza"><span class="caps">BONANZA</span></a>&nbsp;🛟`,
+		`Curating pixels since 2018`,
+		`Eternally browsing for fonts`,
+		`Farm-to-table pixels since 2018`,
+		`Half the battle is giving a shit`,
+		`Mourning the death of <a href="https://vimeo.com/groups/159435/videos/54553882">Mailbox</a> to this day. 😔`,
+		`No generative AI’s were harmed in the making of this website`,
+		`Nothing half-arsed here`,
+		`Opinionated design for opinionated people`,
+		`Still figuring this shit out`,
+		`The truth resists simplicity`,
+		`You don’t have to be a prodigy to be unique (<a href="https://songwhip.com/cavetown/talk-to-me">Cavetown,&nbsp;2019</a>)`,
+	]
+	quip.innerHTML = quips[Math.floor(Math.random() * quips.length)]
+
+	const signoffs = [
+		`Hand-coded in big-little Tāmaki Makaurau&ensp;—&ensp;thanks for dropping by`,
+		`Hand-coded in downtown Auckland, New Zealand&ensp;—&ensp;thanks for dropping by`,
+	]
+	signoff.innerHTML = signoffs[Math.floor(Math.random() * signoffs.length)]
+</script>

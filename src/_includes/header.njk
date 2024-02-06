@@ -1,0 +1,76 @@
+<style>
+	header {
+		align-items: center;
+		border-block-end: var(--delineation);
+		gap: 1rem 2rem;
+		inline-size: 100%;
+		padding-block: 2rem;
+		padding-left: var(--top-level-padding-left);
+		padding-right: var(--top-level-padding-right);
+
+		.content-wrapper {
+			display: flex;
+			flex-direction: row;
+			inline-size: var(--content-width);
+			justify-content: space-between;
+			margin-inline: auto;
+		}
+
+		nav {
+			align-items: baseline;
+			display: block flex;
+			gap: 1rem 2rem;
+
+			a {
+				color: var(--color-fg);
+				text-decoration: none;
+			}
+
+			a:hover {
+				font-weight: 600;
+			}
+
+			a[unavailable] {
+				font-weight: 400;
+				opacity: 50%;
+				cursor: not-allowed;
+			}
+		}
+	}
+</style>
+<header>
+	<div class="content-wrapper">
+		<a href="/">
+			<picture class="logo">
+				<source
+					media="(prefers-color-scheme: light)"
+					srcset="/images/avatar.svg"
+				/>
+				<source
+					media="(prefers-color-scheme: dark)"
+					srcset="/images/avatar~dark.svg"
+				/>
+				<source
+					media="print or ((prefers-color-scheme: light) and (prefers-contrast: more))"
+					srcset="/images/avatar~light~contrast.svg"
+				/>
+				<source
+					media="(prefers-color-scheme: dark) and (prefers-contrast: more)"
+					srcset="/images/avatar~dark~contrast.svg"
+				/>
+				<img
+					decoding="async"
+					alt="Line drawing of the front profile of Jasper’s face. It depicts an oval face shape and short hair; all other facial features, including eyes, are omitted."
+					src="/images/avatar.svg"
+					width="24"
+					height="24"
+				/>
+			</picture>
+		</a>
+		<nav>
+			<a unavailable>About</a>
+			<a unavailable>Now</a>
+			<a unavailable>Work</a>
+		</nav>
+	</div>
+</header>

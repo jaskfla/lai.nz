@@ -1,0 +1,19 @@
+:root {
+	--color-fg: oklch(15% 0 0);
+	--color-fg-2: oklch(50% 0 0);
+	--color-bg: oklch(97% 0 0);
+	--color-bg-vibrant: oklch(100% 0 0 / 80%);
+	--color-accent: oklch(75% 0.215 53);
+	--color-accent-translucent: oklch(75% 0.215 53 / 15%);
+	--color-border: oklch(0% 0 0 / 6%);
+	--bg-blur: blur(20px) saturate(130%);
+
+	@media (prefers-color-scheme: dark) {
+		--color-fg: lch(85% 6 208);
+		--color-fg-2: lch(45% 6 208);
+		--color-bg: lch(8% 11 208);
+		--color-bg-vibrant: lch(8% 11 208 / 80%);
+		--color-accent: lch(76% 108 75);
+		--color-border: oklch(100% 0 0 / 15%);
+	}
+}

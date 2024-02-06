@@ -1,0 +1,84 @@
+@media screen {
+	body.debug * {
+		border: 0;
+		outline: 0.5px solid magenta;
+	}
+
+	:root {
+		--font-stack-sans: Concourse, system-ui, -apple-system, BlinkMacSystemFont,
+			'Segoe UI', Inter, 'Helvetica Neue', sans-serif;
+		--font-stack-serif: 'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro',
+			ui-serif, serif;
+		--font-stack-display: 'Warbler Variable', var(--font-stack-serif);
+		--font-stack-mono: 'MD IO', ui-monospace, monospace;
+		--font-features-concourse: 'ss13', 'ss16';
+
+		--top-level-padding-top: max(env(safe-area-inset-top), 0);
+		--top-level-padding-bottom: max(env(safe-area-inset-bottom), 0);
+		--top-level-padding-left: max(env(safe-area-inset-left), 2rem);
+		--top-level-padding-right: max(env(safe-area-inset-right), 2rem);
+
+		--content-width: min(52rem, 100%);
+		--delineation: 1px solid var(--color-border);
+	}
+
+	html {
+		background-color: var(--color-bg);
+		color: var(--color-fg);
+		font-family: var(--font-stack-sans);
+		font-feature-settings: var(--font-features-concourse);
+		font-size: clamp(17px, 1.5vw, 28px);
+		font-variant-numeric: oldstyle-nums;
+		padding-top: var(--top-level-padding-top);
+		padding-bottom: var(--top-level-padding-bottom);
+		padding-left: var(--top-level-padding-left);
+		padding-right: var(--top-level-padding-right);
+	}
+
+	body {
+		width: 100%;
+	}
+
+	main,
+	section {
+		margin-trim: block;
+	}
+
+	hr {
+		border: var(--delineation);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: balance;
+		line-height: 1.25;
+	}
+
+	main a {
+		color: var(--color-fg-2);
+		text-decoration-color: var(--color-border);
+		text-decoration-thickness: max(0.06em, 1px);
+		text-decoration-style: underline;
+		text-underline-offset: max(0.1em, 1px);
+		transition-property: color, text-decoration-color, text-decoration-thickness,
+			text-underline-offset;
+		transition-duration: 0.2s;
+		transition-timing-function: cubic-bezier(0.64, 0.045, 0.35, 1);
+	}
+
+	main a:hover {
+		color: var(--color-fg);
+		text-decoration-color: var(--color-accent);
+		text-decoration-thickness: max(0.1em, 2px);
+		text-underline-offset: max(0.25em, 2px);
+	}
+
+	abbr,
+	.caps {
+		font-variant-caps: all-small-caps;
+	}
+}
