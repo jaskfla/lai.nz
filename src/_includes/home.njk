@@ -18,9 +18,13 @@
 				padding-block: 8rem;
 				text-wrap: pretty;
 			}
+			section.hero {
+				display: flex;
+				justify-content: center;
+			}
 			figure.hero {
+				flex-shrink: 0;
 				position: relative;
-				width: 100vw;
 			}
 			figure.hero figcaption {
 				position: absolute;
@@ -51,7 +55,7 @@
 		<hr />
 		<section class="hello">{{ content | safe }}</section>
 		<hr />
-		<section>
+		<section class="hero">
 			<figure class="hero">
 				<picture>
 					<source
@@ -119,7 +123,7 @@
 						type="image/jpeg"
 					/>
 					<img
-						alt="An Asian young adult walking down a marble staircase outside an art gallery."
+						alt="An Asian adult walking down a marble staircase outside an art gallery."
 						decoding="async"
 						src="/images/hero.jpg"
 					/>
