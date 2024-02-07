@@ -1,11 +1,20 @@
+const SOURCE_DIR = 'src'
+
 export default (eleventyConfig) => {
-	eleventyConfig.addPassthroughCopy('src/style')
-	eleventyConfig.addPassthroughCopy('src/fonts')
-	eleventyConfig.addPassthroughCopy('src/images')
+	const staticFiles = [
+		`/fonts`,
+		`/images`,
+		`/style`,
+		`/humans.txt`,
+		`/robots.txt`,
+	]
+	for (const file of staticFiles) {
+		eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/${file}`)
+	}
 
 	return {
 		dir: {
-			input: 'src',
+			input: SOURCE_DIR,
 		},
 	}
 }
