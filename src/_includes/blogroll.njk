@@ -9,9 +9,9 @@
 		<meta name="apple-mobile-web-app-title" content="Jasper Lai" />
 		<script src="/scripts/main.js" defer></script>
 	</head>
+	<body>
+		{% include "header.njk" %}
+		<main>{{ content | safe }}</main>
+		{% include "footer.njk" %}
+	</body>
 </html>
-<body>
-	{% include "header.njk" %}
-	<main>{{ content | safe }}</main>
-	{% include "footer.njk" %}
-</body>
