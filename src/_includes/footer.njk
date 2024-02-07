@@ -1,7 +1,6 @@
 <style>
 	footer {
 		border-block-start: var(--delineation);
-		inline-size: 100%;
 
 		> * {
 			margin-inline: auto;
@@ -23,12 +22,10 @@
 				font-variant-caps: all-small-caps;
 				font-weight: 400;
 			}
-
 			ul {
 				list-style-type: none;
 				padding-inline: 0;
 			}
-
 			a {
 				color: var(--color-fg);
 				text-decoration: none;
@@ -37,23 +34,30 @@
 			a:hover {
 				color: var(--color-fg-2);
 			}
-
+			a[unavailable] {
+				color: unset;
+			}
+			#signoff_container {
+				grid-column: 1 / -1;
+				max-inline-size: 20rem;
+			}
 			@media (min-width: 40rem) {
 				grid-template-columns: 1fr repeat(2, minmax(7rem, auto));
 
-				#quip {
+				#signoff_container {
 					grid-column: unset;
 				}
+			}
+			#signoff {
+				font: 1.4rem / 1.3 var(--font-stack-serif);
+				text-wrap: balance;
+			}
+			#thanks {
+				color: var(--color-fg-2);
 			}
 		}
 
 		#quip {
-			font: 1.4rem / 1.3 var(--font-stack-serif);
-			grid-column: 1 / -1;
-			max-inline-size: 20rem;
-		}
-
-		#signoff {
 			color: var(--color-fg-2);
 			filter: saturate(70%);
 			font: 300 1rem / 1.2 var(--font-stack-sans);
@@ -66,13 +70,16 @@
 </style>
 <footer>
 	<nav>
-		<p id="quip"></p>
+		<div id="signoff_container">
+			<p id="signoff">Hand-coded in big-little Tāmaki Makaurau</p>
+			<p id="thanks">Thanks for dropping by</p>
+		</div>
 		<div>
 			<h3>Here</h3>
-			<ul class="internal-links">
-				<li><a href="/about">About</a></li>
-				<li><a href="/now">Now</a></li>
-				<li><a href="/blogroll">Blogroll</a></li>
+			<ul id="here-links">
+				<li><a unavailable>About</a></li>
+				<li><a unavailable>Now</a></li>
+				<li><a unavailable>Blogroll</a></li>
 				<li><a href="/accessibility">Accessibility</a></li>
 				<li><a href="/privacy">Privacy</a></li>
 				<li><a href="/colophon">Colophon</a></li>
@@ -80,7 +87,7 @@
 		</div>
 		<div>
 			<h3>Elsewhere</h3>
-			<ul class="social-links">
+			<ul id="elsewhere-links">
 				<li>
 					<a class="external" title="jaskfla" href="https://github.com/jaskfla"
 						>GitHub</a
@@ -121,35 +128,33 @@
 			</ul>
 		</div>
 	</nav>
-	<p id="signoff">
-		Hand-coded in big-little Tāmaki Makaurau&ensp;—&ensp;thanks for dropping by
-	</p>
+	<p id="quip"></p>
 </footer>
 <script>
 	const quips = [
-		`<a href="https://github.com/merlinmann/wisdom/blob/master/wisdom.md">Looking for the chimneys</a>`,
-		`<a href="https://nerdfighteria.info/v/307598550/">Memento mori</a>&nbsp;😊`,
-		`<a href="https://overcast.fm/+BmEPOwtek">Keep moving <em>and</em> get out of the way</a>`,
-		`<a href="https://youtu.be/FyQi79aYfxU?t=73">Don’t forget to be awesome!</a>&nbsp;🎃🐧`,
-		`<span title="Any ideas? Please contact me!">Still brainstorming a name-specific sign-off,<br /><br /><span class="caps">Jasper</span></span>`,
-		`Anticipating the next episode of <a href="https://www.relay.fm/bonanza"><span class="caps">BONANZA</span></a>&nbsp;🛟`,
-		`Curating pixels since 2018`,
-		`Eternally browsing for fonts`,
-		`Farm-to-table pixels since 2018`,
-		`Half the battle is giving a shit`,
-		`Mourning the death of <a href="https://vimeo.com/groups/159435/videos/54553882">Mailbox</a> to this day. 😔`,
-		`No generative AI’s were harmed in the making of this website`,
-		`Nothing half-arsed here`,
-		`Opinionated design for opinionated people`,
-		`Still figuring this shit out`,
-		`The truth resists simplicity`,
-		`You don’t have to be a prodigy to be unique (<a href="https://songwhip.com/cavetown/talk-to-me">Cavetown,&nbsp;2019</a>)`,
+		'<a href="https://github.com/merlinmann/wisdom/blob/master/wisdom.md">Looking for the chimneys</a>',
+		'<a href="https://nerdfighteria.info/v/307598550/">Memento mori</a>&nbsp;😊',
+		'<a href="https://overcast.fm/+BmEPOwtek">Keep moving <em>and</em> get out of the way</a>',
+		'<a href="https://youtu.be/FyQi79aYfxU?t=73">Don’t forget to be awesome!</a>&nbsp;🎃🐧',
+		'<span title="Any ideas? Please contact me!">Still brainstorming a name-specific sign-off,&emsp;<span class="caps">—Jasper</span></span>',
+		'Anticipating the next episode of <a href="https://www.relay.fm/bonanza"><span class="caps">BONANZA</span></a>&nbsp;🛟',
+		'Curating pixels since 2018',
+		'Eternally browsing for fonts',
+		'Farm-to-table pixels since 2018',
+		'Half the battle is giving a shit',
+		'Mourning the death of <a href="https://vimeo.com/groups/159435/videos/54553882">Mailbox</a> to this day 😔',
+		'No generative AI’s were harmed in the making of this website',
+		'Nothing half-arsed here',
+		'Opinionated design for opinionated people',
+		'Still figuring this shit out',
+		'The truth resists simplicity',
+		'You don’t have to be a prodigy to be unique (<a href="https://songwhip.com/cavetown/talk-to-me">Cavetown,&nbsp;2019</a>)',
 	]
 	quip.innerHTML = quips[Math.floor(Math.random() * quips.length)]
 
 	const signoffs = [
-		`Hand-coded in big-little Tāmaki Makaurau&ensp;—&ensp;thanks for dropping by`,
-		`Hand-coded in downtown Auckland, New Zealand&ensp;—&ensp;thanks for dropping by`,
+		'Hand-coded in big-little Tāmaki Makaurau',
+		'Hand-coded in downtown Auckland, New Zealand',
 	]
 	signoff.innerHTML = signoffs[Math.floor(Math.random() * signoffs.length)]
 </script>

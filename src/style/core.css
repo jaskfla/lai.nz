@@ -70,6 +70,11 @@
 		transition-timing-function: cubic-bezier(0.64, 0.045, 0.35, 1);
 	}
 
+	a[unavailable] {
+		opacity: 50%;
+		cursor: not-allowed;
+	}
+
 	main a:hover {
 		color: var(--color-fg);
 		text-decoration-color: var(--color-accent);
