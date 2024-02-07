@@ -1,6 +1,7 @@
 ---
 title: Accessibility
 layout: 'wall_of_text.njk'
+permalink: accessibility.html
 ---
 
 I make this website mostly in service of my own itches, but would nevertheless like it to be usable by anyone who comes by, regardless of technology or ability.

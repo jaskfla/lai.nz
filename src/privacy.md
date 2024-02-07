@@ -1,7 +1,7 @@
 ---
 title: Terms of use & privacy policy
 layout: 'wall_of_text.njk'
-permalink: privacy
+permalink: privacy.html
 ---
 
 <abbr title="too long; didn’t read">TL;DR</abbr>: This site doesn’t track you.
