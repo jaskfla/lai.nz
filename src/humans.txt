@@ -1,15 +1,22 @@
-# lai.nz humansTXT
-humanstxt.org
+ _       _
+| |     (_)
+| | __ _ _   _ __  ____
+| |/ _` | | | '_ \|_  /
+| | (_| | |_| | | |/ /
+|_|\__,_|_(_)_| |_/___| humansTXT
+
 
 ## One-person team
 
-Jasper Lai
+📛 Jasper Lai
 📧 j @ lai . nz
 📍 Tāmaki Makaurau, Aotearoa (Auckland, New Zealand)
+
 
 ## Thanks
 
 Jeramy B., Maryanne C. and my fellow software engineering nerds.
+
 
 ## Site
 
@@ -39,3 +46,9 @@ Jeramy B., Maryanne C. and my fellow software engineering nerds.
 	- MacBook Pro, 13-inch, 2019
 	- Wacom Intuos Pro, Medium
 	- Mode Eighty
+
+
+***
+
+
+What’s humansTXT? → humanstxt.org
