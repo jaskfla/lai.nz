@@ -15,8 +15,8 @@
 
 		--top-level-padding-top: max(env(safe-area-inset-top), 0);
 		--top-level-padding-bottom: max(env(safe-area-inset-bottom), 0);
-		--top-level-padding-left: max(env(safe-area-inset-left), 2rem);
-		--top-level-padding-right: max(env(safe-area-inset-right), 2rem);
+		--top-level-padding-left: max(env(safe-area-inset-left), 1.5rem);
+		--top-level-padding-right: max(env(safe-area-inset-right), 1.5rem);
 
 		--content-width: min(52rem, 100%);
 		--delineation: 1px solid var(--color-border);
