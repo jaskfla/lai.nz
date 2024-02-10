@@ -6,7 +6,7 @@
 
 	:root {
 		--font-stack-sans: Concourse, system-ui, -apple-system, BlinkMacSystemFont,
-			'Segoe UI', Inter, 'Helvetica Neue', sans-serif;
+			Inter, 'Segoe UI', 'Helvetica Neue', sans-serif;
 		--font-stack-serif: 'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro',
 			ui-serif, serif;
 		--font-stack-display: 'Warbler Variable', var(--font-stack-serif);
