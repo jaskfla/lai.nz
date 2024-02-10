@@ -24,7 +24,7 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [Jen Simmons](http://jensimmons.com)
 - [Lady Sophie](https://songwhip.com/ladysophie/one-night-only-to-the-boy-who-broke-my-heart)
 - [Lea Verou](https://verou.me)
-- Lucas Sin
+- [Lucas Sin](https://www.instagram.com/lucas.sin)
 - [Lynn Fisher](https://lynnandtonic.com)
 - [Marco Arment](https://marco.org)
 - [Matthew Butterick](https://matthewbutterick.com)
