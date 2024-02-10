@@ -13,7 +13,7 @@ permalink: readings
 - [The Design of Everyday Things](https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things)
 - [The Grug-Brained Developer](https://grugbrain.dev)
 - [Hypercritical](https://hypercritical.fireside.fm)
-- [Merlin’s Wisdom Project](https://github.com/merlinmann/wisdom/blob/master/wisdom.md)
+- [Merlin’s Wisdom Project](http://wisdom.limo)
 - [Practical Typography](https://practicaltypography.com)
 - [Trust the Process](https://medium.com/smith-diction/trust-the-process-97ac8999d56a)
 - [We’re All Scared](https://youtu.be/fGmAekTPD5c)
