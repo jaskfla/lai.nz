@@ -2,9 +2,15 @@ const SOURCE_DIR = 'src'
 
 export default (eleventyConfig) => {
 	const staticFiles = [
+		// Directories
 		`/fonts`,
 		`/images`,
+		`/images_meta`,
 		`/style`,
+
+		// Files
+		`/apple-touch-icon.png`,
+		`/favicon.ico`,
 		`/humans.txt`,
 		`/robots.txt`,
 	]
