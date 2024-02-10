@@ -1,0 +1,40 @@
+---
+layout: base.njk
+---
+
+<style>
+	section {
+		font-size: 1.4rem;
+		inline-size: 100%;
+		line-height: 1.45;
+		margin-inline: auto;
+		max-inline-size: var(--content-width);
+		padding-block: 8rem;
+	}
+
+	.words-schmwords h1 {
+		color: var(--color-accent);
+		font-size: 1.4rem;
+		font-variant-caps: all-small-caps;
+		font-weight: 400;
+		margin-block-end: 2rem;
+	}
+
+	.words-schmwords p {
+		margin-block-end: 2rem;
+		max-inline-size: 30rem;
+	}
+
+	.words-schmwords > p:first-of-type {
+		font-family: var(--font-stack-serif);
+		font-size: 2rem;
+		line-height: 1.3;
+		margin-block-end: 3rem;
+		max-inline-size: 100%;
+	}
+</style>
+
+<section class="words-schmwords">
+	<h1>{{ title | safe }}</h1>
+	{{ content | safe }}
+</section>

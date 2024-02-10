@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-layout: 'wall_of_text.njk'
+layout: words-schmwords.njk
 permalink: accessibility.html
 ---
 

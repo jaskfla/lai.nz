@@ -1,6 +1,6 @@
 ---
-title: Terms of use & privacy policy
-layout: 'wall_of_text.njk'
+title: Terms of Use & Privacy Policy
+layout: words-schmwords.njk
 permalink: privacy.html
 ---
 

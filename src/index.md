@@ -1,6 +1,6 @@
 ---
-title: Jasper Lai
-layout: 'home.njk'
+title: 👋
+layout: home.njk
 ---
 
 I’m a final year software engineering student at [Waipapa Taumata Rau](https://www.auckland.ac.nz 'University of Auckland'), and a full-stack developer intern at [Beyond Essential Systems](https://bes.au).

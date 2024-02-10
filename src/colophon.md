@@ -1,6 +1,6 @@
 ---
 title: Colophon
-layout: 'wall_of_text.njk'
+layout: words-schmwords.njk
 ---
 
 The typefaces around here are [Warbler](https://djr.com/warbler) by David Jonathan Ross and [Concourse](https://mbtype.com/fonts/concourse) by Matthew Butterick.
