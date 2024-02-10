@@ -12,13 +12,13 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [Arun Venkatesan](https://arun.is)
 - [Bartosz Ciechanowski](https://ciechanow.ski)
 - [Brian Mueller](https://mastodon.social/@brianmueller)
+- [The Browser Company of New York](https://thebrowser.company)
 - [Christian Selig](https://christianselig.com)
 - [Climate Town](https://www.youtube.com/c/ClimateTown)
 - [DeepBlueInk](https://www.youtube.com/c/DeepBlueInk)
 - Dr Don & Prof. Ben
 - [exurb1a](https://www.youtube.com/channel/UCimiUgDLbi6P17BdaCZpVbg)
 - [Goodside Studio](https://www.goodside.studio)
-- Hasan Minhaj
 - [Information Architects](https://ia.net)
 - Jay Foreman
 - [Jen Simmons](http://jensimmons.com)
@@ -30,7 +30,7 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [Marco Arment](https://marco.org)
 - [Matthew Butterick](https://matthewbutterick.com)
 - [Matthew Skiles](https://matthewskiles.com)
-- [Merlin Mann](http://www.merlinmann.com)
+- [Merlin Mann](http://unwilling.horse)
 - [Mike Rugnetta](https://rugnetta.com)
 - [Neatnik](https://neatnik.net)
 - [Nilay Patel](https://www.theverge.com/authors/nilay-patel)
