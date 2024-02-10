@@ -1,6 +1,6 @@
 ---
 title: Required reading
-layout: 'words-schmwords.njk'
+layout: words-schmwords.njk
 permalink: readings
 ---
 
@@ -13,6 +13,7 @@ permalink: readings
 - [The Design of Everyday Things](https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things)
 - [The Grug-Brained Developer](https://grugbrain.dev)
 - [Hypercritical](https://hypercritical.fireside.fm)
+- [Inbox Zero](https://youtu.be/z9UjeTMb3Yk)
 - [Merlin’s Wisdom Project](http://wisdom.limo)
 - [Practical Typography](https://practicaltypography.com)
 - [Trust the Process](https://medium.com/smith-diction/trust-the-process-97ac8999d56a)
