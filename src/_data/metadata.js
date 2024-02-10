@@ -1,5 +1,5 @@
 export default {
-	author: 'Jasper Lai',
+	name: 'Jasper Lai',
 	domain: 'lai.nz',
 	url: 'https://lai.nz',
 	description:
