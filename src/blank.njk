@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+		<title>Blank Page</title>
+		{% include "head/style.njk" %} {% include "head/icons.njk" %} {% include
+		"head/seo.njk" %}
+		<meta name="apple-mobile-web-app-title" content="Blank Page" />
+	</head>
+	<style>
+		::selection {
+			background-color: transparent;
+		}
+		body {
+			color: var(--color-fg-2);
+			min-height: unset;
+		}
+		main {
+			margin-trim: none;
+		}
+		p {
+			cursor: default;
+			font-variant-caps: all-small-caps;
+			margin-block: 45vh 0;
+			margin-inline: auto;
+			max-inline-size: 12rem;
+			text-align: center;
+			text-wrap: balance;
+		}
+	</style>
+</html>
+<body>
+	<main>
+		<p>
+			This page
+			<a
+				href="https://web.archive.org/web/20180224075941/http://this-page-intentionally-left-blank.org/whythat.html"
+				>intentionally</a
+			>
+			left blank
+		</p>
+	</main>
+</body>
