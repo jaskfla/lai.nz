@@ -3,6 +3,8 @@ title: Blogroll
 layout: words-schmwords.njk
 ---
 
+_Under construction._
+
 - [5ives](https://www.5ives.com)
 - [43 Folders](http://www.43folders.com)
 - [Arun Venkatesan](https://arun.is)
