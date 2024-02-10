@@ -5,7 +5,8 @@ permalink: readings
 ---
 
 - [An Invocation for Beginnings](https://youtu.be/RYlCVwxoL_g)
-- [Ask](https://danmall.com/posts/ask/)
+- [The Anthropocene Reviewed](https://anthropocenereviewedbook.com)
+- [Ask](https://danmall.com/posts/ask)
 - [Best printer 2023: just buy this Brother laser printer everyone has, it’s fine](https://www.theverge.com/23642073/best-printer-2023-brother-laser-wi-fi-its-fine)
 - [Better](http://www.merlinmann.com/better)
 - [The Craft of Writing Effectively](https://youtu.be/vtIzMaLkCaM)
@@ -13,6 +14,7 @@ permalink: readings
 - [The Design of Everyday Things](https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things)
 - [The Grug-Brained Developer](https://grugbrain.dev)
 - [Hypercritical](https://hypercritical.fireside.fm)
+- [In Praise of Shadows](https://www.goodreads.com/en/book/show/34473)
 - [Inbox Zero](https://youtu.be/z9UjeTMb3Yk)
 - [Merlin’s Wisdom Project](http://wisdom.limo)
 - [Practical Typography](https://practicaltypography.com)
