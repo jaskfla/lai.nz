@@ -1,6 +1,6 @@
 ---
 title: Blogroll
-layout: blogroll.njk
+layout: words-schmwords.njk
 ---
 
 - [5ives](https://www.5ives.com)
