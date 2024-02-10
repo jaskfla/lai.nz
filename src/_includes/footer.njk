@@ -1,71 +1,82 @@
 <style>
 	footer {
 		border-block-start: var(--delineation);
+	}
 
-		> * {
-			margin-inline: auto;
-			max-inline-size: var(--content-width);
+	footer > * {
+		margin-inline: auto;
+		max-inline-size: var(--content-width);
+	}
+
+	footer nav {
+		display: grid;
+		font-size: 1rem;
+		gap: 1rem 2rem;
+		grid-template-columns: repeat(2, 1fr);
+		line-height: 1.8;
+		padding-block: 4rem;
+	}
+
+	footer nav h3 {
+		color: var(--color-accent);
+		font-size: inherit;
+		line-height: inherit;
+		font-variant-caps: all-small-caps;
+		font-weight: 400;
+	}
+
+	footer nav ul {
+		list-style-type: none;
+		padding-inline: 0;
+	}
+
+	footer nav a {
+		color: var(--color-fg);
+		text-decoration: none;
+		transition: color 0.15s ease;
+	}
+
+	footer nav a:hover {
+		color: var(--color-fg-2);
+	}
+
+	footer nav a[unavailable] {
+		color: unset;
+	}
+
+	#signoff_container {
+		grid-column: 1 / -1;
+		margin-trim: block;
+		max-inline-size: 20rem;
+	}
+
+	#signoff {
+		font: 1.4rem / 1.3 var(--font-stack-serif);
+		margin-block-end: 0.3rem;
+		text-wrap: balance;
+	}
+
+	#thanks {
+		color: var(--color-fg-2);
+	}
+
+	@media (min-width: 40rem) {
+		footer nav {
+			grid-template-columns: 1fr repeat(2, minmax(7rem, auto));
 		}
-
-		nav {
-			display: grid;
-			font-size: 1rem;
-			gap: 1rem 2rem;
-			grid-template-columns: repeat(2, 1fr);
-			line-height: 1.8;
-			padding-block: 4rem;
-
-			h3 {
-				color: var(--color-accent);
-				font-size: inherit;
-				line-height: inherit;
-				font-variant-caps: all-small-caps;
-				font-weight: 400;
-			}
-			ul {
-				list-style-type: none;
-				padding-inline: 0;
-			}
-			a {
-				color: var(--color-fg);
-				text-decoration: none;
-				transition: color 0.15s ease;
-			}
-			a:hover {
-				color: var(--color-fg-2);
-			}
-			a[unavailable] {
-				color: unset;
-			}
-			#signoff_container {
-				grid-column: 1 / -1;
-				max-inline-size: 20rem;
-			}
-			@media (min-width: 40rem) {
-				grid-template-columns: 1fr repeat(2, minmax(7rem, auto));
-
-				#signoff_container {
-					grid-column: unset;
-				}
-			}
-			#signoff {
-				font: 1.4rem / 1.3 var(--font-stack-serif);
-				text-wrap: balance;
-			}
-			#thanks {
-				color: var(--color-fg-2);
-			}
+		#signoff_container {
+			grid-column: unset;
 		}
+	}
 
-		#quip {
-			color: var(--color-fg-2);
-			filter: saturate(70%);
-			font: 300 1rem / 1.2 var(--font-stack-sans);
-			font-variant-caps: all-small-caps;
-			padding-block: 2rem;
-			text-align: center;
-			text-wrap: balance;
-		}
+	#quip {
+		color: var(--color-fg-2);
+		filter: saturate(70%);
+		font: 300 1rem / 1.2 var(--font-stack-sans);
+		font-variant-caps: all-small-caps;
+		padding-block: 2rem;
+		text-align: center;
+		text-wrap: balance;
 	}
 </style>
 <footer>
