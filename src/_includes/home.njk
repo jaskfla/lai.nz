@@ -1,139 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
-		<title>{{ title }}</title>
-		{% include "head/style.njk" %}
-		{% include "head/icons.njk" %}
-		{% include "head/seo.njk" %}
-		<meta name="apple-mobile-web-app-title" content="Jasper Lai" />
-		<style>
-			.hello {
-				font-family: var(--font-stack-serif);
-				font-size: clamp(24px, 3vw, 2rem);
-				line-height: 1.3;
-				margin-inline: auto;
-				max-inline-size: 20em;
-				padding-block: 8rem;
-				text-wrap: pretty;
-			}
-			section.hero {
-				display: flex;
-				justify-content: center;
-			}
-			figure.hero {
-				flex-shrink: 0;
-				position: relative;
-				width: 100%;
-			}
-			figure.hero figcaption {
-				position: absolute;
-				bottom: 0;
-				right: 0;
+---
+layout: base.njk
+---
 
-				backdrop-filter: var(--bg-blur);
-				-webkit-backdrop-filter: var(--bg-blur);
-				background-color: var(--color-bg-vibrant);
-				border-radius: 0.4rem;
-				border: 0.5px solid var(--color-border);
-				font-size: 0.8rem;
-				inline-size: fit-content;
-				letter-spacing: 0.015em;
-				line-height: 1.25;
-				margin-block: 1rem;
-				margin-inline: 2rem;
-				padding-block: 0.4rem;
-				padding-inline: 0.8rem;
-			}
-		</style>
-	</head>
-</html>
-<body>
-	{% include "header.njk" %}
-	<main>
-		{% include "opsz_playground.html" %}
-		<hr />
-		<section class="hello">{{ content | safe }}</section>
-		<hr />
-		<section class="hero">
-			<figure class="hero">
-				<picture>
-					<source
-						srcset="
-							/images/hero.avif       4610w,
-							/images/hero-3840w.avif 3840w,
-							/images/hero-2560w.avif 2560w,
-							/images/hero-2048w.avif 2048w,
-							/images/hero-1920w.avif 1920w,
-							/images/hero-1600w.avif 1600w,
-							/images/hero-1080w.avif 1800w,
-							/images/hero-750w.avif   750w,
-							/images/hero-640w.avif   640w,
-							/images/hero-500w.avif   500w,
-							/images/hero-320w.avif   320w
-						"
-						type="image/avif"
-					/>
-					<source
-						srcset="
-							/images/hero.heic       4610w,
-							/images/hero-3840w.heic 3840w,
-							/images/hero-2560w.heic 2560w,
-							/images/hero-2048w.heic 2048w,
-							/images/hero-1920w.heic 1920w,
-							/images/hero-1600w.heic 1600w,
-							/images/hero-1080w.heic 1800w,
-							/images/hero-750w.heic   750w,
-							/images/hero-640w.heic   640w,
-							/images/hero-500w.heic   500w,
-							/images/hero-320w.heic   320w
-						"
-						type="image/heif"
-					/>
-					<source
-						srcset="
-							/images/hero.webp       4610w,
-							/images/hero-3840w.webp 3840w,
-							/images/hero-2560w.webp 2560w,
-							/images/hero-2048w.webp 2048w,
-							/images/hero-1920w.webp 1920w,
-							/images/hero-1600w.webp 1600w,
-							/images/hero-1080w.webp 1800w,
-							/images/hero-750w.webp   750w,
-							/images/hero-640w.webp   640w,
-							/images/hero-500w.webp   500w,
-							/images/hero-320w.webp   320w
-						"
-						type="image/webp"
-					/>
-					<source
-						srcset="
-							/images/hero.jpg       4610w,
-							/images/hero-3840w.jpg 3840w,
-							/images/hero-2560w.jpg 2560w,
-							/images/hero-2048w.jpg 2048w,
-							/images/hero-1920w.jpg 1920w,
-							/images/hero-1600w.jpg 1600w,
-							/images/hero-1080w.jpg 1800w,
-							/images/hero-750w.jpg   750w,
-							/images/hero-640w.jpg   640w,
-							/images/hero-500w.jpg   500w,
-							/images/hero-320w.jpg   320w
-						"
-						type="image/jpeg"
-					/>
-					<img
-						alt="An Asian adult walking down a marble staircase outside an art gallery."
-						decoding="async"
-						src="/images/hero.jpg"
-					/>
-				</picture>
-				<figcaption>
-					Thanks to Jeramy B. for this oddly fancy photo of me 🤍
-				</figcaption>
-			</figure>
-		</section>
-	</main>
-	{% include 'footer.njk' %}
-</body>
+<style>
+	.hello {
+		font-family: var(--font-stack-serif);
+		font-size: clamp(24px, 3vw, 2rem);
+		line-height: 1.3;
+		margin-inline: auto;
+		max-inline-size: 20em;
+		padding-block: 8rem;
+		text-wrap: pretty;
+	}
+	section.hero {
+		display: flex;
+		justify-content: center;
+	}
+	figure.hero {
+		flex-shrink: 0;
+		position: relative;
+		width: 100%;
+	}
+	figure.hero figcaption {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		backdrop-filter: var(--bg-blur);
+		-webkit-backdrop-filter: var(--bg-blur);
+		background-color: var(--color-bg-vibrant);
+		border-radius: 0.4rem;
+		border: 0.5px solid var(--color-border);
+		font-size: 0.8rem;
+		inline-size: fit-content;
+		letter-spacing: 0.015em;
+		line-height: 1.25;
+		margin-block: 1rem;
+		margin-inline: 2rem;
+		padding-block: 0.4rem;
+		padding-inline: 0.8rem;
+	}
+</style>
+{% include "opsz_demo.html" %}
+<hr />
+<section class="hello">{{ content | safe }}</section>
+<hr />
+<section class="hero">
+	<figure class="hero">
+		<picture>
+			<source
+				srcset="
+					/images/hero.avif       4610w,
+					/images/hero-3840w.avif 3840w,
+					/images/hero-2560w.avif 2560w,
+					/images/hero-2048w.avif 2048w,
+					/images/hero-1920w.avif 1920w,
+					/images/hero-1600w.avif 1600w,
+					/images/hero-1080w.avif 1800w,
+					/images/hero-750w.avif   750w,
+					/images/hero-640w.avif   640w,
+					/images/hero-500w.avif   500w,
+					/images/hero-320w.avif   320w
+				"
+				type="image/avif"
+			/>
+			<source
+				srcset="
+					/images/hero.heic       4610w,
+					/images/hero-3840w.heic 3840w,
+					/images/hero-2560w.heic 2560w,
+					/images/hero-2048w.heic 2048w,
+					/images/hero-1920w.heic 1920w,
+					/images/hero-1600w.heic 1600w,
+					/images/hero-1080w.heic 1800w,
+					/images/hero-750w.heic   750w,
+					/images/hero-640w.heic   640w,
+					/images/hero-500w.heic   500w,
+					/images/hero-320w.heic   320w
+				"
+				type="image/heif"
+			/>
+			<source
+				srcset="
+					/images/hero.webp       4610w,
+					/images/hero-3840w.webp 3840w,
+					/images/hero-2560w.webp 2560w,
+					/images/hero-2048w.webp 2048w,
+					/images/hero-1920w.webp 1920w,
+					/images/hero-1600w.webp 1600w,
+					/images/hero-1080w.webp 1800w,
+					/images/hero-750w.webp   750w,
+					/images/hero-640w.webp   640w,
+					/images/hero-500w.webp   500w,
+					/images/hero-320w.webp   320w
+				"
+				type="image/webp"
+			/>
+			<source
+				srcset="
+					/images/hero.jpg       4610w,
+					/images/hero-3840w.jpg 3840w,
+					/images/hero-2560w.jpg 2560w,
+					/images/hero-2048w.jpg 2048w,
+					/images/hero-1920w.jpg 1920w,
+					/images/hero-1600w.jpg 1600w,
+					/images/hero-1080w.jpg 1800w,
+					/images/hero-750w.jpg   750w,
+					/images/hero-640w.jpg   640w,
+					/images/hero-500w.jpg   500w,
+					/images/hero-320w.jpg   320w
+				"
+				type="image/jpeg"
+			/>
+			<img
+				alt="An Asian adult walking down a marble staircase outside an art gallery."
+				decoding="async"
+				src="/images/hero.jpg"
+			/>
+		</picture>
+		<figcaption>
+			Thanks to Jeramy B. for this oddly fancy photo of me 🤍
+		</figcaption>
+	</figure>
+</section>

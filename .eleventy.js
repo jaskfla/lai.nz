@@ -5,7 +5,7 @@ export default (eleventyConfig) => {
 		// Directories
 		`/fonts`,
 		`/images`,
-		`/images_meta`,
+		`/meta`,
 		`/style`,
 
 		// Files
