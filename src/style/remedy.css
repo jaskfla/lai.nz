@@ -75,15 +75,16 @@ hr {
 	height: 0;
 }
 
-picture,
-img,
-svg,
-video,
-canvas,
 audio,
-iframe,
+canvas,
+figure,
 embed,
-object {
+iframe,
+img,
+object,
+picture,
+svg,
+video {
 	display: block;
 	max-width: 100%;
 }
