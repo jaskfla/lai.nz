@@ -19,5 +19,6 @@ permalink: readings
 - [Merlin’s Wisdom Project](http://wisdom.limo)
 - [Practical Typography](https://practicaltypography.com)
 - [Trust the Process](https://medium.com/smith-diction/trust-the-process-97ac8999d56a)
+- [Understanding Success Criterion 6.1.1: Give a Shit](https://useragentman.com/wcag-wishlist)
 - [We’re All Scared](https://youtu.be/fGmAekTPD5c)
 - [Web Design is 95% Typography](https://ia.net/topics/the-web-is-all-about-typography-period)
