@@ -33,6 +33,7 @@
 		padding-bottom: var(--top-level-padding-bottom);
 		padding-left: var(--top-level-padding-left);
 		padding-right: var(--top-level-padding-right);
+		text-combine-upright: digits;
 	}
 
 	body {
