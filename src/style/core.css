@@ -59,28 +59,28 @@
 		line-height: 1.25;
 	}
 
-	main a {
+	a {
 		color: var(--color-fg-2);
 		text-decoration-color: var(--color-border);
 		text-decoration-thickness: max(0.06em, 1px);
 		text-decoration-style: underline;
-		text-underline-offset: max(0.1em, 1px);
+		text-underline-offset: 0;
 		transition-property: color, text-decoration-color, text-decoration-thickness,
 			text-underline-offset;
 		transition-duration: 0.2s;
 		transition-timing-function: cubic-bezier(0.64, 0.045, 0.35, 1);
 	}
 
-	a[unavailable] {
-		opacity: 50%;
-		cursor: not-allowed;
-	}
-
-	main a:hover {
+	a:hover {
 		color: var(--color-fg);
 		text-decoration-color: var(--color-accent);
 		text-decoration-thickness: max(0.1em, 2px);
-		text-underline-offset: max(0.25em, 2px);
+		text-underline-offset: max(0.04em, 1px);
+	}
+
+	a[unavailable] {
+		opacity: 50%;
+		cursor: not-allowed;
 	}
 
 	abbr,
