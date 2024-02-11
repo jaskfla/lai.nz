@@ -8,11 +8,11 @@
 		"head/seo.njk" %}
 		<meta name="apple-mobile-web-app-title" content="Jasper Lai" />
 	</head>
+	<body>
+		{% include "header.njk" %}
+		<main>
+			{{ content | safe }}
+		</main>
+		{% include 'footer.njk' %}
+	</body>
 </html>
-<body>
-	{% include "header.njk" %}
-	<main>
-		{{ content | safe }}
-	</main>
-	{% include 'footer.njk' %}
-</body>
