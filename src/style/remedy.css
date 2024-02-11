@@ -25,6 +25,7 @@ html {
 	print-color-adjust: exact;
 	tab-size: 2;
 	text-rendering: geometricPrecision;
+	text-underline-position: from-font;
 	text-wrap: pretty;
 }
 
