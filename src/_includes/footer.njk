@@ -71,12 +71,18 @@
 
 	#quip {
 		color: var(--color-fg-2);
-		filter: saturate(70%);
+		filter: saturate(0);
 		font: 300 1rem / 1.2 var(--font-stack-sans);
+		letter-spacing: 0.05em;
 		font-variant-caps: all-small-caps;
 		padding-block: 2rem;
 		text-align: center;
 		text-wrap: balance;
+		transition: filter 0.2s ease;
+	}
+
+	#quip:hover {
+		filter: saturate(1);
 	}
 </style>
 <footer>
