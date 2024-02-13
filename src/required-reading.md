@@ -12,6 +12,7 @@ permalink: readings
 - [The Craft of Writing Effectively](https://youtu.be/vtIzMaLkCaM)
 - [Design chooses to be bad at something](https://stephanango.com/choose-to-be-bad)
 - [The Design of Everyday Things](https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things)
+- [Falsehoods Programmers Believe About Names](https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names)
 - [The Grug-Brained Developer](https://grugbrain.dev)
 - [Hypercritical](https://hypercritical.fireside.fm)
 - [In Praise of Shadows](https://www.goodreads.com/en/book/show/34473)
