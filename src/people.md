@@ -1,7 +1,7 @@
 ---
 title: People whose work I admire
 layout: wordswordswords.njk
-permalink: people
+permalink: people.html
 ---
 
 There’s a lot of crap on the internet. But there’s also plenty of great stuff. These people produce work that are worth my attention—perhaps you’ll like them too.
