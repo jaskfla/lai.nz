@@ -8,6 +8,8 @@ layout: base.njk
 		margin-inline: auto;
 		max-inline-size: 20em;
 		padding-block: 8rem;
+		padding-left: var(--top-level-padding-left);
+		padding-right: var(--top-level-padding-right);
 		text-wrap: pretty;
 	}
 	section.hero {
@@ -27,23 +29,49 @@ layout: base.njk
 		max-height: 90vh;
 	}
 	figure.hero figcaption {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-
-		backdrop-filter: var(--bg-blur);
-		-webkit-backdrop-filter: var(--bg-blur);
-		background-color: var(--color-bg-vibrant);
-		border-radius: 0.4rem;
-		border: 0.5px solid var(--color-border);
+		color: var(--color-fg-2);
 		font-size: 0.8rem;
-		inline-size: fit-content;
-		letter-spacing: 0.015em;
 		line-height: 1.25;
-		margin-block: 1rem;
-		margin-inline: 2rem;
-		padding-block: 0.4rem;
-		padding-inline: 0.8rem;
+		letter-spacing: 0.015em;
+		margin-block: 1rem 4rem;
+		margin-left: var(--top-level-padding-left);
+		margin-right: var(--top-level-padding-right);
+		text-align: end;
+
+		@media (min-width: 40rem) {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			backdrop-filter: var(--bg-blur);
+			-webkit-backdrop-filter: var(--bg-blur);
+			background-color: var(--color-bg-vibrant);
+			border-radius: 0.4rem;
+			border: 0.5px solid var(--color-border);
+			color: var(--color-fg-1);
+			inline-size: fit-content;
+			margin-block: 1rem;
+			padding-block: 0.4rem;
+			padding-inline: 0.8rem;
+		}
+	}
+
+	.explainer {
+		inline-size: 100%;
+		padding-block: 6rem 8rem;
+		padding-left: var(--top-level-padding-left);
+		padding-right: var(--top-level-padding-right);
+		text-wrap: pretty;
+	}
+
+	.explainer__safe-area {
+		margin-inline: auto;
+		max-inline-size: var(--content-width);
+	}
+
+	.explainer p {
+		/* max-inline-size: 20em; */
+		color: var(--color-fg-2);
 	}
 </style>
 {% include "opsz_demo.html" %}
@@ -123,6 +151,19 @@ layout: base.njk
 		/>
 	</picture>
 	<figcaption>
-		Thanks to Jeramy B. for this oddly fancy photo of me 🤍
+		Thanks to Jeramy B. for this oddly fancy photo of me ♥
 	</figcaption>
 </figure>
+<section class="explainer">
+	<div class="explainer__safe-area">
+		<p>
+			This site is a playground of sorts. It’s a bit of a mess, but that’s the
+			point. Here, I get to experiment with technologies I don’t otherwise get
+			to try, work in public, and—most importantly—play with fonts.
+		</p>
+		<p>
+			Have a mosey around! It isn’t much, but hopefully there’s something you
+			find neat.
+		</p>
+	</div>
+</section>

@@ -1,14 +1,17 @@
 <style>
 	footer {
 		border-block-start: var(--delineation);
+		padding-bottom: var(--top-level-padding-bottom);
+		padding-left: var(--top-level-padding-left);
+		padding-right: var(--top-level-padding-right);
 	}
 
-	footer > * {
+	.footer__safe_area > * {
 		margin-inline: auto;
 		max-inline-size: var(--content-width);
 	}
 
-	footer nav {
+	.footer__safe_area nav {
 		display: grid;
 		font-size: 1rem;
 		gap: 1rem 2rem;
@@ -17,7 +20,7 @@
 		padding-block: 4rem;
 	}
 
-	footer nav h3 {
+	.footer__safe_area nav h3 {
 		color: var(--color-accent);
 		font-size: inherit;
 		line-height: inherit;
@@ -25,22 +28,22 @@
 		font-weight: 400;
 	}
 
-	footer nav ul {
+	.footer__safe_area nav ul {
 		list-style-type: none;
 		padding-inline: 0;
 	}
 
-	footer nav a {
+	.footer__safe_area nav a {
 		color: var(--color-fg);
 		text-decoration: none;
 		transition: color 0.15s ease;
 	}
 
-	footer nav a:hover {
+	.footer__safe_area nav a:hover {
 		color: var(--color-fg-2);
 	}
 
-	footer nav a[unavailable] {
+	.footer__safe_area nav a[unavailable] {
 		color: unset;
 	}
 
@@ -62,7 +65,7 @@
 	}
 
 	@media (min-width: 40rem) {
-		footer nav {
+		.footer__safe_area nav {
 			grid-template-columns: 1fr repeat(2, minmax(7rem, auto));
 		}
 		#signoff_container {
@@ -86,74 +89,76 @@
 	}
 </style>
 <footer>
-	<nav>
-		<div id="signoff_container">
-			<p id="signoff">Hand-coded in big-little Tāmaki Makaurau</p>
-			<p id="thanks">Thanks for dropping by</p>
-		</div>
-		<div>
-			<h3>Here</h3>
-			<ul id="here-links">
-				<li><a unavailable>About</a></li>
-				<li><a unavailable>Now</a></li>
-				<li><a href="/blogroll">Blogroll</a></li>
-				<li><a href="/accessibility">Accessibility</a></li>
-				<li><a href="/privacy">Privacy</a></li>
-				<li><a href="/colophon">Colophon</a></li>
-			</ul>
-		</div>
-		<div>
-			<h3>Elsewhere</h3>
-			<ul id="elsewhere-links">
-				<li>
-					<a
-						class="external"
-						title="jaskfla"
-						href="https://github.com/jaskfla"
-						target="_blank"
-						>GitHub</a
-					>
-				</li>
-				<li>
-					<a
-						class="external"
-						title="@jasperlai@mastodon.online"
-						href="https://mastodon.online/@jasperlai"
-						target="_blank"
-						>Mastodon</a
-					>
-				</li>
-				<li>
-					<a
-						class="external"
-						title="@_JasperLai"
-						href="https://twitter.com/_JasperLai"
-						target="_blank"
-						>Twitter</a
-					>
-				</li>
-				<li>
-					<a
-						class="external"
-						title="jasperlai"
-						href="https://discordapp.com/users/228441721246056449"
-						target="_blank"
-						>Discord</a
-					>
-				</li>
-				<li>
-					<a
-						class="external"
-						title="jasperlai"
-						href="https://www.linkedin.com/in/jasperlai"
-						target="_blank"
-						>LinkedIn</a
-					>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<p id="quip"></p>
+	<div class="footer__safe_area">
+		<nav>
+			<div id="signoff_container">
+				<p id="signoff">Hand-coded in big-little Tāmaki Makaurau</p>
+				<p id="thanks">Thanks for dropping by</p>
+			</div>
+			<div>
+				<h3>Here</h3>
+				<ul id="here-links">
+					<li><a unavailable>About</a></li>
+					<li><a unavailable>Now</a></li>
+					<li><a href="/blogroll">Blogroll</a></li>
+					<li><a href="/accessibility">Accessibility</a></li>
+					<li><a href="/privacy">Privacy</a></li>
+					<li><a href="/colophon">Colophon</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Elsewhere</h3>
+				<ul id="elsewhere-links">
+					<li>
+						<a
+							class="external"
+							title="jaskfla"
+							href="https://github.com/jaskfla"
+							target="_blank"
+							>GitHub</a
+						>
+					</li>
+					<li>
+						<a
+							class="external"
+							title="@jasperlai@mastodon.online"
+							href="https://mastodon.online/@jasperlai"
+							target="_blank"
+							>Mastodon</a
+						>
+					</li>
+					<li>
+						<a
+							class="external"
+							title="@_JasperLai"
+							href="https://twitter.com/_JasperLai"
+							target="_blank"
+							>Twitter</a
+						>
+					</li>
+					<li>
+						<a
+							class="external"
+							title="jasperlai"
+							href="https://discordapp.com/users/228441721246056449"
+							target="_blank"
+							>Discord</a
+						>
+					</li>
+					<li>
+						<a
+							class="external"
+							title="jasperlai"
+							href="https://www.linkedin.com/in/jasperlai"
+							target="_blank"
+							>LinkedIn</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<p id="quip"></p>
+	</div>
 </footer>
 <script>
 	const quips = [
