@@ -1,8 +1,10 @@
 ---
 title: Required reading
 layout: wordswordswords.njk
-permalink: readings
+permalink: readings.html
 ---
+
+I mean, they’re not _required_—obviously. But these have struck some kind of chord with me.
 
 - [An Invocation for Beginnings](https://youtu.be/RYlCVwxoL_g)
 - [The Anthropocene Reviewed](https://anthropocenereviewedbook.com)
