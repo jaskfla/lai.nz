@@ -1,6 +1,6 @@
 ---
 title: Blogroll
-layout: words-schmwords.njk
+layout: wordswordswords.njk
 ---
 
 _Under construction._

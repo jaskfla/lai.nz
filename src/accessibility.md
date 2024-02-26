@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-layout: words-schmwords.njk
+layout: wordswordswords.njk
 permalink: accessibility.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: People whose work I admire
-layout: words-schmwords.njk
+layout: wordswordswords.njk
 permalink: people
 ---
 

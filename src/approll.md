@@ -1,6 +1,6 @@
 ---
 title: Indispensable apps
-layout: words-schmwords.njk
+layout: wordswordswords.njk
 ---
 
 - [Audio Hijack](https://rogueamoeba.com/audiohijack/)

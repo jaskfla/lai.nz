@@ -3,7 +3,12 @@ layout: base.njk
 ---
 
 <style>
-	section {
+	.wordswordswords {
+		padding-left: var(--top-level-padding-left);
+		padding-right: var(--top-level-padding-right);
+	}
+
+	.wordswordswords__safe_area {
 		font-size: 1.4rem;
 		inline-size: 100%;
 		line-height: 1.45;
@@ -12,7 +17,7 @@ layout: base.njk
 		padding-block: 8rem;
 	}
 
-	.words-schmwords h1 {
+	.wordswordswords__safe_area h1 {
 		color: var(--color-accent);
 		font-size: 1.4rem;
 		font-variant-caps: all-small-caps;
@@ -20,12 +25,12 @@ layout: base.njk
 		margin-block-end: 2rem;
 	}
 
-	.words-schmwords p {
+	.wordswordswords__safe_area p {
 		margin-block-end: 2rem;
 		max-inline-size: 30rem;
 	}
 
-	.words-schmwords > p:first-of-type {
+	.wordswordswords__safe_area > p:first-of-type {
 		font-family: var(--font-stack-serif);
 		font-size: 2rem;
 		line-height: 1.3;
@@ -35,7 +40,9 @@ layout: base.njk
 	}
 </style>
 
-<section class="words-schmwords">
-	<h1>{{ title | safe }}</h1>
-	{{ content | safe }}
+<section class="wordswordswords">
+	<div class="wordswordswords__safe_area">
+		<h1>{{ title | safe }}</h1>
+		{{ content | safe }}
+	</div>
 </section>

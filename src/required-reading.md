@@ -1,6 +1,6 @@
 ---
 title: Required reading
-layout: words-schmwords.njk
+layout: wordswordswords.njk
 permalink: readings
 ---
 

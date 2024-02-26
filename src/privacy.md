@@ -1,6 +1,6 @@
 ---
 title: Terms of use & privacy policy
-layout: words-schmwords.njk
+layout: wordswordswords.njk
 permalink: privacy.html
 ---
 

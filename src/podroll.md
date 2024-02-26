@@ -1,6 +1,6 @@
 ---
 title: Podroll
-layout: words-schmwords.njk
+layout: wordswordswords.njk
 ---
 
 Am I proud of the title? No. But it gets the point across—and succinctly.
