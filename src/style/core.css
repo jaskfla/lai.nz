@@ -22,6 +22,18 @@
 		--delineation: 1px solid var(--color-border);
 	}
 
+	.use-safe-area-x {
+		padding-left: var(--top-level-padding-left);
+		padding-right: var(--top-level-padding-right);
+	}
+	.use-safe-area-y {
+		padding-top: var(--top-level-padding-top);
+		padding-bottom: var(--top-level-padding-bottom);
+	}
+	.use-safe-area-bottom {
+		padding-bottom: var(--top-level-padding-bottom);
+	}
+
 	html {
 		background-color: var(--color-bg);
 		color: var(--color-fg);
@@ -29,10 +41,7 @@
 		font-feature-settings: var(--font-features-concourse);
 		font-size: clamp(17px, 1.5vw, 28px);
 		font-variant-numeric: oldstyle-nums;
-		padding-top: var(--top-level-padding-top);
-		padding-bottom: var(--top-level-padding-bottom);
-		padding-left: var(--top-level-padding-left);
-		padding-right: var(--top-level-padding-right);
+
 		text-combine-upright: digits;
 	}
 
