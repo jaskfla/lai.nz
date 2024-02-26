@@ -4,7 +4,7 @@ layout: words-schmwords.njk
 ---
 
 - [Audio Hijack](https://rogueamoeba.com/audiohijack/)
-- [Clear](https://www.useclear.com)
+- [Clear](https://app.useclear.com/refer/BI64KO) (referral link)
 - [Drafts](https://getdrafts.com)
 - [Hazel](https://www.noodlesoft.com)
 - [iA Writer](https://ia.net/writer)
