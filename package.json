@@ -9,9 +9,9 @@
 	"license": "SEE LICENSE IN LICENSE.md",
 	"repository": "git:jaskfla/jaskfla.github.io",
 	"scripts": {
-		"build": "rm -rf _site/ && npx @11ty/eleventy",
-		"start": "npx @11ty/eleventy --serve",
-		"watch": "npx @11ty/eleventy --watch"
+		"build": "rm -rf _site/ && bunx @11ty/eleventy",
+		"start": "bunx @11ty/eleventy --serve",
+		"watch": "bunx @11ty/eleventy --watch"
 	},
 	"private": true,
 	"author": {
