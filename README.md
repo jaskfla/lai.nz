@@ -26,7 +26,7 @@ bun run build
 
 Then peep the `/_site` folder.
 
-### 🏃‍♂️ To run
+### 👟 To run
 
 ```sh
 bun run start
