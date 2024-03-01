@@ -1,6 +1,6 @@
 # lai.nz
 
-## ☑️ Prereq
+## *️⃣ Prereq
 
 Install [Bun](https://bun.sh):[^pkg]
 
