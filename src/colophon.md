@@ -1,6 +1,7 @@
 ---
 title: Colophon
 layout: wordswordswords.njk
+permalink: colophon.html
 ---
 
 The typefaces around here are [Warbler](https://djr.com/warbler) by David Jonathan Ross and [Concourse](https://mbtype.com/fonts/concourse) by Matthew Butterick.

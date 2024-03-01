@@ -1,6 +1,7 @@
 ---
 title: Blogroll
 layout: wordswordswords.njk
+permalink: blogroll.html
 ---
 
 _Under construction._

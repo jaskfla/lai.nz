@@ -1,6 +1,7 @@
 ---
 title: Podroll
 layout: wordswordswords.njk
+permalink: podroll.html
 ---
 
 Am I proud of the title? No. But it gets the point across—and succinctly.

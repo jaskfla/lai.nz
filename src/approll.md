@@ -1,6 +1,7 @@
 ---
 title: Indispensable apps
 layout: wordswordswords.njk
+permalink: approll.html
 ---
 
 - [Audio Hijack](https://rogueamoeba.com/audiohijack/)
