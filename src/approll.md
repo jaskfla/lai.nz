@@ -12,6 +12,7 @@ permalink: approll.html
 - [Pages](https://www.apple.com/apps/#pages)
 - [Mela](https://mela.recipes)
 - [Overcast](https://overcast.fm)
+- [PDF Squeezer](https://www.witt-software.com/pdfsqueezer/)
 - [Soulver](https://soulver.app)
 - [Unobstruct](https://apps.apple.com/app/unobstruct/id1255281426)
 - [Unread](https://www.goldenhillsoftware.com/unread)
