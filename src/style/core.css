@@ -28,8 +28,15 @@
 		font-family: var(--font-stack-sans);
 		font-feature-settings: var(--font-features-concourse);
 		font-size: clamp(17px, 1.35vw, 28px);
+		font-weight: 400;
 		font-variant-numeric: oldstyle-nums;
 		text-combine-upright: digits;
+	}
+
+	@media screen and (prefers-color-scheme: dark) {
+		html {
+			font-weight: 300;
+		}
 	}
 
 	body {
