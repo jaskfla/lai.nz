@@ -34,7 +34,7 @@ This might prompt you to `nvm install`.
 bun run build
 ```
 
-Then peep the `/_site` folder.
+Then peep the freshly minted `/_site` folder.
 
 ### 👟 To run
 
