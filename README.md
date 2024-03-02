@@ -2,11 +2,13 @@
 
 ## *️⃣ Prereq
 
-Install [Bun](https://bun.sh):[^pkg]
+Install [Bun](https://bun.sh/docs/installation):[^pkg]
 
 ```sh
-curl -fsSL https://bun.sh/install | bash
+brew install oven-sh/bun/bun 
 ```
+
+Or, if you don’t use Homebrew: `curl -fsSL https://bun.sh/install | bash`
 
 [^pkg]: If you know what you’re doing, go ahead and use [pnpm](https://pnpm.io)/[yarn](https://yarnpkg.com)/[npm](https://www.npmjs.com). I’m having fun with Bun.
 
@@ -34,7 +36,7 @@ This might prompt you to `nvm install`.
 bun run build
 ```
 
-Then peep the freshly minted `/_site` folder.
+Then peep the freshly minted `/_site/` folder.
 
 ### 👟 To run
 
