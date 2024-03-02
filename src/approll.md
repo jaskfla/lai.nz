@@ -14,6 +14,7 @@ permalink: approll.html
 - [Overcast](https://overcast.fm)
 - [PDF Squeezer](https://www.witt-software.com/pdfsqueezer/)
 - [Soulver](https://soulver.app)
+- [Timery](https://timeryapp.com)
 - [Unobstruct](https://apps.apple.com/app/unobstruct/id1255281426)
 - [Unread](https://www.goldenhillsoftware.com/unread)
 
