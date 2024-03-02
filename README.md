@@ -8,13 +8,23 @@ Install [Bun](https://bun.sh):[^pkg]
 curl -fsSL https://bun.sh/install | bash
 ```
 
+[^pkg]: If you know what you’re doing, go ahead and use [pnpm](https://pnpm.io)/[yarn](https://yarnpkg.com)/[npm](https://www.npmjs.com). I’m having fun with Bun.
+
 Then install dependencies:
 
 ```sh
 bun install
 ```
 
-[^pkg]: If you know what you’re doing, go ahead and use [pnpm](https://pnpm.io)/[yarn](https://yarnpkg.com)/[npm](https://www.npmjs.com). I’m having fun with Bun. If using [Node](https://nodejs.org) (I’m not), be sure to run `nvm use` before building and running; it might also prompt you to `nvm install`. If using [Deno](https://deno.com), I’m sure you can figure things out yourself.
+Make sure you’re using the right version of [Node](https://nodejs.org):[^runtime]
+
+```sh
+nvm use
+```
+
+This might prompt you to `nvm install`.
+
+[^runtime]: I’d like to switch to using the Bun runtime at some point, but Eleventy assumes Node (which is fair enough). If using [Deno](https://deno.com), I’ll leave you to figure things out yourself—let me know how that goes!
 
 ## 🚀 Deployment
 
