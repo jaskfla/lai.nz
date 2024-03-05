@@ -6,12 +6,12 @@
 		padding-right: var(--top-level-padding-right);
 	}
 
-	.footer__safe_area > * {
+	.footer__safe-area > * {
 		margin-inline: auto;
 		max-inline-size: var(--content-width);
 	}
 
-	.footer__safe_area nav {
+	.footer__safe-area nav {
 		display: grid;
 		font-size: 1rem;
 		gap: 1rem 2rem;
@@ -20,7 +20,7 @@
 		padding-block: 4rem;
 	}
 
-	.footer__safe_area nav h3 {
+	.footer__safe-area nav h3 {
 		color: var(--color-accent);
 		font-size: inherit;
 		line-height: inherit;
@@ -28,22 +28,22 @@
 		font-weight: 400;
 	}
 
-	.footer__safe_area nav ul {
+	.footer__safe-area nav ul {
 		list-style-type: none;
 		padding-inline: 0;
 	}
 
-	.footer__safe_area nav a {
+	.footer__safe-area nav a {
 		color: var(--color-fg);
 		text-decoration: none;
 		transition: color 0.15s ease;
 	}
 
-	.footer__safe_area nav a:hover {
+	.footer__safe-area nav a:hover {
 		color: var(--color-fg-2);
 	}
 
-	.footer__safe_area nav a[unavailable] {
+	.footer__safe-area nav a[unavailable] {
 		color: unset;
 	}
 
@@ -65,7 +65,7 @@
 	}
 
 	@media (min-width: 40rem) {
-		.footer__safe_area nav {
+		.footer__safe-area nav {
 			grid-template-columns: 1fr repeat(2, minmax(7rem, auto));
 		}
 		#signoff_container {
@@ -85,7 +85,7 @@
 	}
 </style>
 <footer>
-	<div class="footer__safe_area">
+	<div class="footer__safe-area">
 		<nav>
 			<div id="signoff_container">
 				<p id="signoff">Hand-coded in big-little Tāmaki Makaurau</p>
