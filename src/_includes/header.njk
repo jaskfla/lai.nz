@@ -2,49 +2,44 @@
 	header {
 		align-items: center;
 		border-block-end: var(--delineation);
-		gap: 1rem 2rem;
 		inline-size: 100%;
 		padding-block: 1.25rem;
 		padding-left: var(--top-level-padding-left);
 		padding-right: var(--top-level-padding-right);
+	}
 
-		.content-wrapper {
-			display: flex;
-			flex-direction: row;
-			inline-size: var(--content-width);
-			justify-content: space-between;
-			margin-inline: auto;
-		}
+	.header__safe-area {
+		display: flex;
+		flex-direction: row;
+		inline-size: var(--content-width);
+		justify-content: space-between;
+		margin-inline: auto;
+	}
 
-		.logo:hover {
-			opacity: 50%;
-			transition: opacity 0.3s ease;
-		}
+	.header__logo:hover {
+		opacity: 50%;
+		transition: opacity 0.3s ease;
+	}
 
-		nav {
-			align-items: baseline;
-			display: block flex;
-			gap: 1rem 2rem;
+	.header__navigation {
+		align-items: baseline;
+		display: block flex;
+		gap: 1rem 2rem;
+	}
 
-			a {
-				color: var(--color-fg);
-				text-decoration: none;
-			}
+	.header__navigation_link {
+		color: var(--color-fg);
+		text-decoration: none;
+	}
 
-			a:hover {
-				font-weight: 600;
-			}
-
-			a[unavailable] {
-				font-weight: 400;
-			}
-		}
+	.header__navigation_link:hover:not([unavailable]) {
+		color: var(--color-fg-2);
 	}
 </style>
 <header>
-	<div class="content-wrapper">
+	<div class="header__safe-area">
 		<a href="/">
-			<picture class="logo">
+			<picture class="header__logo">
 				<source
 					media="(prefers-color-scheme: light)"
 					srcset="/images/avatar.svg"
@@ -70,11 +65,11 @@
 				/>
 			</picture>
 		</a>
-		<nav>
-			<a unavailable>About</a>
-			<a unavailable>Now</a>
-			<a unavailable>Notes</a>
-			<a unavailable>Work</a>
+		<nav class="header__navigation">
+			<a class="header__navigation_link" unavailable>About</a>
+			<a class="header__navigation_link" href="/now">Now</a>
+			<a class="header__navigation_link" unavailable>Notes</a>
+			<a class="header__navigation_link" unavailable>Work</a>
 		</nav>
 	</div>
 </header>
