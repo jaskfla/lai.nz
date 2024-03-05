@@ -10,7 +10,7 @@ brew install oven-sh/bun/bun
 
 Or, if you don’t use Homebrew: `curl -fsSL https://bun.sh/install | bash`
 
-[^pkg]: If you know what you’re doing, go ahead and use [pnpm](https://pnpm.io)/[yarn](https://yarnpkg.com)/[npm](https://www.npmjs.com). I’m having fun with Bun.
+[^pkg]: If you know what you’re doing, go ahead and use [pnpm](https://pnpm.io)/[yarn](https://yarnpkg.com)/[npm](https://www.npmjs.com). It might not stick, but for now I’m having fun with Bun.
 
 Then install dependencies:
 
@@ -26,7 +26,7 @@ nvm use
 
 This might prompt you to `nvm install`.
 
-[^runtime]: I’d like to switch to using the Bun runtime at some point, but Eleventy assumes Node (which is fair enough). If using [Deno](https://deno.com), I’ll leave you to figure things out yourself—let me know how that goes!
+[^runtime]: I’d like to give the ~~Bun runtime~~ buntime a proper go at some point, but Eleventy assumes Node (which is fair enough). If using [Deno](https://deno.com), I’ll leave you to figure things out yourself—let me know how that goes!
 
 ## 🚀 Deployment
 
