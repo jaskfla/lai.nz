@@ -5,10 +5,10 @@
 Install [Bun](https://bun.sh/docs/installation):[^pkg]
 
 ```sh
-brew install oven-sh/bun/bun 
+curl -fsSL https://bun.sh/install | bash
 ```
 
-Or, if you don’t use Homebrew: `curl -fsSL https://bun.sh/install | bash`
+Or, if you prefer use Homebrew: `brew install oven-sh/bun/bun`
 
 [^pkg]: If you know what you’re doing, go ahead and use [pnpm](https://pnpm.io)/[yarn](https://yarnpkg.com)/[npm](https://www.npmjs.com). It might not stick, but for now I’m having fun with Bun.
 
