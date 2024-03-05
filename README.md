@@ -26,7 +26,7 @@ nvm use
 
 This might prompt you to `nvm install`.
 
-[^runtime]: I’d like to give the ~~Bun runtime~~ buntime a proper go at some point, but Eleventy assumes Node (which is fair enough). If using [Deno](https://deno.com), I’ll leave you to figure things out yourself—let me know how that goes!
+[^runtime]: I’d like to give the ~~buntime~~ Bun runtime a proper go at some point, but Eleventy assumes Node (which is fair enough). If using [Deno](https://deno.com), I’ll leave you to figure things out yourself—let me know how that goes!
 
 ## 🚀 Deployment
 
