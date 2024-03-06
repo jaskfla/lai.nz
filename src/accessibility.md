@@ -8,6 +8,6 @@ I make this website mostly in service of my own itches, but would nevertheless l
 
 The code driving this site is standards-compliant [<abbr>HTML</abbr>](https://html.spec.whatwg.org), [<abbr>CSS</abbr>](https://www.w3.org/Style/CSS) and JavaScript; and is made with the [Web Content Accessibility Guidelines 2.2](https://www.w3.org/TR/WCAG22) in mind. (I’m also pinching a few improvements from the [<abbr>WCAG 3</abbr> drafts](https://www.w3.org/TR/wcag3).) Text should be readable, images should have descriptions, and everything should be keyboard-navigable.
 
-This site is and will always be a work in progress. If there’s any part of it that you find difficult to use, please let me know in a [GitHub issue](https://github.com/jaskfla/jaskfla.github.io/issues), or by <a href="&#109;&#97;&#73;&#108;&#116;&#111;&#58;&#106;&#64;&#108;&#97;&#105;&#46;&#110;&#122;">emailing me</a> directly.
+This site is and will always be a work in progress. If there’s any part of it that you find difficult to use, please let me know in a [GitHub issue](https://github.com/jaskfla/jaskfla.github.io/issues), or by <a href="&#109;&#97;&#73;&#108;&#116;&#111;&#58;&#106;&#64;&#108;&#97;&#105;&#46;&#110;&#122;">emailing me</a> directly. I’ll try to fix it as soon as time allows.
 
-I’ll try to fix it as soon as time allows. Though I can’t guarantee accessibility of stuff I link to, I try to select and promote work by people who also value inclusive design.
+Though I can’t guarantee accessibility of stuff I link to, I try to select and promote work by people who also value inclusive design.
