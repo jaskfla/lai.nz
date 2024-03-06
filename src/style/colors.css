@@ -8,12 +8,26 @@
 	--color-border: oklch(0% 0 0 / 6%);
 	--bg-blur: blur(20px) saturate(130%);
 
+	@media (prefers-contrast: more) {
+		--color-fg: oklch(15% 0 0);
+		--color-fg-2: var(--color-fg);
+		--color-bg-vibrant: var(--color-bg);
+		--color-border: oklch(0% 0 0 / 12%);
+	}
+
 	@media (prefers-color-scheme: dark) {
-		--color-fg: lch(85% 6 208);
-		--color-fg-2: lch(45% 6 208);
-		--color-bg: lch(8% 11 208);
-		--color-bg-vibrant: lch(8% 11 208 / 80%);
-		--color-accent: lch(76% 108 75);
+		--color-fg: oklch(85% 0.015 202);
+		--color-fg-2: oklch(45% 0.015 202);
+		--color-bg: oklch(20.5% 0.04 202);
+		--color-bg-vibrant: oklch(20.5% 0.04 202 / 80%);
+		--color-accent: oklch(80% 0.194 74.5);
 		--color-border: oklch(100% 0 0 / 15%);
+
+		@media (prefers-contrast: more) {
+			--color-fg: oklch(90% 0.015 202);
+			--color-fg-2: var(--color-fg);
+			--color-bg-vibrant: var(--color-bg);
+			--color-border: oklch(100% 0 0 / 25%);
+		}
 	}
 }
