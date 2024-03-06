@@ -15,11 +15,11 @@
 		font: clamp(40px, min(8vw, 45vh), 4.5rem) / 1.2 'Warbler Variable', ui-serif;
 		font-optical-sizing: none;
 		-webkit-font-smoothing: antialiased;
-		font-variation-settings: 'opsz' 15;
+		font-variation-settings: 'opsz' 26;
 		hanging-punctuation: first force-end last;
 		text-align: center;
 		text-rendering: geometricPrecision;
-		transition: font-variation-settings, left;
+		transition: font-variation-settings;
 		transition-duration: 1.1s;
 		transition-timing-function: cubic-bezier(0.64, 0.045, 0.35, 1);
 
@@ -29,13 +29,14 @@
 	}
 
 	#opsz_hero:hover {
-		font-variation-settings: 'opsz' 26;
+		font-variation-settings: 'opsz' 15;
 	}
 
 	@supports not (hanging-punctuation: force-end) {
 		#opsz_hero {
-			position: relative;
 			left: 0.124em;
+			position: relative;
+			transition: font-variation-settings, left;
 		}
 		#opsz_hero:hover {
 			left: 0.103em; /* Width of hanging full stop varies with opsz */
@@ -51,7 +52,7 @@
 		'force-end'
 	)
 
-	opszIsSmall = true
+	opszIsSmall = false
 	opsz_hero.addEventListener('touchend', (e) => {
 		opsz_hero.style.fontVariationSettings = `'opsz' ${opszIsSmall ? 26 : 15}`
 		if (!doesSupportHangingPunctuation) {
