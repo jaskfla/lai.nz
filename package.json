@@ -22,7 +22,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.4",
+    "@11ty/eleventy": "3.0.0-alpha.5",
     "@biomejs/biome": "^1.6.1"
   }
 }
