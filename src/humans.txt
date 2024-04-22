@@ -35,12 +35,16 @@ Jeramy B., Maryanne C. and my fellow software engineering nerds.
 	- iA Writer (ia.net/writer)
 
 - Development
+	- Eleventy (11ty.dev)
+	- Liquid (shopify.github.io/liquid)
 	- BBEdit (barebones.com/products/bbedit)
 	- Visual Studio Code (code.visualstudio.com)
 	- Warp (warp.dev)
 	- Git (git-scm.com)
 	- GitHub (github.com)
 	- MDN Web Docs (developer.mozilla.org)
+	- Bun (bun.sh)
+	- Biome (biomejs.dev)
 
 - Hardware
 	- MacBook Pro, 13-inch, 2019
