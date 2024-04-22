@@ -26,6 +26,7 @@ export default (eleventyConfig) => {
 	return {
 		dir: {
 			input: SOURCE_DIR,
+			templateFormats: ['liquid', 'md', 'njk'],
 		},
 	};
 };
