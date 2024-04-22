@@ -1,26 +1,31 @@
-const SOURCE_DIR = "src";
+const SOURCE_DIR = 'src';
 
 export default (eleventyConfig) => {
-  const staticFiles = [
-    // Directories
-    "fonts",
-    "images",
-    "meta",
-    "style",
+	/* Static files */
 
-    // Files
-    "apple-touch-icon.png",
-    "favicon.ico",
-    "humans.txt",
-    "robots.txt",
-  ];
-  for (const file of staticFiles) {
-    eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/${file}`);
-  }
+	const staticFiles = [
+		'fonts/',
+		'images/',
+		'meta/',
+		'style/',
+		'apple-touch-icon.png',
+		'favicon.ico',
+		'humans.txt',
+		'robots.txt',
+	];
+	for (const file of staticFiles) {
+		eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/${file}`);
+	}
 
-  return {
-    dir: {
-      input: SOURCE_DIR,
-    },
-  };
+	/* Collections */
+
+	eleventyConfig.addCollection('notes', (collection) =>
+		collection.getFilteredByGlob(`${SOURCE_DIR}/notes/*.md`),
+	);
+
+	return {
+		dir: {
+			input: SOURCE_DIR,
+		},
+	};
 };

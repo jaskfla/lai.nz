@@ -1,28 +1,28 @@
 {
-  "name": "lai.nz",
-  "main": "index.js",
-  "homepage": "https://lai.nz",
-  "bugs": {
-    "url": "https://github.com/jaskfla/jaskfla.github.io/issues",
-    "email": "j @ lai . nz"
-  },
-  "license": "SEE LICENSE IN LICENSE.md",
-  "repository": "git:jaskfla/jaskfla.github.io",
-  "scripts": {
-    "build": "rm -rf _site/ && bun x @11ty/eleventy",
-    "start": "bun x @11ty/eleventy --serve",
-    "watch": "bun x @11ty/eleventy --watch",
-    "format": "biome format --write ."
-  },
-  "private": true,
-  "author": {
-    "name": "Jasper Lai",
-    "email": "j @ lai . nz",
-    "url": "https://lai.nz"
-  },
-  "type": "module",
-  "devDependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.5",
-    "@biomejs/biome": "^1.6.1"
-  }
+	"name": "lai.nz",
+	"main": "index.js",
+	"homepage": "https://lai.nz",
+	"bugs": {
+		"url": "https://github.com/jaskfla/jaskfla.github.io/issues",
+		"email": "j @ lai . nz"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": "git:jaskfla/jaskfla.github.io",
+	"scripts": {
+		"build": "rm -rf _site/ && bun x @11ty/eleventy",
+		"start": "bun x @11ty/eleventy --serve",
+		"watch": "bun x @11ty/eleventy --watch",
+		"format": "biome format --write ."
+	},
+	"private": true,
+	"author": {
+		"name": "Jasper Lai",
+		"email": "j @ lai . nz",
+		"url": "https://lai.nz"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@11ty/eleventy": "3.0.0-alpha.6",
+		"@biomejs/biome": "^1.6.1"
+	}
 }
