@@ -10,6 +10,7 @@
 	"repository": "git:jaskfla/jaskfla.github.io",
 	"scripts": {
 		"build": "rm -rf _site/ && bun x @11ty/eleventy",
+		"prestart": "rm -rf _site/",
 		"start": "bun x @11ty/eleventy --serve",
 		"watch": "bun x @11ty/eleventy --watch",
 		"format": "biome format --write ."
