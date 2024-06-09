@@ -35,21 +35,21 @@ export default [
 			'Resist criticizing tools for what they are bad at. Resist designing tools that are well-rounded.',
 	},
 	{
-		author: 'Patrick McKenzie',
-		title: 'Falsehoods Programmers Believe About Names',
-		link: 'https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names',
-		media: 'blog post',
-		pullquote: '40. People have names.',
-		comment:
-			'Please don’t ever create a table with <code>first_name</code> and <code>last_name</code> again.',
-	},
-	{
 		author: 'Big Sky Software',
 		title: 'The Grug-Brained Developer',
 		link: 'https://grugbrain.dev',
 		media: 'static site',
 		pullquote: 'complexity <em>very</em>, <em>very</em> bad',
 		comment: null,
+	},
+	{
+		author: 'Patrick McKenzie',
+		title: 'Falsehoods Programmers Believe About Names',
+		link: 'https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names',
+		media: 'blog post',
+		pullquote: '40.&nbsp;People have names.',
+		comment:
+			'Please don’t ever create a table with <code>first_name</code> and <code>last_name</code> again.',
 	},
 	{
 		author: 'Merlin mann',
@@ -80,7 +80,7 @@ export default [
 		title: 'Trust the Process',
 		link: 'https://medium.com/smith-diction/trust-the-process-97ac8999d56a',
 		media: 'essay',
-		pullquote: 'There’s no secret sauce … and that’s awesome.',
+		pullquote: 'There’s no secret sauce&nbsp;… and that’s awesome.',
 		comment: null,
 	},
 	{
