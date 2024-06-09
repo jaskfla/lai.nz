@@ -12,7 +12,9 @@
 
 	#opsz_hero {
 		cursor: default;
-		font: clamp(40px, min(8vw, 45vh), 4.5rem) / 1.2 'Warbler Variable', ui-serif;
+		font:
+			clamp(40px, min(8vw, 45vh), 4.5rem) / 1.2 'Warbler Variable',
+			ui-serif;
 		font-optical-sizing: none;
 		-webkit-font-smoothing: antialiased;
 		font-variation-settings: 'opsz' 26;
@@ -49,15 +51,15 @@
 <script>
 	const doesSupportHangingPunctuation = CSS.supports(
 		'hanging-punctuation',
-		'force-end'
-	)
+		'force-end',
+	);
 
-	opszIsSmall = false
+	opszIsSmall = false;
 	opsz_hero.addEventListener('touchend', (e) => {
-		opsz_hero.style.fontVariationSettings = `'opsz' ${opszIsSmall ? 26 : 15}`
+		opsz_hero.style.fontVariationSettings = `'opsz' ${opszIsSmall ? 26 : 15}`;
 		if (!doesSupportHangingPunctuation) {
-			opsz_hero.style.left = opszIsSmall ? '0.103em' : '0.124em'
+			opsz_hero.style.left = opszIsSmall ? '0.103em' : '0.124em';
 		}
-		opszIsSmall = !opszIsSmall
-	})
+		opszIsSmall = !opszIsSmall;
+	});
 </script>
