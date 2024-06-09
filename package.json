@@ -13,7 +13,9 @@
 		"prestart": "rm -rf _site/",
 		"start": "bun x @11ty/eleventy --serve",
 		"watch": "bun x @11ty/eleventy --watch",
-		"format": "biome format --write ."
+		"format": "prettier .",
+		"format:fix": "prettier --write .",
+		"clean": "rm -rf node_modules/ _site/"
 	},
 	"private": true,
 	"author": {
@@ -24,6 +26,6 @@
 	"type": "module",
 	"devDependencies": {
 		"@11ty/eleventy": "3.0.0-alpha.10",
-		"@biomejs/biome": "^1.8.0"
+		"prettier": "^3.3.1"
 	}
 }
