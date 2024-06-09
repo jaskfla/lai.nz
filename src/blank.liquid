@@ -1,12 +1,8 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
-		<title>Blank Page</title>
-		{% render 'head/style' %} {% render 'head/icons' %} {% render 'head/seo' %}
-		<meta name="apple-mobile-web-app-title" content="Blank Page" />
-	</head>
+---
+layout: base.liquid
+---
+
+<main>
 	<style>
 		::selection {
 			background-color: transparent;
@@ -28,16 +24,12 @@
 			text-wrap: balance;
 		}
 	</style>
-</html>
-<body>
-	<main>
-		<p>
-			This page
-			<a
-				href="https://web.archive.org/web/20180224075941/http://this-page-intentionally-left-blank.org/whythat.html"
-				>intentionally</a
-			>
-			left blank
-		</p>
-	</main>
-</body>
+	<p>
+		This page
+		<a
+			href="https://web.archive.org/web/20180224075941/http://this-page-intentionally-left-blank.org/whythat.html"
+			>intentionally</a
+		>
+		left blank
+	</p>
+</main>

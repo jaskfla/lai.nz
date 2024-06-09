@@ -1,129 +1,120 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
-		<title>Feedback from Welby – Jasper Lai</title>
-		{% render 'head/style' %} {% render 'head/icons' %} {% render 'head/seo' %}
-		<meta name="apple-mobile-web-app-title" content="Jasper Lai" />
-		<style>
-			.feedback-from-welby {
-				padding-left: var(--top-level-padding-left);
-				padding-right: var(--top-level-padding-right);
-			}
+---
+title: Feedback from Welby
+layout: main.liquid
+---
 
-			.feedback-from-welby__safe_area > * {
-				margin-inline: auto;
-				max-inline-size: var(--content-width);
-			}
+<main class="feedback-from-welby">
+	<style>
+		.feedback-from-welby {
+			padding-left: var(--top-level-padding-left);
+			padding-right: var(--top-level-padding-right);
+		}
 
-			.feedback-from-welby__preamble {
-				align-items: stretch;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				margin-inline: auto;
-				min-block-size: 75svh;
-				padding-block: 4rem;
-			}
+		.feedback-from-welby__safe_area > * {
+			margin-inline: auto;
+			max-inline-size: var(--content-width);
+		}
 
-			.feedback-from-welby h1,
-			.feedback-from-welby h2 {
-				font: 700 2rem / 1.35 var(--font-stack-serif);
-			}
+		.feedback-from-welby__preamble {
+			align-items: stretch;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-inline: auto;
+			min-block-size: 75svh;
+			padding-block: 4rem;
+		}
 
-			.feedback-from-welby h2 {
-				color: var(--color-fg-2);
-			}
+		.feedback-from-welby h1,
+		.feedback-from-welby h2 {
+			font: 700 2rem / 1.35 var(--font-stack-serif);
+		}
 
-			.feedback-from-welby p {
-				margin-block: 0.65em 1.5em;
-			}
+		.feedback-from-welby h2 {
+			color: var(--color-fg-2);
+		}
 
-			.feedback-from-welby__preamble p {
-				color: var(--color-fg-2);
-				max-inline-size: 26em;
-				line-height: 1.35;
-			}
+		.feedback-from-welby p {
+			margin-block: 0.65em 1.5em;
+		}
 
+		.feedback-from-welby__preamble p {
+			color: var(--color-fg-2);
+			max-inline-size: 26em;
+			line-height: 1.35;
+		}
+
+		.feedback-from-welby__feedback {
+			font: 700 2.25rem / 1.35 var(--font-stack-serif);
+			margin-inline: auto;
+			padding-block-end: 8rem;
+		}
+
+		@media (prefers-color-scheme: dark) {
 			.feedback-from-welby__feedback {
-				font: 700 2.25rem / 1.35 var(--font-stack-serif);
-				margin-inline: auto;
-				padding-block-end: 8rem;
+				font-weight: 400;
 			}
+		}
 
-			@media (prefers-color-scheme: dark) {
-				.feedback-from-welby__feedback {
-					font-weight: 400;
-				}
+		@media (max-width: 400px) {
+			.feedback-from-welby {
+				hyphens: auto;
 			}
+		}
 
-			@media (max-width: 400px) {
-				.feedback-from-welby {
-					hyphens: auto;
-				}
+		@supports not (hanging-punctuation: first) {
+			.feedback-from-welby__feedback p {
+				text-indent: -0.5em;
 			}
-
-			@supports not (hanging-punctuation: first) {
-				.feedback-from-welby__feedback p {
-					text-indent: -0.5em;
-				}
-			}
-		</style>
-	</head>
-</html>
-<body>
-	{% render 'components/header' %}
-	<main class="feedback-from-welby">
-		<div class="feedback-from-welby__safe_area">
-			<div class="feedback-from-welby__preamble">
-				<h1>Feedback from Welby</h1>
-				<h2>Following a Master of Design proposal</h2>
-				<p>
-					In <time datetime="2020">2020</time>, I developed a Master of Design
-					proposal under
-					<a href="https://academics.aut.ac.nz/welby.ings"
-						>Professor Welby Ings</a
-					>’ supervision. For reasons uninteresting to the reader, that led me
-					pursue software engineering. However, the time spent working with
-					Welby was formative. It continues to inform my
-					development—academically, professionally, personally.
-				</p>
-			</div>
-			<article class="feedback-from-welby__feedback">
-				<p>
-					“This [feedback form] is problematic because it does not enable one to
-					tick alternative boxes. It is the comments below that carry the weight
-					of my assessment.
-				</p>
-				<p>
-					“Jasper was committed and thoughtful throughout the programme. He is a
-					highly focused thinker who pursued criticality in an effort to refine
-					and render articulate, a well conceived proposal. He is clearly a
-					thinker who is best served by projects that afford space for complex
-					analysis and detail refinement.
-				</p>
-				<p>
-					“It was a pleasure to work alongside somebody who was highly focused,
-					questioning and attentive to momentum. His commitment was typified by
-					a distinctive approach to suggestions—where these were not accepted
-					automatically but inquired into and assessed in the context of
-					alternatives.
-				</p>
-				<p>
-					“This appears to be a method Jasper has for learning and so long as it
-					does not turn into concept defensiveness, the approach serves to
-					deepen learning because new knowledge is double checked and related
-					across wider platforms than the immediate concern.
-				</p>
-				<p>
-					“I wish Jasper well on a professional and scholarly journey that will
-					be unlike other people’s. His thoughtful commitment to this project
-					has been such that his proposal has been refined into a polished and
-					articulate submission.”
-				</p>
-			</article>
+		}
+	</style>
+	<div class="feedback-from-welby__safe_area">
+		<div class="feedback-from-welby__preamble">
+			<h1>Feedback from Welby</h1>
+			<h2>Following a Master of Design proposal</h2>
+			<p>
+				In <time datetime="2020">2020</time>, I developed a Master of Design
+				proposal under
+				<a href="https://academics.aut.ac.nz/welby.ings"
+					>Professor Welby Ings</a
+				>’ supervision. For reasons uninteresting to the reader, that led me
+				pursue software engineering. However, the time spent working with
+				Welby was formative. It continues to inform my
+				development—academically, professionally, personally.
+			</p>
 		</div>
-	</main>
-	{% render 'components/footer' %}
-</body>
+		<article class="feedback-from-welby__feedback">
+			<p>
+				“This [feedback form] is problematic because it does not enable one to
+				tick alternative boxes. It is the comments below that carry the weight
+				of my assessment.
+			</p>
+			<p>
+				“Jasper was committed and thoughtful throughout the programme. He is a
+				highly focused thinker who pursued criticality in an effort to refine
+				and render articulate, a well conceived proposal. He is clearly a
+				thinker who is best served by projects that afford space for complex
+				analysis and detail refinement.
+			</p>
+			<p>
+				“It was a pleasure to work alongside somebody who was highly focused,
+				questioning and attentive to momentum. His commitment was typified by
+				a distinctive approach to suggestions—where these were not accepted
+				automatically but inquired into and assessed in the context of
+				alternatives.
+			</p>
+			<p>
+				“This appears to be a method Jasper has for learning and so long as it
+				does not turn into concept defensiveness, the approach serves to
+				deepen learning because new knowledge is double checked and related
+				across wider platforms than the immediate concern.
+			</p>
+			<p>
+				“I wish Jasper well on a professional and scholarly journey that will
+				be unlike other people’s. His thoughtful commitment to this project
+				has been such that his proposal has been refined into a polished and
+				articulate submission.”
+			</p>
+		</article>
+	</div>
+</main>
