@@ -21,6 +21,7 @@
 
 		--content-width: min(52rem, 100%);
 		--delineation: 1px solid var(--color-border);
+		--transition-fn: cubic-bezier(0.64, 0.045, 0.35, 1);
 	}
 
 	html {
@@ -75,7 +76,7 @@
 		transition-property: color, text-decoration-color, text-decoration-thickness,
 			text-underline-offset;
 		transition-duration: 200ms;
-		transition-timing-function: cubic-bezier(0.64, 0.045, 0.35, 1);
+		transition-timing-function: var(--transition-fn);
 	}
 
 	a:hover {

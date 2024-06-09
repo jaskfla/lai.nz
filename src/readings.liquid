@@ -5,8 +5,8 @@ permalink: readings.html
 ---
 
 <p>
-	I mean, they’re not <em>required</em>—obviously. But these have struck some kind of
-	chord with me.
+	I mean, they’re not <em>required</em>—obviously. But these have struck some
+	kind of chord with me.
 </p>
 <ul class="readings">
 	<style>
@@ -15,23 +15,32 @@ permalink: readings.html
 			inline-size: 100%;
 			list-style-type: none;
 		}
-		.readings__reading_link {
-			color: unset;
-			display: contents;
-		}
 		.readings__reading {
 			border-block: var(--delineation);
-			display: grid;
-			gap: .5rem 1rem;
 			margin-block: 0;
-			padding-block: 2rem 4rem;
-			@media (min-width: 40rem) {
-				grid-template-columns: 1fr 3fr;
-			}
+			transition-duration: 300ms;
+      transition-property: border-color, opacity;
+      transition-timing-function: ease;
+		}
+		.readings:has(.readings__reading:hover) > .readings__reading:not(:hover) {
+			border-color: transparent;
+			opacity: 45%;
 		}
 		.readings__reading p {
 			margin-block: 0;
 			max-inline-size: unset;
+		}
+		.readings__reading a {
+			text-decoration: none;
+		}
+		.readings__reading_link {
+			color: unset;
+			display: block grid;
+			gap: 0.5rem 1rem;
+			padding-block: 2rem 4rem;
+			@media (min-width: 40rem) {
+				grid-template-columns: 1fr 3fr;
+			}
 		}
 		.readings__reading_details {
 			display: flex;
@@ -55,47 +64,47 @@ permalink: readings.html
 			font-size: 2rem;
 			font-weight: 700;
 			line-height: 1.15;
-			opacity: 95%;
+			opacity: 93%;
 			text-wrap: balance;
-			}
+		}
 		@supports not (hanging-punctuation: first) {
 			.readings__reading_pullquote {
 				text-indent: -0.5em;
 			}
 		}
 		.readings__reading_pullquote::before {
-			content: '“'
+			content: '“';
 		}
 		.readings__reading_pullquote::after {
-			content: '”'
+			content: '”';
 		}
 		p.readings__reading_comment {
 			font-family: var(--font-stack-sans);
-			margin-block-start: .5rem;
+			margin-block-start: 0.5rem;
 		}
 	</style>
 	{% for r in readings %}
-	<a class="readings__reading_link" href="{{ r.link }}" target="_blank">
 		<li class="readings__reading">
-			<p class="readings__reading_author">
-				{% if r.author %}
-					{{ r.author }}
-				{% else %}
-					Unknown
-				{% endif %}
-			</p>
-			<div class="readings__reading_details">
-				{% if r.author %}
-					<h2 class="readings__reading_title">{{ r.title }}</h2>
-				{% endif %}
-				{% if r.pullquote %}
+			<a class="readings__reading_link" href="{{ r.link }}" target="_blank">
+				<p class="readings__reading_author">
+					{% if r.author %}
+						{{ r.author }}
+					{% else %}
+						Unknown
+					{% endif %}
+				</p>
+				<div class="readings__reading_details">
+					{% if r.author %}
+						<h2 class="readings__reading_title">{{ r.title }}</h2>
+					{% endif %}
+						{% if r.pullquote %}
 					<p class="readings__reading_pullquote">{{ r.pullquote }}</p>
-				{% endif %}
-				{% if r.comment %}
-					<p class="readings__reading_comment">{{ r.comment }}</p>
-				{% endif %}
-			</div>
+					{% endif %}
+					{% if r.comment %}
+						<p class="readings__reading_comment">{{ r.comment }}</p>
+					{% endif %}
+				</div>
+			</a>
 		</li>
-	</a>
-	{% endfor %} {% for thing in foobar %} {{ thing.example1 }} {% endfor %}
+	{% endfor %}
 </ul>
