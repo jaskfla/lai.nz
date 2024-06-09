@@ -27,6 +27,14 @@ export default [
 		comment: 'Learn to fall in love with the world again.',
 	},
 	{
+		author: 'Merlin Mann',
+		title: 'Merlin’s Wisdom Project',
+		link: 'http://wisdom.limo',
+		media: 'curated list',
+		pullquote: 'Look for the chimneys.',
+		comment: null,
+	},
+	{
 		author: 'Steph Ango',
 		title: 'Great tools choose to be bad at some things',
 		link: 'https://stephanango.com/choose-to-be-bad',
@@ -39,23 +47,6 @@ export default [
 		link: 'https://grugbrain.dev',
 		media: 'static site',
 		pullquote: 'complexity <em>very</em>, <em>very</em> bad',
-		comment: null,
-	},
-	{
-		author: 'Patrick McKenzie',
-		title: 'Falsehoods Programmers Believe About Names',
-		link: 'https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names',
-		media: 'blog post',
-		pullquote: '40.&nbsp;People have names.',
-		comment:
-			'Please don’t ever create a table with <code>first_name</code> and <code>last_name</code> again.',
-	},
-	{
-		author: 'Merlin mann',
-		title: 'Merlin’s Wisdom Project',
-		link: 'http://wisdom.limo',
-		media: 'curated list',
-		pullquote: 'Look for the chimneys.',
 		comment: null,
 	},
 	{
@@ -73,6 +64,15 @@ export default [
 		media: 'essay',
 		pullquote: null,
 		comment: null,
+	},
+	{
+		author: 'Patrick McKenzie',
+		title: 'Falsehoods Programmers Believe About Names',
+		link: 'https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names',
+		media: 'blog post',
+		pullquote: '40.&nbsp;People have names.',
+		comment:
+			'Please don’t ever create a table with <code>first_name</code> and <code>last_name</code> again.',
 	},
 	{
 		author: 'Smith & Diction',
@@ -103,15 +103,17 @@ export default [
 		title: 'The Web is Fantastic',
 		link: 'https://rknight.me/blog/the-web-is-fantastic',
 		media: 'blog post',
-		pullquote: null,
+		pullquote:
+			'Don’t give&nbsp;… these clowns your content. Don’t give them the time or your attention.',
 		comment: null,
 	},
 	{
 		author: 'Hank Green',
 		title: 'We’re All Scared',
 		link: 'https://youtu.be/fGmAekTPD5c',
-		media: null,
-		pullquote: null,
+		media: 'video',
+		pullquote:
+			'The only way I’ve found to temper the fear of creation is just to create, constantly.',
 		comment: null,
 	},
 	{
