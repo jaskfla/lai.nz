@@ -1,6 +1,6 @@
 ---
 title: People whose work I admire
-layout: wordswordswords.njk
+layout: wordswordswords.liquid
 permalink: people.html
 ---
 

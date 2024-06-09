@@ -1,6 +1,6 @@
 ---
 title: Required reading
-layout: wordswordswords.njk
+layout: wordswordswords.liquid
 permalink: readings.html
 ---
 

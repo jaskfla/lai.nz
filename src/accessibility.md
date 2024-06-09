@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-layout: wordswordswords.njk
+layout: wordswordswords.liquid
 permalink: accessibility.html
 ---
 

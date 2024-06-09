@@ -1,6 +1,6 @@
 ---
 title: Colophon
-layout: wordswordswords.njk
+layout: wordswordswords.liquid
 permalink: colophon.html
 ---
 

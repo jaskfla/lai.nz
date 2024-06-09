@@ -1,6 +1,6 @@
 ---
 title: 👋
-layout: home.njk
+layout: home.liquid
 ---
 
 I’m a final-year software engineering student at [Waipapa Taumata Rau](https://www.auckland.ac.nz 'University of Auckland'), and an intern-turned-junior-developer at [Beyond Essential Systems](https://bes.au).

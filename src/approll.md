@@ -1,6 +1,6 @@
 ---
 title: Indispensable apps
-layout: wordswordswords.njk
+layout: wordswordswords.liquid
 permalink: approll.html
 ---
 

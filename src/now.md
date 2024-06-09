@@ -1,6 +1,6 @@
 ---
 title: Now
-layout: now.njk
+layout: now.liquid
 permalink: now.html
 ---
 

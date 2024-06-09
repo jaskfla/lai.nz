@@ -1,6 +1,6 @@
 ---
 title: Podroll
-layout: wordswordswords.njk
+layout: wordswordswords.liquid
 permalink: podroll.html
 ---
 
@@ -11,7 +11,7 @@ Am I proud of the title? No. But it gets the point across—and succinctly.
 - [Dear Hank and John](https://overcast.fm/itunes1002937870)
 - [Hello Internet](http://www.hellointernet.fm)
 - [Hypercritical](https://hypercritical.fireside.fm)
-- [Roderick on the Line](http://www.merlinmann.com/roderick/)
+- [Roderick on the Line](http://www.merlinmann.com/roderick)
 - [Strong Songs](https://strongsongspodcast.com)
 - [The Anthropocene Reviewed](https://www.wnycstudios.org/podcasts/anthropocene-reviewed)
 - [Reconcilable Differences](https://www.relay.fm/rd)

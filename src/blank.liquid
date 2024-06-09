@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang='en'>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 		<title>Blank Page</title>
-		{% include "head/style.njk" %} {% include "head/icons.njk" %} {% include
-		"head/seo.njk" %}
-		<meta name="apple-mobile-web-app-title" content="Blank Page" />
+		{% render 'head/style' %}
+		{% render 'head/icons' %}
+		{% render 'head/seo' %}
+		<meta name='apple-mobile-web-app-title' content='Blank Page'>
 	</head>
 	<style>
 		::selection {
@@ -35,7 +36,7 @@
 		<p>
 			This page
 			<a
-				href="https://web.archive.org/web/20180224075941/http://this-page-intentionally-left-blank.org/whythat.html"
+				href='https://web.archive.org/web/20180224075941/http://this-page-intentionally-left-blank.org/whythat.html'
 				>intentionally</a
 			>
 			left blank

@@ -1,6 +1,6 @@
 ---
 title: Blogroll
-layout: wordswordswords.njk
+layout: wordswordswords.liquid
 permalink: blogroll.html
 ---
 
