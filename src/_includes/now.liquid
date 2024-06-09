@@ -1,17 +1,11 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
-		<title>
-			{{ title }}
-			–
-			{{ metadata.name }}
-		</title>
-		{% render 'head/style' %}
-		{% render 'head/icons' %}
-		{% render 'head/seo' %}
-		<meta name="apple-mobile-web-app-title" content="Jasper Lai">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+		<title>{{ title }} – {{ metadata.name }}</title>
+		{% render 'head/style' %} {% render 'head/icons' %} {% render 'head/seo' %}
+		<meta name="apple-mobile-web-app-title" content="Jasper Lai" />
 	</head>
 	<body>
 		{% render 'components/header' %}

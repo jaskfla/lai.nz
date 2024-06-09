@@ -9,7 +9,7 @@
 	"license": "SEE LICENSE IN LICENSE.md",
 	"repository": "git:jaskfla/jaskfla.github.io",
 	"scripts": {
-		"build": "rm -rf _site/ && bun x @11ty/eleventy",
+		"build": "rm -rf _site/ && bun x @11ty/eleventy && prettier --write _site/**/*.html",
 		"prestart": "rm -rf _site/",
 		"start": "bun x @11ty/eleventy --serve",
 		"watch": "bun x @11ty/eleventy --watch",

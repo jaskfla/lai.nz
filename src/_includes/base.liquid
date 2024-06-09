@@ -1,9 +1,14 @@
----
-layout: barebones.liquid
----
-
-{% render 'components/header' %}
-<main>
-	{{ content }}
-</main>
-{% render 'components/footer' %}
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-title" content="Jasper Lai" />
+		<meta name="generator" content="Eleventy" />
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+		<title>{{ title }} – Jasper Lai</title>
+		{% render 'head/style' %} {% render 'head/icons' %} {% render 'head/seo' %}
+	</head>
+	<body>
+		{{ content }}
+	</body>
+</html>
