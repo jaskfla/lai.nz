@@ -111,7 +111,7 @@ export default [
 		author: 'Hank Green',
 		title: 'We’re All Scared',
 		link: 'https://youtu.be/fGmAekTPD5c',
-		media: 'video',
+		media: 'vlog, 4 min',
 		pullquote:
 			'The only way I’ve found to temper the fear of creation is just to create, constantly.',
 		comment: null,

@@ -27,7 +27,6 @@ permalink: readings.html
 			opacity: 45%;
 		}
 		.readings__reading p {
-			margin-block: 0;
 			max-inline-size: unset;
 		}
 		.readings__reading a {
@@ -36,7 +35,7 @@ permalink: readings.html
 		.readings__reading_link {
 			color: unset;
 			display: block grid;
-			gap: 0.5rem 1rem;
+			gap: 0.5rem 1.5rem;
 			padding-block: 2rem 4rem;
 			@media (min-width: 40rem) {
 				grid-template-columns: 1fr 3fr;
@@ -51,6 +50,13 @@ permalink: readings.html
 			font-family: var(--font-stack-serif);
 			font-variant-caps: all-small-caps;
 			line-height: 1.3;
+			margin-block: 0;
+		}
+		.readings__reading_media {
+			font-size: 0.85rem;
+			letter-spacing: 0.01em;
+			opacity: 65%;
+			margin-block-end: .5rem;
 		}
 		.readings__reading_title {
 			font-family: var(--font-stack-serif);
@@ -64,6 +70,7 @@ permalink: readings.html
 			font-size: 2rem;
 			font-weight: 700;
 			line-height: 1.15;
+			margin-block: 0;
 			opacity: 93%;
 			text-wrap: balance;
 		}
@@ -78,21 +85,26 @@ permalink: readings.html
 		.readings__reading_pullquote::after {
 			content: '”';
 		}
-		p.readings__reading_comment {
+		.readings__reading_comment {
 			font-family: var(--font-stack-sans);
-			margin-block-start: 0.5rem;
+			margin-block: 0.5rem 0;
 		}
 	</style>
 	{% for r in readings %}
 		<li class="readings__reading">
 			<a class="readings__reading_link" href="{{ r.link }}" target="_blank">
-				<p class="readings__reading_author">
-					{% if r.author %}
-						{{ r.author }}
-					{% else %}
-						Unknown
-					{% endif %}
-				</p>
+				<div>
+					<p class="readings__reading_author">
+						{% if r.author %}
+							{{ r.author }}
+						{% else %}
+							Unknown author
+						{% endif %}
+					</p>
+					{% if r.media %}
+					<p class="readings__reading_media">{{ r.media }}</p>
+				{% endif %}
+				</div>
 				<div class="readings__reading_details">
 					{% if r.author %}
 						<h2 class="readings__reading_title">{{ r.title }}</h2>
