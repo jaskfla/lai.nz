@@ -6,7 +6,7 @@ export default [
 		media: 'lecture, 1 hr 21 min',
 		pullquote: null,
 		comment:
-			'I learned more about writing in these 80 minutes than my entire schooling life, which conditioned me to believe writing is for demonstrating my own understanding. Bullshit.',
+			'I learned more about writing in these 80&nbsp;minutes than my entire schooling life, which conditioned me to believe writing is for demonstrating my own understanding. Bullshit.',
 	},
 	{
 		author: 'Ze Frank',
