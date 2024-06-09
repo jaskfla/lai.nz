@@ -2,6 +2,7 @@
 	body.debug * {
 		border: 0;
 		outline: 0.5px solid magenta;
+		outline-offset: 0;
 	}
 
 	:root {
@@ -10,7 +11,7 @@
 		--font-stack-serif: 'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro',
 			ui-serif, serif;
 		--font-stack-display: 'Warbler Variable', var(--font-stack-serif);
-		--font-stack-mono: 'MD IO', ui-monospace, monospace;
+		--font-stack-mono: 'MD IO', ui-monospace, 'IBM Plex Mono', monospace;
 		--font-features-concourse: 'ss13', 'ss16';
 
 		--top-level-padding-top: max(env(safe-area-inset-top), 0);
@@ -74,7 +75,7 @@
 		transition-property: color, text-decoration-color, text-decoration-thickness,
 			text-underline-offset;
 		transition-duration: 200ms;
-		transition-timing-function: (0.64, 0.045, 0.35, 1);
+		transition-timing-function: cubic-bezier(0.64, 0.045, 0.35, 1);
 	}
 
 	a:hover {

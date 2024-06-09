@@ -4,7 +4,9 @@
 
 * {
 	box-sizing: border-box;
+	font-family: inherit;
 	margin: 0;
+	outline-offset: max(0.0625rem, 1px);
 	padding: 0;
 	text-decoration-thickness: from-font;
 }
@@ -107,4 +109,9 @@ audio {
 fieldset {
 	border: 0;
 	min-width: 0;
+}
+
+input,
+textarea {
+	hanging-punctuation: none;
 }
