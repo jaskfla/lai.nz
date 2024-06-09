@@ -31,8 +31,7 @@ export default [
 		title: 'Great tools choose to be bad at some things',
 		link: 'https://stephanango.com/choose-to-be-bad',
 		media: 'blog post',
-		pullquote:
-			'Resist criticizing tools for what they are bad at. Resist designing tools that are well-rounded.',
+		pullquote: 'Resist designing tools that are well-rounded.',
 	},
 	{
 		author: 'Big Sky Software',
