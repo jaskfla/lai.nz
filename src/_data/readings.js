@@ -39,7 +39,7 @@ export default [
 		title: 'Practical Typography',
 		link: 'https://practicaltypography.com',
 		media: 'digital book',
-		pullquote: 'You are a typographer.',
+		pullquote: null,
 		comment: 'The start of my journey with typography.',
 	},
 	{
