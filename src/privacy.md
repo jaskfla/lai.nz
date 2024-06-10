@@ -12,4 +12,4 @@ I like my privacy too, so this site has no tracking. None. I don’t know how ma
 
 I do use webfonts, but they’re all served from this domain. There is no third party. Hopefully at some point I’ll get around to letting you use only system fonts anyway.
 
-If you email or DM me somewhere, that’ll be kept private. If I want to quote you somewhere, I’ll be sure to ask.
+If you email or <abbr title="direct message">DM</abbr> me somewhere, that’ll be kept private. If I want to quote you somewhere, I’ll be sure to ask.
