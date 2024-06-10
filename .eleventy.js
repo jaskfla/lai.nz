@@ -23,6 +23,13 @@ export default (eleventyConfig) => {
 		collection.getFilteredByGlob(`${SOURCE_DIR}/notes/*.md`),
 	);
 
+	/* Filters */
+
+	eleventyConfig.addFilter('hostname', (url) => {
+		const hostname = new URL(url).hostname;
+		return hostname.slice(0, 4) === 'www.' ? hostname.slice(4) : hostname;
+	});
+
 	return {
 		dir: {
 			input: SOURCE_DIR,

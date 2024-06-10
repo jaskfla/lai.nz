@@ -11,6 +11,8 @@ permalink: readings.html
 <ul class="readings">
 	<style>
 		.readings {
+			--transition-duration: 300ms;
+
 			font-size: 1rem;
 			inline-size: 100%;
 			list-style-type: none;
@@ -18,9 +20,9 @@ permalink: readings.html
 		.readings__reading {
 			border-block: var(--delineation);
 			margin-block: 0;
-			transition-duration: 300ms;
+			transition-duration: var(--transition-duration);
       transition-property: border-color, opacity;
-      transition-timing-function: ease;
+      transition-timing-function: var(--transition-fn);
 		}
 		.readings:has(.readings__reading:hover) > .readings__reading:not(:hover) {
 			border-color: transparent;
@@ -36,7 +38,7 @@ permalink: readings.html
 			color: unset;
 			display: block grid;
 			gap: 0.5rem 1.5rem;
-			padding-block: 2rem 4rem;
+			padding-block: 2rem;
 			@media (min-width: 40rem) {
 				grid-template-columns: 1fr 3fr;
 			}
@@ -89,10 +91,29 @@ permalink: readings.html
 			font-family: var(--font-stack-sans);
 			margin-block: 0.5rem 0;
 		}
+		.readings__reading_hostname {
+			font-size: 0.85rem;
+			inline-size: fit-content;
+			letter-spacing: .015rem;
+			margin-block: 2rem 0;
+			opacity: 0;
+			transition: opacity var(--transition-duration) var(--transition-fn);
+		}
+		.readings__reading:hover .readings__reading_hostname {
+			opacity: 40%;
+		}
+		.readings__reading_hostname::after {
+			content: '→';
+			margin-inline-start: 0.3em;
+			transition: margin-inline-start var(--transition-duration) var(--transition-fn);
+		}
+		.readings__reading:hover .readings__reading_hostname::after {
+			margin-inline-start: 0.5em;
+		}
 	</style>
 	{% for r in readings %}
 		<li class="readings__reading">
-			<a class="readings__reading_link" href="{{ r.link }}" target="_blank">
+		<a class="readings__reading_link" {% if r.link %} href="{{ r.link }}" {% endif %} target="_blank">
 				<div>
 					<p class="readings__reading_author">
 						{% if r.author %}
@@ -114,6 +135,9 @@ permalink: readings.html
 					{% endif %}
 					{% if r.comment %}
 						<p class="readings__reading_comment">{{ r.comment }}</p>
+					{% endif %}
+					{% if r.link %}
+						<p class="readings__reading_hostname" title="{{ r.link }}">{{ r.link | hostname }}</p>
 					{% endif %}
 				</div>
 			</a>
