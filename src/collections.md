@@ -13,8 +13,8 @@ Essays, books, vlogs, lectures, things and whatever-it-may-be’s which have nes
 People I like, and their blogs, podcasts, apps:
 
 - [People whose work I admire](/people)
-- [Indispensable apps](/approll)
 - [Blogroll](/blogroll)
+- [Indispensable apps](/approll)
 - [Podcasts I like (podroll?)](/podroll)
 
 Ah, and one that might actually be _useful_:
