@@ -16,7 +16,7 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [Christian Selig](https://christianselig.com)
 - [Climate Town](https://www.youtube.com/ClimateTown)
 - [DeepBlueInk](https://www.youtube.com/DeepBlueInk)
-- Dr Don & Prof. Ben
+- [Dr Don](https://mastodon.social/@bugcounter) & [Prof. Ben](https://x.com/benjaminchapman)
 - [exurb1a](https://www.youtube.com/Exurb1a)
 - [Goodside Studio](https://www.goodside.studio)
 - [Information Architects](https://ia.net)
