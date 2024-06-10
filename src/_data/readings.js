@@ -3,7 +3,7 @@ export default [
 		author: 'Larry McEnerney',
 		title: 'The Craft of Writing Effectively',
 		link: 'https://youtu.be/vtIzMaLkCaM',
-		media: 'lecture, 1 hr 21 min',
+		media: 'lecture, 1&nbsp;hr 21&nbsp;min',
 		pullquote: null,
 		comment:
 			'I learned more about writing in these 80&nbsp;minutes than my entire schooling life, which conditioned me to believe writing is for demonstrating my own understanding. Bullshit.',
@@ -12,7 +12,7 @@ export default [
 		author: 'Ze Frank',
 		title: 'An Invocation for Beginnings',
 		link: 'https://youtu.be/RYlCVwxoL_g',
-		media: 'video',
+		media: 'video, 3&nbsp;min',
 		pullquote:
 			'My pencils are sharp enough. Even the dull ones will make a mark.',
 		comment:
@@ -111,7 +111,7 @@ export default [
 		author: 'Hank Green',
 		title: 'We’re All Scared',
 		link: 'https://youtu.be/fGmAekTPD5c',
-		media: 'vlog, 4 min',
+		media: 'vlog, 4&nbsp;min',
 		pullquote:
 			'The only way I’ve found to temper the fear of creation is just to create, constantly.',
 		comment: null,
