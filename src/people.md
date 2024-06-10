@@ -12,7 +12,6 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [Arun Venkatesan](https://arun.is)
 - [Bartosz Ciechanowski](https://ciechanow.ski)
 - [Brian Mueller](https://mastodon.social/@brianmueller)
-- [The Browser Company of New York](https://thebrowser.company)
 - [Christian Selig](https://christianselig.com)
 - [Climate Town](https://www.youtube.com/ClimateTown)
 - [DeepBlueInk](https://www.youtube.com/DeepBlueInk)
