@@ -10,4 +10,4 @@ Butterick’s book, [_Practical Typography_](https://practicaltypography.com), t
 
 I use [Eleventy](https://www.11ty.dev) to build this site, and host it with [Netlify](https://www.netlify.com). Its code is [on GitHub](https://github.com/jaskfla/jaskfla.github.io), if that piques your interest. My domain comes via [Gandi](https://www.gandi.net); and DNS stuff runs through Cloudflare’s pipes (though anticipate switching to [DNS Kitchen](https://dns.kitchen)).
 
-This site has [no analytics](https://lai.nz/privacy).
+This site has [no analytics](/privacy).
