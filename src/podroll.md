@@ -8,7 +8,7 @@ Not proud of the title, but it gets the point across—and succinctly.
 
 - [99% Invisible](https://99percentinvisible.org)
 - [The Anthropocene Reviewed](https://www.wnycstudios.org/podcasts/anthropocene-reviewed)
-- [Bionic](https://www.relay.fm/bionic) (and, by extension, [BONANZA](https://www.relay.fm/bonanza))
+- [Bionic](https://www.relay.fm/bionic) (and, by extension, [<span class="caps">BONANZA</span>](https://www.relay.fm/bonanza))
 - [Dear Hank and John](https://overcast.fm/itunes1002937870)
 - [Hello Internet](http://www.hellointernet.fm)
 - [Hypercritical](https://hypercritical.fireside.fm)
