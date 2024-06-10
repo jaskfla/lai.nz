@@ -35,6 +35,14 @@ export default [
 		comment: null,
 	},
 	{
+		author: 'Matthew Butterick',
+		title: 'Practical Typography',
+		link: 'https://practicaltypography.com',
+		media: 'digital book',
+		pullquote: 'You are a typographer.',
+		comment: 'The start of my journey with typography.',
+	},
+	{
 		author: 'Steph Ango',
 		title: 'Great tools choose to be bad at some things',
 		link: 'https://stephanango.com/choose-to-be-bad',
@@ -48,14 +56,6 @@ export default [
 		media: 'static site',
 		pullquote: 'complexity <em>very</em>, <em>very</em> bad',
 		comment: null,
-	},
-	{
-		author: 'Matthew Butterick',
-		title: 'Practical Typography',
-		link: 'https://practicaltypography.com',
-		media: 'digital book',
-		pullquote: null,
-		comment: 'The start of my journey with typography.',
 	},
 	{
 		author: 'Tanizaki Jun’ichirō',
