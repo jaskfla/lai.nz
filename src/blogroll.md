@@ -4,7 +4,7 @@ layout: wordswordswords.liquid
 permalink: blogroll.html
 ---
 
-_Under construction._
+My grand list of good follows. (It’s not that grand, but these are well interesting.)
 
 - [5ives](https://www.5ives.com)
 - [43 Folders](http://www.43folders.com)
