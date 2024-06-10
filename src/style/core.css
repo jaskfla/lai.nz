@@ -79,7 +79,7 @@
 		transition-timing-function: var(--transition-fn);
 	}
 
-	a:hover {
+	a:hover:not([unavailable]) {
 		color: var(--color-fg);
 		text-decoration-color: var(--color-accent);
 		text-decoration-thickness: max(0.1em, 2px);
@@ -88,7 +88,6 @@
 
 	a[unavailable] {
 		cursor: not-allowed;
-		opacity: 50%;
 		text-decoration-style: wavy;
 	}
 

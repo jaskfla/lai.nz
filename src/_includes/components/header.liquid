@@ -32,7 +32,9 @@
 			color: var(--color-fg);
 			text-decoration: none;
 		}
-
+		.header__navigation_link[unavailable] {
+			opacity: 50%;
+		}
 		.header__navigation_link:hover:not([unavailable]) {
 			color: var(--color-fg-2);
 		}
@@ -66,11 +68,11 @@
 			</picture>
 		</a>
 		<nav class="header__navigation">
-			<a class="header__navigation_link" href="/about" unavailable>About</a>
-			<a class="header__navigation_link" href="/now" unavailable>Now</a>
-			<a class="header__navigation_link" href="/lists" unavailable>Lists</a>
-			<a class="header__navigation_link" href="/notes" hidden unavailable>Notes</a>
-			<a class="header__navigation_link" href="/work" unavailable>Work</a>
+			<a class="header__navigation_link" title="Still workin’ on this" unavailable>About</a>
+			<a class="header__navigation_link" title="This too, sorry" unavailable>Now</a>
+			<a class="header__navigation_link" href="/lists">Lists</a>
+			<a class="header__navigation_link" title="Under construction!" unavailable>Notes</a>
+			<a class="header__navigation_link" href="/work" hidden unavailable>Work</a>
 		</nav>
 	</div>
 </header>
