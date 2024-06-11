@@ -8,16 +8,21 @@ layout: base.liquid
 			background-color: transparent;
 		}
 		body {
+			block-size: 100vh;
 			color: var(--color-fg-2);
-			min-height: unset;
 		}
 		main {
-			margin-trim: none;
+			block-size: 100%;
+			display: grid;
+			grid-template-rows: 3fr auto 4fr;
+		}
+		main::before {
+			content: '';
 		}
 		p {
 			cursor: default;
 			font-variant-caps: all-small-caps;
-			margin-block: 45vh 0;
+			margin-block: 0;
 			margin-inline: auto;
 			max-inline-size: 12rem;
 			text-align: center;
