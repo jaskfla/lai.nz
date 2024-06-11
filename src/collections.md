@@ -6,7 +6,7 @@ permalink: collections.html
 
 It’s just a list of lists, really.
 
-Essays, books, vlogs, lectures, things and whatever-it-may-be’s which have nestled in my brain:
+Essays, books, vlogs, lectures and whatever-it-may-be’s which have nestled in my brain:
 
 - [Required reading](/readings)
 
