@@ -24,9 +24,11 @@ permalink: readings.html
       transition-property: border-color, opacity;
       transition-timing-function: var(--transition-fn);
 		}
-		.readings:has(.readings__reading:hover) > .readings__reading:not(:hover) {
-			border-color: transparent;
-			opacity: 40%;
+		@media (hover: hover) {
+			.readings:has(.readings__reading:hover) > .readings__reading:not(:hover) {
+				border-color: transparent;
+				opacity: 40%;
+			}
 		}
 		.readings__reading p {
 			max-inline-size: unset;
