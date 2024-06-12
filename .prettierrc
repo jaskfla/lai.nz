@@ -1,5 +1,13 @@
 {
 	"experimentalTernaries": true,
 	"singleQuote": true,
-	"useTabs": true
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": ["*.liquid"],
+			"options": {
+				"parser": "html"
+			}
+		}
+	]
 }
