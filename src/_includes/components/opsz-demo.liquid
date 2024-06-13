@@ -11,13 +11,17 @@
 	}
 
 	#opsz_hero {
+		--opsz-small: 15;
+		--opsz-large: 33;
+		--optical-size: var(--opsz-large);
+
 		cursor: default;
 		font:
-			clamp(40px, min(8vw, 45vh), 4.5rem) / 1.2 'Warbler Variable',
-			ui-serif;
+		clamp(40px, min(8vw, 45vh), 4.5rem) / 1.2 'Warbler Variable',
+		ui-serif;
 		font-optical-sizing: none;
+		font-variation-settings: 'opsz' var(--optical-size);
 		-webkit-font-smoothing: antialiased;
-		font-variation-settings: 'opsz' 26;
 		hanging-punctuation: first force-end last;
 		text-align: center;
 		text-rendering: geometricPrecision;
@@ -27,21 +31,26 @@
 
 		.fullstop {
 			color: var(--color-accent);
+			display: contents;
 		}
 	}
 
-	#opsz_hero:hover {
-		font-variation-settings: 'opsz' 15;
+	@media (hover: hover) {
+		#opsz_hero:hover {
+			--optical-size: var(--opsz-small);
+		}
 	}
 
 	@supports not (hanging-punctuation: force-end) {
 		#opsz_hero {
-			left: 0.124em;
+			--hang-adjustment-rest: 0.124em;
+			--hang-adjustment-active: 0.103em;
+			left: var(--hang-adjustment-rest);
 			position: relative;
 			transition-property: font-variation-settings, left;
 		}
 		#opsz_hero:hover {
-			left: 0.103em; /* Width of hanging full stop varies with opsz */
+			left: var(--hang-adjustment-active); /* Width of hanging full stop varies with opsz */
 		}
 	}
 </style>
@@ -54,12 +63,12 @@
 		'force-end',
 	);
 
-	opszIsSmall = false;
+	let isAtRest = true;
 	opsz_hero.addEventListener('touchend', (e) => {
-		opsz_hero.style.fontVariationSettings = `'opsz' ${opszIsSmall ? 26 : 15}`;
+		opsz_hero.style.setProperty('--optical-size', isAtRest ? 'var(--opsz-small)' : 'var(--opsz-large)');
 		if (!doesSupportHangingPunctuation) {
-			opsz_hero.style.left = opszIsSmall ? '0.103em' : '0.124em';
+			opsz_hero.style.left = isAtRest ? '--hang-adjustment-rest' : '--hang-adjustment-active';
 		}
-		opszIsSmall = !opszIsSmall;
+		isAtRest = !isAtRest;
 	});
 </script>
