@@ -1,33 +1,46 @@
 :root {
-	--color-fg: oklch(20% 0 0);
-	--color-fg-2: oklch(50% 0 0);
-	--color-bg: oklch(97% 0 0);
-	--color-bg-vibrant: oklch(100% 0 0 / 80%);
-	--color-accent: oklch(75% 0.215 53);
-	--color-accent-translucent: oklch(75% 0.215 53 / 15%);
-	--color-border: oklch(0% 0 0 / 6%);
+	--oklch-fg: 20% 0 0;
+	--oklch-fg-2: 50% 0 0;
+	--oklch-bg: 97% 0 0;
+	--oklch-bg-vibrant: 100% 0 0 / 80%;
+	--oklch-accent: 75% 0.215 53;
+	--oklch-black: 0% 0 0;
+	--oklch-white: 100% 0 0;
+
+	--color-fg: oklch(var(--oklch-fg));
+	--color-fg-2: oklch(var(--oklch-fg-2));
+	--color-bg: oklch(var(--oklch-bg));
+	--color-bg-vibrant: oklch(var(--oklch-white) / 80%);
+	--color-accent: oklch(var(--oklch-accent));
+	--color-accent-translucent: oklch(var(--oklch-accent) / 15%);
+	--color-border: oklch(var(--oklch-black) / 6%);
+	--color-selection: oklch(85% 0 0 / 30%);
 	--bg-blur: blur(20px) saturate(130%);
 
 	@media (prefers-contrast: more) {
-		--color-fg: oklch(15% 0 0);
-		--color-fg-2: var(--color-fg);
+		--oklch-fg: 15% 0 0;
+		--oklch-fg-2: 30% 0 0;
+
 		--color-bg-vibrant: var(--color-bg);
-		--color-border: oklch(0% 0 0 / 12%);
+		--color-border: oklch(var(--oklch-black) / 12%);
 	}
 
 	@media (prefers-color-scheme: dark) {
-		--color-fg: oklch(88% 0.015 202);
-		--color-fg-2: oklch(70% 0.015 202);
-		--color-bg: oklch(20.5% 0.04 202);
-		--color-bg-vibrant: oklch(20.5% 0.04 202 / 80%);
-		--color-accent: oklch(80% 0.194 74.5);
-		--color-border: oklch(100% 0 0 / 15%);
+		--oklch-fg: 88% 0.015 202;
+		--oklch-fg-2: 70% 0.015 202;
+		--oklch-bg: 20.5% 0.04 202;
+		--oklch-accent: 80% 0.194 74.5;
+
+		--color-border: oklch(var(--oklch-white) / 15%);
+		--color-bg-vibrant: oklch(var(--oklch-bg) / 80%);
+		--color-selection: oklch(55% 0.015 202 / 12%);
 
 		@media (prefers-contrast: more) {
-			--color-fg: oklch(90% 0.015 202);
-			--color-fg-2: var(--color-fg);
+			--oklch-fg: 94% 0.015 202;
+			--oklch-fg-2: 85% 0.015 202;
+
 			--color-bg-vibrant: var(--color-bg);
-			--color-border: oklch(100% 0 0 / 25%);
+			--color-border: oklch(var(--oklch-white) / 25%);
 		}
 	}
 }
