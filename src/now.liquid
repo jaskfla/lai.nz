@@ -66,8 +66,14 @@ permalink: now.html
 			list-style-type: none;
 			margin-block: unset;
 		}
+		@media (hover: hover) {
+			.coverflow__content:has(:hover) > .coverflow__item:not(:hover) {
+				filter: saturate(30%);
+			}
+		}
 		.coverflow__item {
 			margin-block: 0;
+			transition: filter 250ms var(--transition-fn);
 		}
 		.coverflow__img {
 			block-size: var(--coverflow-block-size);
