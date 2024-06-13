@@ -160,6 +160,15 @@
 	</div>
 </footer>
 <script>
+	const randomElementFrom = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+	const signoffs = [
+		'Hand-coded in big-little Tāmaki Makaurau',
+		'Hand-coded in downtown Auckland, New Zealand',
+		// 'Well wishes from downtown Tāmaki Makaurau',
+	];
+	signoff.innerHTML = randomElementFrom(signoffs);
+
 	const quips = [
 		'<a href="http://wisdom.limo">Looking for the chimneys</a>',
 		'<a href="https://nerdfighteria.info/v/307598550/">Memento mori</a>&nbsp;😊',
@@ -179,12 +188,5 @@
 		'The truth resists simplicity',
 		'You don’t have to be a prodigy to be unique (<a href="https://songwhip.com/cavetown/talk-to-me">Cavetown,&nbsp;2019</a>)',
 	];
-	quip.innerHTML = quips[Math.floor(Math.random() * quips.length)];
-
-	const signoffs = [
-		'Hand-coded in big-little Tāmaki Makaurau',
-		'Hand-coded in downtown Auckland, New Zealand',
-		'Well wishes from Tāmaki Makaurau'
-	];
-	signoff.innerHTML = signoffs[Math.floor(Math.random() * signoffs.length)];
+	quip.innerHTML = randomElementFrom(quips);
 </script>
