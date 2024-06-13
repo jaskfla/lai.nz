@@ -1,59 +1,23 @@
-/* Warbler Variable */
+/* Warbler */
 
 @font-face {
-	font-family: 'Warbler Variable';
+	font-family: 'Warbler';
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 400 700;
 	font-display: swap;
-	src: url('/fonts/WarblerVariableV1-VF.woff2') format('woff2'),
-		url('/fonts/WarblerVariableV1-VF.woff') format('woff');
+	src:
+		url('/fonts/WarblerVariable[opsz,wght].woff2') format('woff2'),
+		url('/fonts/WarblerVariable[opsz,wght].woff') format('woff');
 }
 
 @font-face {
-	font-family: 'Warbler Variable';
+	font-family: 'Warbler';
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 400 700;
 	font-display: swap;
-	src: url('/fonts/WarblerVariableV1-Italic[opsz].woff2') format('woff2'),
-		url('/fonts/WarblerVariableV1-Italic[opsz].woff') format('woff');
-}
-
-/* Warbler Text */
-
-@font-face {
-	font-family: 'Warbler Text';
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url('/fonts/WarblerTextV1.2.woff2') format('woff2'),
-		url('/fonts/WarblerTextV1.2.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Warbler Text';
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-	src: url('/fonts/WarblerTextV1.2_Bold.woff2') format('woff2'),
-		url('/fonts/WarblerTextV1.2_Bold.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Warbler Text';
-	font-style: italic;
-	font-weight: 400;
-	font-display: swap;
-	src: url('/fonts/WarblerTextV1.2_Italic.woff2') format('woff2'),
-		url('/fonts/WarblerTextV1.2_Italic.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Warbler Text';
-	font-style: italic;
-	font-weight: 700;
-	font-display: swap;
-	src: url('/fonts/WarblerTextV1.2_Bold_Italic.woff2') format('woff2'),
-		url('/fonts/WarblerTextV1.2_Bold_Italic.woff') format('woff');
+	src:
+		url('/fonts/WarblerVariable-Italic[opsz,wght].woff2') format('woff2'),
+		url('/fonts/WarblerVariable-Italic[opsz,wght].woff') format('woff');
 }
 
 /* Concourse */
@@ -63,7 +27,8 @@
 	font-style: normal;
 	font-weight: 300;
 	font-display: swap;
-	src: url('/fonts/Concourse_3.woff2') format('woff2'),
+	src:
+		url('/fonts/Concourse_3.woff2') format('woff2'),
 		url('/fonts/Concourse_3.woff') format('woff');
 }
 
@@ -72,7 +37,8 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url('/fonts/Concourse_4.woff2') format('woff2'),
+	src:
+		url('/fonts/Concourse_4.woff2') format('woff2'),
 		url('/fonts/Concourse_4.woff') format('woff');
 }
 
@@ -81,7 +47,8 @@
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
-	src: url('/fonts/Concourse_6.woff2') format('woff2'),
+	src:
+		url('/fonts/Concourse_6.woff2') format('woff2'),
 		url('/fonts/Concourse_6.woff') format('woff');
 }
 
@@ -90,7 +57,8 @@
 	font-style: italic;
 	font-weight: 300;
 	font-display: swap;
-	src: url('/fonts/Concourse_3_Italic.woff2') format('woff2'),
+	src:
+		url('/fonts/Concourse_3_Italic.woff2') format('woff2'),
 		url('/fonts/Concourse_3_Italic.woff') format('woff');
 }
 
@@ -99,7 +67,8 @@
 	font-style: italic;
 	font-weight: 400;
 	font-display: swap;
-	src: url('/fonts/Concourse_4_Italic.woff2') format('woff2'),
+	src:
+		url('/fonts/Concourse_4_Italic.woff2') format('woff2'),
 		url('/fonts/Concourse_4_Italic.woff') format('woff');
 }
 
@@ -108,7 +77,8 @@
 	font-style: italic;
 	font-weight: 600;
 	font-display: swap;
-	src: url('/fonts/Concourse_6_Italic.woff2') format('woff2'),
+	src:
+		url('/fonts/Concourse_6_Italic.woff2') format('woff2'),
 		url('/fonts/Concourse_6_Italic.woff') format('woff');
 }
 
