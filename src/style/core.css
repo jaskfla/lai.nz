@@ -24,6 +24,10 @@
 		--transition-fn: cubic-bezier(0.64, 0.045, 0.35, 1);
 	}
 
+	::selection {
+		background-color: var(--color-selection);
+	}
+
 	html {
 		background-color: var(--color-bg);
 		color: var(--color-fg);
