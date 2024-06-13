@@ -160,13 +160,22 @@
 	</div>
 </footer>
 <script>
+	const randomElementFrom = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+	const signoffs = [
+		'Hand-coded in big-little Tāmaki Makaurau',
+		'Hand-coded in downtown Auckland, New Zealand',
+		// 'Well wishes from downtown Tāmaki Makaurau',
+	];
+	signoff.innerHTML = randomElementFrom(signoffs);
+
 	const quips = [
 		'<a href="http://wisdom.limo">Looking for the chimneys</a>',
-		'<a href="https://nerdfighteria.info/v/307598550/">Memento mori</a>&nbsp;😊',
+		'<a href="https://nerdfighteria.info/v/307598550">Memento mori</a>&nbsp;😊',
 		'<a href="https://overcast.fm/+BmEPOwtek">Keep moving <em>and</em> get out of the way</a>',
 		'<a href="https://youtu.be/FyQi79aYfxU?t=73">Don’t forget to be awesome!</a>&nbsp;🎃🐧',
 		'<span title="Any ideas? Please contact me!">Still brainstorming a name-specific sign-off,&emsp;<span class="caps">—Jasper</span></span>',
-		'Anticipating the next episode of <a href="https://www.relay.fm/bonanza"><span class="caps">BONANZA</span></a>&nbsp;🛟',
+		'Anticipating the next episode of <a class="caps" href="https://www.relay.fm/bonanza">BONANZA</a>&nbsp;🛟',
 		'Curating pixels since 2018',
 		'Eternally browsing for fonts',
 		'Farm-to-table pixels since 2018',
@@ -179,11 +188,5 @@
 		'The truth resists simplicity',
 		'You don’t have to be a prodigy to be unique (<a href="https://songwhip.com/cavetown/talk-to-me">Cavetown,&nbsp;2019</a>)',
 	];
-	quip.innerHTML = quips[Math.floor(Math.random() * quips.length)];
-
-	const signoffs = [
-		'Hand-coded in big-little Tāmaki Makaurau',
-		'Hand-coded in downtown Auckland, New Zealand',
-	];
-	signoff.innerHTML = signoffs[Math.floor(Math.random() * signoffs.length)];
+	quip.innerHTML = randomElementFrom(quips);
 </script>
