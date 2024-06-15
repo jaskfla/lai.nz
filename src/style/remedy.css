@@ -80,6 +80,7 @@ abbr {
 }
 
 hr {
+	border-inline: 0;
 	box-sizing: content-box;
 	height: 0;
 }

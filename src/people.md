@@ -20,6 +20,7 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [exurb1a](https://www.youtube.com/Exurb1a)
 - [Goodside Studio](https://www.goodside.studio)
 - [Information Architects](https://ia.net)
+- [James Hoffmann](https://www.jameshoffmann.co.uk)
 - [Jay Foreman](https://www.youtube.com/JayForeman)
 - [Jen Simmons](http://jensimmons.com)
 - [Lady Sophie](https://songwhip.com/ladysophie/one-night-only-to-the-boy-who-broke-my-heart)

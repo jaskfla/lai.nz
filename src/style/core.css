@@ -29,7 +29,17 @@
 	}
 
 	html {
-		background-color: var(--color-bg);
+		--noise-mask-blend-mode: darken;
+		background: linear-gradient(oklch(var(--oklch-bg) / 96.5%), var(--color-bg)),
+			url('/images/noise.jpg'), var(--color-bg);
+		background: linear-gradient(oklch(var(--oklch-bg) / 96.5%), var(--color-bg)),
+			image-set(
+				'/images/noise.heic' type('image/heif'),
+				'/images/noise.webp' type('image/webp'),
+				'/images/noise.jpg' type('image/jpeg')
+			),
+			var(--color-bg);
+		background-blend-mode: normal, var(--noise-mask-blend-mode), normal;
 		color: var(--color-fg);
 		font-family: var(--font-stack-sans);
 		font-feature-settings: var(--font-features-concourse);
@@ -41,6 +51,7 @@
 
 	@media screen and (prefers-color-scheme: dark) {
 		html {
+			--noise-mask-blend-mode: lighten;
 			font-weight: 300;
 		}
 	}
@@ -54,7 +65,8 @@
 	}
 
 	hr {
-		border: var(--delineation);
+		border-block-start: 0;
+		border-block-end: var(--delineation);
 	}
 
 	p {
