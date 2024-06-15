@@ -1,8 +1,7 @@
 :root {
+	--oklch-bg: 97% 0 0;
 	--oklch-fg: 20% 0 0;
 	--oklch-fg-2: 50% 0 0;
-	--oklch-bg: 97% 0 0;
-	--oklch-bg-vibrant: 100% 0 0 / 80%;
 	--oklch-accent: 75% 0.215 53;
 	--oklch-black: 0% 0 0;
 	--oklch-white: 100% 0 0;
@@ -18,6 +17,7 @@
 	--bg-blur: blur(20px) saturate(130%);
 
 	@media (prefers-contrast: more) {
+		--oklch-bg: 100% 0 0;
 		--oklch-fg: 15% 0 0;
 		--oklch-fg-2: 30% 0 0;
 
