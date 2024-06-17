@@ -92,6 +92,7 @@
 	}
 
 	a {
+		border-radius: 0.25em;
 		color: var(--color-fg-2);
 		text-decoration-color: var(--color-border);
 		text-decoration-line: underline;
