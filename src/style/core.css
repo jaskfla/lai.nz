@@ -1,7 +1,7 @@
-@media screen {
+@layer core {
 	body.debug * {
 		border: 0;
-		outline: 0.5px solid magenta;
+		outline: 0.5px solid oklch(61% 0.27 15);
 		outline-offset: 0;
 	}
 
