@@ -29,17 +29,23 @@
 	}
 
 	html {
-		--noise-mask-blend-mode: darken;
-		background: linear-gradient(oklch(var(--oklch-bg) / 96.5%), var(--color-bg)),
-			url('/images/noise.jpg'), var(--color-bg);
-		background: linear-gradient(oklch(var(--oklch-bg) / 96.5%), var(--color-bg)),
-			image-set(
-				'/images/noise.heic' type('image/heif'),
-				'/images/noise.webp' type('image/webp'),
-				'/images/noise.jpg' type('image/jpeg')
-			),
-			var(--color-bg);
-		background-blend-mode: normal, var(--noise-mask-blend-mode), normal;
+		@media screen {
+			--noise-mask: radial-gradient(
+				circle at 50% -25vh,
+				oklch(var(--oklch-bg) / 95.5%) 0,
+				var(--color-bg) 200vh
+			);
+			--noise-mask-blend-mode: darken;
+			background: var(--noise-mask), url('/images/noise.jpg'), var(--color-bg);
+			background: var(--noise-mask),
+				image-set(
+					'/images/noise.heic' type('image/heif'),
+					'/images/noise.webp' type('image/webp'),
+					'/images/noise.jpg' type('image/jpeg')
+				),
+				var(--color-bg);
+			background-blend-mode: normal, var(--noise-mask-blend-mode), normal;
+		}
 		color: var(--color-fg);
 		font-family: var(--font-stack-sans);
 		font-feature-settings: var(--font-features-concourse);
