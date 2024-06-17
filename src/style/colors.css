@@ -26,7 +26,7 @@
 	}
 
 	@media (prefers-color-scheme: dark) {
-		--oklch-fg: 88% 0.015 202;
+		--oklch-fg: 85% 0.015 202;
 		--oklch-fg-2: 70% 0.015 202;
 		--oklch-bg: 20.5% 0.04 202;
 		--oklch-accent: 80% 0.194 74.5;
