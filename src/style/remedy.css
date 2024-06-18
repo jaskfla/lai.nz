@@ -104,6 +104,15 @@ svg,
 video {
 	display: block;
 	max-width: 100%;
+	vertical-align: middle; /* If `display` value is overridden */
+}
+
+audio:not([controls]) {
+	display: none;
+}
+
+audio {
+	width: 100%;
 }
 
 canvas,
@@ -115,8 +124,12 @@ video {
 	height: auto;
 }
 
-audio {
-	width: 100%;
+picture {
+	display: contents;
+}
+
+source {
+	display: none;
 }
 
 fieldset {
