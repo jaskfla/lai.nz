@@ -64,6 +64,7 @@
 
 	body {
 		inline-size: 100%;
+		line-height: 1.45;
 	}
 
 	section {
@@ -78,7 +79,6 @@
 	p {
 		/* font-optical-sizing: none;
 		font-variation-settings: 'opsz' 16; */
-		line-height: 1.45;
 	}
 
 	h1,
@@ -86,9 +86,12 @@
 	h3,
 	h4,
 	h5,
-	h6 {
+	h6,
+	button,
+	input,
+	label {
 		text-wrap: balance;
-		line-height: 1.25;
+		line-height: 1.15;
 	}
 
 	a {
