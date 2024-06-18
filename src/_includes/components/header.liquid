@@ -17,9 +17,11 @@
 			margin-inline: auto;
 		}
 
+		.header__logo {
+			transition: opacity 200ms var(--transition-fn);
+		}
 		.header__logo:hover {
 			opacity: 50%;
-			transition: opacity 0.3s ease;
 		}
 
 		.header__navigation {
@@ -40,8 +42,8 @@
 		}
 	</style>
 	<div class="header__safe-area">
-		<a href="/">
-			<picture class="header__logo">
+		<a class="header__logo" href="/">
+			<picture>
 				<source
 					media="(prefers-color-scheme: light)"
 					srcset="/images/avatar.svg"
