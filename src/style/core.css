@@ -10,7 +10,8 @@ body.debug * {
 	--font-stack-serif: 'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro',
 		ui-serif, serif;
 	--font-stack-display: 'Warbler Variable', var(--font-stack-serif);
-	--font-stack-mono: 'MD IO', ui-monospace, 'IBM Plex Mono', monospace;
+	--font-stack-mono: ui-monospace, SFMono-Regular, 'SF Mono', 'IBM Plex Mono',
+		monospace;
 	--font-features-concourse: 'ss13', 'ss16';
 
 	--top-level-padding-top: max(env(safe-area-inset-top), 0);
@@ -94,7 +95,7 @@ label {
 }
 
 a {
-	border-radius: 0.25em;
+	border-radius: 0.3em;
 	color: var(--color-fg-2);
 	text-decoration-color: var(--color-border);
 	text-decoration-line: underline;
@@ -121,4 +122,22 @@ a[unavailable] {
 abbr,
 .caps {
 	font-variant-caps: all-small-caps;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: var(--font-stack-mono);
+	font-size: 83%;
+	font-variant-numeric: lining-nums;
+	font-weight: 475;
+	letter-spacing: -0.01em;
+}
+
+code {
+	background-color: oklch(var(--oklch-fg-2) / 8%);
+	border-radius: 0.3em;
+	padding-block: 0.2em;
+	padding-inline: 0.3em;
 }
