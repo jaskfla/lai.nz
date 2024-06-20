@@ -1,126 +1,124 @@
-@layer core {
-	body.debug * {
-		border: 0;
-		outline: 0.5px solid oklch(61% 0.27 15);
-		outline-offset: 0;
+body.debug * {
+	border: 0;
+	outline: 0.5px solid oklch(61% 0.27 15);
+	outline-offset: 0;
+}
+
+:root {
+	--font-stack-sans: Concourse, system-ui, -apple-system, BlinkMacSystemFont,
+		Inter, 'Segoe UI', 'Helvetica Neue', sans-serif;
+	--font-stack-serif: 'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro',
+		ui-serif, serif;
+	--font-stack-display: 'Warbler Variable', var(--font-stack-serif);
+	--font-stack-mono: 'MD IO', ui-monospace, 'IBM Plex Mono', monospace;
+	--font-features-concourse: 'ss13', 'ss16';
+
+	--top-level-padding-top: max(env(safe-area-inset-top), 0);
+	--top-level-padding-bottom: max(env(safe-area-inset-bottom), 0);
+	--top-level-padding-left: max(env(safe-area-inset-left), 1.75rem);
+	--top-level-padding-right: max(env(safe-area-inset-right), 1.75rem);
+
+	--content-width: min(52rem, 100%);
+	--delineation: 1px solid var(--color-border);
+	--transition-fn: cubic-bezier(0.64, 0.045, 0.35, 1);
+}
+
+::selection {
+	background-color: var(--color-selection);
+}
+
+html {
+	@media screen {
+		--noise-image: url('/images/noise.jpg'); /* Fallback */
+		--noise-image: image-set(
+			'/images/noise.heic' type('image/heif'),
+			'/images/noise.webp' type('image/webp'),
+			'/images/noise.jpg' type('image/jpeg')
+		);
+		--noise-mask: radial-gradient(
+			circle at 50% -25vh,
+			oklch(var(--oklch-bg) / 95.5%) 0,
+			var(--color-bg) 200vh
+		);
+		--noise-mask-blend-mode: darken;
+		background: var(--noise-mask), var(--noise-image), var(--color-bg);
+		background-blend-mode: normal, var(--noise-mask-blend-mode), normal;
 	}
 
-	:root {
-		--font-stack-sans: Concourse, system-ui, -apple-system, BlinkMacSystemFont,
-			Inter, 'Segoe UI', 'Helvetica Neue', sans-serif;
-		--font-stack-serif: 'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro',
-			ui-serif, serif;
-		--font-stack-display: 'Warbler Variable', var(--font-stack-serif);
-		--font-stack-mono: 'MD IO', ui-monospace, 'IBM Plex Mono', monospace;
-		--font-features-concourse: 'ss13', 'ss16';
+	color: var(--color-fg);
+	font-family: var(--font-stack-sans);
+	font-feature-settings: var(--font-features-concourse);
+	font-size: clamp(17px, 1.35vw, 25px);
+	font-weight: 400;
+	font-variant-numeric: oldstyle-nums;
+	text-combine-upright: digits;
+}
 
-		--top-level-padding-top: max(env(safe-area-inset-top), 0);
-		--top-level-padding-bottom: max(env(safe-area-inset-bottom), 0);
-		--top-level-padding-left: max(env(safe-area-inset-left), 1.75rem);
-		--top-level-padding-right: max(env(safe-area-inset-right), 1.75rem);
-
-		--content-width: min(52rem, 100%);
-		--delineation: 1px solid var(--color-border);
-		--transition-fn: cubic-bezier(0.64, 0.045, 0.35, 1);
-	}
-
-	::selection {
-		background-color: var(--color-selection);
-	}
-
+@media screen and (prefers-color-scheme: dark) {
 	html {
-		@media screen {
-			--noise-image: url('/images/noise.jpg'); /* Fallback */
-			--noise-image: image-set(
-				'/images/noise.heic' type('image/heif'),
-				'/images/noise.webp' type('image/webp'),
-				'/images/noise.jpg' type('image/jpeg')
-			);
-			--noise-mask: radial-gradient(
-				circle at 50% -25vh,
-				oklch(var(--oklch-bg) / 95.5%) 0,
-				var(--color-bg) 200vh
-			);
-			--noise-mask-blend-mode: darken;
-			background: var(--noise-mask), var(--noise-image), var(--color-bg);
-			background-blend-mode: normal, var(--noise-mask-blend-mode), normal;
-		}
-
-		color: var(--color-fg);
-		font-family: var(--font-stack-sans);
-		font-feature-settings: var(--font-features-concourse);
-		font-size: clamp(17px, 1.35vw, 25px);
-		font-weight: 400;
-		font-variant-numeric: oldstyle-nums;
-		text-combine-upright: digits;
+		--noise-mask-blend-mode: lighten;
+		font-weight: 300;
 	}
+}
 
-	@media screen and (prefers-color-scheme: dark) {
-		html {
-			--noise-mask-blend-mode: lighten;
-			font-weight: 300;
-		}
-	}
+body {
+	inline-size: 100%;
+	line-height: 1.45;
+}
 
-	body {
-		inline-size: 100%;
-		line-height: 1.45;
-	}
+section {
+	margin-trim: block;
+}
 
-	section {
-		margin-trim: block;
-	}
+hr {
+	border-block-start: 0;
+	border-block-end: var(--delineation);
+}
 
-	hr {
-		border-block-start: 0;
-		border-block-end: var(--delineation);
-	}
-
-	p {
-		/* font-optical-sizing: none;
+p {
+	/* font-optical-sizing: none;
 		font-variation-settings: 'opsz' 16; */
-	}
+}
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	button,
-	input,
-	label {
-		text-wrap: balance;
-		line-height: 1.15;
-	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+label {
+	text-wrap: balance;
+	line-height: 1.15;
+}
 
-	a {
-		border-radius: 0.25em;
-		color: var(--color-fg-2);
-		text-decoration-color: var(--color-border);
-		text-decoration-line: underline;
-		text-decoration-style: solid;
-		text-underline-offset: 0;
-		transition-property: color, text-decoration-color, text-decoration-thickness,
-			text-underline-offset;
-		transition-duration: 200ms;
-		transition-timing-function: var(--transition-fn);
-	}
+a {
+	border-radius: 0.25em;
+	color: var(--color-fg-2);
+	text-decoration-color: var(--color-border);
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-underline-offset: 0;
+	transition-property: color, text-decoration-color, text-decoration-thickness,
+		text-underline-offset;
+	transition-duration: 200ms;
+	transition-timing-function: var(--transition-fn);
+}
 
-	a:hover:not([unavailable]) {
-		color: var(--color-fg);
-		text-decoration-color: var(--color-accent);
-		text-decoration-thickness: max(0.1em, 2px);
-		text-underline-offset: max(0.04em, 1px);
-	}
+a:hover:not([unavailable]) {
+	color: var(--color-fg);
+	text-decoration-color: var(--color-accent);
+	text-decoration-thickness: max(0.1em, 2px);
+	text-underline-offset: max(0.04em, 1px);
+}
 
-	a[unavailable] {
-		cursor: not-allowed;
-		text-decoration-style: wavy;
-	}
+a[unavailable] {
+	cursor: not-allowed;
+	text-decoration-style: wavy;
+}
 
-	abbr,
-	.caps {
-		font-variant-caps: all-small-caps;
-	}
+abbr,
+.caps {
+	font-variant-caps: all-small-caps;
 }
