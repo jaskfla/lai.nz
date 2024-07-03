@@ -13,6 +13,7 @@ Not proud of the title, but it gets the point across—and succinctly.
 - [Do By Friday](https://dobyfriday.com)
 - [Hello Internet](http://www.hellointernet.fm)
 - [Hypercritical](https://hypercritical.fireside.fm)
+- [Lexicon Valley](https://lexiconvalley.substack.com)
 - [Roderick on the Line](http://www.merlinmann.com/roderick)
 - [Strong Songs](https://strongsongspodcast.com)
 - [Reconcilable Differences](https://www.relay.fm/rd)
