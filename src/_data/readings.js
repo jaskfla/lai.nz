@@ -86,7 +86,7 @@ export default [
 		author: 'Merlin Mann',
 		title: 'Inbox Zero',
 		link: 'https://youtu.be/z9UjeTMb3Yk',
-		media: 'Google Tech Talk',
+		media: 'tech talk',
 		pullquote: null,
 		comment: 'I don’t think it means what you think it means.',
 	},
