@@ -1,5 +1,5 @@
 ---
-title: Indie foundries
+title: Indie font foundries
 layout: wordswordswords.liquid
 permalink: font-foundries.html
 ---
