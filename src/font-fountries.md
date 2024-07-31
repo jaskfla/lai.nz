@@ -44,5 +44,5 @@ Buy from independent typeface designers. There’s no need to support <a href="h
 
 These two are more _catalogue_ than _foundry_:
 
-- [Future Fonts](https://www.futurefonts.xyz)
-- [UNCUT.wtf](https://uncut.wtf)
+- <a href="https://www.futurefonts.xyz" target="_blank">Future Fonts</a>
+- <a href="https://uncut.wtf" target="_blank"><span class="caps">UNCUT</span>.wtf</a>
