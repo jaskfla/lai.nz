@@ -25,8 +25,8 @@ export default [
 		link: 'https://winsonbrooklyn.com/cookbook',
 	},
 	{
-		title: 'Our Flag Means Death',
-		coverPath: '/images/cover-art/our-flag-means-death-500',
-		link: 'https://www.justwatch.com/nz/tv-show/our-flag-means-death',
+		title: 'Bloomburrow',
+		coverPath: '/images/cover-art/mtg__bloomburrow-500',
+		link: 'https://magic.wizards.com/en/products/bloomburrow/card-image-gallery',
 	},
 ];
