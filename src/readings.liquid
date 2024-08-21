@@ -57,23 +57,16 @@ permalink: readings.html
 			margin-block: 0;
 		}
 		.readings__reading_media {
+			color: var(--color-fg-2);
 			font-size: 0.85rem;
 			letter-spacing: 0.01em;
-			opacity: 65%;
 			margin-block-end: .5rem;
 		}
 		.readings__reading_title {
-			font-family: var(--font-serif);
-			font-size: 1rem;
-			font-style: italic;
-			font-weight: 400;
-			line-height: 1.3;
+			font: italic 400 1rem / 1.3 var(--font-serif);
 		}
 		.readings__reading_pullquote {
-			font-family: var(--font-serif);
-			font-size: 2rem;
-			font-weight: 700;
-			line-height: 1.15;
+			font: 700 2rem / 1.15 var(--font-serif);
 			margin-block: 0;
 			opacity: 93%;
 			text-wrap: balance;
@@ -94,6 +87,7 @@ permalink: readings.html
 			margin-block: 0.5rem 0;
 		}
 		.readings__reading_hostname {
+			color: var(--color-fg-2);
 			font-size: 0.85rem;
 			inline-size: fit-content;
 			letter-spacing: .015rem;
@@ -102,9 +96,10 @@ permalink: readings.html
 			transition: opacity var(--transition-duration) var(--transition-fn);
 		}
 		.readings__reading:hover .readings__reading_hostname {
-			opacity: 40%;
+			opacity: 100%;
 		}
 		.readings__reading_hostname::after {
+			color: var(--color-accent);
 			content: '→';
 			margin-inline-start: 0.3em;
 			transition: margin-inline-start var(--transition-duration) var(--transition-fn);
