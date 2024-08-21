@@ -17,7 +17,7 @@
 	--bg-blur: blur(20px) saturate(130%);
 
 	@media (prefers-contrast: more) {
-		--oklch-bg: 100% 0 0;
+		--oklch-bg: var(--oklch-white);
 		--oklch-fg: 15% 0 0;
 		--oklch-fg-2: 30% 0 0;
 

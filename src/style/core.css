@@ -5,12 +5,12 @@ body.debug * {
 }
 
 :root {
-	--font-stack-sans: Concourse, system-ui, -apple-system, BlinkMacSystemFont,
-		Inter, 'Segoe UI', 'Helvetica Neue', sans-serif;
-	--font-stack-serif: 'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro',
-		ui-serif, serif;
-	--font-stack-display: 'Warbler Variable', var(--font-stack-serif);
-	--font-stack-mono: ui-monospace, SFMono-Regular, 'SF Mono', 'IBM Plex Mono',
+	--font-sans: Concourse, system-ui, -apple-system, BlinkMacSystemFont, Inter,
+		'Segoe UI', 'Helvetica Neue', sans-serif;
+	--font-serif: 'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro', ui-serif,
+		serif;
+	--font-display: 'Warbler Variable', var(--font-serif);
+	--font-mono: ui-monospace, SFMono-Regular, 'SF Mono', 'IBM Plex Mono',
 		monospace;
 	--font-features-concourse: 'ss13', 'ss16';
 
@@ -24,7 +24,7 @@ body.debug * {
 	--transition-duration-sensible: 225ms;
 	--transition-duration-relaxed: 300ms;
 	--transition-duration-snail: 500ms;
-	--transition-duration-glacial: 1000ms;
+	--transition-duration-glacial: 1s;
 	--transition-fn: cubic-bezier(0.64, 0.045, 0.35, 1);
 
 	--content-width: min(52rem, 100%);
@@ -54,7 +54,7 @@ html {
 	}
 
 	color: var(--color-fg);
-	font-family: var(--font-stack-sans);
+	font-family: var(--font-sans);
 	font-feature-settings: var(--font-features-concourse);
 	font-size: clamp(17px, 1.35vw, 25px);
 	font-weight: 400;
@@ -135,7 +135,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: var(--font-stack-mono);
+	font-family: var(--font-mono);
 	font-size: 83%;
 	font-variant-numeric: lining-nums;
 	font-weight: 475;
