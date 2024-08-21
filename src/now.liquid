@@ -69,11 +69,13 @@ permalink: now.html
 		@media (hover: hover) {
 			.coverflow__content:has(:hover) > .coverflow__item:not(:hover) {
 				filter: saturate(30%);
+				opacity: 85%;
 			}
 		}
 		.coverflow__item {
 			margin-block: 0;
-			transition: filter 250ms var(--transition-fn);
+			transition: filter var(--transition-duration-sensible) var(--transition-fn),
+				opacity var(--transition-duration-sensible) var(--transition-fn);
 		}
 		.coverflow__img {
 			block-size: var(--coverflow-block-size);
