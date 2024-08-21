@@ -39,12 +39,9 @@
 			text-decoration: none;
 		}
 
-		.footer__safe-area nav a:hover {
-			color: var(--color-fg-2);
-		}
-
+		.footer__safe-area nav a:hover,
 		.footer__safe-area nav a[unavailable] {
-			color: unset;
+			color: var(--color-fg-2);
 		}
 
 		#signoff_container {
@@ -91,71 +88,32 @@
 				<p id="thanks">Thanks for dropping by</p>
 			</div>
 			<div>
-				<h3>Here</h3>
-				<ul id="here-links">
-					<li><a href="/accessibility">Accessibility</a></li>
-					<li><a href="/privacy">Privacy</a></li>
-					<li><a href="/colophon">Colophon</a></li>
-					<li>
-						<a href="/blank">
-							<abbr title="this page intentionally left blank">TPILB</abbr>
-						</a>
-					</li>
+				<h3>Browse</h3>
+				<ul id="browse-links">
+					<li><a unavailable>About</a></li>
+					<li><a href="/now">Now</a></li>
+					<li><a href="/collections">Collections</a></li>
+					<li><a unavailable>Blog</a></li>
+					<li><a href="/links">Contact</a></li>
 				</ul>
 			</div>
 			<div>
-				<h3>Elsewhere</h3>
-				<ul id="elsewhere-links">
-					<li>
-						<a
-							class="external"
-							title="jaskfla"
-							href="https://github.com/jaskfla"
-							target="_blank"
-							>GitHub</a
-						>
-					</li>
-					<li>
-						<a
-							class="external"
-							title="@jasperlai@mastodon.online"
-							href="https://mastodon.online/@jasperlai"
-							rel="me"
-							target="_blank"
-							>Mastodon</a
-						>
-					</li>
-					<li>
-						<a
-							class="external"
-							title="@_JasperLai"
-							href="https://x.com/_JasperLai"
-							target="_blank"
-							><s>Twitter</s></a
-						>
-					</li>
-					<li>
-						<a
-							class="external"
-							title="jasperlai"
-							href="https://discordapp.com/users/228441721246056449"
-							target="_blank"
-							>Discord</a
-						>
-					</li>
-					<li>
-						<a
-							class="external"
-							title="jasperlai"
-							href="https://www.linkedin.com/in/jasperlai"
-							target="_blank"
-							>LinkedIn</a
-						>
-					</li>
+				<h3>Info</h3>
+				<ul id="info-links">
+					<li><a href="/accessibility">Accessibility</a></li>
+					<li><a href="/privacy">Privacy</a></li>
+					<li><a href="/colophon">Colophon</a></li>
+					<li><a href="https://github.com/jaskfla/lai.nz" target="_blank">View source</a></li>
 				</ul>
 			</div>
 		</nav>
 		<p id="quip"></p>
+		<a
+			href="https://mastodon.online/@jasperlai"
+			rel="me"
+			style="display: none"
+			></a
+		>
 	</div>
 </footer>
 <script>
