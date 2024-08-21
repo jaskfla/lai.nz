@@ -26,7 +26,7 @@ permalink: now.html
 <p>
 	Researching
 	<a href="https://part4project.foe.auckland.ac.nz/home/project/detail/5167" target="_blank"
-		>how LLMs can be used to improve the development of ontologies</a
+		>how LLMs can be used to improve ontology learning</a
 	>. Running with my partner, swimming. Learnin’ to cook more Taiwanese food.
 </p>
 <h2 class="run-in">Obsessing about</h2>
@@ -81,6 +81,16 @@ permalink: now.html
 			border: var(--delineation);
 			inline-size: auto;
 		}
+		.coverflow__text-item {
+			align-content: end;
+			aspect-ratio: 4 / 3;
+			block-size: var(--coverflow-block-size);
+			border-radius: 0.25rem;
+			border: var(--delineation);
+			color: var(--color-fg-2);
+			font-size: 1rem;
+			padding: 0.5rem;
+		}
 	</style>
 	<ul class="coverflow__content">
 		{% for thing in coverflow %}
@@ -99,6 +109,13 @@ permalink: now.html
 			</a>
 		</li>
 		{% endfor %}
+		<li class="coverflow__item coverflow__text-item">
+			…and
+			<a href="https://altezanobrothers.co.nz" target="_blank">locally</a>
+			<a href="https://www.eighthirty.com" target="_blank">roasted</a>.
+			<a href="https://www.espressoworkshop.co.nz" target="_blank">specialty</a>
+			<a href="https://www.anastasiscoffee.com" target="_blank">coffee</a>.
+		</li>
 	</ul>
 </div>
 
