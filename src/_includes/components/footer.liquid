@@ -118,12 +118,9 @@
 </footer>
 <script>
 	const randomElementFrom = (arr) => arr[Math.floor(Math.random() * arr.length)];
-	const signoffs = [
-		'Hand-coded in big-little Tāmaki Makaurau',
-		'Hand-coded in downtown Auckland, New Zealand',
-		// 'Well wishes from downtown Tāmaki Makaurau',
-	];
-	signoff.innerHTML = randomElementFrom(signoffs);
+	const signoffAction = randomElementFrom(['Hand-coded in', 'Hand-crafted in', 'Well wishes from']);
+	const signoffPlace = randomElementFrom(['big-little Tāmaki Makaurau', 'downtown Auckland, New Zealand'])
+	signoff.innerHTML = `${signoffAction} ${signoffPlace}`;
 	const quips = [
 		'<a href="http://wisdom.limo" target="_blank">Looking for the chimneys</a>',
 		'<a href="https://nerdfighteria.info/v/307598550" target="_blank">Memento mori</a>&nbsp;😊',
