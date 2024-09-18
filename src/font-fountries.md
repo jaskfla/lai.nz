@@ -19,6 +19,7 @@ Buy from independent typeface designers. There’s no need to support <a href="h
 - [Displaay](https://displaay.net)
 - [Fabio Haag Type](https://fabiohaagtype.com/en)
 - [Fonderia Cavedoni](https://www.fonderiacavedoni.com)
+- [Gradient](https://www.wearegradient.net)
 - [Grilli Type](https://www.grillitype.com)<span class="star-marker"></span>
 - [Harbour Type](https://www.harbortype.com)
 - [Huerta Tipografica](https://huertatipografica.com)
