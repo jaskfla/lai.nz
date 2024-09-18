@@ -12,7 +12,6 @@ body.debug * {
 	--font-display: 'Warbler Variable', var(--font-serif);
 	--font-mono: ui-monospace, SFMono-Regular, 'SF Mono', 'IBM Plex Mono',
 		monospace;
-	--font-features-concourse: 'ss13', 'ss16';
 
 	--top-level-padding-top: max(env(safe-area-inset-top), 0);
 	--top-level-padding-bottom: max(env(safe-area-inset-bottom), 0);
@@ -55,8 +54,11 @@ html {
 
 	color: var(--color-fg);
 	font-family: var(--font-sans);
-	font-feature-settings: var(--font-features-concourse);
-	font-size: clamp(17px, 14.2px + 0.87vw, 25px);
+	font-variant-alternates: styleset(neat-concourse);
+	@supports not (font-variant-alternates: styleset(neat-concourse)) {
+		font-feature-settings: 'ss13', 'ss16';
+	}
+	font-size: clamp(106.25%, 88.75% + 0.87vw, 145%);
 	font-weight: 400;
 	font-variant-numeric: oldstyle-nums;
 	text-combine-upright: digits;
