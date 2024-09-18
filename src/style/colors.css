@@ -5,7 +5,7 @@
 	/* --color-accent: oklch(75% 0.215 53); */
 	--color-accent: oklch(68.5% 0.2 31);
 
-	--color-bg-vibrant: oklch(100% 0 0 / 80%);
+	--color-bg-vibrant: oklch(from var(--color-bg) l c h / 94%);
 	--color-border: oklch(0% 0 0 / 6%);
 	--color-selection: oklch(85% 0 0 / 30%);
 
@@ -25,7 +25,6 @@
 		--color-accent: oklch(80% 0.194 74.5);
 
 		--color-border: oklch(100% 0 0 / 15%);
-		--color-bg-vibrant: oklch(from var(--color-bg) l c h / 80%);
 		--color-selection: oklch(55% 0.015 202 / 12%);
 
 		@media (prefers-contrast: more) {
