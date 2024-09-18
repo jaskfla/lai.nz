@@ -7,7 +7,7 @@
 
 	--color-bg-vibrant: oklch(from var(--color-bg) l c h / 94%);
 	--color-border: oklch(0% 0 0 / 6%);
-	--color-selection: oklch(100% 0 0 / 25%);
+	--color-selection: oklch(from var(--color-fg) l c h / 6%);
 
 	@media (prefers-contrast: more) {
 		--color-bg: white;
@@ -25,7 +25,6 @@
 		--color-accent: oklch(80% 0.194 74.5);
 
 		--color-border: oklch(100% 0 0 / 15%);
-		--color-selection: oklch(55% 0.015 202 / 12%);
 
 		@media (prefers-contrast: more) {
 			--color-fg: oklch(94% 0.015 202);
