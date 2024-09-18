@@ -7,7 +7,7 @@
 
 	--color-bg-vibrant: oklch(from var(--color-bg) l c h / 94%);
 	--color-border: oklch(0% 0 0 / 6%);
-	--color-selection: oklch(85% 0 0 / 30%);
+	--color-selection: oklch(100% 0 0 / 25%);
 
 	@media (prefers-contrast: more) {
 		--color-bg: white;
