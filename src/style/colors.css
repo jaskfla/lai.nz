@@ -1,46 +1,40 @@
 :root {
-	--oklch-bg: 97% 0 0;
-	--oklch-fg: 20% 0 0;
-	--oklch-fg-2: 50% 0 0;
-	--oklch-accent: 75% 0.215 53;
-	--oklch-black: 0% 0 0;
-	--oklch-white: 100% 0 0;
+	--color-bg: oklch(98% 0.003 68);
+	--color-fg: oklch(15% 0.04 229.5);
+	--color-fg-2: oklch(47.5% 0.015 229.5);
+	/* --color-accent: oklch(75% 0.215 53); */
+	--color-accent: oklch(68.5% 0.2 31);
 
-	--color-fg: oklch(var(--oklch-fg));
-	--color-fg-2: oklch(var(--oklch-fg-2));
-	--color-bg: oklch(var(--oklch-bg));
-	--color-bg-vibrant: oklch(var(--oklch-white) / 80%);
-	--color-accent: oklch(var(--oklch-accent));
-	--color-accent-translucent: oklch(var(--oklch-accent) / 15%);
-	--color-border: oklch(var(--oklch-black) / 6%);
+	--color-bg-vibrant: oklch(100% 0 0 / 80%);
+	--color-border: oklch(0% 0 0 / 6%);
 	--color-selection: oklch(85% 0 0 / 30%);
 	--bg-blur: blur(20px) saturate(130%);
 
 	@media (prefers-contrast: more) {
-		--oklch-bg: var(--oklch-white);
-		--oklch-fg: 15% 0 0;
-		--oklch-fg-2: 30% 0 0;
+		--color-bg: white;
+		--color-fg: oklch(15% 0 0);
+		--color-fg-2: oklch(30% 0 0);
 
 		--color-bg-vibrant: var(--color-bg);
-		--color-border: oklch(var(--oklch-black) / 12%);
+		--color-border: oklch(0% 0 0 / 12%);
 	}
 
 	@media (prefers-color-scheme: dark) {
-		--oklch-fg: 85% 0.015 202;
-		--oklch-fg-2: 70% 0.015 202;
-		--oklch-bg: 20.5% 0.04 202;
-		--oklch-accent: 80% 0.194 74.5;
+		--color-fg: oklch(85% 0.015 202);
+		--color-fg-2: oklch(from var(--color-fg) 70% c h);
+		--color-bg: oklch(20.5% 0.04 202);
+		--color-accent: oklch(80% 0.194 74.5);
 
-		--color-border: oklch(var(--oklch-white) / 15%);
-		--color-bg-vibrant: oklch(var(--oklch-bg) / 80%);
+		--color-border: oklch(100% 0 0 / 15%);
+		--color-bg-vibrant: oklch(from var(--color-bg) l c h / 80%);
 		--color-selection: oklch(55% 0.015 202 / 12%);
 
 		@media (prefers-contrast: more) {
-			--oklch-fg: 94% 0.015 202;
-			--oklch-fg-2: 85% 0.015 202;
+			--color-fg: oklch(94% 0.015 202);
+			--color-fg-2: oklch(85% 0.015 202);
 
 			--color-bg-vibrant: var(--color-bg);
-			--color-border: oklch(var(--oklch-white) / 25%);
+			--color-border: oklch(100% 0 0 / 25%);
 		}
 	}
 }

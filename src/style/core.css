@@ -44,7 +44,7 @@ html {
 		);
 		--noise-mask: radial-gradient(
 			circle at 50% -25vh,
-			oklch(var(--oklch-bg) / 95.5%) 0,
+			oklch(from var(--color-bg) l c h / 95.5%) 0,
 			var(--color-bg) 200vh
 		);
 		--noise-mask-blend-mode: darken;
@@ -145,7 +145,7 @@ samp {
 }
 
 code {
-	background-color: oklch(var(--oklch-fg-2) / 8%);
+	background-color: oklch(from var(--oklch-fg-2) l c h / 8%);
 	border-radius: 0.3em;
 	padding-block: 0.2em;
 	padding-inline: 0.3em;
