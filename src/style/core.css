@@ -56,9 +56,8 @@ html {
 	color: var(--color-fg);
 	font-family: var(--font-sans);
 	font-variant-alternates: styleset(neat-concourse);
-	@supports not (font-variant-alternates: styleset(neat-concourse)) {
-		font-feature-settings: 'ss13', 'ss16';
-	}
+	font-feature-settings: 'ss13', 'ss16';
+
 	font-size: clamp(106.25%, 88.75% + 0.87vw, 145%);
 	font-weight: 400;
 	font-variant-numeric: oldstyle-nums;
