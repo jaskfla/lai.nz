@@ -26,6 +26,7 @@ body.debug * {
 	--transition-duration-glacial: 1s;
 	--transition-fn: cubic-bezier(0.64, 0.045, 0.35, 1);
 
+	--bg-blur: blur(20px) saturate(130%);
 	--content-width: min(52rem, 100%);
 	--delineation: 1px solid var(--color-border);
 }
