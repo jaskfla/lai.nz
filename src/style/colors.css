@@ -19,7 +19,7 @@
 	}
 
 	@media (prefers-color-scheme: dark) {
-		--color-fg: oklch(85% 0.015 202);
+		--color-fg: oklch(82.5% 0.015 202);
 		--color-fg-2: oklch(from var(--color-fg) 70% c h);
 		--color-bg: oklch(20.5% 0.04 202);
 		--color-accent: oklch(80% 0.194 74.5);
