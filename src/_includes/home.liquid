@@ -3,10 +3,12 @@ layout: main.liquid
 ---
 
 <style>
+	.landing__safe-area {
+		margin-inline: auto;
+		max-inline-size: var(--content-width);
+	}
 	.hello {
 		font: clamp(24px, 2.7vw, 2rem) / 1.3 var(--font-serif);
-		margin-inline: auto;
-		max-inline-size: 20em;
 		padding-block: 8rem;
 		padding-left: var(--top-level-padding-left);
 		padding-right: var(--top-level-padding-right);
@@ -44,8 +46,8 @@ layout: main.liquid
 			bottom: 0;
 			right: 0;
 
-			backdrop-filter: var(--bg-blur);
 			-webkit-backdrop-filter: var(--bg-blur);
+			backdrop-filter: var(--bg-blur);
 			background-color: var(--color-bg-vibrant);
 			border-radius: 0.4rem;
 			border: 0.5px solid var(--color-border);
@@ -56,28 +58,22 @@ layout: main.liquid
 			padding-inline: 0.8rem;
 		}
 	}
-
 	.explainer {
-		inline-size: 100%;
+		color: var(--color-fg-2);
 		padding-block: 6rem 8rem;
 		padding-left: var(--top-level-padding-left);
 		padding-right: var(--top-level-padding-right);
 		text-wrap: pretty;
 	}
-
-	.explainer__safe-area {
-		margin-inline: auto;
-		max-inline-size: var(--content-width);
-	}
-
 	.explainer p {
-		/* max-inline-size: 20em; */
-		color: var(--color-fg-2);
+		margin-block-end: 1.75rem;
 	}
 </style>
 {% render 'components/opsz-demo' %}
 <hr />
-<section class="hello">{{ content }}</section>
+<section class="hello">
+	<div class="landing__safe-area">{{ content }}</div>
+</section>
 <hr />
 <figure class="hero">
 	<picture>
@@ -156,7 +152,7 @@ layout: main.liquid
 	</figcaption>
 </figure>
 <section class="explainer">
-	<div class="explainer__safe-area">
+	<div class="landing__safe-area">
 		<p>
 			This site is a
 			<a
