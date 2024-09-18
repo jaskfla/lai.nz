@@ -57,6 +57,11 @@ p {
 	margin-block: 0 1em;
 }
 
+ul,
+ol {
+	padding-inline-start: 1em;
+}
+
 b,
 strong {
 	font-weight: bolder;

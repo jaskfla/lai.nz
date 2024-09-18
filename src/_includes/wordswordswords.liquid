@@ -13,10 +13,14 @@ layout: main.liquid
 			.wordswordswords__safe-area {
 				font-size: 1.35rem;
 				inline-size: 100%;
-				line-height: 1.45;
+				line-height: 1.5;
 				margin-inline: auto;
 				max-inline-size: var(--content-width);
 				padding-block: 8rem;
+			}
+
+			.wordswordswords :where(h2, h3, h4, h5, h6, li, p):not(.run-in) {
+				margin-block-end: 2.35rem;
 			}
 
 			.wordswordswords__safe-area h1 {
@@ -24,11 +28,10 @@ layout: main.liquid
 				font-size: 1.4rem;
 				font-variant-caps: all-small-caps;
 				font-weight: 400;
-				margin-block-end: 2rem;
+				margin-block-end: 1.35rem;
 			}
 
-			.wordswordswords__safe-area p {
-				margin-block-end: 2rem;
+			.wordswordswords__safe-area :where(p, ul) {
 				max-inline-size: 30rem;
 			}
 
@@ -37,20 +40,15 @@ layout: main.liquid
 				font-size: 2rem;
 				line-height: 1.3;
 				margin-block-end: 6rem;
-				max-inline-size: 100%;
+				max-inline-size: unset;
 				text-wrap: balance;
 			}
 
-			.wordswordswords ul {
-				list-style-position: inside;
-				margin-block-end: 2rem;
+			.wordswordswords li:not(:last-child) {
+				margin-block-end: 0.675rem;
 			}
 
-			.wordswordswords ul li {
-				margin-block-end: 1rem;
-			}
-
-			.wordswordswords ul li::marker {
+			.wordswordswords li::marker {
 				color: var(--color-fg-2);
 			}
 		}
