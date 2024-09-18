@@ -134,7 +134,7 @@ source {
 
 fieldset {
 	border: 0;
-	min-width: 0;
+	min-inline-size: 0;
 }
 
 input,
@@ -146,6 +146,6 @@ input,
 button,
 textarea,
 select {
-	font-family: inherit;
 	font-size: inherit;
+	touch-action: manipulation;
 }
