@@ -85,21 +85,17 @@ hr {
 	border-block-end: var(--delineation);
 }
 
-p {
-	/* font-optical-sizing: none;
-		font-variation-settings: 'opsz' 16; */
-}
+/* p {
+	font-optical-sizing: none;
+	font-variation-settings: 'opsz' 16;
+} */
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-button,
-input,
-label {
-	text-wrap: balance;
+h6 {
 	line-height: 1.15;
 }
 

@@ -2,7 +2,7 @@
  * Reset, normalize and remedy, all smushed together.
  *
  * https://github.com/jensimmons/cssremedy
- * https://piccalil.li/blog/a-more-modern-css-reset/
+ * https://piccalil.li/blog/a-more-modern-css-reset
  */
 
 *,
@@ -51,6 +51,19 @@ html {
 
 body {
 	min-block-size: 100svh;
+}
+
+button,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+label {
+	text-wrap: balance;
 }
 
 p {
