@@ -154,3 +154,9 @@ select {
 	font-size: inherit;
 	touch-action: manipulation;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+}
