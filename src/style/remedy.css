@@ -2,6 +2,7 @@
  * Reset, normalize and remedy, all smushed together.
  *
  * https://github.com/jensimmons/cssremedy
+ * https://github.com/clagnut/TODS
  * https://piccalil.li/blog/a-more-modern-css-reset
  */
 
@@ -13,10 +14,17 @@
 
 * {
 	font-family: inherit;
+	font-size: inherit;
 	margin: 0;
 	outline-offset: max(0.0625rem, 1px);
 	padding: 0;
 	text-decoration-thickness: from-font;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
 }
 
 html {
@@ -31,8 +39,11 @@ html {
 	font-optical-sizing: auto;
 	-webkit-font-smoothing: antialiased;
 	font-synthesis: none;
+	font-variant-ligatures: common-ligatures no-discretionary-ligatures
+		no-historical-ligatures contextual;
 	hanging-punctuation: first allow-end last;
 	hyphenate-character: '‐'; /* Unambiguous hyphen U+2010 */
+	hyphenate-limit-chars: auto 2 3;
 	letter-spacing: 0;
 	margin: 0;
 	orphans: 2;
@@ -40,7 +51,12 @@ html {
 	padding: 0;
 	print-color-adjust: exact;
 	tab-size: 2;
+	text-align: start;
+	text-decoration-skip-ink: auto;
 	text-rendering: geometricPrecision;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 	text-underline-position: from-font;
 	text-wrap: pretty;
 }
@@ -50,7 +66,8 @@ html {
 }
 
 body {
-	min-block-size: 100svh;
+	inline-size: 100%;
+	min-block-size: 100vb;
 }
 
 button,
@@ -66,13 +83,18 @@ label {
 	text-wrap: balance;
 }
 
-p {
-	margin-block: 0 1em;
+ul:not([role='list']) {
+	list-style-type: disc;
 }
 
-ul,
-ol {
+ol:not([role='list']),
+ul:not([role='list']) {
 	padding-inline-start: 1em;
+}
+
+ol[role='list'],
+ul[role='list'] {
+	list-style-type: none;
 }
 
 b,
@@ -98,6 +120,17 @@ kbd,
 pre,
 samp {
 	font-family: ui-monospace, monospace;
+	hyphens: none;
+	text-align: start;
+	word-spacing: normal;
+	word-wrap: normal;
+}
+
+pre:has(code) {
+	max-inline-size: 100%;
+	overflow-x: auto;
+	overflow-inline: auto;
+	inline-size: max-content;
 }
 
 abbr {
@@ -164,12 +197,9 @@ input,
 button,
 textarea,
 select {
-	font-size: inherit;
 	touch-action: manipulation;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	:root {
-		scroll-behavior: smooth;
-	}
+small {
+	font-size: 0.85em;
 }
