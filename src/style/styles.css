@@ -1,5 +1,5 @@
 @import url('remedy.css') layer(remedy);
-@import url('fonts.css') layer(fonts);
+@import url('type.css') layer(type);
 @import url('colors.css') layer(colors);
 @import url('core.css') layer(core);
 @layer template;

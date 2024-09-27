@@ -156,3 +156,38 @@
 		url('/fonts/IBMPlexMono-Medium.woff2') format('woff2'),
 		url('/fonts/IBMPlexMono-Medium.woff') format('woff');
 }
+
+* {
+	font-feature-settings:
+		'case' var(--ot-case, off),
+		'sinf' var(--ot-sinf, off);
+}
+
+.case {
+	--ot-case: on;
+}
+
+.sinf {
+	--ot-sinf: on;
+}
+
+sub {
+	font-size: 100%;
+	font-variant-position: sub;
+	line-height: inherit;
+	vertical-align: baseline;
+}
+
+sup {
+	font-size: 100%;
+	font-variant-position: super;
+	line-height: inherit;
+	vertical-align: baseline;
+}
+
+math,
+td,
+time[datetime*=':'],
+var {
+	font-variant-numeric: lining-nums slashed-zero tabular-nums;
+}
