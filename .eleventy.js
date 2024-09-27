@@ -7,6 +7,7 @@ export default (eleventyConfig) => {
 		'fonts/',
 		'images/',
 		'meta/',
+		'scripts/',
 		'style/',
 		'apple-touch-icon.png',
 		'favicon.ico',
