@@ -4,7 +4,7 @@ layout: wordswordswords.liquid
 permalink: collections.html
 ---
 
-I keep lists of things. Here’s my list of ’em.
+I love a good list, so here’s a list of ’em. (Naturally.)
 
 Some neat conveniences in macOS:
 
