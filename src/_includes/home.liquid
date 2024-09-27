@@ -59,20 +59,19 @@ layout: main.liquid
 		}
 	}
 	.explainer {
+		--flow-space: 1.75em;
 		color: var(--color-fg-2);
 		padding-block: 6rem 8rem;
 		padding-left: var(--top-level-padding-left);
 		padding-right: var(--top-level-padding-right);
 		text-wrap: pretty;
 	}
-	.explainer p {
-		margin-block-end: 1.75rem;
-	}
+
 </style>
 {% render 'components/opsz-demo' %}
 <hr />
 <section class="hello">
-	<div class="landing__safe-area">{{ content }}</div>
+	<div class="landing__safe-area flow">{{ content }}</div>
 </section>
 <hr />
 <figure class="hero">
@@ -152,7 +151,7 @@ layout: main.liquid
 	</figcaption>
 </figure>
 <section class="explainer">
-	<div class="landing__safe-area">
+	<div class="landing__safe-area flow">
 		<p>
 			This site is a
 			<a

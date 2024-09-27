@@ -84,8 +84,8 @@
 		font-feature-settings: 'ss13', 'ss16';
 
 		font-size: clamp(106.25%, 88.75% + 0.87vi, 145%);
+		font-variant-numeric: proportional-nums;
 		font-weight: 400;
-		font-variant-numeric: oldstyle-nums;
 		text-combine-upright: digits;
 	}
 
@@ -175,13 +175,18 @@
 		padding-inline: 0.3em;
 	}
 
+	article,
+	.prose {
+		font-variant-numeric: oldstyle-nums proportional-nums;
+	}
+
 	/* https://piccalil.li/blog/my-favourite-3-lines-of-css */
-	.flow > * + * {
+	:is(article, .flow) > * + * {
 		margin-block-start: var(--flow-space, 1em);
 	}
 
 	.flow :is(ol, ul, dl):not([class]) > li + li,
-	.flow :is(ol, ul, dl):not([class]) :where(ol, ul, dl) {
+	.flow :is(ol, ul, dl):not([class]) :is(ol, ul, dl) {
 		margin-block-start: 0.5em;
 	}
 }
