@@ -19,10 +19,10 @@
 		--focus-ring-style: solid;
 		--focus-ring-width: calc(2 * var(--hairline));
 
-		--top-level-padding-top: max(env(safe-area-inset-top), 0);
-		--top-level-padding-bottom: max(env(safe-area-inset-bottom), 0);
-		--top-level-padding-left: max(env(safe-area-inset-left), 1.75rem);
-		--top-level-padding-right: max(env(safe-area-inset-right), 1.75rem);
+		--top-level-padding-top: env(safe-area-inset-top, 0);
+		--top-level-padding-bottom: env(safe-area-inset-bottom, 0);
+		--top-level-padding-left: max(env(safe-area-inset-left, 0), 1.75rem);
+		--top-level-padding-right: max(env(safe-area-inset-right, 0), 1.75rem);
 
 		--transition-dn-lightning: 125ms;
 		--transition-dn-swift: 175ms;
