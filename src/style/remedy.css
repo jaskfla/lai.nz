@@ -108,10 +108,7 @@ var {
 	font-style: italic;
 }
 
-em > em,
-em > i,
-i > em,
-i > i {
+:is(em, i) > :is(em, i) {
 	font-style: normal;
 }
 
