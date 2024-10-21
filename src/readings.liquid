@@ -109,11 +109,12 @@ permalink: readings.html
 		.readings__reading_hostname::after {
 			color: var(--color-accent);
 			content: '→';
+			display: inline-block;
 			margin-inline-start: 0.3em;
-			transition: margin-inline-start var(--transition-duration) var(--transition-fn);
+			transition: transform var(--transition-duration) var(--transition-fn);
 		}
 		.readings__reading:hover .readings__reading_hostname::after {
-			margin-inline-start: 0.5em;
+			transform: translateX(0.2em);
 		}
 	</style>
 	{% for r in readings %}
