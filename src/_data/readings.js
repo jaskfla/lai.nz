@@ -43,6 +43,14 @@ export default [
 		comment: 'The start of my journey with typography.',
 	},
 	{
+		author: 'Marcin Wichary',
+		title: 'Crafting link underlines on Medium',
+		link: 'https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9',
+		media: 'blog post',
+		pullquote: null,
+		comment: null,
+	},
+	{
 		author: 'Steph Ango',
 		title: 'Great tools choose to be bad at some things',
 		link: 'https://stephanango.com/choose-to-be-bad',
