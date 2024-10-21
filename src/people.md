@@ -21,7 +21,6 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [Goodside Studio](https://www.goodside.studio)
 - [Gordon Murray](https://en.wikipedia.org/wiki/Gordon_Murray)
 - [iA](https://ia.net 'Information Architects')
-- [James Hoffmann](https://www.jameshoffmann.co.uk)
 - [Jay Foreman](https://www.youtube.com/JayForeman)
 - [Jen Simmons](https://jensimmons.com)
 - [Lady Sophie](https://songwhip.com/ladysophie/one-night-only-to-the-boy-who-broke-my-heart)
