@@ -31,6 +31,7 @@ const quips = [
 	'Eternally browsing for fonts',
 	'Farm-to-table pixels since 2018',
 	'Half the battle is giving a shit',
+	'Here to pay attention',
 	'Mourning the death of <a href="https://vimeo.com/groups/159435/videos/54553882" target="_blank">Mailbox</a> to this day 😔',
 	'No generative AI’s were harmed in the making of this website',
 	// 'Nothing half-arsed here',
@@ -38,4 +39,4 @@ const quips = [
 	'Still figuring this shit out',
 	'The truth resists simplicity',
 ];
-quip.innerHTML = pickOne(quips);
+document.getElementById('quip').innerHTML = pickOne(quips);
