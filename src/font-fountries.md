@@ -29,6 +29,7 @@ Buy from independent typeface designers. There’s no need to support <a href="h
 - [Kometa](https://www.kometa.xyz)
 - [Mass Driver](https://www.mass-driver.com)<span class="star-marker"></span>
 - [MB Type](https://mbtype.com)<span class="star-marker"></span>
+- [Monokrom](https://monokrom.no)
 - [NaN](https://www.nan.xyz)
 - [Oh No](https://ohnotype.co)
 - [Okay Type](https://okaytype.com)
