@@ -25,6 +25,6 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@11ty/eleventy": "3.0.0-alpha.18"
+		"@11ty/eleventy": "^3.0.0"
 	}
 }
