@@ -1,0 +1,92 @@
+main {
+	body:has(&) {
+		font-size: 300%;
+	}
+
+	block-size: 100vb;
+	opacity: 0;
+	transition: opacity 200ms ease;
+
+	&.👀 {
+		opacity: 1;
+	}
+}
+
+main > div {
+	--_padding: 3rem;
+	block-size: 100vb;
+	inline-size: 100%;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	overflow: hidden;
+	padding-bottom: calc(1.5 * max(env(safe-area-inset-bottom), var(--_padding)));
+	padding-left: max(env(safe-area-inset-left), var(--_padding));
+	padding-right: max(env(safe-area-inset-right), var(--_padding));
+	padding-top: max(env(safe-area-inset-top), var(--_padding));
+	position: absolute;
+	transition: opacity 200ms ease;
+
+	&:not(.👀) {
+		overflow: hidden;
+		pointer-events: none;
+		white-space: nowrap;
+		opacity: 0;
+	}
+
+	&.👀 {
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	> :is(iframe, img) {
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		position: absolute;
+	}
+
+	> iframe {
+		block-size: 100%;
+		inline-size: 100%;
+	}
+}
+
+/*
+	 * A little rectangle in the bottom right corner used to regain focus from iframes, and also as a resting
+	 * place for mouse pointer.
+	 */
+.official-cursor-resting-area {
+	background: transparent;
+	block-size: 6.25rem;
+	cursor: none;
+	inline-size: 6.25rem;
+	inset-block-end: 0;
+	inset-inline-end: 0;
+	position: absolute;
+	z-index: 10000000;
+}
+
+.indicator {
+	aspect-ratio: 3 / 2;
+	background-color: var(--color-accent);
+	block-size: 0.25rem;
+	border-radius: calc(infinity * 1px);
+	inset-block-start: calc(env(safe-area-inset-left, 0) + 2rem);
+	inset-inline-start: calc(env(safe-area-inset-top, 0) + 2rem);
+	position: absolute;
+	z-index: calc(infinity);
+	opacity: 0;
+
+	&.👀 {
+		opacity: 30%;
+	}
+	&:not(.👀) {
+		/* Appear immediately, but transition out (https://easings.net/#easeOutCubic) */
+		transition: opacity 500ms cubic-bezier(0.33, 1, 0.68, 1);
+	}
+}
+
+.center {
+	display: flex;
+	place-items: center;
+	text-align: center;
+}

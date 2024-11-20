@@ -13,6 +13,7 @@ export default (eleventyConfig) => {
 		'favicon.ico',
 		'humans.txt',
 		'robots.txt',
+		'slides/**/*.{css,js}',
 	];
 	for (const file of staticFiles) {
 		eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/${file}`);
