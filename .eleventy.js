@@ -31,6 +31,10 @@ export default (eleventyConfig) => {
 		return hostname.slice(0, 4) === 'www.' ? hostname.slice(4) : hostname;
 	});
 
+	eleventyConfig.addFilter('isoDateString', (date) =>
+		date.toISOString().slice(0, 10),
+	);
+
 	return {
 		dir: {
 			input: SOURCE_DIR,
