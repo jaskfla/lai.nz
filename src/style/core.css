@@ -149,7 +149,13 @@
 
 	abbr,
 	.caps {
+		font-style: normal;
 		font-variant-caps: all-small-caps;
+	}
+
+	em,
+	i {
+		font-family: var(--font-serif);
 	}
 
 	span.caps {
