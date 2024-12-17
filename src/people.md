@@ -17,6 +17,7 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [Climate Town](https://www.youtube.com/ClimateTown)
 - [DeepBlueInk](https://www.youtube.com/DeepBlueInk)
 - [Dr&nbsp;Don](https://mastodon.social/@bugcounter) & [Prof.&nbsp;Ben](https://x.com/benjaminchapman)
+- [Emil Kowalski](https://emilkowal.ski)
 - [exurb1a](https://www.youtube.com/Exurb1a)
 - [Goodside Studio](https://www.goodside.studio)
 - [Gordon Murray](https://en.wikipedia.org/wiki/Gordon_Murray)
