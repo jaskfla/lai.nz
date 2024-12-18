@@ -28,7 +28,7 @@ export default (eleventyConfig) => {
 
 	eleventyConfig.addFilter('hostname', (url) => {
 		const hostname = new URL(url).hostname;
-		return hostname.slice(0, 4) === 'www.' ? hostname.slice(4) : hostname;
+		return hostname.startsWith('www.') ? hostname.slice(4) : hostname;
 	});
 
 	eleventyConfig.addFilter('isoDateString', (date) =>
