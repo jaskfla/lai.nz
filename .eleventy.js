@@ -30,10 +30,10 @@ export default (eleventyConfig) => {
 		const hostname = new URL(url).hostname;
 		return hostname.startsWith('www.') ? hostname.slice(4) : hostname;
 	});
-
 	eleventyConfig.addFilter('isoDateString', (date) =>
 		date.toISOString().slice(0, 10),
 	);
+	eleventyConfig.addFilter('stringify', (o) => JSON.stringify(o, null, '\t'));
 
 	return {
 		dir: {
