@@ -171,6 +171,11 @@
 	--ot-sinf: on;
 }
 
+b,
+strong {
+	font-weight: 600;
+}
+
 sub {
 	font-size: 100%;
 	font-variant-position: sub;
