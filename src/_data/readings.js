@@ -44,6 +44,14 @@ export default [
 	},
 	{
 		author: 'Marcin Wichary',
+		title: 'The hardest working font in Manhattan',
+		link: 'https://aresluna.org/the-hardest-working-font-in-manhattan',
+		media: 'photo essay',
+		pullquote: 'This is, perhaps, how you become gortonpilled.',
+		comment: 'Marcin does it again, with… a love letter to a font?',
+	},
+	{
+		author: 'Marcin Wichary',
 		title: 'Crafting link underlines on Medium',
 		link: 'https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9',
 		media: 'blog post',
