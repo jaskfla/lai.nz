@@ -4,7 +4,9 @@ layout: wordswordswords.liquid
 permalink: font-foundries.html
 ---
 
-Buy from independent typeface designers. There’s no need to support <a href="https://qz.com/2068310/what-monotypes-purchase-of-hoeflerco-means-to-font-designers" target="_blank">Big Font</a>.
+Buy from independent typeface designers. There’s no need to support
+<a href="https://qz.com/2068310/what-monotypes-purchase-of-hoeflerco-means-to-font-designers" target="_blank">Big
+Font</a>.
 
 <style>
 	.star-marker::before {
@@ -33,7 +35,8 @@ Buy from independent typeface designers. There’s no need to support <a href="h
 - [NaN](https://www.nan.xyz)
 - [Oh No](https://ohnotype.co)
 - [Okay Type](https://okaytype.com)
-- [Pangram Pangram](https://pangrampangram.com) & [Off Type](https://off-type.com)<span class="star-marker"></span>
+- [Pangram Pangram](https://pangrampangram.com) &
+  [Off Type](https://off-type.com)<span class="star-marker"></span>
 - [Rosetta](https://rosettatype.com)<span class="star-marker"></span>
 - [Studio Triple](https://studiotriple.fr)
 - [Toshi Omagari](https://tosche.net)

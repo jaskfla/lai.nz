@@ -155,6 +155,15 @@ video {
 	vertical-align: middle; /* If `display` value is overridden */
 }
 
+img {
+	height: auto;
+	shape-margin: 1rem; /* If floated */
+
+	/* If providing low-res preview via `style` attribute */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 img[alt] {
 	font-style: italic;
 }

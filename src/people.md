@@ -4,7 +4,9 @@ layout: wordswordswords.liquid
 permalink: people.html
 ---
 
-There’s a lot of crap on the internet. But there’s also plenty of great stuff. These people produce work that are worth my attention—perhaps you’ll like them too.
+There’s a lot of crap on the internet. But there’s also plenty of great stuff.
+These people produce work that are worth my attention—perhaps you’ll like them
+too.
 
 - [Adam Lissagor](https://adamlisagor.com)
 - [Andrew Kim](https://allsideswater.com)
@@ -16,7 +18,8 @@ There’s a lot of crap on the internet. But there’s also plenty of great stuf
 - [Christian Selig](https://christianselig.com)
 - [Climate Town](https://www.youtube.com/ClimateTown)
 - [DeepBlueInk](https://www.youtube.com/DeepBlueInk)
-- [Dr&nbsp;Don](https://mastodon.social/@bugcounter) & [Prof.&nbsp;Ben](https://x.com/benjaminchapman)
+- [Dr&nbsp;Don](https://mastodon.social/@bugcounter) &
+  [Prof.&nbsp;Ben](https://x.com/benjaminchapman)
 - [Emil Kowalski](https://emilkowal.ski)
 - [exurb1a](https://www.youtube.com/Exurb1a)
 - [Goodside Studio](https://www.goodside.studio)

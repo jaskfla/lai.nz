@@ -4,7 +4,8 @@ layout: wordswordswords.liquid
 permalink: blogroll.html
 ---
 
-My grand list of top-shelf follows. (It’s not that grand, but these are well interesting.)
+My grand list of top-shelf follows. (It’s not that grand, but these are well
+interesting.)
 
 - [5ives](https://www.5ives.com)
 - [43 Folders](http://www.43folders.com)

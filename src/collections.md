@@ -8,9 +8,11 @@ I love a good list, so here’s a list of ’em. (Naturally.)
 
 Some neat conveniences in macOS:
 
-- <a href="https://gist.github.com/jaskfla/f086f495745ee54912de09ac9895e4b8" target="_blank">macOS Tidbits</a>
+- <a href="https://gist.github.com/jaskfla/f086f495745ee54912de09ac9895e4b8" target="_blank">macOS
+  Tidbits</a>
 
-Essays, books, vlogs, lectures and whatever-it-may-be’s which have nestled in my brain:
+Essays, books, vlogs, lectures and whatever-it-may-be’s which have nestled in my
+brain:
 
 - [Required reading](/readings)
 
