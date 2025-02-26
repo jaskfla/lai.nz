@@ -1,15 +1,25 @@
 {
 	"name": "lai.nz",
-	"homepage": "https://lai.nz",
-	"bugs": {
-		"url": "https://github.com/jaskfla/lai.nz/issues",
-		"email": "j @ lai . nz"
+	"author": {
+		"name": "Jasper Lai",
+		"email": "j @ lai . nz",
+		"url": "https://lai.nz"
 	},
-	"license": "SEE LICENSE IN LICENSE.md",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/jaskfla/lai.nz.git"
 	},
+	"devDependencies": {
+		"@11ty/eleventy": "^3.0.0",
+		"html-minifier-terser": "^7.2.0"
+	},
+	"bugs": {
+		"url": "https://github.com/jaskfla/lai.nz/issues",
+		"email": "j @ lai . nz"
+	},
+	"homepage": "https://lai.nz",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"private": true,
 	"scripts": {
 		"build": "rm -rf _site/ && bun x @11ty/eleventy",
 		"prestart": "rm -rf _site/",
@@ -17,14 +27,5 @@
 		"watch": "bun x @11ty/eleventy --watch",
 		"clean": "rm -rf node_modules/ _site/"
 	},
-	"private": true,
-	"author": {
-		"name": "Jasper Lai",
-		"email": "j @ lai . nz",
-		"url": "https://lai.nz"
-	},
-	"type": "module",
-	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0"
-	}
+	"type": "module"
 }

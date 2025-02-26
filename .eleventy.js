@@ -1,3 +1,5 @@
+import htmlmin from 'html-minifier-terser';
+
 const SOURCE_DIR = 'src';
 
 export default (eleventyConfig) => {
@@ -34,6 +36,18 @@ export default (eleventyConfig) => {
 		date.toISOString().slice(0, 10),
 	);
 	eleventyConfig.addFilter('stringify', (o) => JSON.stringify(o, null, '\t'));
+
+	/* Filters */
+
+	eleventyConfig.addTransform('htmlmin', function (content) {
+		return this.page.outputPath?.endsWith('.html') ?
+				htmlmin.minify(content, {
+					useShortDoctype: true,
+					removeComments: true,
+					collapseWhitespace: true,
+				})
+			:	content; // If not HTML output, return as-is
+	});
 
 	return {
 		dir: {
