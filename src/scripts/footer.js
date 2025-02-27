@@ -32,6 +32,7 @@ const quips = [
 	'Curating pixels since 2018',
 	'Eternally browsing for fonts',
 	'Farm-to-table pixels since 2018',
+	'Full of beans',
 	'Half the battle is giving a shit',
 	'Here to pay attention',
 	'Mourning the death of <a href="https://vimeo.com/groups/159435/videos/54553882" target="_blank">Mailbox</a> to this day 😔',
