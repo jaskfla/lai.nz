@@ -48,7 +48,7 @@ export default (eleventyConfig) => {
 					removeEmptyAttributes: true,
 					useShortDoctype: true,
 				})
-			:	content; // If not HTML output, return as-is
+			:	content;
 	});
 
 	return {
