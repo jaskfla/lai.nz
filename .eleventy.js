@@ -1,4 +1,4 @@
-import htmlmin from 'html-minifier-terser';
+import {minify} from 'html-minifier-terser';
 
 const SOURCE_DIR = 'src';
 
@@ -41,9 +41,8 @@ export default (eleventyConfig) => {
 
 	eleventyConfig.addTransform('htmlmin', function (content) {
 		return this.page.outputPath?.endsWith('.html') ?
-				htmlmin.minify(content, {
+				minify(content, {
 					collapseWhitespace: true,
-					minifyCSS: true,
 					minifyJS: true,
 					removeComments: true,
 					removeEmptyAttributes: true,
