@@ -42,9 +42,12 @@ export default (eleventyConfig) => {
 	eleventyConfig.addTransform('htmlmin', function (content) {
 		return this.page.outputPath?.endsWith('.html') ?
 				htmlmin.minify(content, {
-					useShortDoctype: true,
-					removeComments: true,
 					collapseWhitespace: true,
+					minifyCSS: true,
+					minifyJS: true,
+					removeComments: true,
+					removeEmptyAttributes: true,
+					useShortDoctype: true,
 				})
 			:	content; // If not HTML output, return as-is
 	});
