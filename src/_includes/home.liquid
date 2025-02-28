@@ -44,15 +44,15 @@ layout: main.liquid
 		text-align: end;
 
 		@media (min-width: 40rem) {
+			inset-block-end: 0;
+			inset-inline-end: 0;
 			position: absolute;
-			bottom: 0;
-			right: 0;
 
 			-webkit-backdrop-filter: var(--bg-blur);
 			backdrop-filter: var(--bg-blur);
 			background-color: var(--color-bg-vibrant);
 			border-radius: var(--s-5);
-			border: 0.5px solid var(--color-border);
+			border: var(--delineation);
 			color: var(--color-fg-1);
 			inline-size: fit-content;
 			margin-block: var(--s0);
