@@ -27,7 +27,7 @@
 	}
 }
 
-html {
+:root {
 	color-scheme: light dark;
 	font-family:
 		system-ui,
@@ -44,6 +44,7 @@ html {
 	hanging-punctuation: first allow-end last;
 	hyphenate-character: '‐'; /* Unambiguous hyphen U+2010 */
 	hyphenate-limit-chars: auto 2 3;
+	interpolate-size: allow-keywords;
 	letter-spacing: 0;
 	margin: 0;
 	orphans: 2;
