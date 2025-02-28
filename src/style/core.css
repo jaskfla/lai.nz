@@ -169,10 +169,9 @@
 		text-decoration-line: underline;
 		text-decoration-style: solid;
 		text-underline-offset: 0;
-		transition-property: color, text-decoration-color, text-decoration-thickness,
-			text-underline-offset;
-		transition-duration: var(--transition-dn-swift);
-		transition-timing-function: var(--transition-fn);
+		transition: var(--transition-dn-swift) var(--transition-fn);
+		transition-property: color, opacity, text-decoration-color,
+			text-decoration-thickness, text-underline-offset;
 	}
 
 	a:hover:not([unavailable]) {
