@@ -15,12 +15,12 @@
 		--optical-size: var(--opsz-large);
 
 		cursor: default;
-		font:
-			clamp(40px, min(8vi, 45vb), 4.5rem) / 1.2 'Warbler Variable',
-			ui-serif;
+		font-family: 'Warbler Variable', ui-serif;
 		font-optical-sizing: none;
-		font-variation-settings: 'opsz' var(--optical-size);
+		font-size: clamp(40px, min(8vi, 45vb), 4.5rem);
 		-webkit-font-smoothing: antialiased;
+		font-variation-settings: 'opsz' var(--optical-size);
+		line-height: 1.2
 		hanging-punctuation: first force-end last;
 		text-align: center;
 		text-rendering: geometricPrecision;
