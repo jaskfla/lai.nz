@@ -80,7 +80,7 @@
 
 		color: var(--color-fg);
 		font-family: var(--font-sans);
-		font-size: clamp(100%, 88.75% + 0.87vi, 135%);
+		font-size: clamp(100%, 88.75% + 0.87vi, 130%);
 		font-variant-alternates: styleset(neat-concourse);
 		font-feature-settings: 'ss13', 'ss16';
 		font-variant-numeric: proportional-nums;
