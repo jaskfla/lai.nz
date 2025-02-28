@@ -19,6 +19,46 @@
 		--focus-ring-style: solid;
 		--focus-ring-width: calc(2 * var(--hairline));
 
+		--ratio: 1.2;
+		--s-6: calc(1rem * pow(var(--ratio), -6));
+		--s-5: calc(1rem * pow(var(--ratio), -5));
+		--s-4: calc(1rem * pow(var(--ratio), -4));
+		--s-3: calc(1rem * pow(var(--ratio), -3));
+		--s-2: calc(1rem * pow(var(--ratio), -2));
+		--s-1: calc(1rem * pow(var(--ratio), -1));
+		--s0: 1rem;
+		--s1: calc(1rem * pow(var(--ratio), 1));
+		--s2: calc(1rem * pow(var(--ratio), 2));
+		--s3: calc(1rem * pow(var(--ratio), 3));
+		--s4: calc(1rem * pow(var(--ratio), 4));
+		--s5: calc(1rem * pow(var(--ratio), 5));
+		--s6: calc(1rem * pow(var(--ratio), 6));
+		--s7: calc(1rem * pow(var(--ratio), 7));
+		--s8: calc(1rem * pow(var(--ratio), 8));
+		--s9: calc(1rem * pow(var(--ratio), 9));
+		--s10: calc(1rem * pow(var(--ratio), 10));
+		--s11: calc(1rem * pow(var(--ratio), 11));
+
+		@supports not (width: calc(0px * pow(0, 0))) {
+			--s-6: calc(var(--s-5) / var(--ratio));
+			--s-5: calc(var(--s-4) / var(--ratio));
+			--s-4: calc(var(--s-3) / var(--ratio));
+			--s-3: calc(var(--s-2) / var(--ratio));
+			--s-2: calc(var(--s-1) / var(--ratio));
+			--s-1: calc(var(--s0) / var(--ratio));
+			--s1: calc(var(--s0) * var(--ratio));
+			--s2: calc(var(--s1) * var(--ratio));
+			--s3: calc(var(--s2) * var(--ratio));
+			--s4: calc(var(--s3) * var(--ratio));
+			--s5: calc(var(--s4) * var(--ratio));
+			--s6: calc(var(--s5) * var(--ratio));
+			--s7: calc(var(--s6) * var(--ratio));
+			--s8: calc(var(--s7) * var(--ratio));
+			--s9: calc(var(--s8) * var(--ratio));
+			--s10: calc(var(--s9) * var(--ratio));
+			--s11: calc(var(--s10) * var(--ratio));
+		}
+
 		--top-level-padding-top: env(safe-area-inset-top, 0);
 		--top-level-padding-bottom: env(safe-area-inset-bottom, 0);
 		--top-level-padding-left: max(env(safe-area-inset-left, 0), 1.75rem);
