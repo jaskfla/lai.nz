@@ -5,6 +5,11 @@
 		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
 		<title>{{ title }} – Jasper Lai</title>
 
+		<link rel="preload" href="/style/styles.css" as="style" crossorigin />
+		<link rel="preload" href="/style/remedy.css" as="style" crossorigin />
+		<link rel="preload" href="/style/type.css" as="style" crossorigin />
+		<link rel="preload" href="/style/colors.css" as="style" crossorigin />
+		<link rel="preload" href="/style/core.css" as="style" crossorigin />
 		<link
 			rel="preload"
 			href="/fonts/WarblerTextV1.2.woff2"
@@ -32,7 +37,12 @@
 		<link rel="stylesheet" media="all" href="/style/styles.css" />
 
 		<link rel="icon" href="favicon.ico" sizes="48x48" />
-		<link rel="icon" href="/meta/favicon.svg" sizes="any" type="image/svg+xml" />
+		<link
+			rel="icon"
+			href="/meta/favicon.svg"
+			sizes="any"
+			type="image/svg+xml"
+		/>
 		<link rel="mask-icon" href="/meta/mask-icon.svg" color="#303030" />
 		<link rel="apple-touch-icon" sizes="256x256" href="apple-touch-icon.png" />
 		<link
@@ -89,7 +99,7 @@
 		<meta name="twitter:description" content="{{ metadata.description }}" />
 
 		<meta name="apple-mobile-web-app-title" content="Jasper Lai" />
-		<meta name="generator" content="{{ eleventy.generator }}">
+		<meta name="generator" content="{{ eleventy.generator }}" />
 	</head>
 	<body>
 		{{ content }}
