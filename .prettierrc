@@ -1,5 +1,6 @@
 {
 	"experimentalTernaries": true,
+	"proseWrap": "always",
 	"singleQuote": true,
 	"useTabs": true,
 	"overrides": [

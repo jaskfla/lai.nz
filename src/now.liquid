@@ -6,13 +6,16 @@ permalink: now.html
 
 <style>
 	h2 {
-		font-size: 1.35rem;
+		font-size: inherit;
 		font-weight: 700;
 		line-height: 1.45;
 	}
 	.run-in {
-		float: left;
+		float: inline-start;
 		margin-inline-end: 0.85em;
+	}
+	.wordswordswords__safe-area > p:first-of-type + .run-in {
+		margin-block-start: 0;
 	}
 	.run-in + p {
 		clear: none;
@@ -25,10 +28,11 @@ permalink: now.html
 <h2 class="run-in">Doing</h2>
 <p>
 	Making my way through Emil Kowalski’s
-	<a href="https://animations.dev" target="_blank">Animations on the Web</a>,
-	with Andy Bell’s
+	<a href="https://animations.dev" target="_blank"
+		><i>Animations on the Web</i></a
+	>, with Andy Bell’s
 	<a href="https://piccalil.li/complete-css" target="_blank"
-		>Complete <abbr title="Cascading Style Sheets">CSS</abbr></a
+		><i>Complete <abbr title="Cascading Style Sheets">CSS</abbr></i></a
 	>
 	lined up and ready to go. Running the maunga with my partner, swimming.
 	Learnin’ to cook more Taiwanese food.
@@ -44,23 +48,19 @@ permalink: now.html
 		href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
 		target="_blank"
 		>Web Components</a
-	>,
-	<a href="https://developer.apple.com/videos/wwdc24" target="_blank"
-		><abbr title="Worldwide Developers Conference 2024">WWDC24</abbr></a
+	>, Sara Soueidan’s
+	<a href="https://practical-accessibility.today" target="_blank"
+		><i>Practical Accessibility</i></a
 	>
-	&
-	<a href="https://cssday.nl/2024/speakers" target="_blank"
-		><abbr title="Cascading Style Sheets">CSS</abbr>&nbsp;Day</a
-	>
-	session videos, and SwiftUI. Also Kaveh Akbar’s <i>Martyr!</i>.
+	and SwiftUI. Also <i>Martyr!</i> by Kaveh Akbar.
 </p>
 <h2>Enjoying</h2>
 <div class="coverflow">
 	<style>
 		.coverflow {
-			--coverflow-block-size: 8rem;
+			--coverflow-block-size: var(--s11);
 			block-size: var(--coverflow-block-size);
-			margin-block: 1rem 2rem;
+			margin-block: var(--s0) var(--s3);
 			overflow-x: auto;
 			scroll-snap-type: inline proximity;
 		}
@@ -99,8 +99,8 @@ permalink: now.html
 			border-radius: 0.25rem;
 			border: var(--delineation);
 			color: var(--color-fg-2);
-			font-size: 1rem;
-			padding: 0.5rem;
+			font-size: var(--s0);
+			padding: var(--s-3);
 		}
 	</style>
 	<ul class="coverflow__content" role="list">
@@ -121,9 +121,9 @@ permalink: now.html
 		</li>
 		{% endfor %}
 		<li class="coverflow__item coverflow__text-item">
-			…and
+			…<a href="https://greyroastingco.com" target="_blank">and</a>
 			<a href="https://altezanobrothers.co.nz" target="_blank">locally</a>
-			<a href="https://www.eighthirty.com" target="_blank">roasted</a>.
+			<a href="https://www.eighthirty.com" target="_blank">roasted</a>
 			<a href="https://www.espressoworkshop.co.nz" target="_blank">specialty</a>
 			<a href="https://www.anastasiscoffee.com" target="_blank">coffee</a>.
 		</li>

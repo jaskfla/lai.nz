@@ -1,7 +1,7 @@
 @media screen {
 	.debug * {
 		border: 0;
-		outline: 0.5px solid oklch(61% 0.27 15);
+		outline: 1px solid oklch(61% 0.27 15);
 		outline-offset: 0;
 	}
 
@@ -15,14 +15,54 @@
 			monospace;
 
 		--focus-ring-color: var(--color-accent);
-		--focus-ring-offset: 0.25em;
+		--focus-ring-offset: calc(2 * var(--hairline));
 		--focus-ring-style: solid;
 		--focus-ring-width: calc(2 * var(--hairline));
 
+		--ratio: 1.2;
+		--s-6: calc(1rem * pow(var(--ratio), -6));
+		--s-5: calc(1rem * pow(var(--ratio), -5));
+		--s-4: calc(1rem * pow(var(--ratio), -4));
+		--s-3: calc(1rem * pow(var(--ratio), -3));
+		--s-2: calc(1rem * pow(var(--ratio), -2));
+		--s-1: calc(1rem * pow(var(--ratio), -1));
+		--s0: 1rem;
+		--s1: calc(1rem * pow(var(--ratio), 1));
+		--s2: calc(1rem * pow(var(--ratio), 2));
+		--s3: calc(1rem * pow(var(--ratio), 3));
+		--s4: calc(1rem * pow(var(--ratio), 4));
+		--s5: calc(1rem * pow(var(--ratio), 5));
+		--s6: calc(1rem * pow(var(--ratio), 6));
+		--s7: calc(1rem * pow(var(--ratio), 7));
+		--s8: calc(1rem * pow(var(--ratio), 8));
+		--s9: calc(1rem * pow(var(--ratio), 9));
+		--s10: calc(1rem * pow(var(--ratio), 10));
+		--s11: calc(1rem * pow(var(--ratio), 11));
+
+		@supports not (width: calc(0px * pow(0, 0))) {
+			--s-6: calc(var(--s-5) / var(--ratio));
+			--s-5: calc(var(--s-4) / var(--ratio));
+			--s-4: calc(var(--s-3) / var(--ratio));
+			--s-3: calc(var(--s-2) / var(--ratio));
+			--s-2: calc(var(--s-1) / var(--ratio));
+			--s-1: calc(var(--s0) / var(--ratio));
+			--s1: calc(var(--s0) * var(--ratio));
+			--s2: calc(var(--s1) * var(--ratio));
+			--s3: calc(var(--s2) * var(--ratio));
+			--s4: calc(var(--s3) * var(--ratio));
+			--s5: calc(var(--s4) * var(--ratio));
+			--s6: calc(var(--s5) * var(--ratio));
+			--s7: calc(var(--s6) * var(--ratio));
+			--s8: calc(var(--s7) * var(--ratio));
+			--s9: calc(var(--s8) * var(--ratio));
+			--s10: calc(var(--s9) * var(--ratio));
+			--s11: calc(var(--s10) * var(--ratio));
+		}
+
 		--top-level-padding-top: env(safe-area-inset-top, 0);
 		--top-level-padding-bottom: env(safe-area-inset-bottom, 0);
-		--top-level-padding-left: max(env(safe-area-inset-left, 0), 1.75rem);
-		--top-level-padding-right: max(env(safe-area-inset-right, 0), 1.75rem);
+		--top-level-padding-left: max(env(safe-area-inset-left, 0), var(--s3));
+		--top-level-padding-right: max(env(safe-area-inset-right, 0), var(--s3));
 
 		--transition-dn-lightning: 125ms;
 		--transition-dn-swift: 175ms;
@@ -80,7 +120,7 @@
 
 		color: var(--color-fg);
 		font-family: var(--font-sans);
-		font-size: clamp(100%, 88.75% + 0.87vi, 135%);
+		font-size: clamp(100%, 88.75% + 0.87vi, 130%);
 		font-variant-alternates: styleset(neat-concourse);
 		font-feature-settings: 'ss13', 'ss16';
 		font-variant-numeric: proportional-nums;
@@ -96,7 +136,7 @@
 	}
 
 	body {
-		line-height: 1.5;
+		line-height: 1.6;
 	}
 
 	section {
@@ -129,10 +169,9 @@
 		text-decoration-line: underline;
 		text-decoration-style: solid;
 		text-underline-offset: 0;
-		transition-property: color, text-decoration-color, text-decoration-thickness,
-			text-underline-offset;
-		transition-duration: var(--transition-dn-swift);
-		transition-timing-function: var(--transition-fn);
+		transition: var(--transition-dn-swift) var(--transition-fn);
+		transition-property: color, opacity, text-decoration-color,
+			text-decoration-thickness, text-underline-offset;
 	}
 
 	a:hover:not([unavailable]) {
@@ -149,7 +188,13 @@
 
 	abbr,
 	.caps {
+		font-style: normal;
 		font-variant-caps: all-small-caps;
+	}
+
+	em,
+	i {
+		font-family: var(--font-serif);
 	}
 
 	span.caps {
@@ -187,5 +232,26 @@
 	.flow :is(ol, ul, dl):not([class]) > li + li,
 	.flow :is(ol, ul, dl):not([class]) :is(ol, ul, dl) {
 		margin-block-start: 0.5em;
+	}
+
+	:is(h1, h2, h3) {
+		--flow-space: var(--s5);
+	}
+	:is(h4, h5, h6) {
+		--flow-space: var(--s1);
+	}
+	.flow h2 {
+		font-size: var(--s2);
+		letter-spacing: -0.01em;
+	}
+	.flow h3 {
+		font-size: var(--s1);
+		font-weight: 600;
+		letter-spacing: 0.01em;
+	}
+	.flow h4 {
+		font-size: var(--s0);
+		font-weight: 600;
+		letter-spacing: 0.01em;
 	}
 }
