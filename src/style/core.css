@@ -233,4 +233,25 @@
 	.flow :is(ol, ul, dl):not([class]) :is(ol, ul, dl) {
 		margin-block-start: 0.5em;
 	}
+
+	:is(h1, h2, h3) {
+		--flow-space: var(--s5);
+	}
+	:is(h4, h5, h6) {
+		--flow-space: var(--s1);
+	}
+	.flow h2 {
+		font-size: var(--s2);
+		letter-spacing: -0.01em;
+	}
+	.flow h3 {
+		font-size: var(--s1);
+		font-weight: 600;
+		letter-spacing: 0.01em;
+	}
+	.flow h4 {
+		font-size: var(--s0);
+		font-weight: 600;
+		letter-spacing: 0.01em;
+	}
 }
