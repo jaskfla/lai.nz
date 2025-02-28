@@ -15,7 +15,7 @@
 			monospace;
 
 		--focus-ring-color: var(--color-accent);
-		--focus-ring-offset: 0.25em;
+		--focus-ring-offset: calc(2 * var(--hairline));
 		--focus-ring-style: solid;
 		--focus-ring-width: calc(2 * var(--hairline));
 
