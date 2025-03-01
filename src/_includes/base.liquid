@@ -5,6 +5,11 @@
 		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
 		<title>{{ title }} – Jasper Lai</title>
 
+		<link rel="preload" href="/style/styles.css" as="style" crossorigin />
+		<link rel="preload" href="/style/remedy.css" as="style" crossorigin />
+		<link rel="preload" href="/style/type.css" as="style" crossorigin />
+		<link rel="preload" href="/style/colors.css" as="style" crossorigin />
+		<link rel="preload" href="/style/core.css" as="style" crossorigin />
 		<link
 			rel="preload"
 			href="/fonts/WarblerTextV1.2.woff2"
@@ -12,10 +17,32 @@
 			type="font/woff2"
 			crossorigin
 		/>
+		<link
+			rel="preload"
+			href="/fonts/Concourse_4.woff2"
+			as="font"
+			type="font/woff2"
+			media="(prefers-color-scheme: light)"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/Concourse_3.woff2"
+			as="font"
+			type="font/woff2"
+			media="(prefers-color-scheme: dark)"
+			crossorigin
+		/>
+
 		<link rel="stylesheet" media="all" href="/style/styles.css" />
 
 		<link rel="icon" href="favicon.ico" sizes="48x48" />
-		<link rel="icon" href="/meta/favicon.svg" sizes="any" type="image/svg+xml" />
+		<link
+			rel="icon"
+			href="/meta/favicon.svg"
+			sizes="any"
+			type="image/svg+xml"
+		/>
 		<link rel="mask-icon" href="/meta/mask-icon.svg" color="#303030" />
 		<link rel="apple-touch-icon" sizes="256x256" href="apple-touch-icon.png" />
 		<link
@@ -59,11 +86,12 @@
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta property="og:locale" content="en_NZ" />
+		<meta name="fediverse:creator" content="@jasperlai@mastodon.online" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:image" content="/meta/open-graph-image.webp" />
 		<meta
-		name="twitter:image:alt"
-		content="An Asian adult walking down a marble staircase outside an art gallery."
+			name="twitter:image:alt"
+			content="An Asian adult walking down a marble staircase outside an art gallery."
 		/>
 		<meta name="twitter:site" content="@_JasperLai" />
 		<meta name="twitter:creator" content="@_JasperLai" />
@@ -71,7 +99,7 @@
 		<meta name="twitter:description" content="{{ metadata.description }}" />
 
 		<meta name="apple-mobile-web-app-title" content="Jasper Lai" />
-		<meta name="generator" content="{{ eleventy.generator }}">
+		<meta name="generator" content="{{ eleventy.generator }}" />
 	</head>
 	<body>
 		{{ content }}

@@ -8,8 +8,10 @@ layout: main.liquid
 		max-inline-size: var(--content-width);
 	}
 	.hello {
-		font: clamp(24px, 2.7vi, 2rem) / 1.3 var(--font-serif);
-		padding-block: 8rem;
+		font-family: var(--font-serif);
+		font-size: var(--s3);
+		line-height: 1.35;
+		padding-block: var(--s11);
 		padding-left: var(--top-level-padding-left);
 		padding-right: var(--top-level-padding-right);
 		text-wrap: pretty;
@@ -33,35 +35,35 @@ layout: main.liquid
 	}
 	figure.hero figcaption {
 		color: var(--color-fg-2);
-		font-size: 0.8rem;
+		font-size: var(--s-1);
 		letter-spacing: 0.015em;
 		line-height: 1.25;
-		margin-block: 1rem 4rem;
+		margin-block: var(--s0) var(--s6);
 		margin-left: var(--top-level-padding-left);
 		margin-right: var(--top-level-padding-right);
 		text-align: end;
 
 		@media (min-width: 40rem) {
-			position: absolute;
 			inset-block-end: 0;
 			inset-inline-end: 0;
+			position: absolute;
 
 			-webkit-backdrop-filter: var(--bg-blur);
 			backdrop-filter: var(--bg-blur);
 			background-color: var(--color-bg-vibrant);
-			border-radius: 0.4rem;
-			border: 0.5px solid var(--color-border);
+			border-radius: var(--s-5);
+			border: var(--delineation);
 			color: var(--color-fg-1);
 			inline-size: fit-content;
-			margin-block: 1rem;
-			padding-block: 0.4rem;
-			padding-inline: 0.8rem;
+			margin-block: var(--s0);
+			padding-block: var(--s-5);
+			padding-inline: var(--s-1);
 		}
 	}
 	.explainer {
 		--flow-space: 1.75em;
 		color: var(--color-fg-2);
-		padding-block: 6rem 8rem;
+		padding-block: var(--s10) var(--s11);
 		padding-left: var(--top-level-padding-left);
 		padding-right: var(--top-level-padding-right);
 		text-wrap: pretty;

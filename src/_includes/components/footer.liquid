@@ -14,11 +14,11 @@
 
 		.footer__safe-area nav {
 			display: grid;
-			font-size: 1rem;
-			gap: 1rem 2rem;
+			font-size: var(--s0);
+			gap: var(--s1) var(--s3);
 			grid-template-columns: repeat(2, 1fr);
 			line-height: 1.85;
-			padding-block: 4rem;
+			padding-block: var(--s6);
 		}
 
 		.footer__safe-area nav h3 {
@@ -51,8 +51,10 @@
 		}
 
 		#signoff {
-			font: 1.4rem / 1.3 var(--font-serif);
-			margin-block-end: 0.3rem;
+			font-family: var(--font-serif);
+			font-size: var(--s1);
+			line-height: 1.3;
+			margin-block-end: var(--s-6);
 			text-wrap: balance;
 		}
 
@@ -72,10 +74,13 @@
 
 		#quip {
 			color: var(--color-fg-2);
-			font: 300 1rem / 1.2 var(--font-sans);
-			letter-spacing: 0.05em;
+			font-family: var(--font-sans);
+			font-size: var(--s0);
 			font-variant-caps: all-small-caps;
-			padding-block: 2rem;
+			font-weight: 300;
+			letter-spacing: 0.05em;
+			line-height: 1.2;
+			padding-block: var(--s3);
 			text-align: center;
 			text-wrap: balance;
 			transition: filter 0.2s ease;

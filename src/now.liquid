@@ -6,13 +6,16 @@ permalink: now.html
 
 <style>
 	h2 {
-		font-size: 1.35rem;
+		font-size: inherit;
 		font-weight: 700;
 		line-height: 1.45;
 	}
 	.run-in {
-		float: left;
+		float: inline-start;
 		margin-inline-end: 0.85em;
+	}
+	.wordswordswords__safe-area > p:first-of-type + .run-in {
+		margin-block-start: 0;
 	}
 	.run-in + p {
 		clear: none;
@@ -55,9 +58,9 @@ permalink: now.html
 <div class="coverflow">
 	<style>
 		.coverflow {
-			--coverflow-block-size: 8rem;
+			--coverflow-block-size: var(--s11);
 			block-size: var(--coverflow-block-size);
-			margin-block: 1rem 2rem;
+			margin-block: var(--s0) var(--s3);
 			overflow-x: auto;
 			scroll-snap-type: inline proximity;
 		}
@@ -96,8 +99,8 @@ permalink: now.html
 			border-radius: 0.25rem;
 			border: var(--delineation);
 			color: var(--color-fg-2);
-			font-size: 1rem;
-			padding: 0.5rem;
+			font-size: var(--s0);
+			padding: var(--s-3);
 		}
 	</style>
 	<ul class="coverflow__content" role="list">
