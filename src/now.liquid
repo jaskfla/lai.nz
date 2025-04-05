@@ -22,16 +22,18 @@ permalink: now.html
 	}
 </style>
 <p>
-	This is my <a href="https://nownownow.com/about" target="_blank">now page</a>.
-	(You should make one too.)
+	This is my
+	<a href="https://nownownow.com/about" rel="external" target="_blank"
+		>now page</a
+	>. (You should make one too.)
 </p>
 <h2 class="run-in">Doing</h2>
 <p>
 	Making my way through Emil Kowalski’s
-	<a href="https://animations.dev" target="_blank"
+	<a href="https://animations.dev" rel="external" target="_blank"
 		><i>Animations on the Web</i></a
 	>, with Andy Bell’s
-	<a href="https://piccalil.li/complete-css" target="_blank"
+	<a href="https://piccalil.li/complete-css" rel="external" target="_blank"
 		><i>Complete <abbr title="Cascading Style Sheets">CSS</abbr></i></a
 	>
 	lined up and ready to go. Running the maunga with my partner, swimming.
@@ -46,10 +48,11 @@ permalink: now.html
 <p>
 	<a
 		href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
+		rel="external"
 		target="_blank"
 		>Web Components</a
 	>, Sara Soueidan’s
-	<a href="https://practical-accessibility.today" target="_blank"
+	<a href="https://practical-accessibility.today" rel="external" target="_blank"
 		><i>Practical Accessibility</i></a
 	>
 	and SwiftUI. Also <i>Martyr!</i> by Kaveh Akbar.
@@ -106,7 +109,7 @@ permalink: now.html
 	<ul class="coverflow__content" role="list">
 		{% for thing in coverflow %}
 		<li class="coverflow__item">
-			<a href="{{ thing.link }}" target="_blank">
+			<a href="{{ thing.link }}" rel="external" target="_blank">
 				<picture>
 					<source srcset="{{ thing.coverPath }}.webp" type="image/webp" />
 					<source srcset="{{ thing.coverPath }}.png" type="image/png" />
@@ -121,11 +124,24 @@ permalink: now.html
 		</li>
 		{% endfor %}
 		<li class="coverflow__item coverflow__text-item">
-			…<a href="https://greyroastingco.com" target="_blank">and</a>
-			<a href="https://altezanobrothers.co.nz" target="_blank">locally</a>
-			<a href="https://www.eighthirty.com" target="_blank">roasted</a>
-			<a href="https://www.espressoworkshop.co.nz" target="_blank">specialty</a>
-			<a href="https://www.anastasiscoffee.com" target="_blank">coffee</a>.
+			…<a href="https://greyroastingco.com" rel="external" target="_blank"
+				>and</a
+			>
+			<a href="https://rocketcoffee.co.nz" rel="external" target="_blank"
+				>locally</a
+			>
+			<a href="https://altezanobrothers.co.nz" rel="external" target="_blank"
+				>roasted</a
+			>
+			<a href="https://www.eighthirty.com" rel="external" target="_blank"
+				>specialty</a
+			>
+			<a
+				href="https://www.espressoworkshop.co.nz"
+				rel="external"
+				target="_blank"
+				>coffee</a
+			>.
 		</li>
 	</ul>
 </div>

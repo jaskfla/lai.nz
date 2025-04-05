@@ -5,7 +5,7 @@ permalink: font-foundries.html
 ---
 
 Buy from independent typeface designers. There’s no need to support
-<a href="https://qz.com/2068310/what-monotypes-purchase-of-hoeflerco-means-to-font-designers" target="_blank">Big
+<a href="https://qz.com/2068310/what-monotypes-purchase-of-hoeflerco-means-to-font-designers" rel="external" target="_blank">Big
 Font</a>.
 
 <style>

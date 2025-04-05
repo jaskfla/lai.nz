@@ -126,7 +126,12 @@ permalink: readings.html
 	</style>
 	{% for r in readings %}
 		<li class="readings__reading" id="{{ r.title | slugify }}">
-		<a class="readings__reading_link" {% if r.link %} href="{{ r.link }}" {% endif %} target="_blank">
+		<a
+			class="readings__reading_link"
+			{% if r.link %} href="{{ r.link }}" {% endif %}
+			rel="external"
+			target="_blank"
+		>
 				<div>
 					<p class="readings__reading_author">
 						{% if r.author %}
