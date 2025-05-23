@@ -29,12 +29,7 @@
 
 :root {
 	color-scheme: light dark;
-	font-family:
-		system-ui,
-		-apple-system,
-		BlinkMacSystemFont,
-		Inter,
-		sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
 	font-kerning: normal;
 	font-optical-sizing: auto;
 	-webkit-font-smoothing: antialiased;
