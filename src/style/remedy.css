@@ -214,3 +214,7 @@ select {
 small {
 	font-size: 0.85em;
 }
+
+@view-transition {
+	navigation: auto;
+}
