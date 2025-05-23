@@ -59,10 +59,10 @@
 			--s11: calc(var(--s10) * var(--ratio));
 		}
 
-		--top-level-padding-top: env(safe-area-inset-top, 0);
-		--top-level-padding-bottom: env(safe-area-inset-bottom, 0);
-		--top-level-padding-left: max(env(safe-area-inset-left, 0), var(--s3));
-		--top-level-padding-right: max(env(safe-area-inset-right, 0), var(--s3));
+		--safe-padding-top: env(safe-area-inset-top, 0);
+		--safe-padding-bottom: env(safe-area-inset-bottom, 0);
+		--safe-padding-left: max(env(safe-area-inset-left, 0), var(--s3));
+		--safe-padding-right: max(env(safe-area-inset-right, 0), var(--s3));
 
 		--transition-dn-lightning: 125ms;
 		--transition-dn-swift: 175ms;
