@@ -23,19 +23,30 @@ permalink: readings.html
 			}
 		}
 		.readings__reading {
-			border-block: var(--delineation);
+			border-block-start: var(--delineation);
 			display: grid;
 			grid-column: 1 / -1;
 			grid-template-columns: subgrid;
 			margin-block: 0;
-			transition-duration: var(--transition-duration);
-      transition-property: border-color, opacity;
-      transition-timing-function: var(--transition-fn);
+			&:last-of-type {
+				border-block-end: var(--delineation);
+			}
 		}
 		@media (hover: hover) {
+			.readings__reading {
+				transition: border-color var(--transition-duration) var(--transition-fn);
+			}
+			.readings__reading_link {
+				transition: opacity var(--transition-duration) var(--transition-fn);
+			}
 			.readings:has(.readings__reading:hover) > .readings__reading:not(:hover) {
 				border-color: transparent;
-				opacity: 40%;
+				.readings__reading_link {
+					opacity: 40%;
+				}
+			}
+			.readings__reading:hover + .readings__reading {
+				border-color: var(--color-border) !important;
 			}
 		}
 		.readings__reading p {
