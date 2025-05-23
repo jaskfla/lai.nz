@@ -16,7 +16,7 @@ Font</a>.
 	}
 </style>
 
-<ul role="list" style="column-gap: var(--s0); columns: 2">
+<ul role="list" style="column-gap: var(--s0); columns: 2; max-inline-size: 30em;">
 	<li>
 		<a href="https://www.boldmonday.com" rel="external" target="_blank"
 			>Bold Monday</a
