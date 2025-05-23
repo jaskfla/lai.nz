@@ -9,8 +9,9 @@ const signoffPlace = pickOne([
 	'big-little Tāmaki Makaurau',
 	'downtown Auckland, New Zealand',
 ]);
-document.getElementById('signoff').innerHTML =
-	`${signoffAction} ${signoffPlace}`;
+document.getElementById(
+	'signoff'
+).innerHTML = `${signoffAction} ${signoffPlace}`;
 
 document.getElementById('thanks').outerHTML = pickOne([
 	'<p id="thanks" lang="mi">Ngā mihi mo te haere mai</p>',
