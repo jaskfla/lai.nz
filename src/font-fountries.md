@@ -16,7 +16,10 @@ Font</a>.
 	}
 </style>
 
-<ul role="list" style="column-gap: var(--s0); columns: 2; max-inline-size: 30em;">
+<ul
+	role="list"
+	style="column-gap: var(--s0); columns: 2; max-inline-size: 30em"
+>
 	<li>
 		<a href="https://www.boldmonday.com" rel="external" target="_blank"
 			>Bold Monday</a
@@ -81,7 +84,8 @@ Font</a>.
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://mbtype.com" rel="external" target="_blank">MB Type</a
+		<a href="https://mbtype.com" rel="external" target="_blank"
+			><span class="caps">MB</span> Type</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
@@ -89,7 +93,11 @@ Font</a>.
 	</li>
 	<li><a href="https://www.nan.xyz" rel="external" target="_blank">NaN</a></li>
 	<li>
-		<a href="https://ohnotype.co" rel="external" target="_blank">Oh No</a>
+		<a href="https://ohnotype.co" rel="external" target="_blank"
+			><span class="caps">Oh</span>
+			<span style="text-transform: lowercase">No</span>
+			Type Co.</a
+		>
 	</li>
 	<li>
 		<a href="https://okaytype.com" rel="external" target="_blank">Okay Type</a>
@@ -97,7 +105,8 @@ Font</a>.
 	<li>
 		<a href="https://pangrampangram.com" rel="external" target="_blank"
 			>Pangram Pangram</a
-		> & <a href="https://off-type.com" rel="external" target="_blank">Off Type</a
+		>
+		& <a href="https://off-type.com" rel="external" target="_blank">Off Type</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
