@@ -72,7 +72,7 @@ Font</a>.
 		>
 	</li>
 	<li>
-		<a href="http://klim.co.nz" rel="external" target="_blank">Klim</a
+		<a href="https://klim.co.nz" rel="external" target="_blank">Klim</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
