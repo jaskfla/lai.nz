@@ -16,50 +16,6 @@ layout: main.liquid
 		padding-right: var(--top-level-padding-right);
 		text-wrap: pretty;
 	}
-	section.hero {
-		display: flex;
-		justify-content: center;
-	}
-	figure.hero {
-		flex-shrink: 0;
-		position: relative;
-		width: 100%;
-	}
-	figure.hero img {
-		object-fit: cover;
-		width: 100%;
-		height: 50 cqw;
-		min-height: 33 cqw;
-		/* ~3:1 aspect ratio */
-		max-height: 90vh;
-	}
-	figure.hero figcaption {
-		color: var(--color-fg-2);
-		font-size: var(--s-1);
-		letter-spacing: 0.015em;
-		line-height: 1.25;
-		margin-block: var(--s0) var(--s6);
-		margin-left: var(--top-level-padding-left);
-		margin-right: var(--top-level-padding-right);
-		text-align: end;
-
-		@media (min-width: 40rem) {
-			inset-block-end: 0;
-			inset-inline-end: 0;
-			position: absolute;
-
-			-webkit-backdrop-filter: var(--bg-blur);
-			backdrop-filter: var(--bg-blur);
-			background-color: var(--color-bg-vibrant);
-			border-radius: var(--s-5);
-			border: var(--delineation);
-			color: var(--color-fg-1);
-			inline-size: fit-content;
-			margin-block: var(--s0);
-			padding-block: var(--s-5);
-			padding-inline: var(--s-1);
-		}
-	}
 	.explainer {
 		--flow-space: 1.75em;
 		color: var(--color-fg-2);
@@ -76,82 +32,7 @@ layout: main.liquid
 	<div class="landing__safe-area flow">{{ content }}</div>
 </section>
 <hr />
-<figure class="hero">
-	<picture>
-		<source
-			srcset="
-				/images/hero.avif       4610w,
-				/images/hero-3840w.avif 3840w,
-				/images/hero-2560w.avif 2560w,
-				/images/hero-2048w.avif 2048w,
-				/images/hero-1920w.avif 1920w,
-				/images/hero-1600w.avif 1600w,
-				/images/hero-1080w.avif 1800w,
-				/images/hero-750w.avif   750w,
-				/images/hero-640w.avif   640w,
-				/images/hero-500w.avif   500w,
-				/images/hero-320w.avif   320w
-			"
-			type="image/avif"
-		/>
-		<source
-			srcset="
-				/images/hero.heic       4610w,
-				/images/hero-3840w.heic 3840w,
-				/images/hero-2560w.heic 2560w,
-				/images/hero-2048w.heic 2048w,
-				/images/hero-1920w.heic 1920w,
-				/images/hero-1600w.heic 1600w,
-				/images/hero-1080w.heic 1800w,
-				/images/hero-750w.heic   750w,
-				/images/hero-640w.heic   640w,
-				/images/hero-500w.heic   500w,
-				/images/hero-320w.heic   320w
-			"
-			type="image/heif"
-		/>
-		<source
-			srcset="
-				/images/hero.webp       4610w,
-				/images/hero-3840w.webp 3840w,
-				/images/hero-2560w.webp 2560w,
-				/images/hero-2048w.webp 2048w,
-				/images/hero-1920w.webp 1920w,
-				/images/hero-1600w.webp 1600w,
-				/images/hero-1080w.webp 1800w,
-				/images/hero-750w.webp   750w,
-				/images/hero-640w.webp   640w,
-				/images/hero-500w.webp   500w,
-				/images/hero-320w.webp   320w
-			"
-			type="image/webp"
-		/>
-		<source
-			srcset="
-				/images/hero.jpg       4610w,
-				/images/hero-3840w.jpg 3840w,
-				/images/hero-2560w.jpg 2560w,
-				/images/hero-2048w.jpg 2048w,
-				/images/hero-1920w.jpg 1920w,
-				/images/hero-1600w.jpg 1600w,
-				/images/hero-1080w.jpg 1800w,
-				/images/hero-750w.jpg   750w,
-				/images/hero-640w.jpg   640w,
-				/images/hero-500w.jpg   500w,
-				/images/hero-320w.jpg   320w
-			"
-			type="image/jpeg"
-		/>
-		<img
-			alt="An Asian adult walking down a marble staircase outside an art gallery."
-			decoding="async"
-			src="/images/hero.jpg"
-		/>
-	</picture>
-	<figcaption>
-		Thanks to Jeramy&nbsp;B. for this oddly fancy photo of me ♥
-	</figcaption>
-</figure>
+{% render 'components/hero' %}
 <section class="explainer">
 	<div class="landing__safe-area flow">
 		<p>
