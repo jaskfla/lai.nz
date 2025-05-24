@@ -137,12 +137,12 @@ permalink: readings.html
 	</style>
 	{% for r in readings %}
 		<li class="readings__reading" id="{{ r.title | slugify }}">
-		<a
-			class="readings__reading_link"
-			{% if r.link %} href="{{ r.link }}" {% endif %}
-			rel="external"
-			target="_blank"
-		>
+			<a
+				class="readings__reading_link"
+				{% if r.link %} href="{{ r.link }}" {% endif %}
+				rel="external"
+				target="_blank"
+			>
 				<div>
 					<p class="readings__reading_author">
 						{% if r.author %}
@@ -152,15 +152,15 @@ permalink: readings.html
 						{% endif %}
 					</p>
 					{% if r.media %}
-					<p class="readings__reading_media">{{ r.media }}</p>
-				{% endif %}
+						<p class="readings__reading_media">{{ r.media }}</p>
+					{% endif %}
 				</div>
 				<div class="readings__reading_details">
 					{% if r.author %}
 						<h2 class="readings__reading_title">{{ r.title }}</h2>
 					{% endif %}
-						{% if r.pullquote %}
-					<p class="readings__reading_pullquote">{{ r.pullquote }}</p>
+					{% if r.pullquote %}
+						<p class="readings__reading_pullquote">{{ r.pullquote }}</p>
 					{% endif %}
 					{% if r.comment %}
 						<p class="readings__reading_comment">{{ r.comment }}</p>
