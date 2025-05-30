@@ -72,6 +72,11 @@ Font</a>.
 		>
 	</li>
 	<li>
+		<a href="https://kilotype.de" rel="external" target="_blank"
+			>Kilotype</a
+		>
+	</li>
+	<li>
 		<a href="https://klim.co.nz" rel="external" target="_blank">Klim</a
 		><span class="star-marker"></span>
 	</li>
