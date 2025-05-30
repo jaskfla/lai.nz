@@ -136,7 +136,24 @@ export default [
 		author: 'Oliver Reichenstein',
 		title: 'Web Design is 95% Typography',
 		link: 'https://ia.net/topics/the-web-is-all-about-typography-period',
-		media: 'article',
+		media: 'article, 4&nbsp;min',
+		pullquote: null,
+		comment: null,
+	},
+	{
+		author: 'Oliver Reichenstein',
+		title: 'Maker’s Knowledge',
+		link: 'https://ia.net/topics/the-web-is-all-about-typography-period',
+		media: 'article, 11&nbsp;min',
+		pullquote:
+			'<i>Design Thinking</i> suggests that there’s thought without design and design without thought. There isn’t.',
+		comment: null,
+	},
+	{
+		author: 'Matthias Endler',
+		title: 'The Best Programmers I Know',
+		link: 'https://endler.dev/2025/best-programmers',
+		media: 'blog post',
 		pullquote: null,
 		comment: null,
 	},
@@ -148,7 +165,7 @@ export default [
 	// 	media: 'article',
 	// 	pullquote: 'Never think about printers again.',
 	// 	comment:
-	// 		'Perhaps not life changing, but damned Nilay’s subtext about AI slop isn’t on point.',
+	// 		'Perhaps not life changing, but damned if Nilay’s subtext about AI slop isn’t on point.',
 	// },
 	// {
 	// 	author: 'Merlin Mann',
@@ -165,13 +182,5 @@ export default [
 	// 	media: 'book',
 	// 	pullquote: null,
 	// 	comment: null,
-	// },
-	// {
-	// 	author: 'John Siracusa & Dan Benjamin',
-	// 	title: 'Hypercritical',
-	// 	link: 'https://hypercritical.fireside.fm',
-	// 	media: 'podcast',
-	// 	pullquote: null,
-	// 	comment: 'All about that knobfeel.',
 	// },
 ];
