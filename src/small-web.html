@@ -1,0 +1,50 @@
+---
+title: Lovely personal sites
+layout: wordswordswords.liquid
+permalink: small-web.html
+---
+
+<style>
+	.personal-sites-list {
+		column-gap: 2ch;
+		display: flex;
+		flex-wrap: wrap;
+	}
+</style>
+
+<p>
+	A handful of reminders that the
+	<a
+		href="https://benhoyt.com/writings/the-small-web-is-beautiful"
+		rel="external"
+		target="_blank"
+		>the small web is beaufitul</a
+	>.
+</p>
+
+<p>
+	I mean, I like my website. But <em>look at these</em>. Look hard enough and
+	you’ll find that this site has grown more from grafts than the original
+	sapling.
+</p>
+
+<ul class="personal-sites-list" role="list">
+	{% for url in personal-sites %}
+	<li class="personal-sites-list__item">
+		<a href="{{ url }}" rel="external" target="_blank"
+			><code>{{ url | hostname }}</code></a
+		>
+	</li>
+	{% endfor %}
+</ul>
+
+<h2>Related</h2>
+
+<p>
+	<a
+		href="https://projects.kwon.nyc/internet-is-fun"
+		rel="external"
+		target="_blank"
+		>The internet used to be fun</a
+	>
+</p>
