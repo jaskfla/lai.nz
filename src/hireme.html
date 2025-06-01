@@ -13,12 +13,9 @@ excludeFromSitemap: true
 			grid-auto-flow: dense;
 			grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
 			margin-block-start: var(--s11);
-
-			/* :where(h2, :has(h2)), */
 			:where(h2, :has(h2)) ~ p:first-of-type {
 				--flow-space: 0;
 			}
-
 			p {
 				grid-column-start: 2;
 			}
@@ -35,7 +32,6 @@ excludeFromSitemap: true
 				text-wrap: balance;
 			}
 		}
-
 		h2 {
 			font-family: var(--font-display);
 			font-size: inherit;
@@ -43,7 +39,6 @@ excludeFromSitemap: true
 			font-variation-settings: 'opsz' 16;
 			line-height: inherit;
 		}
-
 		table {
 			border-block: var(--delineation);
 			font-size: var(--s0);
@@ -218,6 +213,10 @@ excludeFromSitemap: true
 		antithetical to web sensibilities.
 	</p>
 	<p>Capitalism isn’t working out.</p>
+	<p>
+		<abbr title="large language models">LLMs</abbr> are a fascinating tool, but
+		stewards of the technology have built their empire on theft.
+	</p>
 	<p>Detail matters.</p>
 </section>
 {% endcomment %}
