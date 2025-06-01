@@ -109,8 +109,5 @@ of design systems.
 
 I’m an unremarkable ideator but a strong editor.
 
-I am acutely sensitive to shape, to flow, and to voice.
-
-I think, often, in paragraphs.
 
 I am unironically, unashamedly curious.
