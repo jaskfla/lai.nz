@@ -124,6 +124,11 @@ Font</a>.
 		>
 	</li>
 	<li>
+		<a href="https://www.swisstypefaces.com" rel="external" target="_blank"
+			>Swiss Typefaces</a
+		>
+	</li>
+	<li>
 		<a href="https://tosche.net" rel="external" target="_blank"
 			>Toshi Omagari</a
 		>
