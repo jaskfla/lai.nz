@@ -227,7 +227,7 @@
 
 	/* https://piccalil.li/blog/my-favourite-3-lines-of-css */
 	:is(article, .flow) > * + * {
-		margin-block-start: var(--flow-space, 1em);
+		margin-block-start: var(--flow-space, 1lh);
 	}
 
 	.flow :is(ol, ul, dl):not([class]) > li + li,
@@ -243,16 +243,16 @@
 	}
 	.flow h2 {
 		font-size: var(--s2);
-		letter-spacing: -0.01em;
+		/* letter-spacing: -0.01em; */
 	}
 	.flow h3 {
 		font-size: var(--s1);
 		font-weight: 600;
-		letter-spacing: 0.01em;
+		/* letter-spacing: 0.01em; */
 	}
 	.flow h4 {
 		font-size: var(--s0);
 		font-weight: 600;
-		letter-spacing: 0.01em;
+		/* letter-spacing: 0.01em; */
 	}
 }
