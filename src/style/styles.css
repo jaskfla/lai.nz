@@ -2,4 +2,16 @@
 @import url('type.css') layer(type);
 @import url('colors.css') layer(colors);
 @import url('core.css') layer(core);
+
+@layer utility {
+	.visually-hidden:not(:focus):not(:active) {
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+}
+
 @layer template;
