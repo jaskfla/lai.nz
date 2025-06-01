@@ -11,12 +11,10 @@ excludeFromSitemap: true
 			padding-left: var(--safe-padding-left);
 			padding-right: var(--safe-padding-right);
 		}
-
 		.feedback-from-welby__safe-area > * {
 			margin-inline: auto;
 			max-inline-size: var(--content-width);
 		}
-
 		.feedback-from-welby__preamble {
 			align-items: stretch;
 			display: flex;
@@ -26,7 +24,6 @@ excludeFromSitemap: true
 			min-block-size: 75svb;
 			padding-block: var(--s8);
 		}
-
 		.feedback-from-welby h1,
 		.feedback-from-welby h2 {
 			font-family: var(--font-serif);
@@ -34,46 +31,38 @@ excludeFromSitemap: true
 			font-weight: 700;
 			line-height: 1.3;
 		}
-
 		.feedback-from-welby h2 {
 			color: var(--color-fg-2);
 		}
-
 		.feedback-from-welby p {
 			margin-block: 0.65em 1.5em;
 		}
-
 		.feedback-from-welby__preamble p {
 			color: var(--color-fg-2);
 			max-inline-size: 26em;
 			line-height: 1.45;
 		}
-
 		.feedback-from-welby__feedback {
 			font: 700 2.25rem / 1.35 var(--font-serif);
 			margin-inline: auto;
 			padding-block-end: var(--s11);
 		}
-
 		.feedback-from-welby__feedback p::before {
 			content:'“'
 		}
 		.feedback-from-welby__feedback p:last-of-type::after {
 			content:'”'
 		}
-
 		@media (prefers-color-scheme: dark) {
 			.feedback-from-welby__feedback {
 				font-weight: 400;
 			}
 		}
-
 		@media (max-width: 400px) {
 			.feedback-from-welby {
 				hyphens: auto;
 			}
 		}
-
 		@supports not (hanging-punctuation: first) {
 			.feedback-from-welby__feedback p {
 				text-indent: -0.5em;
