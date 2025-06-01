@@ -54,7 +54,7 @@ some tech debt</a>. But that hasn’t stopped people from making some pretty coo
 shit. It also isn’t governed by a single, for-profit company—and that’s pretty
 neat.
 
-**I’m attuned to the principles of the web, and work
+**I’m attuned to the web’s principles, and work
 <a href="https://frankchimero.com/blog/2015/the-webs-grain" rel="external" target="_blank">with
 its grain</a>.** I keep up-to-date with draft, spec and browser updates. I have
 annoying opinions about the cascade,
@@ -69,7 +69,7 @@ enhancement and design research.
 
 Your work and your process are design-led, informed by your ethical values.
 
-Your consensus are borne by your alignment, not the other way.
+Your consensus are borne by your alignment, not vice versa.
 
 Your team feel ownership over their work. They are afforded the agency to _do
 the thing_ and _do the thing well_.
