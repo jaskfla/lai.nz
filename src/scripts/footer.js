@@ -6,7 +6,7 @@ const signoffAction = pickOne([
 	'Well wishes from',
 ]);
 const signoffPlace = pickOne([
-	'big-little Tāmaki Makaurau',
+	'big-little <span lang="mi">Tāmaki Makaurau</span>',
 	'downtown Auckland, New Zealand',
 ]);
 document.getElementById(
