@@ -1,0 +1,302 @@
+---
+title: Hire Me
+layout: wordswordswords.liquid
+permalink: hireme.html
+excludeFromSitemap: true
+---
+
+<style>
+	@scope {
+		section {
+			column-gap: var(--s2);
+			display: grid;
+			grid-auto-flow: dense;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+			margin-block-start: var(--s11);
+
+			/* :where(h2, :has(h2)), */
+			:where(h2, :has(h2)) ~ p:first-of-type {
+				--flow-space: 0;
+			}
+
+			p {
+				grid-column-start: 2;
+			}
+			aside {
+				color: var(--color-fg-2);
+				font-feature-settings: 'liga';
+				font-size: var(--s0);
+				font-style: italic;
+				grid-column-start: 1;
+				hyphens: none;
+				letter-spacing: 0.015em;
+				line-height: 1.45;
+				text-align: end;
+				text-wrap: balance;
+			}
+		}
+
+		h2 {
+			font-family: var(--font-display);
+			font-size: inherit;
+			font-style: italic;
+			font-variation-settings: 'opsz' 16;
+			line-height: inherit;
+		}
+
+		table {
+			border-block: var(--delineation);
+			font-size: var(--s0);
+			grid-column: 1 / -1;
+		}
+		tr + tr :where(th, td) {
+			border-block-start: var(--delineation);
+		}
+		tr > :last-child {
+			font-variant-caps: all-small-caps;
+			font-variant-numeric: oldstyle-nums tabular-nums;
+		}
+		td {
+			padding-block: var(--s0) var(--s6);
+			min-block-size: var(--s9);
+		}
+		td > span {
+			color: var(--color-fg-2);
+			display: block;
+			font-size: 83.333333%;
+		}
+	}
+</style>
+
+<p>
+	<em>Kia ora, Jasper here.</em> I do stuff with the web. I’m not currently open
+	for new work; but here’s a li’l something about how I approach my work and
+	<a href="https://bes.au" rel="external" target="_blank">my workplace</a>.
+</p>
+
+<section class="flow">
+	<h2>A bit about me</h2>
+
+	<p>
+		My jobby-job calls me a full-stack web developer. Really, I’m a
+		<a
+			href="https://maggieappleton.com/design-engineers"
+			rel="external"
+			target="_blank"
+			>design engineer</a
+		>. The
+		<a
+			href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development"
+			rel="external"
+			target="_blank"
+			>front-of-the-front-end</a
+		>
+		sort, for whom design and engineering are different perspectives of the same
+		thing.
+	</p>
+
+	<p>
+		<strong>I love web technologies, and I love the web.</strong> JavaScript
+		<a
+			href="https://www.jwz.org/blog/2010/10/every-day-i-learn-something-new-and-stupid/#comment-1020"
+			rel="external"
+			target="_blank"
+			>has a lot of stupid</a
+		>
+		in it, and <abbr title="Cascading Style Sheets">CSS</abbr>
+		<a
+			href="https://github.com/jensimmons/cssremedy"
+			rel="external"
+			target="_blank"
+			>has some tech debt</a
+		>. But that hasn’t stopped people from making some pretty cool shit. It also
+		isn’t governed by a single, for-profit company—and that’s rather neat.
+	</p>
+
+	<p>
+		<strong
+			>I’m attuned to the web’s principles, and work
+			<a
+				href="https://frankchimero.com/blog/2015/the-webs-grain"
+				rel="external"
+				target="_blank"
+				>with its grain</a
+			>.</strong
+		>
+		I keep up-to-date with draft, spec and browser updates. I have annoying
+		opinions about the cascade,
+		<a
+			href="https://htmx.org/essays/locality-of-behaviour"
+			rel="external"
+			target="_blank"
+			>Locality of Behaviour</a
+		>
+		and you-name-it. But my interfaces are adaptive, my markup debuggable, and
+		my work inclusive. I code with semantics, progressive enhancement and design
+		research.
+	</p>
+	<p><strong>Also, I’m a big font nerd.</strong> Real big.</p>
+</section>
+
+<section class="flow">
+	<h2>A bit about you</h2>
+	<p>
+		Your work and your process are design-led, informed by your ethical values.
+	</p>
+	<p>Your consensus are borne by your alignment, not vice versa.</p>
+	<p>
+		Your team feel ownership over their work. They are afforded the agency to
+		<em>do the thing</em> and <em>do the thing well</em>.
+	</p>
+	<p>You value families, but aren’t one.</p>
+	<p>
+		You see the world through a lens of relationships, not a series of discrete
+		projects.
+	</p>
+	<p>You have collaborators, not individual contributors.</p>
+	<p>Your teams are small. Humans work best at human-scale.</p>
+</section>
+
+<section class="flow">
+	<div class="flow" style="grid-row: 1 / 8">
+		<h2>Proficiencies & idiosyncrasies</h2>
+		<aside>
+			This is not a
+			<abbr title="strengths, weaknesses, opportunities & threats">SWOT</abbr>,
+			merely an articulation of characteristics. Some may present unambiguously
+			as strengths, others as clear weaknesses. All can be framed as either;
+			I’ll let you judge.
+		</aside>
+	</div>
+
+	<p>I’ve been described as focused, questioning, and attentive to momentum.</p>
+	<p>
+		React is my bread-and-butter, though I’m happiest
+		<a
+			href="https://www.w3.org/DesignIssues/Principles.html#PLP"
+			rel="external"
+			target="_blank"
+			>when I don’t need it</a
+		>.
+	</p>
+	<p>
+		I have an appetite for resilience, for inclusion, and for better—none of
+		which are easily measurable.
+	</p>
+	<p>
+		I know my way around Figma, am fluent in
+		<abbr title="Hypertext Markup Language">HTML</abbr> and
+		<abbr title="Cascading Style Sheets">CSS</abbr>, and understand the
+		intricacies of design systems.
+	</p>
+	<p>I’m an unremarkable ideator but a strong editor.</p>
+	<p>
+		I’m an interior-of-the-cabinet painter.
+		<a
+			href="https://www.vitsoe.com/rw/about/good-design#good-design-is-thorough-down-to-the-last-detail"
+			rel="external"
+			target="_blank"
+			>Thorough down to the last detail</a
+		>, or something like that.
+	</p>
+	<p>I am unironically, unashamedly curious.</p>
+</section>
+
+{% comment %}
+<section class="flow">
+	<h2>Beliefs & ways</h2>
+	<p>Inclusion isn’t a stretch goal.</p>
+	<p>
+		The web is document-first.
+		<abbr title="Hypertext Markup Language">HTML</abbr>,
+		<abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript should be
+		used as minimally as possible, and in that order.
+	</p>
+	<p>
+		Utility-first <abbr title="Cascading Style Sheets">CSS</abbr> is
+		antithetical to web sensibilities.
+	</p>
+	<p>Capitalism isn’t working out.</p>
+	<p>Detail matters.</p>
+</section>
+{% endcomment %}
+
+<section class="flow">
+	<h2>What I’ve been up to</h2>
+	<table>
+		<thead>
+			<tr class="visually-hidden">
+				<th>Role</th>
+				<th>Place</th>
+				<th>Time</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Intern-turned-dev</td>
+				<td>
+					<a href="https://bes.au" rel="external" target="_blank"
+						>Beyond Essential Systems</a
+					>
+				</td>
+				<td><time datetime="2024">’23</time>–</td>
+			</tr>
+			<tr>
+				<td>
+					Student of Software Engineering
+					<span>+ teaching assistant, student rep</span>
+				</td>
+				<td>
+					<a href="https://www.auckland.ac.nz" rel="external" target="_blank"
+						>University of Auckland</a
+					>
+					<span>Faculty of Engineering</span>
+				</td>
+				<td>
+					<time datetime="2021">’21</time>–<time datetime="2024">’24</time>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Student of Communication Design
+					<span
+						><abbr title="user experience">UX</abbr>,
+						<abbr title="user interface">UI</abbr>, creative sound design</span
+					>
+				</td>
+				<td>
+					<a href="https://www.aut.ac.nz" rel="external" target="_blank"
+						>Auckland University of Technology</a
+					>
+					<span>School of Art and Design</span>
+				</td>
+				<td>
+					<time datetime="2018">’18</time>–<time datetime="2020">’20</time>
+				</td>
+			</tr>
+			<tr>
+				<td>Nerdfighter</td>
+				<td>
+					<a href="https://nerdfighteria.com" rel="external" target="_blank"
+						>Nerdfighteria</a
+					>
+				</td>
+				<td><time datetime="2012">’12</time>–</td>
+			</tr>
+			<tr>
+				<td>
+					Tinkerer <em>&</em> explorer
+					<span>of technology, typography and rabbit holes</span>
+				</td>
+				<td>
+					The World Wide Web
+					<span
+						>from an orange Toshiba Satellite <span class="caps">M50</span
+						><span></span
+					></span>
+				</td>
+				<td><time datetime="2018">’09</time>–</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
