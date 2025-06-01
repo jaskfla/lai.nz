@@ -79,9 +79,6 @@ You value families, but aren’t one.
 You see the world through a lens of relationships, not a series of discrete
 projects.
 
-{% comment %}Your projects are constructed through a lens of relationships, not
-a series of discrete tasks.{% endcomment %}
-
 Your teams are small. Humans work best at human-scale.
 
 ## Proficiencies & idiosyncrasies
