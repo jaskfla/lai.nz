@@ -13,11 +13,12 @@ excludeFromSitemap: true
 			grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
 		}
 		h1,
-		p:first-of-type {
+		p:first-of-type,
+		table {
 			grid-column: 1 / -1;
 		}
 		h2,
-		h2 + * {
+		h2 + p {
 			--flow-space: var(--s11);
 		}
 		h2 {
@@ -29,6 +30,37 @@ excludeFromSitemap: true
 		}
 		p {
 			grid-column-start: 2;
+		}
+		aside {
+			color: var(--color-fg-2);
+			font-size: var(--s0);
+			grid-column-start: 1;
+			text-align: end;
+			font-style: italic;
+		}
+
+		table {
+			border-block: var(--delineation);
+			font-size: var(--s0);
+		}
+		tr + tr :where(th, td) {
+			border-block-start: var(--delineation);
+		}
+		tr > :last-child {
+			font-variant-caps: all-small-caps;
+			font-variant-numeric: oldstyle-nums tabular-nums;
+		}
+		th {
+			display: none; /* TODO: Do this properly */
+		}
+		td {
+			padding-block: var(--s0) var(--s6);
+			min-block-size: var(--s9);
+		}
+		 td > span {
+			color: var(--color-fg-2);
+			display: block;
+			font-size: 83.333333%;
 		}
 	}
 </style>
@@ -51,7 +83,7 @@ thing.
 a lot of stupid</a> in it, and <abbr title="Cascading Style Sheets">CSS</abbr>
 <a href="https://github.com/jensimmons/cssremedy" rel="external" target="_blank">has
 some tech debt</a>. But that hasn’t stopped people from making some pretty cool
-shit. It also isn’t governed by a single, for-profit company—and that’s pretty
+shit. It also isn’t governed by a single, for-profit company—and that’s rather
 neat.
 
 **I’m attuned to the web’s principles, and work
@@ -83,7 +115,7 @@ Your teams are small. Humans work best at human-scale.
 
 ## Proficiencies & idiosyncrasies
 
-<aside style="color: var(--color-fg-2); font-style: italic;">
+<aside>
 This is not a
 <abbr title="strengths, weaknesses, opportunities & threats">SWOT</abbr>. It is
 an articulation of characteristics. Some may present unambiguously as strengths,
@@ -106,5 +138,27 @@ of design systems.
 
 I’m an unremarkable ideator but a strong editor.
 
+I’m an interior-of-the-cabinet painter.
+<a href="https://www.vitsoe.com/rw/about/good-design#good-design-is-thorough-down-to-the-last-detail" rel="external" target="_blank">Thorough
+down to the last detail</a>, or something like that.
 
 I am unironically, unashamedly curious.
+
+<!--
+**I enjoy being part of bigger-than-me things.**
+~~I value process and due diligence, but more than that I value having a common goal.~~
+
+You answer to no investors or board of directors. You need only your own permission.
+
+the folks working on the specs think deeply about the platforms’ development, and
+-->
+
+## What I’ve been up to
+
+| Role                                                                           | Place                                                                                         | Time                                                              |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Intern-turned-dev                                                              | Beyond Essential Systems                                                                      | <time datetime="2024">’23</time>–                                 |
+| Student of Software Engineering <span>+ teaching assistant, student rep</span> | University of Auckland <span>Faculty of Engineering</span>                                    | <time datetime="2021">’21</time>–<time datetime="2024">’24</time> |
+| Student of Communication Design                                                | Auckland University of Technology <span>School of Art and Design</span>                       | <time datetime="2018">’18</time>–<time datetime="2020">’20</time> |
+| Nerdfighter                                                                    | Nerdfighteria                                                                                 | <time datetime="2012">’12</time>–                                 |
+| Tinkerer _&_ explorer <span>of technology, typography and rabbit holes</span>  | The World Wide Web <span>from an orange Toshiba Satellite <span class="caps">M50</span><span> | <time datetime="2018">’09</time>–                                 |
