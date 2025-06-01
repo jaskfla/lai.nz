@@ -25,6 +25,7 @@ too.
 - [exurb1a](https://www.youtube.com/Exurb1a)
 - [Goodside Studio](https://www.goodside.studio)
 - [Gordon Murray](https://en.wikipedia.org/wiki/Gordon_Murray)
+- [Henry Desroches](https://henry.codes)
 - [iA](https://ia.net 'Information Architects')
 - [Jay Foreman](https://www.youtube.com/JayForeman)
 - [Jen Simmons](https://jensimmons.com)
