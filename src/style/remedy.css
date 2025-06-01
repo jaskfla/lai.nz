@@ -210,6 +210,14 @@ small {
 	font-size: 0.85em;
 }
 
+table {
+	border-collapse: collapse;
+}
+
+tbody {
+	vertical-align: top;
+}
+
 @view-transition {
 	navigation: auto;
 }
