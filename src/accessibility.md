@@ -30,3 +30,14 @@ Though I can’t guarantee accessibility of stuff I link to, I try to select and
 promote work by people who also value
 <a href="https://inclusivedesignprinciples.info" rel="external" target="_blank">inclusive
 design</a>.
+
+<aside style="--flow-space: var(--s8); font-size: var(--s0); font-style: italic; text-align: end;">
+	<p>
+		<a
+			href="https://ethanmarcotte.com/wrote/an-accessibility-statement"
+			rel="external"
+			target="_blank"
+			>An accessibility statement? What gives?</a
+		>
+	</p>
+</aside>
