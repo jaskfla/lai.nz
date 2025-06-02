@@ -21,6 +21,7 @@ export default [
 	'https://kayserifserif.place',
 	'https://lynnandtonic.com',
 	'https://medienbaecker.com',
+	'https://mifsud.org',
 	'https://paco.me',
 	'https://ribo.zone',
 	'https://robinrendle.com',
