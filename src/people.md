@@ -30,6 +30,7 @@ too.
 - [iA](https://ia.net 'Information Architects')
 - [Jay Foreman](https://www.youtube.com/JayForeman)
 - [Jen Simmons](https://jensimmons.com)
+- [Jonnie Hallman](https://destroytoday.com)
 - [Lady Sophie](https://songwhip.com/ladysophie/one-night-only-to-the-boy-who-broke-my-heart)
 - [Lea Verou](https://verou.me)
 - [Lucas Sin](https://www.instagram.com/lucas.sin)
