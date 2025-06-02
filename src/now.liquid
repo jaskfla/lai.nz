@@ -11,11 +11,12 @@ permalink: now.html
 		line-height: 1.45;
 	}
 	.run-in {
+		--flow-space: 1lh;
 		float: inline-start;
 		margin-inline-end: 0.85em;
 	}
 	.wordswordswords__safe-area > p:first-of-type + .run-in {
-		margin-block-start: 0;
+		--flow-space: 0;
 	}
 	.run-in + p {
 		clear: none;
