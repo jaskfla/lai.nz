@@ -9,6 +9,7 @@ These people produce work that are worth my attention—perhaps you’ll like th
 too.
 
 - [Adam Lissagor](https://adamlisagor.com)
+- [Adam Newbold](https://neatnik.net)
 - [Andrew Kim](https://allsideswater.com)
 - [Antonio Cavedoni](https://cavedoni.com)
 - [Arun Venkatesan](https://arun.is)
