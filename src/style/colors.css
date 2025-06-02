@@ -13,7 +13,7 @@
 	--color-selection: oklch(from var(--color-fg) l c h / 6%);
 
 	@media (prefers-contrast: more) {
-		--color-bg: white;
+		--color-bg: light-dark(white, oklch(17.5% 0.039 202));
 		--color-fg: light-dark(oklch(15% 0 0), oklch(94% 0.015 202));
 		--color-fg-2: light-dark(oklch(30% 0 0), oklch(85% 0.015 202));
 
