@@ -25,6 +25,7 @@ too.
 - [Emil Kowalski](https://emilkowal.ski)
 - [Ethan Marcotte](https://ethanmarcotte.com)
 - [exurb1a](https://www.youtube.com/Exurb1a)
+- [Gavin Nelson](https://nelson.co)
 - [Good Enough](https://goodenough.us)
 - [Goodside Studio](https://www.goodside.studio)
 - [Gordon Murray](https://en.wikipedia.org/wiki/Gordon_Murray)
