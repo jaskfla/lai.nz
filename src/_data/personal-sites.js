@@ -9,8 +9,10 @@ function hostnameCompare(a, b) {
 
 export default [
 	'https://anhvn.com',
+	'https://arielsalminen.com',
 	'https://benji.org',
 	'https://bradleyziffer.com',
+	'https://charlottedann.com',
 	'https://emilkowal.ski',
 	'https://eva.town',
 	'https://glenn.me',
@@ -26,4 +28,6 @@ export default [
 	'https://paco.me',
 	'https://ribo.zone',
 	'https://robinrendle.com',
+	'https://ryanmulligan.dev',
+	'https://www.adithnarein.com',
 ].sort(hostnameCompare);
