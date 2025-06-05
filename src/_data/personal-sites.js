@@ -25,9 +25,13 @@ export default [
 	'https://medienbaecker.com',
 	'https://mifsud.org',
 	'https://motherfuckingwebsite.com',
+	'https://nelson.co',
 	'https://paco.me',
 	'https://ribo.zone',
 	'https://robinrendle.com',
 	'https://ryanmulligan.dev',
+	'https://wojtek.im',
 	'https://www.adithnarein.com',
+	'https://www.alasdairmonk.com',
+	'https://www.yasmins.site',
 ].sort(hostnameCompare);
