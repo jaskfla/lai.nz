@@ -30,15 +30,29 @@ permalink: now.html
 </p>
 <h2 class="run-in">Doing</h2>
 <p>
-	Making my way through Emil Kowalski’s
+	Binging
+	<a href="https://developer.apple.com/wwdc25" rel="external" target="_blank"
+		>Dub Dub&nbsp;’25</a
+	>
+	session videos. Studying up from
 	<a href="https://animations.dev" rel="external" target="_blank"
 		><i>Animations on the Web</i></a
-	>, with Andy Bell’s
+	>
+	and
 	<a href="https://piccalil.li/complete-css" rel="external" target="_blank"
 		><i>Complete <abbr title="Cascading Style Sheets">CSS</abbr></i></a
-	>
-	lined up and ready to go. Running the maunga with my partner, swimming.
-	Learnin’ to cook more Taiwanese food.
+	>. Hand-rolling a lightweight, accessible slide deck engine with
+	<a
+		href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API"
+		rel="external"
+		target="_blank"
+		>view transitions</a
+	>.
+</p>
+<p>
+	Running <span lang="mi">Tāmaki Makaurau</span> with my partner. Exploring salt
+	tunnels as a turtle archaeologist. And maybe&mdash;<em>just maybe</em
+	>&mdash;thinking about practising more music.
 </p>
 <h2 class="run-in">Obsessing about</h2>
 <p>
@@ -51,10 +65,16 @@ permalink: now.html
 		href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
 		rel="external"
 		target="_blank"
-		>Web Components</a
+		>Web components</a
 	>, Sara Soueidan’s
 	<a href="https://practical-accessibility.today" rel="external" target="_blank"
 		><i>Practical Accessibility</i></a
+	>,
+	<a
+		href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select"
+		rel="external"
+		target="_blank"
+		>styleable <code>&lt;select&gt;</code></a
 	>
 	and SwiftUI. Also <i>Martyr!</i> by Kaveh Akbar.
 </p>
@@ -86,9 +106,8 @@ permalink: now.html
 		}
 		.coverflow__item {
 			margin-block: 0;
-			transition:
-				filter var(--transition-dn-sensible) var(--transition-fn),
-				opacity var(--transition-dn-sensible) var(--transition-fn);
+			transition: var(--transition-dn-sensible) var(--transition-fn);
+			transition-property: filter, opacity;
 		}
 		.coverflow__img {
 			block-size: var(--coverflow-block-size);
