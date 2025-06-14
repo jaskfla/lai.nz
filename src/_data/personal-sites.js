@@ -24,6 +24,7 @@ export default [
 	'https://lynnandtonic.com',
 	'https://medienbaecker.com',
 	'https://mifsud.org',
+	'https://miocene.io',
 	'https://motherfuckingwebsite.com',
 	'https://nelson.co',
 	'https://paco.me',
