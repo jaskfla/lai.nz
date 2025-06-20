@@ -21,6 +21,7 @@ export default [
 	'https://jillian.garden',
 	'https://jzhao.xyz',
 	'https://kayserifserif.place',
+	'https://kuntz.io',
 	'https://lynnandtonic.com',
 	'https://medienbaecker.com',
 	'https://mifsud.org',
