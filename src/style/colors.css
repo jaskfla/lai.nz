@@ -1,6 +1,6 @@
 :root {
 	--color-bg: light-dark(oklch(98% 0.003 68), oklch(20.5% 0.04 202));
-	--color-fg: light-dark(oklch(15% 0.04 229.5), oklch(82.5% 0.015 202));
+	--color-fg: light-dark(oklch(15% 0.04 229.5), oklch(78% 0.015 202));
 	--color-fg-2: light-dark(
 		oklch(from var(--color-fg) 47.5% 0.015 h),
 		oklch(from var(--color-fg) 70% c h)
