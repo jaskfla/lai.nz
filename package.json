@@ -25,7 +25,7 @@
 	"license": "SEE LICENSE IN LICENSE.md",
 	"private": true,
 	"scripts": {
-		"build": "rm -rf _site/ && bun x @11ty/eleventy && pnpm run minify:js",
+		"build": "rm -rf _site/ && bun x @11ty/eleventy && bun run minify:js",
 		"prestart": "rm -rf _site/",
 		"start": "bun x @11ty/eleventy --serve",
 		"watch": "bun x @11ty/eleventy --watch",
