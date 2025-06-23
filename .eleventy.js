@@ -1,3 +1,5 @@
+import path from 'node:path';
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import slugify from '@sindresorhus/slugify';
 import { minify } from 'html-minifier-terser';
 import { JSDOM } from 'jsdom';
@@ -42,6 +44,25 @@ export default (eleventyConfig) => {
 	);
 	eleventyConfig.addFilter('slugify', (str) => slugify(decodeHtml(str))); // Shadow built-in slugify
 	eleventyConfig.addFilter('stringify', (o) => JSON.stringify(o, null, '\t'));
+
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		filenameFormat: (_id, src, width, format, _options) => {
+			const extIn = path.extname(src);
+			const name = path.basename(src, extIn);
+			const extOut = format === 'jpeg' ? 'jpg' : format;
+			return `${name}-${width}w.${extOut}`;
+		},
+		formats: ['svg', 'avif', 'webp', 'jpeg'],
+		svgShortCircuit: 'size',
+		widths: ['auto'],
+		htmlOptions: {
+			imgAttributes: {
+				decoding: 'async',
+				loading: 'lazy',
+			},
+			pictureAttributes: {},
+		},
+	});
 
 	eleventyConfig.addTransform('htmlmin', function (content) {
 		return this.page.outputPath?.endsWith('.html')
