@@ -36,4 +36,5 @@ export default [
 	'https://www.adithnarein.com',
 	'https://www.alasdairmonk.com',
 	'https://www.yasmins.site',
+	'https://yannglt.com',
 ].sort(hostnameCompare);
