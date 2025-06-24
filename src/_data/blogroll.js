@@ -52,6 +52,10 @@ export default [
 		url: 'https://destroytoday.com/blog',
 	},
 	{
+		title: 'LOW←TECH MAGAZINE',
+		url: 'https://solar.lowtechmagazine.com',
+	},
+	{
 		title: 'Manuel Moreale',
 		url: 'https://manuelmoreale.com',
 	},
