@@ -1,0 +1,27 @@
+---
+layout: base.liquid
+---
+
+<slow-paragraphs class="p-by-p" role="article">
+	<style>
+		@layer template {
+			.p-by-p.sp {
+				font-family: var(--font-serif);
+				font-size: var(--s4);
+				text-wrap: pretty;
+
+				s {
+					color: var(--color-fg-2);
+				}
+
+				> .sp__wrapper {
+					margin-inline: auto;
+					max-inline-size: var(--content-width);
+				}
+			}
+		}
+	</style>
+	<h1>{{ title }}</h1>
+	{{ content }}
+</slow-paragraphs>
+<script src="/scripts/slow-paragraphs.js" type="module" defer></script>
