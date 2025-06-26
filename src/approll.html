@@ -1,0 +1,94 @@
+---
+title: Indispensable apps
+layout: wordswordswords.liquid
+permalink: approll.html
+---
+
+<style>
+	.approll__springboard {
+		display: grid;
+		gap: var(--s3);
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(var(--s10), 1fr));
+		max-inline-size: unset;
+		@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+			> a {
+				transition: transform 120ms var(--ease-in-out-quad);
+				&:nth-child(odd):hover {
+					transform: rotate(-1deg) scale(105%) translateY(calc(var(--s-6) * -1));
+				}
+				&:nth-child(even):hover {
+					transform: rotate(1deg) scale(105%) translateY(calc(var(--s-6) * -1));
+				}
+			}
+		}
+		@media (hover: hover) and (prefers-reduced-motion: reduce) {
+			> a {
+				transition: opacity 100ms linear;
+			}
+			> a:hover {
+				opacity: 85%;
+			}
+		}
+	}
+	.approll__icon {
+		aspect-ratio: 1;
+		&.ios {
+			border: var(--delineation);
+			border-radius: 22.5%;
+			mask: url('/images/squircle.svg') center / 100% 100% no-repeat;
+			scale: 81%;
+		}
+	}
+</style>
+
+<p>Delightful, frankly.</p>
+
+<ul class="approll__springboard" role="list">
+	{% for app in approll.primary %} {% if app.link %}
+	<a href="{{ app.link }}" rel="external" target="_blank">
+		{% endif %}
+		<img
+			eleventy:widths="120,160,320,460"
+			alt="{{ app.name }}"
+			class="approll__icon {{ app.platform }}"
+			src="{{ app.iconPath }}"
+		/>
+		{% if app.link %}
+	</a>
+	{% endif %} {% endfor %}
+</ul>
+
+<h2>Apps I wish I had more reason to use</h2>
+
+<ul class="approll__springboard" role="list">
+	{% for app in approll.honorary %} {% if app.link %}
+	<a href="{{ app.link }}" rel="external" target="_blank">
+		{% endif %}
+		<img
+			eleventy:widths="115,230,345,460"
+			alt="{{ app.name }}"
+			class="approll__icon {{ app.platform }}"
+			src="{{ app.iconPath }}"
+		/>
+		{% if app.link %}
+	</a>
+	{% endif %} {% endfor %}
+</ul>
+
+<h2>Graveyard</h2>
+
+<ul class="approll__springboard" role="list">
+	{% for app in approll.graveyard %} {% if app.link %}
+	<a href="{{ app.link }}" rel="external" target="_blank">
+		{% endif %}
+		<img
+			eleventy:widths="115,230,345,460"
+			alt="{{ app.name }}"
+			class="approll__icon {{ app.platform }}"
+			src="{{ app.iconPath }}"
+		/>
+		{% if app.link %}
+	</a>
+	{% endif %} {% endfor %}
+</ul>

@@ -161,3 +161,13 @@ These two are more _catalogue_ than _foundry_:
 - <a href="https://www.futurefonts.xyz" rel="external" target="_blank">Future
   Fonts</a>
 - <a href="https://uncut.wtf" rel="external" target="_blank"><span class="caps">UNCUT</span>.wtf</a>
+
+{% comment %}
+
+- https://aisforfonts.com/fonts
+- https://commercialtype.com/catalog
+- https://www.205.tf
+- https://www.atipofoundry.com
+- https://www.fairetype.com
+
+{% endcomment %}
