@@ -241,7 +241,7 @@ const graveyard = [
 	{
 		name: 'Path',
 		platform: Platform.IOS,
-		iconPath: '/images/app-icons/path.jpg',
+		iconPath: '/images/app-icons/path.png',
 		link: 'https://web.archive.org/web/20161128235506/https://path.com/moments',
 		commentary: null,
 	},
