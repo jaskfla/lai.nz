@@ -124,6 +124,13 @@ const honorary = [
 		commentary: null,
 	},
 	{
+		name: 'Citymapper',
+		platform: Platform.IOS,
+		iconPath: '/images/app-icons/citymapper.svg',
+		link: 'https://citymapper.com',
+		commentary: null,
+	},
+	{
 		name: 'Crouton',
 		platform: Platform.IOS,
 		iconPath: '/images/app-icons/crouton.png',
@@ -177,6 +184,13 @@ const honorary = [
 		platform: Platform.IOS,
 		iconPath: '/images/app-icons/paper.png',
 		link: null,
+		commentary: null,
+	},
+	{
+		name: 'Things',
+		platform: Platform.MACOS,
+		iconPath: '/images/app-icons/things.png',
+		link: 'https://culturedcode.com/things',
 		commentary: null,
 	},
 	{
