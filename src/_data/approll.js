@@ -25,7 +25,7 @@ const primary = [
 	{
 		name: 'Clear',
 		platform: Platform.IOS,
-		iconPath: '/images/app-icons/Clear.png',
+		iconPath: '/images/app-icons/clear.png',
 		link: 'https://www.useclear.com',
 		commentary: null,
 	},
