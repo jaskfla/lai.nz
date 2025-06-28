@@ -50,50 +50,62 @@ permalink: approll.html
 <p>Delightful, frankly.</p>
 
 <ul class="approll__springboard" role="list">
-	{% for app in approll.primary %} {% if app.link %}
-	<a href="{{ app.link }}" rel="external" target="_blank">
-		{% endif %}
-		<img
-			eleventy:widths="120,160,320,460"
-			alt="{{ app.name }}"
-			class="approll__icon {{ app.platform }}"
-			src="{{ app.iconPath }}"
-		/>
+	{% for app in approll.primary %}
+	<li>
 		{% if app.link %}
-	</a>
-	{% endif %} {% endfor %}
+		<a href="{{ app.link }}" rel="external" target="_blank">
+			{% endif %}
+			<img
+				eleventy:widths="120,160,320,460"
+				alt="{{ app.name }}"
+				class="approll__icon {{ app.platform }}"
+				src="{{ app.iconPath }}"
+			/>
+			{% if app.link %}
+		</a>
+		{% endif %}
+	</li>
+	{% endfor %}
 </ul>
 
 <h2>Apps I wish I had more reason to use</h2>
 
 <ul class="approll__springboard" role="list">
-	{% for app in approll.honorary %} {% if app.link %}
-	<a href="{{ app.link }}" rel="external" target="_blank">
-		{% endif %}
-		<img
-			eleventy:widths="115,230,345,460"
-			alt="{{ app.name }}"
-			class="approll__icon {{ app.platform }}"
-			src="{{ app.iconPath }}"
-		/>
+	{% for app in approll.honorary %}
+	<li>
 		{% if app.link %}
-	</a>
-	{% endif %} {% endfor %}
+		<a href="{{ app.link }}" rel="external" target="_blank">
+			{% endif %}
+			<img
+				eleventy:widths="115,230,345,460"
+				alt="{{ app.name }}"
+				class="approll__icon {{ app.platform }}"
+				src="{{ app.iconPath }}"
+			/>
+			{% if app.link %}
+		</a>
+		{% endif %}
+	</li>
+	{% endfor %}
 </ul>
 
 <h2>Graveyard</h2>
 
 <ul class="approll__springboard" role="list">
-	{% for app in approll.graveyard %} {% if app.link %}
-	<a href="{{ app.link }}" rel="external" target="_blank">
-		{% endif %}
-		<img
-			eleventy:widths="115,230,345,460"
-			alt="{{ app.name }}"
-			class="approll__icon {{ app.platform }}"
-			src="{{ app.iconPath }}"
-		/>
+	{% for app in approll.graveyard %}
+	<li>
 		{% if app.link %}
-	</a>
-	{% endif %} {% endfor %}
+		<a href="{{ app.link }}" rel="external" target="_blank">
+			{% endif %}
+			<img
+				eleventy:widths="115,230,345,460"
+				alt="{{ app.name }}"
+				class="approll__icon {{ app.platform }}"
+				src="{{ app.iconPath }}"
+			/>
+			{% if app.link %}
+		</a>
+		{% endif %}
+	</li>
+	{% endfor %}
 </ul>
