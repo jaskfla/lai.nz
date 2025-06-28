@@ -37,7 +37,11 @@ permalink: approll.html
 		&.ios {
 			border: var(--delineation);
 			border-radius: 22.5%;
-			mask: url('/images/squircle.svg') center / 100% 100% no-repeat;
+			mask-image: url('/images/squircle.svg');
+			mask-origin: content-box;
+			mask-position: center;
+			mask-repeat: no-repeat;
+			mask-size: 100% 100%;
 			scale: 81%;
 		}
 	}
