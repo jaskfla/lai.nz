@@ -11,24 +11,29 @@ permalink: approll.html
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		grid-template-columns: repeat(auto-fit, minmax(var(--s10), 1fr));
 		max-inline-size: unset;
-		@media (hover: hover) and (prefers-reduced-motion: no-preference) {
-			> a {
-				transition: transform 120ms var(--ease-in-out-quad);
-				&:nth-child(odd):hover {
-					transform: rotate(-1deg) scale(105%) translateY(calc(var(--s-6) * -1));
-				}
-				&:nth-child(even):hover {
-					transform: rotate(1deg) scale(105%) translateY(calc(var(--s-6) * -1));
-				}
+	}
+	.approll__springboard li {
+		margin: 0;
+	}
+	@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+		.approll__springboard li:has(a) {
+			display: block;
+			transition: transform 120ms var(--ease-in-out-quad);
+			transform-style: preserve-3d;
+			&:nth-child(odd):hover {
+				transform: rotate(-1deg) scale(105%) translateY(calc(var(--s-6) * -1));
+			}
+			&:nth-child(even):hover {
+				transform: rotate(1deg) scale(105%) translateY(calc(var(--s-6) * -1));
 			}
 		}
-		@media (hover: hover) and (prefers-reduced-motion: reduce) {
-			> a {
-				transition: opacity 100ms linear;
-			}
-			> a:hover {
-				opacity: 85%;
-			}
+	}
+	@media (hover: hover) and (prefers-reduced-motion: reduce) {
+		.approll__springboard a {
+			transition: opacity 100ms linear;
+		}
+		.approll__springboard a:hover {
+			opacity: 85%;
 		}
 	}
 	.approll__icon {
