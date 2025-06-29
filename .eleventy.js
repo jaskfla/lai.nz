@@ -77,6 +77,8 @@ export default (eleventyConfig) => {
 			: content;
 	});
 
+	eleventyConfig.setDataFileSuffixes(['.11tydata']);
+
 	return {
 		dir: {
 			input: SOURCE_DIR,
