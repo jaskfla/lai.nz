@@ -14,6 +14,7 @@ function decodeHtml(str) {
 	return el.textContent;
 }
 
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default (eleventyConfig) => {
 	const staticFiles = [
 		'fonts/',
