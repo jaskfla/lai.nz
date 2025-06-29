@@ -39,14 +39,22 @@ permalink: approll.html
 		aspect-ratio: 1;
 		width: 100%;
 		&.ios {
-			/* border: var(--delineation); */
-			/* border-radius: 22.5%; */
 			mask-image: url('/images/squircle.svg');
-			mask-origin: content-box;
 			mask-position: center;
 			mask-repeat: no-repeat;
 			mask-size: 100% 100%;
 			scale: 81%;
+			:has(> &)::before {
+				background-image: url('images/squircle-border.svg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				content: '';
+				inset: 0;
+				position: absolute;
+				scale: 81%;
+				z-index: 1;
+			}
 		}
 	}
 </style>
