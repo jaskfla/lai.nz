@@ -146,6 +146,12 @@ const honorary = [
 		link: 'https://mela.recipes',
 	},
 	{
+		name: 'Mimestream',
+		platform: Platform.MACOS,
+		iconPath: `${dir}/mimestream.png`,
+		link: 'https://mimestream.com',
+	},
+	{
 		name: 'Monodraw',
 		platform: Platform.MACOS,
 		iconPath: `${dir}/monodraw.png`,
