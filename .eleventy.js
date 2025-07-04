@@ -32,16 +32,15 @@ export default (eleventyConfig) => {
 	}
 
 	eleventyConfig.addCollection('notes', (collection) =>
-		collection.getFilteredByGlob(`${SOURCE_DIR}/notes/*.md`)
+		collection.getFilteredByGlob(`${SOURCE_DIR}/notes/*.md`),
 	);
 
-	eleventyConfig.addFilter('decodeHtml', decodeHtml);
 	eleventyConfig.addFilter('hostname', (url) => {
 		const hostname = new URL(url).hostname;
 		return hostname.startsWith('www.') ? hostname.slice(4) : hostname;
 	});
-	eleventyConfig.addFilter('isoDateString', (date) =>
-		date.toISOString().slice(0, 10)
+	eleventyConfig.addFilter('iso_date_string', (date) =>
+		date.toISOString().slice(0, 10),
 	);
 	eleventyConfig.addFilter('slugify', (str) => slugify(decodeHtml(str))); // Shadow built-in slugify
 	eleventyConfig.addFilter('stringify', (o) => JSON.stringify(o, null, '\t'));
@@ -66,15 +65,15 @@ export default (eleventyConfig) => {
 	});
 
 	eleventyConfig.addTransform('htmlmin', function (content) {
-		return this.page.outputPath?.endsWith('.html')
-			? minify(content, {
+		return this.page.outputPath?.endsWith('.html') ?
+				minify(content, {
 					collapseWhitespace: true,
 					minifyJS: true,
 					removeComments: true,
 					removeEmptyAttributes: true,
 					useShortDoctype: true,
-			  })
-			: content;
+				})
+			:	content;
 	});
 
 	eleventyConfig.setDataFileSuffixes(['.11tydata']);
