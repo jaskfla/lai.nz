@@ -98,16 +98,20 @@ permalink: now.html
 			max-inline-size: unset;
 			padding-inline-start: unset;
 		}
+		.coverflow__item {
+			margin-block: 0;
+			transition: var(--transition-dn-sensible) var(--transition-fn);
+			transition-property: filter, opacity;
+		}
+		.coverflow__content:focus-within > .coverflow__item:not(:focus-within) {
+			filter: saturate(30%);
+			opacity: 85%;
+		}
 		@media (hover: hover) {
 			.coverflow__content:has(:hover) > .coverflow__item:not(:hover) {
 				filter: saturate(30%);
 				opacity: 85%;
 			}
-		}
-		.coverflow__item {
-			margin-block: 0;
-			transition: var(--transition-dn-sensible) var(--transition-fn);
-			transition-property: filter, opacity;
 		}
 		.coverflow__img {
 			block-size: var(--coverflow-block-size);
