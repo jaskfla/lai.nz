@@ -1,10 +1,9 @@
-import path from 'node:path';
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import slugify from '@sindresorhus/slugify';
 import { minify } from 'html-minifier-terser';
 import { JSDOM } from 'jsdom';
+import path from 'node:path';
 
-const SOURCE_DIR = 'src';
 const { document } = new JSDOM().window;
 
 /** Turn character entities into the character they encode. */
@@ -14,7 +13,14 @@ function decodeHtml(str) {
 	return el.textContent;
 }
 
-/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+export const config = {
+	dir: {
+		input: 'src',
+		templateFormats: ['liquid', 'md'],
+	},
+};
+
+/** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 export default (eleventyConfig) => {
 	const staticFiles = [
 		'fonts/',
@@ -28,11 +34,11 @@ export default (eleventyConfig) => {
 		'robots.txt',
 	];
 	for (const file of staticFiles) {
-		eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/${file}`);
+		eleventyConfig.addPassthroughCopy(`${config.dir.input}/${file}`);
 	}
 
 	eleventyConfig.addCollection('notes', (collection) =>
-		collection.getFilteredByGlob(`${SOURCE_DIR}/notes/*.md`),
+		collection.getFilteredByGlob(`${config.dir.input}/notes/*.md`),
 	);
 
 	eleventyConfig.addFilter('hostname', (url) => {
@@ -77,11 +83,4 @@ export default (eleventyConfig) => {
 	});
 
 	eleventyConfig.setDataFileSuffixes(['.11tydata']);
-
-	return {
-		dir: {
-			input: SOURCE_DIR,
-			templateFormats: ['liquid', 'md'],
-		},
-	};
 };
