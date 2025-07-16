@@ -162,7 +162,7 @@ These two are more _catalogue_ than _foundry_:
   Fonts</a>
 - <a href="https://uncut.wtf" rel="external" target="_blank"><span class="caps">UNCUT</span>.wtf</a>
 
-{% comment %}
+{%- comment %}
 
 - https://aisforfonts.com/fonts
 - https://commercialtype.com/catalog
@@ -170,4 +170,4 @@ These two are more _catalogue_ than _foundry_:
 - https://www.atipofoundry.com
 - https://www.fairetype.com
 
-{% endcomment %}
+{%- endcomment %}

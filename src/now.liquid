@@ -3,7 +3,6 @@ title: Now
 layout: wordswordswords.liquid
 permalink: now.html
 ---
-
 <style>
 	h2 {
 		font-size: inherit;
@@ -24,62 +23,54 @@ permalink: now.html
 </style>
 <p>
 	This is my
-	<a href="https://nownownow.com/about" rel="external" target="_blank"
-		>now page</a
-	>. (You should make one too.)
+	<a href='https://nownownow.com/about' rel='external' target='_blank'>now page</a>. (You should make one too.)
 </p>
-<h2 class="run-in">Doing</h2>
+<h2 class='run-in'>Doing</h2>
 <p>
 	Binging
-	<a href="https://developer.apple.com/wwdc25" rel="external" target="_blank"
-		>Dub Dub&nbsp;’25</a
-	>
+	<a href='https://developer.apple.com/wwdc25' rel='external' target='_blank'>Dub Dub&nbsp;’25</a>
 	session videos. Studying up from
-	<a href="https://animations.dev" rel="external" target="_blank"
-		><i>Animations on the Web</i></a
-	>
+	<a href='https://animations.dev' rel='external' target='_blank'><i>Animations on the Web</i></a>
 	and
-	<a href="https://piccalil.li/complete-css" rel="external" target="_blank"
-		><i>Complete <abbr title="Cascading Style Sheets">CSS</abbr></i></a
+	<a href='https://piccalil.li/complete-css' rel='external' target='_blank'
+		><i>Complete <abbr title='Cascading Style Sheets'>CSS</abbr></i></a
 	>. Hand-rolling a lightweight, accessible slide deck engine with
 	<a
-		href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API"
-		rel="external"
-		target="_blank"
+		href='https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API'
+		rel='external'
+		target='_blank'
 		>view transitions</a
 	>.
 </p>
 <p>
-	Running <span lang="mi">Tāmaki Makaurau</span> with my partner. Exploring salt
-	tunnels as a turtle archaeologist. And maybe&mdash;<em>just maybe</em
-	>&mdash;thinking about practising more music.
+	Running <span lang='mi'>Tāmaki Makaurau</span> with my partner. Exploring salt tunnels as a turtle archaeologist. And
+	maybe&mdash;<em>just maybe</em>&mdash;thinking about practising more music.
 </p>
-<h2 class="run-in">Obsessing about</h2>
+<h2 class='run-in'>Obsessing about</h2>
 <p>
 	Perceptual colour models, variable fonts, passkeys and all things
-	<abbr title="Cascading Style Sheets">CSS</abbr>.
+	<abbr title='Cascading Style Sheets'>CSS</abbr>.
 </p>
-<h2 class="run-in">Eyeing</h2>
+<h2 class='run-in'>Eyeing</h2>
 <p>
 	<a
-		href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
-		rel="external"
-		target="_blank"
+		href='https://developer.mozilla.org/en-US/docs/Web/API/Web_components'
+		rel='external'
+		target='_blank'
 		>Web components</a
 	>, Sara Soueidan’s
-	<a href="https://practical-accessibility.today" rel="external" target="_blank"
-		><i>Practical Accessibility</i></a
+	<a href='https://practical-accessibility.today' rel='external' target='_blank'><i>Practical Accessibility</i></a
 	>,
 	<a
-		href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select"
-		rel="external"
-		target="_blank"
+		href='https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select'
+		rel='external'
+		target='_blank'
 		>styleable <code>&lt;select&gt;</code></a
 	>
 	and SwiftUI. Also <i>Martyr!</i> by Kaveh Akbar.
 </p>
 <h2>Enjoying</h2>
-<div class="coverflow">
+<div class='coverflow'>
 	<style>
 		.coverflow {
 			--coverflow-block-size: var(--s11);
@@ -130,42 +121,41 @@ permalink: now.html
 			padding: var(--s-3);
 		}
 	</style>
-	<ul class="coverflow__content" role="list">
-		{% for thing in coverflow %}
-		<li class="coverflow__item">
-			<a href="{{ thing.link }}" rel="external" target="_blank">
-				<img
-					eleventy:widths="160,320,480,640"
-					alt="{{ thing.title }}"
-					class="coverflow__img"
-					decoding="async"
-					src="{{ thing.coverPath }}"
-				/>
-			</a>
-		</li>
-		{% endfor %}
-		<li class="coverflow__item coverflow__text-item">
-			…<a href="https://greyroastingco.com" rel="external" target="_blank"
-				>and</a
-			>
-			<a href="https://rocketcoffee.co.nz" rel="external" target="_blank"
-				>locally</a
-			>
-			<a href="https://altezanobrothers.co.nz" rel="external" target="_blank"
-				>roasted</a
-			>
-			<a href="https://www.eighthirty.com" rel="external" target="_blank"
-				>specialty</a
-			>
+	<ul class='coverflow__content' role='list'>
+		{%- for thing in coverflow %}
+			<li class='coverflow__item'>
+				<a href='{{ thing.link }}' rel='external' target='_blank'>
+					<img
+						eleventy:widths='160,320,480,640'
+						alt='{{ thing.title }}'
+						class='coverflow__img'
+						decoding='async'
+						src='{{ thing.coverPath }}'
+					>
+				</a>
+			</li>
+		{%- endfor %}
+		<li class='coverflow__item coverflow__text-item'>
+			…<a href='https://greyroastingco.com' rel='external' target='_blank'>and</a>
+			<a href='https://rocketcoffee.co.nz' rel='external' target='_blank'>locally</a>
+			<a href='https://altezanobrothers.co.nz' rel='external' target='_blank'>roasted</a>
+			<a href='https://www.eighthirty.com' rel='external' target='_blank'>specialty</a>
 			<a
-				href="https://www.espressoworkshop.co.nz"
-				rel="external"
-				target="_blank"
+				href='https://www.espressoworkshop.co.nz'
+				rel='external'
+				target='_blank'
 				>coffee</a
 			>.
 		</li>
 	</ul>
 </div>
 
-{% comment %} Thank you to Jeramy B. for his musical tastemaking. - Arc - Clear
-- Eleventy - GUBBINS - VHS - Warp {% endcomment %}
+{%- comment %}
+	Thank you to Jeramy B. for his musical tastemaking.
+	- Arc
+	- Clear
+	- Eleventy
+	- GUBBINS
+	- VHS
+	- Warp
+{%- endcomment %}
