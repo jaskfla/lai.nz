@@ -3,12 +3,8 @@ title: Required reading
 layout: wordswordswords.liquid
 permalink: readings.html
 ---
-
-<p>
-	I mean, they’re not <em>required</em>—obviously. But these have struck some
-	kind of chord with me.
-</p>
-<ul class="readings" role="list">
+<p>I mean, they’re not <em>required</em>—obviously. But these have struck some kind of chord with me.</p>
+<ul class='readings' role='list'>
 	<style>
 		.readings {
 			--transition-duration: var(--transition-dn-relaxed);
@@ -116,7 +112,7 @@ permalink: readings.html
 			color: var(--color-fg-2);
 			font-size: 0.85rem;
 			inline-size: fit-content;
-			letter-spacing: .015rem;
+			letter-spacing: 0.015rem;
 			margin-block: var(--s3) 0;
 			opacity: 0;
 			transition: opacity var(--transition-duration) var(--transition-fn);
@@ -135,41 +131,43 @@ permalink: readings.html
 			transform: translateX(0.2em);
 		}
 	</style>
-	{% for r in readings %}
-		<li class="readings__reading" id="{{ r.title | slugify }}">
+	{%- for r in readings %}
+		<li class='readings__reading' id='{{ r.title | slugify }}'>
 			<a
-				class="readings__reading_link"
-				{% if r.link %} href="{{ r.link }}" {% endif %}
-				rel="external"
-				target="_blank"
+				class='readings__reading_link'
+				{%- if r.link %}
+					href='{{ r.link }}'
+				{%- endif %}
+				rel='external'
+				target='_blank'
 			>
 				<div>
-					<p class="readings__reading_author">
-						{% if r.author %}
+					<p class='readings__reading_author'>
+						{%- if r.author %}
 							{{ r.author }}
-						{% else %}
+						{%- else %}
 							Unknown author
-						{% endif %}
+						{%- endif %}
 					</p>
-					{% if r.media %}
-						<p class="readings__reading_media">{{ r.media }}</p>
-					{% endif %}
+					{%- if r.media %}
+						<p class='readings__reading_media'>{{ r.media }}</p>
+					{%- endif %}
 				</div>
-				<div class="readings__reading_details">
-					{% if r.author %}
-						<h2 class="readings__reading_title">{{ r.title }}</h2>
-					{% endif %}
-					{% if r.pullquote %}
-						<p class="readings__reading_pullquote">{{ r.pullquote }}</p>
-					{% endif %}
-					{% if r.comment %}
-						<p class="readings__reading_comment">{{ r.comment }}</p>
-					{% endif %}
-					{% if r.link %}
-						<p class="readings__reading_hostname" title="{{ r.link }}">{{ r.link | hostname }}</p>
-					{% endif %}
+				<div class='readings__reading_details'>
+					{%- if r.author %}
+						<h2 class='readings__reading_title'>{{ r.title }}</h2>
+					{%- endif %}
+					{%- if r.pullquote %}
+						<p class='readings__reading_pullquote'>{{ r.pullquote }}</p>
+					{%- endif %}
+					{%- if r.comment %}
+						<p class='readings__reading_comment'>{{ r.comment }}</p>
+					{%- endif %}
+					{%- if r.link %}
+						<p class='readings__reading_hostname' title='{{ r.link }}'>{{ r.link | hostname }}</p>
+					{%- endif %}
 				</div>
 			</a>
 		</li>
-	{% endfor %}
+	{%- endfor %}
 </ul>
