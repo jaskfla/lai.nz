@@ -1,0 +1,301 @@
+---
+title: Podroll
+layout: wordswordswords.liquid
+permalink: podroll.html
+shows:
+  - name: 99% Invisible
+    url: https://99percentinvisible.org
+    disc_color: '#231f20'
+    label_color: '#ffd300'
+    img_basename: 99pi
+    img_extension: svg
+  - name: The Anthropocene Reviewed
+    url: https://www.wnycstudios.org/podcasts/anthropocene-reviewed
+    disc_color: oklch(24.58% 0.0734 273.21)
+    label_color: oklch(24.58% 0.0734 273.21)
+    img_basename: anthropocene-reviewed
+    img_extension: png
+  - name: Bionic
+    url: https://www.relay.fm/bionic
+    disc_color: '#363e47'
+    label_color: oklch(73.72% 0.148 62.09)
+    img_extension: png
+  - name: Dear Hank and John
+    url: https://overcast.fm/itunes1002937870
+    disc_color: oklch(90.13% 0.1668 105.2)
+    label_color: black
+    img_extension: png
+  - name: Do By Friday
+    url: https://dobyfriday.com
+    disc_color: oklch(80% 0 0)
+    label_color: oklch(63.47% 0.1642 19.44)
+    img_extension: jpg
+  - name: Hello Internet
+    url: https://overcast.fm/itunes811377230
+    disc_color: oklch(42.39% 0 0)
+    label_color: oklch(42.39% 0 0)
+    img_extension: svg
+  - name: Hypercritical
+    url: https://hypercritical.fireside.fm
+    disc_color: oklch(36.97% 0.0307 166.4)
+    label_color: oklch(22.21% 0 0)
+    img_extension: jpg
+  - name: Lexicon Valley
+    url: https://lexiconvalley.substack.com
+    disc_color: oklch(32.57% 0.1032 33.73)
+    label_color: oklch(32.57% 0.1032 33.73)
+    img_extension: jpg
+  - name: Never Post
+    url: https://www.neverpo.st
+    disc_color: oklch(93.27% 0.148 114.29)
+    label_color: oklch(93.27% 0.148 114.29)
+    img_extension: jpg
+  - name: Reconcilable Differences
+    url: https://www.relay.fm/rd
+    disc_color: '#376a86'
+    label_color: '#376a86'
+    img_extension: png
+  - name: Roderick on the Line
+    url: http://www.merlinmann.com/roderick
+    disc_color: oklch(20% 0 0)
+    label_color: oklch(88.66% 0.0888 100.96)
+    img_extension: jpg
+  - name: Sound Matters
+    url: https://beoplay.squarespace.com/journal/sound-matters
+    disc_color: black
+    label_color: white
+    img_extension: png
+  - name: Strong Songs
+    url: https://strongsongspodcast.com
+    disc_color: oklch(66.13% 0.1656 45.15)
+    label_color: oklch(66.13% 0.1656 45.15)
+    img_extension: jpg
+  - name: Top Four
+    url: https://www.relay.fm/topfour
+    disc_color: oklch(44% 0.025 248.39)
+    label_color: '#b5190e'
+    img_extension: png
+  - name: Twenty Thousand Hertz
+    url: https://www.20k.org
+    disc_color: '#1d0534'
+    label_color: oklch(59.53% 0.1989 10.97)
+    img_basename: 20khz
+    img_extension: jpg
+  - name: You Look Nice Today
+    url: https://www.youlooknicetoday.com
+    disc_color: black
+    label_color: white
+    img_extension: png
+---
+<style>
+	.podroll__item a {
+		inline-size: fit-content;
+	}
+	.podroll__item:not(:last-child):not(:hover) {
+		border-block-start: var(--delineation);
+	}
+	.podroll__item + .podroll__item {
+		margin-block-start: calc(var(--s6));
+		margin-block-end: unset;
+	}
+	.podroll__lp {
+		--sleeve-width: min(25%, 100svh);
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		place-items: center;
+	}
+	.podroll__lp:is(:focus-visible, :hover) {
+		.podroll__lp_sleeve {
+			transform: translateX(-12%);
+		}
+		.podroll__lp_disc {
+			transform: translateX(36%) rotate(calc(0.48turn / pi));
+		}
+	}
+	.podroll__lp_sleeve,
+	.podroll__lp_disc {
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+		transform: translateX(0);
+		transition: 600ms transform var(--ease-in-out-circ);
+		box-shadow: 0 0px 6px oklch(0% 0 0 / 20%);
+	}
+	.podroll__lp_sleeve {
+		aspect-ratio: 1;
+		background-image: var(--thumb), conic-gradient(var(--label-color), var(--label-color));
+		background-size: 100% 100%;
+		border-radius: 1.5%;
+		width: var(--sleeve-width);
+	}
+	.podroll__lp_disc {
+		aspect-ratio: 1;
+		background-color: var(--color-border);
+		border-radius: calc(infinity * 1px);
+		width: calc(var(--sleeve-width) * 0.96);
+
+		--darker: var(--disc-color, oklch(15% 0 0));
+		--dead-zone-color: var(--darker);
+		--lighter: oklch(from var(--darker) clamp(0.25, l + 0.06, 1) c h);
+		background-image: radial-gradient(
+			transparent,
+			transparent 4%,
+			var(--label-color) 4%,
+			var(--label-color) 15%,
+
+			var(--dead-zone-color) 15%,
+			var(--dead-zone-color) 20%,
+
+			var(--lighter) 20%,
+			var(--lighter) 21.5%,
+			var(--darker) 21.5%,
+			var(--darker) 22.5%,
+
+			var(--lighter) 22.5%,
+			var(--lighter) 24%,
+			var(--darker) 24%,
+			var(--darker) 25%,
+
+			var(--lighter) 25%,
+			var(--lighter) 26.5%,
+			var(--darker) 26.5%,
+			var(--darker) 27.5%,
+
+			var(--lighter) 27.5%,
+			var(--lighter) 29%,
+			var(--darker) 29%,
+			var(--darker) 30%,
+
+			var(--lighter) 30%,
+			var(--lighter) 31.5%,
+			var(--darker) 31.5%,
+			var(--darker) 33%,
+
+			var(--lighter) 33%,
+			var(--lighter) 33.5%,
+			var(--darker) 33.5%,
+			var(--darker) 35%,
+
+			var(--lighter) 35%,
+			var(--lighter) 36.5%,
+			var(--darker) 36.5%,
+			var(--darker) 37.5%,
+
+			var(--lighter) 37.5%,
+			var(--lighter) 39%,
+			var(--darker) 39%,
+			var(--darker) 40%,
+
+			var(--lighter) 40%,
+			var(--lighter) 41.5%,
+			var(--darker) 41.5%,
+			var(--darker) 42.5%,
+
+			var(--lighter) 42.5%,
+			var(--lighter) 44%,
+			var(--darker) 44%,
+			var(--darker) 45%,
+
+			var(--lighter) 45%,
+			var(--lighter) 46.5%,
+			var(--darker) 46.5%,
+			var(--darker) 48%,
+
+			var(--lighter) 48%,
+			var(--lighter) 48.5%,
+			var(--darker) 48.5%,
+			var(--darker) 50%,
+
+			var(--lighter) 50%,
+			var(--lighter) 51.5%,
+			var(--darker) 51.5%,
+			var(--darker) 52.5%,
+
+			var(--lighter) 52.5%,
+			var(--lighter) 54%,
+			var(--darker) 54%,
+			var(--darker) 55%,
+
+			var(--lighter) 55%,
+			var(--lighter) 56.5%,
+			var(--darker) 56.5%,
+			var(--darker) 57.5%,
+
+			var(--lighter) 57.5%,
+			var(--lighter) 59%,
+			var(--darker) 59%,
+			var(--darker) 60%,
+
+			var(--lighter) 60%,
+			var(--lighter) 61.5%,
+			var(--darker) 61.5%,
+			var(--darker) 63%,
+
+			var(--lighter) 63%,
+			var(--lighter) 63.5%,
+			var(--darker) 63.5%,
+			var(--darker) 65%
+		);
+	}
+	.podroll__lp_disc-label {
+		aspect-ratio: 1;
+		background-image: radial-gradient(var(--darker), var(--darker) 4%, transparent 4%), var(--thumb),
+			conic-gradient(var(--label-color), var(--label-color));
+		background-size: 100% 100%;
+		border-radius: var(--rounded);
+		content: '';
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		translate: -50% -50%;
+		width: 20%;
+	}
+</style>
+
+<a href='http://johnroderick.wikidot.com/all-the-great-shows' rel='external' target='_blank'>All the Great Shows!</a>
+(Big fan.)
+
+<ul class='podroll' role='list' style='max-inline-size: unset'>
+	{%- for show in shows %}
+		{%- capture img_path -%}
+			{%- if show.img_basename -%}
+				{%- assign basename = show.img_basename -%}
+			{%- else -%}
+				{%- assign basename = show.name | slugify -%}
+			{%- endif -%}
+			/images/cover-art/podcasts/{{ basename }}.{{ show.img_extension }}
+		{%- endcapture -%}
+		<li
+			class='podroll__item'
+			style="
+				--disc-color: {{ show.disc_color }};
+				--label-color: {{ show.label_color }};
+				--thumb: url('{{ img_path }}');
+			"
+		>
+			<a
+				class='podroll__lp'
+				href='{{ show.url }}'
+				rel='external nofollow'
+				target='_blank'
+			>
+				<div aria-hidden class='podroll__lp_disc'>
+					<img
+						eleventy:widths='34,67'
+						alt=''
+						aria-hidden
+						class='podroll__lp_disc-label'
+						src='{{ img_path }}'
+					>
+				</div>
+				<img
+					eleventy:widths='160,320,480,640'
+					alt='{{ show.name }}'
+					aria-hidden
+					class='podroll__lp_sleeve'
+					src='{{ img_path }}'
+				>
+			</a>
+		</li>
+	{%- endfor %}
+</ul>
