@@ -61,22 +61,23 @@ permalink: approll.html
 
 <p>Delightful, frankly.</p>
 
-{% for category in approll %}
-	{% if category.heading %}
+{%- for category in approll %}
+	{%- if category.heading %}
 		<h2>{{ category.heading }}</h2>
-	{% endif %}
+	{%- endif %}
 	<ul class='approll__springboard' role='list'>
-		{% for app in category.apps %}
+		{%- for app in category.apps %}
 			<li>
-				{% if app.link %}<a href='{{ app.link }}' rel='external' target='_blank'>{% endif %}
+				{%- if app.link %}<a href='{{ app.link }}' rel='external' target='_blank'>{%- endif %}
 				<img
 					eleventy:widths='120,160,320,460'
 					alt='{{ app.name }}'
 					class='approll__icon {{ app.platform }}'
 					src='{{ app.iconPath }}'
+					title='{{ app.name }}'
 				>
-				{% if app.link %}</a>{% endif %}
+				{%- if app.link %}</a>{%- endif %}
 			</li>
-		{% endfor %}
+		{%- endfor %}
 	</ul>
-{% endfor %}
+{%- endfor %}
