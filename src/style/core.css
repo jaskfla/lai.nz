@@ -95,6 +95,7 @@
 		--content-width: min(48rem, 100%);
 		--delineation: var(--hairline) solid var(--color-border);
 		--hairline: max(0.0625rem, 1px);
+		--rounded: calc(infinity * 1px);
 	}
 
 	::selection {
