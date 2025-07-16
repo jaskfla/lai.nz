@@ -29,13 +29,13 @@ permalink: small-web.html
 </p>
 
 <ul class="personal-sites-list" role="list">
-	{% for url in personal-sites %}
+	{%- for url in personal-sites %}
 	<li class="personal-sites-list__item">
 		<a href="{{ url }}" rel="external" target="_blank"
 			><code>{{ url | hostname }}</code></a
 		>
 	</li>
-	{% endfor %}
+	{%- endfor %}
 </ul>
 
 <h2>Related</h2>

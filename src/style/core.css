@@ -108,12 +108,10 @@
 		outline-style: var(--focus-ring-style);
 		outline-width: var(--focus-ring-width);
 	}
-
 	@supports selector(:focus-visible) {
 		:focus {
 			outline: none;
 		}
-
 		:focus-visible {
 			outline-color: var(--focus-ring-color);
 			outline-offset: var(--focus-ring-offset);
