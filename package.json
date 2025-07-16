@@ -26,11 +26,12 @@
 	"license": "SEE LICENSE IN LICENSE.md",
 	"private": true,
 	"scripts": {
-		"build": "rm -rf _site/ && bun x @11ty/eleventy && bun run minify:js",
-		"prestart": "rm -rf _site/",
-		"start": "bun x @11ty/eleventy --serve",
-		"watch": "bun x @11ty/eleventy --watch",
-		"clean": "rm -rf node_modules/ _site/",
+		"build": "bun eleventy && bun run minify:js",
+		"build:hard": "rm -rf _site && eleventy && bun run minify:js",
+		"prestart": "rm -rf _site",
+		"start": "eleventy --serve",
+		"watch": "eleventy --watch",
+		"clean": "rm -rf node_modules _site",
 		"minify:js": "./minify.sh"
 	},
 	"type": "module"
