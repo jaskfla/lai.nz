@@ -52,7 +52,7 @@ export default [
 		url: 'https://destroytoday.com/blog',
 	},
 	{
-		title: 'LOW←TECH MAGAZINE',
+		title: '<div class="caps">LOW←TECH MAGAZINE</div>',
 		url: 'https://solar.lowtechmagazine.com',
 	},
 	{
