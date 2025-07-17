@@ -117,6 +117,15 @@ shows:
 			border-block-end: var(--delineation);
 		}
 	}
+	.podroll__item:is(:focus-visible, :focus-within) {
+		background-color: oklch(from var(--color-fg) l c h / 3%);
+		background-color: var(--color-border);
+		border-block-color: transparent;
+		border-radius: var(--s0);
+	}
+	.podroll__item:is(:focus-visible, :focus-within) + .podroll__item {
+		border-block-start-color: transparent;
+	}
 	@media (hover: hover) {
 		.podroll__item:hover {
 			background-color: oklch(from var(--color-fg) l c h / 3%);
@@ -135,9 +144,9 @@ shows:
 		grid-template-rows: auto;
 		place-items: center;
 		transform: translateX(calc(var(--sleeve-width) * 0.06));
-		transition: 600ms transform var(--ease-in-out-circ);
+		transition: 550ms transform var(--ease-in-out-circ);
 	}
-	.podroll__item:is(:focus-visible, :hover) {
+	.podroll__item:is(:focus-visible, :focus-within) {
 		.podroll__lp_sleeve {
 			transform: translateX(-6%);
 		}
@@ -145,12 +154,22 @@ shows:
 			transform: translateX(42%) rotate(calc(0.48turn / pi));
 		}
 	}
+	@media (hover: hover) {
+		.podroll__item:hover {
+			.podroll__lp_sleeve {
+				transform: translateX(-6%);
+			}
+			.podroll__lp_disc {
+				transform: translateX(42%) rotate(calc(0.48turn / pi));
+			}
+		}
+	}
 	.podroll__lp_sleeve,
 	.podroll__lp_disc {
 		grid-column: 1 / -1;
 		grid-row: 1 / -1;
 		transform: translateX(0);
-		transition: 600ms transform var(--ease-in-out-circ);
+		transition: 550ms transform var(--ease-in-out-circ);
 		box-shadow: 0 0px 6px oklch(0% 0 0 / 20%);
 	}
 	.podroll__lp_sleeve {
