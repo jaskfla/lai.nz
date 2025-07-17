@@ -9,6 +9,7 @@ shows:
     label_color: '#ffd300'
     img_basename: 99pi
     img_extension: svg
+    commentary: Podcast spiritual successor to <i>Design of Everyday Things</i>
   - name: The Anthropocene Reviewed
     url: https://www.wnycstudios.org/podcasts/anthropocene-reviewed
     disc_color: oklch(24.58% 0.0734 273.21)
@@ -20,6 +21,12 @@ shows:
     disc_color: '#363e47'
     label_color: oklch(73.72% 0.148 62.09)
     img_extension: png
+    commentary: …and by extension, <a
+        class="caps"
+        href="https://www.relay.fm/bonanza"
+        rel="external"
+        target="_blank"
+      >BONANZA</a>
   - name: Dear Hank and John
     url: https://overcast.fm/itunes1002937870
     disc_color: oklch(90.13% 0.1668 105.2)
@@ -35,16 +42,19 @@ shows:
     disc_color: oklch(42.39% 0 0)
     label_color: oklch(42.39% 0 0)
     img_extension: svg
+    commentary: <abbr title="rest in peace">RIP</abbr>
   - name: Hypercritical
     url: https://hypercritical.fireside.fm
     disc_color: oklch(36.97% 0.0307 166.4)
     label_color: oklch(22.21% 0 0)
     img_extension: jpg
+    commentary: All about that knobfeel
   - name: Lexicon Valley
     url: https://lexiconvalley.substack.com
     disc_color: oklch(32.57% 0.1032 33.73)
     label_color: oklch(32.57% 0.1032 33.73)
     img_extension: jpg
+    commentary: Words words words
   - name: Never Post
     url: https://www.neverpo.st
     disc_color: oklch(93.27% 0.148 114.29)
@@ -55,6 +65,7 @@ shows:
     disc_color: '#376a86'
     label_color: '#376a86'
     img_extension: png
+    commentary: Prepare the way
   - name: Roderick on the Line
     url: http://www.merlinmann.com/roderick
     disc_color: oklch(20% 0 0)
@@ -75,6 +86,7 @@ shows:
     disc_color: oklch(44% 0.025 248.39)
     label_color: '#b5190e'
     img_extension: png
+    commentary: They never did do top four fruits 🥲
   - name: Twenty Thousand Hertz
     url: https://www.20k.org
     disc_color: '#1d0534'
@@ -86,31 +98,51 @@ shows:
     disc_color: black
     label_color: white
     img_extension: png
+    commentary: I am a professional voice act-or
 ---
 <style>
-	.podroll__item a {
-		inline-size: fit-content;
+	.podroll {
+		max-inline-size: unset;
+		margin-block-start: var(--s12);
 	}
-	.podroll__item:not(:last-child):not(:hover) {
+	.podroll__item {
 		border-block-start: var(--delineation);
-	}
-	.podroll__item + .podroll__item {
-		margin-block-start: calc(var(--s6));
+		display: grid;
+		gap: var(--s6);
+		grid-template-columns: auto 1fr;
 		margin-block-end: unset;
+		padding-block: var(--s0);
+		padding-inline: var(--s0);
+		&:last-child {
+			border-block-end: var(--delineation);
+		}
+	}
+	@media (hover: hover) {
+		.podroll__item:hover {
+			background-color: oklch(from var(--color-fg) l c h / 3%);
+			background-color: var(--color-border);
+			border-block-color: transparent;
+			border-radius: var(--s0);
+		}
+		.podroll__item:hover + .podroll__item {
+			border-block-start-color: transparent;
+		}
 	}
 	.podroll__lp {
-		--sleeve-width: min(25%, 100svh);
+		--sleeve-width: min(var(--s8), 100svh);
 		display: grid;
-		grid-template-columns: auto;
+		grid-template-columns: auto 1fr;
 		grid-template-rows: auto;
 		place-items: center;
+		transform: translateX(calc(var(--sleeve-width) * 0.06));
+		transition: 600ms transform var(--ease-in-out-circ);
 	}
-	.podroll__lp:is(:focus-visible, :hover) {
+	.podroll__item:is(:focus-visible, :hover) {
 		.podroll__lp_sleeve {
-			transform: translateX(-12%);
+			transform: translateX(-6%);
 		}
 		.podroll__lp_disc {
-			transform: translateX(36%) rotate(calc(0.48turn / pi));
+			transform: translateX(42%) rotate(calc(0.48turn / pi));
 		}
 	}
 	.podroll__lp_sleeve,
@@ -250,12 +282,33 @@ shows:
 		translate: -50% -50%;
 		width: 20%;
 	}
+	.podroll__show-name {
+		font-size: unset;
+		font-size: var(--s0);
+		font-weight: normal;
+	}
+	.podroll__show-name a {
+		color: unset;
+		inline-size: fit-content;
+	}
+	.podroll__show-commentary {
+		color: var(--color-fg-2);
+		font-size: var(--s0);
+		margin-block-start: var(--s-6);
+	}
 </style>
 
-<a href='http://johnroderick.wikidot.com/all-the-great-shows' rel='external' target='_blank'>All the Great Shows!</a>
-(Big fan.)
+<p>
+	<a
+		href='http://johnroderick.wikidot.com/all-the-great-shows'
+		rel='external'
+		target='_blank'
+		>All the Great Shows!</a
+	>
+	(Big fan.)
+</p>
 
-<ul class='podroll' role='list' style='max-inline-size: unset'>
+<ul class='podroll' role='list'>
 	{%- for show in shows %}
 		{%- capture img_path -%}
 			{%- if show.img_basename -%}
@@ -278,6 +331,7 @@ shows:
 				href='{{ show.url }}'
 				rel='external nofollow'
 				target='_blank'
+				tabindex='-1'
 			>
 				<div aria-hidden class='podroll__lp_disc'>
 					<img
@@ -296,6 +350,16 @@ shows:
 					src='{{ img_path }}'
 				>
 			</a>
+			<div>
+				<h2 class='podroll__show-name'>
+					<a href='{{ show.url }}' rel='external nofollow' target='_blank'>
+						{{- show.name -}}
+					</a>
+				</h2>
+				{%- if show.commentary %}
+					<p class='podroll__show-commentary'>{{ show.commentary }}</p>
+				{%- endif %}
+			</div>
 		</li>
 	{%- endfor %}
 </ul>
