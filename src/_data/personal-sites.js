@@ -8,6 +8,7 @@ function hostnameCompare(a, b) {
 }
 
 export default [
+	'https://alexandersandberg.com',
 	'https://anhvn.com',
 	'https://arielsalminen.com',
 	'https://benji.org',
@@ -29,9 +30,12 @@ export default [
 	'https://motherfuckingwebsite.com',
 	'https://nelson.co',
 	'https://paco.me',
+	'https://paulstamatiou.com',
+	'https://pham.codes',
 	'https://ribo.zone',
 	'https://robinrendle.com',
 	'https://ryanmulligan.dev',
+	'https://scottkellum.com',
 	'https://wojtek.im',
 	'https://www.adithnarein.com',
 	'https://www.alasdairmonk.com',
