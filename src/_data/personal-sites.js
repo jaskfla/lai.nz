@@ -36,6 +36,7 @@ export default [
 	'https://robinrendle.com',
 	'https://ryanmulligan.dev',
 	'https://scottkellum.com',
+	'https://vhbelvadi.com',
 	'https://wojtek.im',
 	'https://www.adithnarein.com',
 	'https://www.alasdairmonk.com',
