@@ -15,6 +15,9 @@ Butterick’s book,
 Typography</i></a>, taught me most of what I know about typography. You should
 read it&mdash;it’s free.
 
+<i>{{ metadata.domain }}</i> is designed and built by me; and in a real sense
+also by the many who inform my sensibilities, and whose work inspire mine.
+
 I use <a href="https://www.11ty.dev" rel="external" target="_blank">Eleventy</a>
 to build this site, and host it with
 <a href="https://www.netlify.com" rel="external" target="_blank">Netlify</a>.
