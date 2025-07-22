@@ -26,6 +26,6 @@ My domain comes via
 <a href="https://www.gandi.net" rel="external" target="_blank">Gandi</a>; and
 <abbr title="Domain Name System">DNS</abbr> stuff runs through Cloudflare’s
 pipes (though I anticipate switching to
-<a href="https://dns.kitchen" rel="external" target="_blank"><abbr title="Domain Name System">DNS</abbr> Kitchen</a>.
+<a href="https://dns.kitchen" rel="external" target="_blank"><abbr title="Domain Name System">DNS</abbr> Kitchen</a>).
 
 This site has [no analytics](/privacy).
