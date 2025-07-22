@@ -8,7 +8,6 @@ layout: main.liquid
 				padding-left: var(--safe-padding-left);
 				padding-right: var(--safe-padding-right);
 			}
-
 			.wordswordswords__safe-area {
 				font-size: var(--s1);
 				inline-size: 100%;
@@ -16,25 +15,26 @@ layout: main.liquid
 				max-inline-size: var(--content-width);
 				padding-block: var(--s11);
 			}
-
-			.wordswordswords :where(h2) {
+			.wordswordswords__safe-area > :where(h2) {
 				--flow-space: calc(1em * pow(var(--ratio), 7));
+				font-family: var(--font-serif);
+				font-variant-caps: all-small-caps;
+				font-weight: 400;
+				font-size: inherit;
+				letter-spacing: 0.07em;
 			}
 			.wordswordswords :where(h3, h4, h5, h6, li, p) {
 				--flow-space: calc(1em * pow(var(--ratio), 2));
 			}
-
 			.wordswordswords__safe-area h1 {
 				color: var(--color-accent);
 				font-size: var(--s1);
 				font-variant-caps: all-small-caps;
 				font-weight: 400;
 			}
-
 			.wordswordswords__safe-area :where(p, ul) {
 				max-inline-size: 30rem;
 			}
-
 			.wordswordswords__safe-area > p:first-of-type {
 				--flow-space: var(--s1);
 				font-family: var(--font-serif);
@@ -44,11 +44,9 @@ layout: main.liquid
 				max-inline-size: unset;
 				text-wrap: balance;
 			}
-
 			.wordswordswords li:not(:last-child) {
 				margin-block-end: var(--s-2);
 			}
-
 			.wordswordswords li::marker {
 				color: var(--color-fg-2);
 			}
