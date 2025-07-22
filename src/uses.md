@@ -88,7 +88,7 @@ After running my 2019 MacBook Pro into the ground, I replaced it with a base
 ## Display
 
 Retina, around 220&nbsp;ppi, with good
-<abbr title="Digital Cinema Initiatives PD">DCI-P3</abbr> coverage.
+<abbr title="Digital Cinema Initiatives P3">DCI-P3</abbr> coverage.
 <a href="https://bjango.com/articles/macexternaldisplays2/" rel="external nofollow" target="_blank">This
 doesn’t leave many options</a> that don’t have “<abbr>XDR</abbr>” in their name.
 
