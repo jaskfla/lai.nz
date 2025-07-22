@@ -114,8 +114,8 @@ I used
 <a href="https://dribbble.com/padbury" rel="external nofollow" target="_blank">Robert
 Padbury</a>’s
 <i><a href="https://web.archive.org/web/20140115195226/http://www.padbury.me/clock/" rel="external nofollow" target="_blank">Padbury
-Clock</a></i> by for a good ten-ish years, but macOS Sequoia seems to have
-finally broken it.
+Clock</a></i> for a good ten-ish years, but macOS Sequoia seems to have finally
+broken it.
 <i><a href="https://bauhausclock.com" rel="external nofollow" target="_blank">Bauhaus
 Clock</a></i> by
 <a href="https://atillataskiran.com" rel="external nofollow" target="_blank">Atilla
