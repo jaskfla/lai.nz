@@ -18,6 +18,7 @@ fashion.
 - [/podroll](/podroll)
 - [/sitemap](/sitemap.xml)
 - [/slashes](/slashes)
+- [/uses](/uses)
 
 ## Aspirationally…
 
