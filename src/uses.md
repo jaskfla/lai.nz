@@ -63,15 +63,15 @@ I type on a white
 Eighty</a> (with
 <a href="https://www.theremingoat.com/blog/silent-alpacas" rel="external nofollow" target="_blank">Silent
 Alpacas</a>&mdash;lubed and filmed&mdash;on a
-<abbr title="polyoxymethylene">POM</abbr> plate and
+<abbr title="polyoxymethylene">POM</abbr> plate capped with
 <a href="https://web.archive.org/web/20250115203739/https://www.slkdessau.com/" rel="external nofollow" target="_blank"><abbr>SLK</abbr>
-Dessau</a> caps), flanked by a
+Dessau</a> in white), flanked by a
 <a href="https://www.logitech.com/shop/p/lift-vertical-ergonomic-mouse-mac" rel="external nofollow" target="_blank">Logi
-Lift</a> on my dominant side and a
+Lift</a> and
 <a href="https://support.apple.com/121932" rel="external nofollow" target="_blank">Magic
-Trackpad</a> on the other.
+Trackpad</a>.
 
-Most of my cursor manipulation, though, is actually via a
+Most of my cursor manipulation, though, is via a
 <a href="https://www.wacom.com/products/wacom-intuos-pro-2017" rel="external nofollow" target="_blank">Wacom
 Intuos</a>.
 
