@@ -23,6 +23,12 @@ in place of <abbr
 title="Visual Studio Code">VSC</abbr>, but have complicated feelings about the
 whole <abbr title="Large Language Model">LLM</abbr>… _situation_.)
 
+Honourable mention:
+<a href="https://zed.dev" rel="external nofollow" target="_blank">Zed</a>, but
+its global search is
+<a href="https://github.com/zed-industries/zed/issues/4560" rel="external nofollow" target="_blank">deal-breakingly
+slow</a>.
+
 My editor themes jump between
 <a href="https://stephango.com/flexoki" rel="external nofollow" target="_blank">Flexoki</a>,
 <a href="https://github.com/primer/github-vscode-theme" rel="external nofollow" target="_blank">GitHub
@@ -45,11 +51,11 @@ Duo</a>,
 and the inimitable
 <a href="https://mbtype.com/fonts/triplicate/" rel="external nofollow" target="_blank">Triplicate</a>.
 
-(Honourable mentions:
+Honourable mentions:
 <a href="https://developer.apple.com/fonts" rel="external nofollow" target="_blank"><abbr title="San Francisco">SF</abbr>&nbsp;Mono</a>
 and
 <a href="https://www.monolisa.dev" rel="external nofollow" target="_blank">Mono
-Lisa</a>.)
+Lisa</a>.
 
 ## Input devices
 
