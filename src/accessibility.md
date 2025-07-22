@@ -22,9 +22,9 @@ everything should be keyboard-navigable.
 This site is and will always be a work in progress. If there’s any part of it
 that you find difficult to use, please let me know in a
 <a href="{{ metadata.repoUrl }}/issues" rel="external" target="_blank">GitHub
-issue</a>, or by
+issue</a> or by
 <a href="&#109;&#97;&#73;&#108;&#116;&#111;&#58;{{ metadata.email }}">emailing
-me</a> directly. I’ll try to fix it as soon as time allows.
+me</a>. I’ll try to fix it as soon as time allows.
 
 Though I can’t guarantee accessibility of stuff I link to, I try to select and
 promote work by people who also value
