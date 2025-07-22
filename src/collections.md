@@ -21,7 +21,7 @@ People I like, and their blogs, podcasts, apps:
 - [Blogroll](/blogroll)
 - [Lovely personal sites](/small-web)
 - [Indispensable apps](/approll)
-- [Podcasts I like (podroll?)](/podroll)
+- [Podroll](/podroll)
 
 Fonts, fonts, fonts:
 
