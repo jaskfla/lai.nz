@@ -80,17 +80,34 @@ And, purely for Touch&nbsp;ID, I’ve stuck a
 <a href="https://support.apple.com/121954" rel="external nofollow" target="_blank">Magic
 Keyboard</a> to the underside of my desk.
 
-## Computer
+## Apps
 
-After running my 2019 MacBook Pro into the ground, I replaced it with a base
-<span class="caps">M4</span> Mac Mini. (It’s great.)
+<span class="caps">Web browser</span>.
+<a href="https://www.apple.com/safari" rel="external nofollow" target="_blank">Safari</a>.
+(Honourable mention:
+<a href="https://arc.net" rel="external nofollow" target="_blank">Arc</a>.)
 
-## Display
+<span class="caps">Email</span>.
+<a href="https://workspace.google.com/products/gmail" rel="external nofollow" target="_blank">Gmail</a>
+since 2008 +
+<a href="https://www.notion.com/product/mail" rel="external nofollow" target="_blank">Notion
+Mail</a> for now, but happy about neither. A matter of time before I adopt
+<a href="https://www.fastmail.com" rel="external nofollow" target="_blank">Fastmail</a>.
 
-Retina, around 220&nbsp;ppi, with good
+<span class="caps">Launcher</span>.
+<a href="https://www.alfredapp.com" rel="external nofollow" target="_blank">Alfred</a>.
+
+👉 More at [`/approll`](/approll)
+
+## Workstation
+
+Base <span class="caps">M4</span> Mac Mini. Previously: 2019 MacBook Pro (with
+Touch Bar!) which I ran into the ground.
+
+Retina display, around 220&nbsp;ppi, with good
 <abbr title="Digital Cinema Initiatives P3">DCI-P3</abbr> coverage.
 <a href="https://bjango.com/articles/macexternaldisplays2/" rel="external nofollow" target="_blank">This
-doesn’t leave many options</a> that don’t have “<abbr>XDR</abbr>” in their name.
+leaves few options</a> without “<abbr>XDR</abbr>” in their name.
 
 ## Screen saver (yes, really)
 
