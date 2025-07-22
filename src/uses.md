@@ -54,8 +54,7 @@ and the inimitable
 Honourable mentions:
 <a href="https://developer.apple.com/fonts" rel="external nofollow" target="_blank"><abbr title="San Francisco">SF</abbr>&nbsp;Mono</a>
 and
-<a href="https://www.monolisa.dev" rel="external nofollow" target="_blank">Mono
-Lisa</a>.
+<a href="https://www.monolisa.dev" rel="external nofollow" target="_blank">MonoLisa</a>.
 
 ## Input devices
 
