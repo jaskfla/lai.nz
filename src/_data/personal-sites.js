@@ -40,6 +40,7 @@ export default [
 	'https://wojtek.im',
 	'https://www.adithnarein.com',
 	'https://www.alasdairmonk.com',
+	'https://www.joshuawootonn.com',
 	'https://www.yasmins.site',
 	'https://yannglt.com',
 ].sort(hostnameCompare);
