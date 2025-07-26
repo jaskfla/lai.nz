@@ -1,0 +1,234 @@
+<dl>
+	<style>
+		dl {
+			font-size: var(--s0);
+		}
+		dl div {
+			align-items: baseline;
+			column-gap: var(--s-4);
+			display: grid;
+			grid-template-areas: '--app --leader --type';
+			grid-template-columns: auto minmax(var(--s0), 1fr) max-content;
+			margin-block-start: var(--s0);
+		}
+		dl dt {
+			color: var(--color-fg-2);
+			font-variant-caps: all-small-caps;
+			grid-area: --type;
+			hanging-punctuation: allow-end last;
+		}
+		dl dd {
+			grid-area: --app;
+		}
+		dl dd a {
+			color: inherit;
+		}
+		dl .tab-leader {
+			border-block-end-style: dotted;
+			border-block-start: 0;
+			grid-area: --leader;
+		}
+		@media (max-width: 500px) {
+			dl div {
+				grid-template-columns: auto;
+				grid-template-rows: repeat(2, auto);
+				grid-template-areas: '--type' '--app';
+			}
+			dl :is(dd, dt) {
+				display: inline;
+			}
+			dl .tab-leader {
+				display: none;
+			}
+		}
+	</style>
+	<div>
+		<dt>Launcher</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a
+				href='https://www.alfredapp.com'
+				rel='external nofollow'
+				target='_blank'
+				>Alfred</a
+			>
+			<span class='dim'
+				>(avg.
+				<span
+					title='2.333&nbsp;mHz, for you scientifically-minded ones'
+					style='cursor: help'
+					>201.6&nbsp;times/day</span
+				>)</span
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Calendar</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			Apple Calendar
+			<span class='dim'
+				>(<abbr title='rest in peace'>RIP</abbr>
+				<a
+					href='https://web.archive.org/web/20140521033147/https://www.sunrise.am'
+					rel='external nofollow'
+					target='_blank'
+					>Sunrise</a
+				>)</span
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Music</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>Apple Music <span class='dim'>(the app, not the service)</span></dd>
+	</div>
+	<div>
+		<dt>Secrets</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			Apple Passwords <em>&</em>
+			<a href='https://1password.com' rel='external nofollow' target='_blank'>1Password</a>
+		</dd>
+	</div>
+	<div>
+		<dt>Screen capture</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a href='https://cleanshot.com' rel='external nofollow' target='_blank'>CleanShot&nbsp;X</a>
+			<em>&</em> QuickTime
+		</dd>
+	</div>
+	<div>
+		<dt>Slides</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			Custom JavaScript engine or
+			<a
+				href='https://www.apple.com/keynote'
+				rel='external nofollow'
+				target='_blank'
+				>Keynote</a
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Storage</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a href='https://www.dropbox.com' rel='external nofollow' target='_blank'>Dropbox</a>
+			<em>via</em>
+			<a href='https://maestral.app' rel='external nofollow' target='_blank'>Maestral</a>
+		</dd>
+	</div>
+	<div>
+		<dt>Design</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a href='https://www.figma.com' rel='external nofollow' target='_blank'>Figma</a>
+			<span class='dim'
+				>(<a href='https://www.sketch.com' rel='external nofollow' target='_blank'>regrettably</a>)</span
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Media</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a
+				class='caps'
+				href='https://iina.io'
+				rel='external nofollow'
+				target='_blank'
+				>IINA</a
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Read later</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a
+				href='https://www.instapaper.com'
+				rel='external nofollow'
+				target='_blank'
+				>Instapaper</a
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Office suite</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a
+				href='https://www.apple.com/nz/iwork/'
+				rel='external nofollow'
+				target='_blank'
+				>iWork</a
+			>
+			<span class='dim'>(<a href='' rel='external nofollow' target='_blank'>Google Workspace</a> under duress)</span>
+		</dd>
+	</div>
+	<div>
+		<dt>(Un)archiving</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a href='https://www.keka.io' rel='external nofollow' target='_blank'>Keka</a>
+		</dd>
+	</div>
+	<div>
+		<dt>Raster graphics</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a
+				href='https://www.pixelmator.com/pro'
+				rel='external nofollow'
+				target='_blank'
+				>Pixelmator Pro</a
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Run tracking</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a href='https://runkeeper.com' rel='external nofollow' target='_blank'>Runkeeper</a>
+		</dd>
+	</div>
+	<div>
+		<dt>Browser</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a
+				href='https://www.apple.com/safari'
+				rel='external nofollow'
+				target='_blank'
+				>Safari</a
+			>
+			<span class='dim'
+				>(honourable mention: <a href='https://arc.net' rel='external nofollow' target='_blank'>Arc</a>)</span
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Backup</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a
+				href='https://support.apple.com/104984'
+				rel='external nofollow'
+				target='_blank'
+				>Time Machine</a
+			>
+		</dd>
+	</div>
+	<div>
+		<dt>Time tracking</dt>
+		<hr aria-hidden class='tab-leader'>
+		<dd>
+			<a href='https://toggl.com' rel='external nofollow' target='_blank'>Toggl</a>
+			<em>via</em>
+			<a href='https://timeryapp.com' rel='external nofollow' target='_blank'>Timery</a>
+		</dd>
+	</div>
+</dl>

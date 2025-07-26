@@ -17,11 +17,12 @@ Coding is split between
 <a href="http://www.barebones.com/products/bbedit/index.html" rel="external nofollow" target="_blank">BBEdit</a>
 and
 <a href="https://code.visualstudio.com" rel="external nofollow" target="_blank">Visual
-Studio Code</a>. (At work, I’m using
+Studio Code</a>. <span class="dim">(At work,
 <a href="https://www.cursor.com" rel="external nofollow" target="_blank">Cursor</a>
-in place of <abbr
-title="Visual Studio Code">VSC</abbr>, but have complicated feelings about the
-whole <abbr title="Large Language Model">LLM</abbr>… _situation_.)
+takes <abbr
+title="Visual Studio Code">VSC</abbr>’s place, but have complicated feelings
+about the whole <abbr title="Large Language Model">LLM</abbr>…
+_situation_.)</span>
 
 Honourable mention:
 <a href="https://zed.dev" rel="external nofollow" target="_blank">Zed</a>, but
@@ -79,29 +80,16 @@ And, purely for Touch&nbsp;ID, I’ve stuck a
 <a href="https://support.apple.com/121954" rel="external nofollow" target="_blank">Magic
 Keyboard</a> to the underside of my desk.
 
-## Apps
-
-<span class="caps">Web browser</span>.
-<a href="https://www.apple.com/safari" rel="external nofollow" target="_blank">Safari</a>.
-(Honourable mention:
-<a href="https://arc.net" rel="external nofollow" target="_blank">Arc</a>.)
-
-<span class="caps">Email</span>.
-<a href="https://workspace.google.com/products/gmail" rel="external nofollow" target="_blank">Gmail</a>
-since 2008 +
-<a href="https://www.notion.com/product/mail" rel="external nofollow" target="_blank">Notion
-Mail</a> for now, but happy about neither. A matter of time before I adopt
-<a href="https://www.fastmail.com" rel="external nofollow" target="_blank">Fastmail</a>.
-
-<span class="caps">Launcher</span>.
-<a href="https://www.alfredapp.com" rel="external nofollow" target="_blank">Alfred</a>.
-
-👉 More at [`/approll`](/approll)
-
 ## Workstation
 
-Base <span class="caps">M4</span> Mac Mini. Previously: 2019 MacBook Pro (with
-Touch Bar!) which I ran into the ground.
+Base <span class="caps">M4</span> Mac Mini. <span class="dim">Previously: 13″
+MacBooks Pro
+(<a href="https://support.apple.com/en-us/111972" rel="external nofollow" target="_blank">2019</a>
+and
+<a href="https://support.apple.com/en-us/111946" rel="external nofollow" target="_blank">late
+2013</a>),
+<a class="caps" href="https://www.sony.co.nz/electronics/support/laptop-pc-vpc-series/vpcf135fg/specifications" rel="external nofollow" target="_blank">VAIO
+VPCF135FG</a>, Toshiba Satellite <span class="caps">M50</span>.</span>
 
 Retina display, around 220&nbsp;ppi, with good
 <abbr title="Digital Cinema Initiatives P3">DCI-P3</abbr> coverage.
@@ -120,3 +108,59 @@ eleven-ish years, but macOS Sequoia seems to have finally broken it. 🥲
 Clock</a></i> by
 <a href="https://atillataskiran.com" rel="external nofollow" target="_blank">Atilla
 Taşkıran</a> has since settled in nicely.
+
+## Email
+
+<a href="https://workspace.google.com/products/gmail" rel="external nofollow" target="_blank">Gmail</a>
+since <time datetime=2008>2008</time>
++&nbsp;<a href="https://www.notion.com/product/mail" rel="external nofollow" target="_blank">Notion
+Mail</a> for now, but happy about neither. <span class="dim">Notion Mail isn’t
+responsive enough, and \*<em style="font-family: var(--font-sans)">gestures
+broadly at Google</em>\*.
+(<a href="https://www.fastmail.com" rel="external nofollow" target="_blank">Fastmail</a>,
+perhaps?)</span>
+
+Previously, in descending order of satisfaction:
+<a href="https://web.archive.org/web/20150830160717/http://www.mailboxapp.com" rel="external nofollow" target="_blank">Mailbox</a>,
+<a href="https://mimestream.com" rel="external" target="_blank">Mimestream</a>,
+<a href="https://www.theverge.com/2014/10/22/7041227/google-inbox-hands-on-this-feels-like-the-future-of-email" rel="external" target="_blank">Inbox
+by Gmail</a>, Gmail as a
+<a href="https://support.apple.com/en-nz/104996" rel="external" target="_blank">web
+app</a>,
+<a href="https://en.wikipedia.org/wiki/Sparrow_%28email_client%29" rel="external nofollow" target="_blank">Sparrow</a>,
+<a href="https://sparkmailapp.com" rel="external nofollow" target="_blank">Spark</a>,
+<a href="https://www.microsoft.com/microsoft-365/outlook-mobile-for-android-and-ios" rel="external nofollow" target="_blank">Outlook
+for iOS</a>, Apple Mail,
+<a href="https://airmailapp.com" rel="external nofollow" target="_blank">Airmail</a>,
+<a href="https://canarymail.io" rel="external nofollow" target="_blank">Canary
+Mail</a>,
+<a href="https://polymail.io" rel="external nofollow" target="_blank">Polymail</a>,
+<a href="https://www.edisonmail.com" rel="external nofollow" target="_blank">Edison
+Mail</a>.
+
+## Writing instruments
+
+<a href="https://www.penaddict.com/blog/2016/1/24/twsbi-eco-fountain-pen-review" rel="external nofollow" target="_blank"><span class="caps">TWSBI</span>
+Eco</a> filled with
+<a href="https://mountainofink.com/blog/bungubox-ink-of-the-witch" rel="external nofollow" target="_blank">Ink
+of the Witch</a>, or
+<a href="https://www.penaddict.com/blog/2015/1/19/platinum-preppy-fountain-pen-02-ef-nib-review" rel="external nofollow" target="_blank">Platinum
+Preppy</a> with
+<a href="https://mountainofink.com/blog/sailor-kiwa-guro" rel="external nofollow" target="_blank">Kiwa-guro</a>,
+when I can get away with a fountain pen. <span class="dim">(Japanese
+<span class="caps">EF</span>, always.)</span>
+
+Otherwise,
+<a href="https://www.studioneat.com/products/markone" rel="external nofollow" target="_blank">Studio
+Neat Mark One</a> with an
+<a href="https://www.penaddict.com/blog/2019/10/14/ohto-flash-dry-gel-pen-refill-review" rel="external nofollow" target="_blank">Ohto
+Flash Dry</a> cartridge.
+
+Various papers, often reused scrap. <span class="dim">Honourable mentions:
+Kokuyo, Clairefontaine, Rhodia.
+
+## Quickfire
+
+{% render "components/app-quickfire" %}
+
+👉 See also [`/approll`](/approll) and [`/colophon`](/colophon).

@@ -4,6 +4,9 @@
 @import url('core.css') layer(core);
 
 @layer utility {
+	.dim {
+		color: var(--color-fg-2);
+	}
 	.visually-hidden:not(:focus):not(:active) {
 		clip-path: inset(50%);
 		height: 1px;
