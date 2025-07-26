@@ -29,6 +29,7 @@ export default [
 	'https://miocene.io',
 	'https://motherfuckingwebsite.com',
 	'https://nelson.co',
+	'https://onur.design',
 	'https://paco.me',
 	'https://paulstamatiou.com',
 	'https://pham.codes',
