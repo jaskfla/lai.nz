@@ -7,6 +7,10 @@
 	.dim {
 		color: var(--color-fg-2);
 	}
+	.safe-column {
+		padding-left: var(--safe-padding-left);
+		padding-right: var(--safe-padding-right);
+	}
 	.visually-hidden:not(:focus):not(:active) {
 		clip-path: inset(50%);
 		height: 1px;
