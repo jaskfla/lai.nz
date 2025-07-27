@@ -157,7 +157,7 @@ Neat Mark One</a> with an
 Flash Dry</a> cartridge.
 
 Various papers, often reused scrap. <span class="dim">Honourable mentions:
-Kokuyo, Clairefontaine, Rhodia.
+Kokuyo, Clairefontaine, Rhodia.</span>
 
 ## Quickfire
 
