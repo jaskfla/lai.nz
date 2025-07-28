@@ -193,11 +193,13 @@
 			text-underline-offset;
 	}
 
-	a:hover:not([unavailable]) {
+	a:not([unavailable]):where(:focus-visible, :hover) {
 		color: var(--color-fg);
-		text-decoration-color: var(--color-accent);
+	}
+	a:not([unavailable]):where(:hover) {
 		text-decoration-thickness: max(0.1em, 2px);
 		text-underline-offset: max(0.04em, 1px);
+		text-decoration-color: var(--color-accent);
 	}
 
 	a[unavailable] {
