@@ -11,7 +11,7 @@
 		padding-left: var(--safe-padding-left);
 		padding-right: var(--safe-padding-right);
 	}
-	.visually-hidden:not(:focus):not(:active) {
+	.visually-hidden:not(:focus, :focus-within):not(:active) {
 		clip-path: inset(50%);
 		height: 1px;
 		overflow: hidden;
