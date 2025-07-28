@@ -276,4 +276,83 @@
 		font-weight: 600;
 		/* letter-spacing: 0.01em; */
 	}
+
+	.a11y-links {
+		--y: calc(var(--safe-padding-top) + var(--s3));
+		background-color: var(--color-bg);
+		border-color: var(--focus-ring-color);
+		border-radius: calc(var(--s-5) + var(--s-4));
+		border-style: var(--focus-ring-style);
+		border-width: var(--focus-ring-width);
+		column-gap: var(--s-4);
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		inline-size: 16rem;
+		inset-block-start: var(--y);
+		inset-inline-end: 0;
+		justify-content: stretch;
+		line-height: 1.15;
+		margin-left: var(--safe-padding-left);
+		margin-right: var(--safe-padding-right);
+		padding: var(--s-4);
+		position: fixed;
+		transform: translateY(0);
+		transition:
+			opacity ease,
+			transform var(--ease-out-circ);
+		transition-duration: 200ms;
+		z-index: 1;
+	}
+	.a11y-links:not(:focus-within):not(:active) {
+		opacity: 0;
+		transform: translateY(calc(var(--y) * -1));
+		transition:
+			opacity ease,
+			transform var(--ease-in-circ);
+	}
+	.a11y-links h2 {
+		font-family: var(--font-serif);
+		font-variant-caps: all-small-caps;
+		font-weight: inherit;
+		grid-column: 2 / -1;
+		letter-spacing: 0.08em;
+		padding-block: var(--s-4);
+	}
+	.a11y-link {
+		align-items: center;
+		border-radius: var(--s-5);
+		border: var(--hairline) solid transparent;
+		color: inherit;
+		display: grid;
+		grid-column: 1 / -1;
+		grid-template-columns: subgrid;
+		padding-block: var(--s-4);
+		padding-inline: var(--s-4);
+		text-decoration: none;
+	}
+	.a11y-link:focus-visible {
+		outline: none;
+		background-color: oklch(from var(--color-fg-2) l c h / 8%);
+		border: var(--delineation);
+	}
+	.a11y-link::before {
+		color: var(--color-accent);
+		content: '→';
+		opacity: 0;
+		text-decoration: none;
+	}
+	.a11y-link::after {
+		color: var(--color-fg-2);
+		content: attr(data-shortcut);
+		content: attr(data-shortcut raw-string);
+		font-variant-numeric: lining-nums tabular-nums;
+		font-size: var(--s-1);
+		text-align: end;
+	}
+	.a11y-link:focus-visible::after {
+		content: '⏎';
+	}
+	.a11y-link:focus-visible::before {
+		opacity: 1;
+	}
 }

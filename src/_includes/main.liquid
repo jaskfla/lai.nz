@@ -1,6 +1,21 @@
 ---
 layout: base.liquid
 ---
+<div class='a11y-links visually-hidden'>
+	<h2>Accessibility links</h2>
+	<a
+		class='a11y-link'
+		href='{{ main_content_id | default: '#main' }}'
+		data-shortcut='⇧1'
+		>Skip to main content</a
+	>
+	<a
+		class='a11y-link'
+		href='/accessibility'
+		data-shortcut='⇧2'
+		>Accessibility feedback</a
+	>
+</div>
 {% render "components/header" %}
 <main>{{ content }}</main>
 {% render "components/footer" %}

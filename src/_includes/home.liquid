@@ -24,8 +24,10 @@ layout: main.liquid
 </style>
 {%- render "components/opsz-demo" %}
 <hr>
-<section class='hello'>
-	<div class='landing__safe-area flow'>{{ content }}</div>
+<section class='hello' id='main'>
+	<div class='landing__safe-area flow'>
+		{{ content }}
+	</div>
 </section>
 <hr>
 {%- render "components/hero" %}
