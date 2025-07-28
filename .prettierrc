@@ -1,14 +1,8 @@
 {
 	"experimentalTernaries": true,
+	"liquidSingleQuote": false,
+	"plugins": ["@shopify/prettier-plugin-liquid"],
 	"proseWrap": "always",
 	"singleQuote": true,
-	"useTabs": true,
-	"overrides": [
-		{
-			"files": ["*.liquid"],
-			"options": {
-				"parser": "html"
-			}
-		}
-	]
+	"useTabs": true
 }
