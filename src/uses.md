@@ -96,6 +96,11 @@ Retina display, around 220&nbsp;ppi, with good
 <a href="https://bjango.com/articles/macexternaldisplays2/" rel="external nofollow" target="_blank">This
 leaves few options</a> without “<abbr>XDR</abbr>” in their name.
 
+Plus a pair of
+<a class="caps" href="https://www.akg.com/headphones/professional-headphones/K240MKII.html" rel="external nofollow" target="_blank">AKG
+K240 MKII</a>s (12&nbsp;years strong!)&mdash;or just AirPods,
+<a href="https://support.apple.com/en-nz/121203" rel="external nofollow" target="_blank">non-pro</a>.
+
 ## Screen saver (yes, really)
 
 <a href="https://dribbble.com/padbury" rel="external nofollow" target="_blank">Robert
