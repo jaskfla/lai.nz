@@ -8,36 +8,52 @@ excludeFromSitemap: true
 <style>
 	@scope {
 		section {
-			column-gap: var(--s2);
-			display: grid;
-			grid-auto-flow: dense;
-			grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-			margin-block-start: var(--s11);
+			--flow-space: var(--s11);
+		}
+		aside {
+			--flow-space: var(--s-1);
+			color: var(--color-fg-2);
+			font-feature-settings: 'liga';
+			font-size: var(--s0);
+			font-style: italic;
+			hyphens: none;
+			letter-spacing: 0.015em;
+			line-height: 1.45;
+		}
+		@media (min-width: 800px) {
+			section {
+				column-gap: var(--s2);
+				display: grid;
+				grid-auto-flow: dense;
+				grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+				--flow-space: var(--s11);
+				p {
+					grid-column-start: 2;
+				}
+				aside {
+					color: var(--color-fg-2);
+					font-feature-settings: 'liga';
+					font-size: var(--s0);
+					font-style: italic;
+					grid-column-start: 1;
+					hyphens: none;
+					letter-spacing: 0.015em;
+					line-height: 1.45;
+					text-align: end;
+					text-wrap: balance;
+				}
+			}
 			:where(h2, :has(h2)) ~ p:first-of-type {
 				--flow-space: 0;
 			}
-			p {
-				grid-column-start: 2;
-			}
-			aside {
-				color: var(--color-fg-2);
-				font-feature-settings: 'liga';
-				font-size: var(--s0);
+			h2 {
+				font-family: var(--font-display);
+				font-size: inherit;
 				font-style: italic;
-				grid-column-start: 1;
-				hyphens: none;
-				letter-spacing: 0.015em;
-				line-height: 1.45;
-				text-align: end;
-				text-wrap: balance;
+				font-variation-settings: 'opsz' 16;
+				letter-spacing: unset;
+				line-height: inherit;
 			}
-		}
-		h2 {
-			font-family: var(--font-display);
-			font-size: inherit;
-			font-style: italic;
-			font-variation-settings: 'opsz' 16;
-			line-height: inherit;
 		}
 		table {
 			border-block: var(--delineation);
