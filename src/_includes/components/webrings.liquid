@@ -1,0 +1,221 @@
+<section class='safe-column webrings'>
+	<style>
+		@layer template {
+			.webrings {
+				padding-block-end: var(--s11);
+			}
+			.webrings > .landing__safe-area {
+				display: grid;
+			}
+			.webrings__list {
+				column-gap: var(--s-2);
+				display: grid;
+				grid-template-columns: 100%;
+				row-gap: var(--s0);
+			}
+			.webrings__ring {
+				align-items: baseline;
+				column-gap: var(--s-4);
+				display: grid;
+				grid-column: 1 / -1;
+				grid-template-columns: max-content minmax(var(--s2), 1fr) repeat(3, max-content);
+
+				border-block-end-width: var(--hairline) solid transparent;
+			}
+			.webrings__ring:hover {
+				border-block-end-color: var(--color-border);
+			}
+			.webrings__ring:not(:hover) .tab-leader {
+				border-color: transparent;
+			}
+			.tab-leader {
+				border-color: transparent;
+			}
+			.webrings__ring :not([unavailable]) {
+				color: var(--color-fg);
+				font-weight: normal;
+				line-height: inherit;
+			}
+			.webrings__ring :where(nav, .webrings__ring_pending-overlay) {
+				grid-column: 3 / -1;
+				grid-row: 1 / 2;
+			}
+			.webrings__ring nav {
+				display: grid;
+				grid-template-columns: subgrid;
+			}
+			.webrings__ring_name {
+				font-weight: normal;
+				color: unset;
+			}
+			.webrings__ring :is(.webrings__ring_prev, .webrings__ring_rand, .webrings__ring_next) {
+				padding-inline: 0.5ch;
+			}
+			.webrings__ring[data-pending] .webrings__ring_name::after {
+				color: var(--color-fg-2);
+				content: '*';
+				font-variant-position: super;
+				margin-inline-start: 0.1em;
+			}
+			.webrings__ring_pending-overlay {
+				--blur-radius: 0.2em;
+				align-self: center;
+				backdrop-filter: blur(var(--blur-radius));
+				block-size: calc(100% + 4 * var(--blur-radius));
+				color: var(--color-fg-2);
+				display: flex;
+				cursor: not-allowed;
+				justify-self: stretch;
+				opacity: 0;
+				overflow: visible;
+				place-content: center;
+				place-items: center;
+				transition-property: backdrop-filter, filter, opacity;
+				transition: 200ms ease;
+				&:hover {
+					opacity: 1;
+				}
+				&:not(:hover) {
+					filter: blur(var(--blur-radius));
+				}
+			}
+			.webrings .pending-note {
+				color: var(--color-fg-2);
+				font-size: var(--s-1);
+				font-style: italic;
+				grid-column: 1 / -1;
+				letter-spacing: 0.015em;
+				margin-block-start: var(--s0);
+				&::before {
+					content: '*';
+					font-style: normal;
+					margin-inline-end: 0.2em;
+				}
+			}
+		}
+	</style>
+	<div class='landing__safe-area two-up'>
+		<h2>Webrings</h2>
+		<div class='webrings__list'>
+			<div class='webrings__ring' data-pending>
+				<h3 class='caps webrings__ring_name'>
+					<a
+						href='https://cs.sjoy.lol'
+						rel='external'
+						target='_blank'
+						>CSS JOY</a
+					>
+				</h3>
+				<hr class='tab-leader'>
+				<nav>
+					<a
+						class='webrings__ring_prev'
+						href='https://webri.ng/webring/cssjoy/previous?via={{ metadata.url }}'
+						inert
+						rel='external'
+						target='_blank'
+						unavailable
+						>Prev</a
+					>
+					<a
+						class='webrings__ring_rand'
+						href='https://webri.ng/webring/cssjoy/random?via={{ metadata.url }}'
+						inert
+						rel='external'
+						target='_blank'
+						unavailable
+						>Random</a
+					>
+					<a
+						class='webrings__ring_next'
+						href='https://webri.ng/webring/cssjoy/next?via={{ metadata.url }}'
+						inert
+						rel='external'
+						target='_blank'
+						unavailable
+						>Next</a
+					>
+				</nav>
+				<em class='webrings__ring_pending-overlay'>Pending…</em>
+			</div>
+			<div class='webrings__ring' data-pending>
+				<h3 class='webrings__ring_name'>
+					<a
+						href='https://a11y-webring.club'
+						rel='external'
+						target='_blank'
+						>a11y-webring.club</a
+					>
+				</h3>
+				<hr class='tab-leader'>
+				<nav>
+					<a
+						class='webrings__ring_prev'
+						href='https://a11y-webring.club/prev'
+						inert
+						rel='external'
+						target='_blank'
+						unavailable
+						>Prev</a
+					>
+					<a
+						class='webrings__ring_rand'
+						href='https://a11y-webring.club/random'
+						inert
+						rel='external'
+						target='_blank'
+						unavailable
+						>Random</a
+					>
+					<a
+						class='webrings__ring_next'
+						href='https://a11y-webring.club/next'
+						inert
+						rel='external'
+						target='_blank'
+						unavailable
+						>Next</a
+					>
+				</nav>
+				<em class='webrings__ring_pending-overlay'>Pending…</em>
+			</div>
+			<div class='webrings__ring webrings__ring_name'>
+				<h3>
+					<a
+						href='https://baccyflap.com/noai'
+						rel='external'
+						target='_blank'
+					>
+						<span aria-hidden>🚫&nbsp;no 🤖&nbsp;ai</span>
+						<span class='visually-hidden'>No AI</span>
+					</a>
+				</h3>
+				<hr class='tab-leader'>
+				<nav>
+					<a
+						class='webrings__ring_prev'
+						href='https://baccyflap.com/noai/?prv&s=lai'
+						rel='external'
+						target='_blank'
+						>Prev</a
+					>
+					<a
+						class='webrings__ring_rand'
+						href='https://baccyflap.com/noai/?rnd'
+						rel='external'
+						target='_blank'
+						>Random</a
+					>
+					<a
+						class='webrings__ring_next'
+						href='https://baccyflap.com/noai/?nxt&s=lai'
+						rel='external'
+						target='_blank'
+						>Next</a
+					>
+				</nav>
+			</div>
+			<aside class='pending-note'>Membership pending approval</aside>
+		</div>
+	</div>
+</section>

@@ -2,27 +2,47 @@
 layout: main.liquid
 ---
 <style>
-	.landing__safe-area {
-		margin-inline: auto;
-		max-inline-size: var(--content-width);
-	}
-	.hello {
-		font-family: var(--font-serif);
-		font-size: var(--s3);
-		line-height: 1.35;
-		padding-block: var(--s11);
-		padding-left: var(--safe-padding-left);
-		padding-right: var(--safe-padding-right);
-	}
-	.explainer {
-		--flow-space: 1.75em;
-		color: var(--color-fg-2);
-		padding-block: var(--s10) var(--s11);
-		padding-left: var(--safe-padding-left);
-		padding-right: var(--safe-padding-right);
+	@layer template {
+		.landing__safe-area {
+			margin-inline: auto;
+			max-inline-size: var(--content-width);
+		}
+		.two-up {
+			@media (min-width: 800px) {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				column-gap: var(--s0);
+				& > :not(h2) {
+					grid-column: 2 / -1;
+				}
+			}
+			& > h2 {
+				font-family: var(--font-serif);
+				font-size: inherit;
+				font-variant-caps: all-small-caps;
+				font-weight: inherit;
+				grid-column: 1 / 2;
+				letter-spacing: 0.08em;
+				line-height: inherit;
+				margin-block-end: var(--s1);
+			}
+		}
+
+		.hello {
+			font-family: var(--font-serif);
+			font-size: var(--s3);
+			line-height: 1.35;
+			padding-block: var(--s11);
+			padding-left: var(--safe-padding-left);
+			padding-right: var(--safe-padding-right);
+		}
+		.preamble {
+			--flow-space: 1.75em;
+			padding-block: var(--s10) var(--s11);
+		}
 	}
 </style>
-{%- render "components/opsz-demo" %}
+{% render "components/opsz-demo" %}
 <hr>
 <section class='hello' id='main'>
 	<div class='landing__safe-area flow'>
@@ -30,19 +50,23 @@ layout: main.liquid
 	</div>
 </section>
 <hr>
-{%- render "components/hero" %}
-<section class='explainer'>
-	<div class='landing__safe-area flow'>
-		<p>
-			This site is part commonplace book, part
-			<a
-				href='https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone'
-				rel='external'
-				target='_blank'
-				>worry stone</a
-			>. It’s a bit of a mess, but that’s the point. This is my excuse to experiment with tools and ideas; work with the
-			garage door open; and&mdash;<em>most importantly</em>&mdash;play with fonts.
-		</p>
-		<p>Have a noodle around! It isn’t much, but I hope you find something neat.</p>
+{% render "components/hero" %}
+<section class='preamble safe-column'>
+	<div class='landing__safe-area two-up'>
+		<h2>Preamble</h2>
+		<div class='flow'>
+			<p>
+				This site is part commonplace book, part
+				<a
+					href='https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone'
+					rel='external'
+					target='_blank'
+					>worry stone</a
+				>. It’s a bit of a mess, but that’s the point. This is my excuse to experiment with tools and ideas; work with
+				the garage door open; and&mdash;<em>most importantly</em>&mdash;play with fonts.
+			</p>
+			<p>Have a noodle around! It isn’t much, but I hope you find something neat.</p>
+		</div>
 	</div>
 </section>
+{% render "components/webrings" %}
