@@ -48,7 +48,7 @@
 				font-weight: normal;
 				color: unset;
 			}
-			.webrings__ring :is(.webrings__ring_prev, .webrings__ring_rand, .webrings__ring_next) {
+			:is(.webrings__ring_prev, .webrings__ring_rand, .webrings__ring_next) {
 				padding-inline: 0.5ch;
 			}
 			.webrings__ring[data-pending] .webrings__ring_name::after {
@@ -179,7 +179,7 @@
 				</nav>
 				<em class='webrings__ring_pending-overlay'>Pending…</em>
 			</div>
-			<div class='webrings__ring '>
+			<div class='webrings__ring'>
 				<h3 class='webrings__ring_name'>
 					<a
 						href='https://baccyflap.com/noai'
@@ -209,6 +209,39 @@
 					<a
 						class='webrings__ring_next'
 						href='https://baccyflap.com/noai/?nxt&s=lai'
+						rel='external'
+						target='_blank'
+						>Next</a
+					>
+				</nav>
+			</div>
+			<div class='webrings__ring'>
+				<h3 class='webrings__ring_name'>
+					<a
+						href='https://hotlinewebring.club'
+						rel='external'
+						target='_blank'
+						>Hotline</a
+					>
+				</h3>
+				<hr class='tab-leader'>
+				<nav>
+					<a
+						class='webrings__ring_prev'
+						href='https://hotlinewebring.club/jasper/previous'
+						rel='external'
+						target='_blank'
+						>Prev</a
+					>
+					<a
+						class='webrings__ring_rand'
+						href='#'
+						style='visibility: hidden'
+						>Random</a
+					>
+					<a
+						class='webrings__ring_next'
+						href='https://hotlinewebring.club/jasper/next'
 						rel='external'
 						target='_blank'
 						>Next</a
