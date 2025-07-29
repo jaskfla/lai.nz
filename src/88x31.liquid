@@ -28,14 +28,30 @@ permalink: 88x31.html
 	>
 
 	<a href='https://chrisburnell.com/note/eleventy-animated-88x31/' rel='external' target='_blank'>
-		<img
-			eleventy:ignore
-			alt='Built with Eleventy'
-			class='web-badge'
-			src='/images/badges/built-with-eleventy.gif'
-			width='88'
-			height='31'
-		>
+		<picture>
+			<source
+				media='(prefers-reduced-motion: no-preference)'
+				srcset='/images/badges/built-with-eleventy~animated.gif'
+				type='image/gif'
+				width='88'
+				height='31'
+			>
+			<source
+				media='(prefers-reduced-motion: none)'
+				srcset='/images/badges/built-with-eleventy.gif'
+				type='image/gif'
+				width='88'
+				height='31'
+			>
+			<img
+				eleventy:ignore
+				alt='Built with Eleventy'
+				class='web-badge'
+				src='/images/badges/built-with-eleventy.gif'
+				width='88'
+				height='31'
+			>
+		</picture>
 	</a>
 
 	<iframe
