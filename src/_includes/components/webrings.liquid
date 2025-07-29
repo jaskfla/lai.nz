@@ -11,7 +11,7 @@
 				column-gap: var(--s-2);
 				display: grid;
 				grid-template-columns: 100%;
-				row-gap: var(--s0);
+				row-gap: var(--s1);
 			}
 			.webrings__ring {
 				align-items: baseline;
@@ -19,17 +19,9 @@
 				display: grid;
 				grid-column: 1 / -1;
 				grid-template-columns: max-content minmax(var(--s2), 1fr) repeat(3, max-content);
-
-				border-block-end-width: var(--hairline) solid transparent;
 			}
 			.webrings__ring:hover {
 				border-block-end-color: var(--color-border);
-			}
-			.webrings__ring:not(:hover) .tab-leader {
-				border-color: transparent;
-			}
-			.tab-leader {
-				border-color: transparent;
 			}
 			.webrings__ring :not([unavailable]) {
 				color: var(--color-fg);
@@ -106,7 +98,6 @@
 						>CSS JOY</a
 					>
 				</h3>
-				<hr class='tab-leader'>
 				<nav>
 					<a
 						class='webrings__ring_prev'
@@ -147,7 +138,6 @@
 						>a11y-webring.club</a
 					>
 				</h3>
-				<hr class='tab-leader'>
 				<nav>
 					<a
 						class='webrings__ring_prev'
@@ -190,7 +180,6 @@
 						<span class='visually-hidden'>No AI</span>
 					</a>
 				</h3>
-				<hr class='tab-leader'>
 				<nav>
 					<a
 						class='webrings__ring_prev'
@@ -224,7 +213,6 @@
 						>Hotline</a
 					>
 				</h3>
-				<hr class='tab-leader'>
 				<nav>
 					<a
 						class='webrings__ring_prev'
