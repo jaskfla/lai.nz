@@ -8,6 +8,7 @@ function hostnameCompare(a, b) {
 }
 
 export default [
+	'https://abandon.ie',
 	'https://alexandersandberg.com',
 	'https://anhvn.com',
 	'https://arielsalminen.com',
