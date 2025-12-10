@@ -2,33 +2,35 @@
 
 ## \*️⃣ Prereq
 
-Install [Bun](https://bun.sh/docs/installation):[^pkg]
+Install
+[Deno](https://docs.deno.com/runtime/getting_started/installation):[^pkg]
 
 [^pkg]:
     If you know what you’re doing, go ahead and use
     [pnpm](https://pnpm.io)/[yarn](https://yarnpkg.com)/[npm](https://www.npmjs.com).
-    It might not stick, but for now I’m having fun with Bun.
 
 ```sh
-curl -fsSL https://bun.sh/install | bash
+curl -fsSL https://deno.land/install.sh | sh
 ```
 
-Or, if you prefer Homebrew: `brew install oven-sh/bun/bun`
+Or, if you prefer Homebrew: `brew install deno`
 
 Then install dependencies:
 
 ```sh
-bun install
+deno install
 ```
 
 Make sure you’re using the right version of
 [Node](https://nodejs.org):[^runtime]
 
 [^runtime]:
-    I’d like to give the ~~buntime~~ Bun runtime a proper go at some point, but
-    Eleventy assumes Node (which is fair enough). If using
-    [Deno](https://deno.com), I’ll leave you to figure things out yourself—let
-    me know how that goes!
+    To be completely honest, I don’t know whether my use of Deno in this project
+    makes runs the Eleventy build in a Deno runtime. This is a remnant from when
+    I
+    [used a different package manager](https://dbushell.com/notes/2025-09-10T12:08Z).
+    I’ll (eventually) delete either this section or footnote once I figure out
+    which bit is no longer relevant.
 
 ```sh
 nvm use
@@ -41,7 +43,7 @@ This might prompt you to `nvm install`.
 ### 🏗️ To build
 
 ```sh
-bun run build
+deno run build
 ```
 
 Then peep the freshly minted `/_site/` folder.
@@ -49,5 +51,5 @@ Then peep the freshly minted `/_site/` folder.
 ### 👟 To run
 
 ```sh
-bun run start
+deno run start
 ```

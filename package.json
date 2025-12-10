@@ -26,8 +26,8 @@
 	"license": "SEE LICENSE IN LICENSE.md",
 	"private": true,
 	"scripts": {
-		"build": "bun eleventy && bun run minify:js",
-		"build:hard": "rm -rf _site && eleventy && bun run minify:js",
+		"build": "eleventy && deno run minify:js",
+		"build:hard": "rm -rf _site && eleventy && deno run minify:js",
 		"prestart": "rm -rf _site",
 		"start": "eleventy --serve",
 		"watch": "eleventy --watch",
