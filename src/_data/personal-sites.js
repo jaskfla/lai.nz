@@ -1,6 +1,7 @@
 function getHostname(url) {
 	const hostname = new URL(url).hostname;
-	return hostname.startsWith('www.') ? hostname.slice(4) : hostname;
+	const www = 'www';
+	return hostname.startsWith(www) ? hostname.slice(www.length) : hostname;
 }
 
 function hostnameCompare(a, b) {
@@ -11,6 +12,7 @@ export default [
 	'https://abandon.ie',
 	'https://alexandersandberg.com',
 	'https://anhvn.com',
+	'https://aresluna.org',
 	'https://arielsalminen.com',
 	'https://benji.org',
 	'https://bradleyziffer.com',
@@ -21,6 +23,7 @@ export default [
 	'https://henry.codes',
 	'https://ja.mt',
 	'https://jillian.garden',
+	'https://jordanm.co.uk',
 	'https://jzhao.xyz',
 	'https://kayserifserif.place',
 	'https://kuntz.io',
@@ -38,6 +41,7 @@ export default [
 	'https://robinrendle.com',
 	'https://ryanmulligan.dev',
 	'https://scottkellum.com',
+	'https://tonsky.me',
 	'https://vhbelvadi.com',
 	'https://wojtek.im',
 	'https://www.adithnarein.com',
