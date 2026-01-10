@@ -58,7 +58,7 @@ export default [
 		pullquote:
 			'…a soullessly-regurgitated, compression-down-scaled, AI-up-scaled version version of the next.',
 		comment:
-			'Henry (from online) articulates in a way I couldn’t why this website exists.',
+			'Henry (<em>from online</em>) articulates in a way I couldn’t why this website exists.',
 	},
 	{
 		author: 'Marcin Wichary',
@@ -93,12 +93,12 @@ export default [
 	},
 	{
 		author: 'Patrick McKenzie',
-		title: 'Falsehoods Programmers Believe About Names',
+		title: 'Falsehoods programmers believe about names',
 		link: 'https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names',
 		media: 'blog post',
 		pullquote: '40.&nbsp;People have names.',
 		comment:
-			'Please don’t ever create a table with <code>first_name</code> and <code>last_name</code> again.',
+			'Let us never again create a table with <code>first_name</code> and <code>last_name</code>.',
 	},
 	{
 		author: 'Smith & Diction',
@@ -156,8 +156,8 @@ export default [
 		link: 'https://ia.net/topics/the-web-is-all-about-typography-period',
 		media: 'article, 11&nbsp;min',
 		pullquote:
-			'<i>Design Thinking</i> suggests that there’s thought without design and design without thought. There isn’t.',
-		comment: null,
+			'<i>Design Thinking</i> suggests that there’s thought without design and design without thought.',
+		comment: '“There isn’t.”',
 	},
 	{
 		author: 'Matthias Endler',
@@ -182,14 +182,6 @@ export default [
 	// 	title: 'Better',
 	// 	link: 'http://www.merlinmann.com/better',
 	// 	media: 'blog post?',
-	// 	pullquote: null,
-	// 	comment: null,
-	// },
-	// {
-	// 	author: 'Don Norman',
-	// 	title: 'The Design of Everyday Things',
-	// 	link: 'https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things',
-	// 	media: 'book',
 	// 	pullquote: null,
 	// 	comment: null,
 	// },
