@@ -51,6 +51,16 @@ export default [
 		comment: 'Marcin does it again, with… a love letter to a font?',
 	},
 	{
+		author: 'Henry Desroches',
+		title: 'A website to destroy all websites',
+		link: 'https://henry.codes/writing/a-website-to-destroy-all-websites',
+		media: 'essay (rant)',
+		pullquote:
+			'…a soullessly-regurgitated, compression-down-scaled, AI-up-scaled version version of the next.',
+		comment:
+			'Henry (from online) articulates in a way I couldn’t why this website exists.',
+	},
+	{
 		author: 'Marcin Wichary',
 		title: 'Crafting link underlines on Medium',
 		link: 'https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9',
