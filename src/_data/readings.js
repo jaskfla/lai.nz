@@ -16,7 +16,7 @@ export default [
 		pullquote:
 			'My pencils are sharp enough. Even the dull ones will make a mark.',
 		comment:
-			'We all get stuck between somewhere between zero and one now and again. When I’m in my deepest depths, I revisit Ze to start getting shit done again.',
+			'We all get stuck between somewhere between zero and one now and again. When I’m in my deepest depths, I revisit Ze to start Getting Shit Done again.',
 	},
 	{
 		author: 'John Green',
