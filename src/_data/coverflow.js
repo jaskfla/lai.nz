@@ -20,13 +20,18 @@ export default [
 		link: 'https://album.link/i/1444693578',
 	},
 	{
+		title: 'The New Abnormal, by the Strokes',
+		coverPath: '/images/cover-art/strokes__new-abnormal.jpg',
+		link: 'https://album.link/s/2xkZV2Hl1Omi8rk2D7t5lN',
+	},
+	{
 		title: 'Win Son Presents: A Taiwanese American Cookbook',
 		coverPath: '/images/cover-art/win-son-cookbook.png',
 		link: 'https://winsonbrooklyn.com/cookbook',
 	},
 	{
-		title: 'Bloomburrow',
-		coverPath: '/images/cover-art/mtg__bloomburrow.png',
-		link: 'https://magic.wizards.com/en/products/bloomburrow/card-image-gallery',
+		title: 'Magic the Gathering',
+		coverPath: '/images/cover-art/mtg.webp',
+		link: 'https://magic.wizards.com',
 	},
 ];
