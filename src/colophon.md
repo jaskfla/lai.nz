@@ -24,7 +24,7 @@ to build this site, and host it with
 <a href="https://www.netlify.com" rel="external nofollow" target="_blank">Netlify</a>.
 Its code is [on GitHub]({{ metadata.repoUrl }}), if that piques your interest.
 My domain comes via
-<a href="https://porkbun.com" rel="external nofollow" target="_blank">Gandi</a>;
+<a href="https://porkbun.com" rel="external nofollow" target="_blank">Porkbun</a>;
 and <abbr title="Domain Name System">DNS</abbr> stuff runs through Cloudflare’s
 pipes (though I anticipate switching to
 <a href="https://dns.kitchen" rel="external nofollow" target="_blank"><abbr title="Domain Name System">DNS</abbr> Kitchen</a>).
