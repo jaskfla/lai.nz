@@ -1,5 +1,5 @@
 ---
-title: Paradigms and Props
+title: Props and Paradigms
 layout: p-by-p.liquid
 permalink: writing/css-in-js.html
 excludeFromSitemap: true
@@ -28,7 +28,7 @@ I’ve used it and [Emotion](https://emotion.sh) in university assignments and
 [side projects](https://github.com/UOA-CS732-SE750-Students-2024/project-group-golden-giraffes)
 too.
 
-Earlier this year (2025), styled-components
+In 2025, styled-components
 [went into maintenance mode](https://opencollective.com/styled-components/updates/thank-you).
 
 <span aria-label="Smiling face with tear emoji" role="img">🥲</span>
