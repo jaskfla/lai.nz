@@ -121,7 +121,7 @@ Taşkıran</a> has since settled in nicely.
 since <time datetime=2008>2008</time>
 +&nbsp;<a href="https://www.notion.com/product/mail" rel="external nofollow" target="_blank">Notion
 Mail</a> for now, but happy about neither. <span class="dim">Notion Mail is
-maddeningly unresponsive,
+exasperatingly unresponsive,
 and \*<em style="font-family: var(--font-sans)">gestures broadly at
 Google</em>\*.
 (<a href="https://www.fastmail.com" rel="external nofollow" target="_blank">Fastmail</a>,
