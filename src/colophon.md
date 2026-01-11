@@ -15,8 +15,9 @@ Butterick’s book,
 Typography</i></a>, taught me most of what I know about typography. You should
 read it&mdash;it’s free.
 
-<i>{{ metadata.domain }}</i> is designed and built by me; and in a real sense
-also by the many who inform my sensibilities, and whose work inspire mine.
+<i>{{ metadata.domain }}</i> is designed and built by me. Also, in a real sense,
+by the many who <a href="/people">inform my sensibilities</a> and whose work
+<a href="/small-web">inspire mine</a>.
 
 I use
 <a href="https://www.11ty.dev" rel="external nofollow" target="_blank">Eleventy</a>
