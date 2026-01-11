@@ -20,29 +20,30 @@ and
 Studio Code</a>. <span class="dim">(At work,
 <a href="https://www.cursor.com" rel="external nofollow" target="_blank">Cursor</a>
 takes <abbr
-title="Visual Studio Code">VSC</abbr>’s place, but have complicated feelings
-about the whole <abbr title="Large Language Model">LLM</abbr>…
-_situation_.)</span>
+title="Visual Studio Code">VSC</abbr>’s place, but I have complicated feelings
+about the <abbr title="Large Language Model">LLM</abbr>… _situation_.)</span>
 
 Honourable mention:
 <a href="https://zed.dev" rel="external nofollow" target="_blank">Zed</a>, but
-its global search is
+<a href="https://zed.dev/blog/nerd-sniped-project-search" rel="external nofollow" target=_blank>until
+recently</a> its global search was
 <a href="https://github.com/zed-industries/zed/issues/4560" rel="external nofollow" target="_blank">deal-breakingly
 slow</a>.
 
-My editor themes jump between
+Editor theme is
 <a href="https://stephango.com/flexoki" rel="external nofollow" target="_blank">Flexoki</a>,
+formerly
 <a href="https://github.com/primer/github-vscode-theme" rel="external nofollow" target="_blank">GitHub
 Primer</a> and
 <a href="https://catppuccin.com" rel="external nofollow" target="_blank">Catppuccin</a>&mdash;all
-of which have both light and dark variants.
+of which have light and dark variants.
 
-And while I use almost none of its agentic ~~bullshit~~ _features_,
+And while I use none of its agentic ~~bullshit~~ _features_,
 <a href="https://www.warp.dev" rel="external nofollow" target="_blank">Warp</a>’s
 Mac-native text input keeps me from turning to
-<a href="https://iterm2.com" rel="external nofollow" target="_blank">iTerm2</a>
+<a href="https://ghostty.org" rel="external nofollow" target="_blank">Ghostty</a>
 or
-<a href="https://ghostty.org" rel="external nofollow" target="_blank">Ghostty</a>.
+<a href="https://iterm2.com" rel="external nofollow" target="_blank">iTerm2</a>.
 
 ## Writing fonts
 
@@ -59,7 +60,7 @@ and
 
 ## Input devices
 
-I type on a white
+A white
 <a href="https://modedesigns.com/collections/eighty" rel="external nofollow" target="_blank">Mode
 Eighty</a> (with
 <a href="https://www.theremingoat.com/blog/silent-alpacas" rel="external nofollow" target="_blank">Silent
@@ -106,8 +107,8 @@ K240 MKII</a>s (12&nbsp;years strong!)&mdash;or just AirPods,
 <a href="https://dribbble.com/padbury" rel="external nofollow" target="_blank">Robert
 Padbury</a>’s
 <i><a href="https://web.archive.org/web/20140115195226/http://www.padbury.me/clock/" rel="external nofollow" target="_blank">Padbury
-Clock</a></i> saved my screens<span class="caps">(?)</span> for a good
-eleven-ish years, but macOS Sequoia seems to have finally broken it. 🥲
+Clock</a></i> saved my screens for a good eleven-ish years, but macOS Sequoia
+seems to have finally broken it. 🥲
 
 <i><a href="https://bauhausclock.com" rel="external nofollow" target="_blank">Bauhaus
 Clock</a></i> by
@@ -119,9 +120,10 @@ Taşkıran</a> has since settled in nicely.
 <a href="https://workspace.google.com/products/gmail" rel="external nofollow" target="_blank">Gmail</a>
 since <time datetime=2008>2008</time>
 +&nbsp;<a href="https://www.notion.com/product/mail" rel="external nofollow" target="_blank">Notion
-Mail</a> for now, but happy about neither. <span class="dim">Notion Mail isn’t
-responsive enough, and \*<em style="font-family: var(--font-sans)">gestures
-broadly at Google</em>\*.
+Mail</a> for now, but happy about neither. <span class="dim">Notion Mail is
+maddeningly unresponsive,
+and \*<em style="font-family: var(--font-sans)">gestures broadly at
+Google</em>\*.
 (<a href="https://www.fastmail.com" rel="external nofollow" target="_blank">Fastmail</a>,
 perhaps?)</span>
 
