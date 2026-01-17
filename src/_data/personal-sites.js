@@ -14,6 +14,7 @@ export default [
 	'https://anhvn.com',
 	'https://aresluna.org',
 	'https://arielsalminen.com',
+	'https://jesseyuen.com',
 	'https://benji.org',
 	'https://bradleyziffer.com',
 	'https://charlottedann.com',
