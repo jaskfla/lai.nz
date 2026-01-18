@@ -12,11 +12,11 @@
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.2",
 		"@11ty/eleventy-img": "^6.0.4",
-		"@biomejs/biome": "^2.1.2",
+		"@biomejs/biome": "^2.3.11",
 		"@sindresorhus/slugify": "^2.2.1",
 		"html-minifier-terser": "^7.2.0",
 		"jsdom": "^26.1.0",
-		"terser": "^5.43.1"
+		"terser": "^5.46.0"
 	},
 	"bugs": {
 		"url": "https://github.com/jaskfla/lai.nz/issues",
