@@ -61,6 +61,16 @@ export default [
 			'Henry (<em>from online</em>) articulates in a way I couldn’t why this website exists.',
 	},
 	{
+		author: 'Frank Chimero',
+		title: 'The Web’s Grain',
+		link: 'https://frankchimero.com/blog/2015/the-webs-grain',
+		media: 'essay',
+		pullquote: 'That’s not what bears are supposed to do.',
+		comment:
+			null &&
+			'Alternatively, in the form of a <a href="https://www.webstock.org.nz/talks/the-webs-grain" rel="external nofollow">Webstock talk</a>.',
+	},
+	{
 		author: 'Marcin Wichary',
 		title: 'Crafting link underlines on Medium',
 		link: 'https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9',
@@ -159,14 +169,14 @@ export default [
 			'<i>Design Thinking</i> suggests that there’s thought without design and design without thought.',
 		comment: '“There isn’t.”',
 	},
-	{
-		author: 'Matthias Endler',
-		title: 'The Best Programmers I Know',
-		link: 'https://endler.dev/2025/best-programmers',
-		media: 'blog post',
-		pullquote: null,
-		comment: null,
-	},
+	// {
+	// 	author: 'Matthias Endler',
+	// 	title: 'The Best Programmers I Know',
+	// 	link: 'https://endler.dev/2025/best-programmers',
+	// 	media: 'blog post',
+	// 	pullquote: null,
+	// 	comment: null,
+	// },
 	// {
 	// 	author: 'Nilay Patel',
 	// 	title:
