@@ -56,10 +56,6 @@ export default [
 		url: 'https://solar.lowtechmagazine.com',
 	},
 	{
-		title: 'Manuel Moreale',
-		url: 'https://manuelmoreale.com',
-	},
-	{
 		title: 'Not a Number',
 		url: 'https://www.nan.fyi',
 	},
