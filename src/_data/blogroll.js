@@ -32,24 +32,36 @@ export default [
 		url: 'https://daringfireball.net',
 	},
 	{
+		title: 'Dave Rupert',
+		url: 'https://daverupert.com',
+	},
+	{
+		title: 'Email is Good',
+		url: 'https://email-is-good.com',
+	},
+	{
 		title: 'Heydon Pickering',
 		url: 'https://heydonworks.com/latest',
-	},
-	{
-		title: 'Jim Nielsen',
-		url: 'https://blog.jim-nielsen.com',
-	},
-	{
-		title: 'Josh Comeau',
-		url: 'https://www.joshwcomeau.com',
 	},
 	{
 		title: 'The <abbr title="Hypertext Markup Language">HTML</abbr> Review',
 		url: 'https://thehtml.review',
 	},
 	{
+		title: 'Jim Nielsen',
+		url: 'https://blog.jim-nielsen.com',
+	},
+	{
 		title: 'Jonnie Hallman',
 		url: 'https://destroytoday.com/blog',
+	},
+	{
+		title: 'Josh Comeau',
+		url: 'https://www.joshwcomeau.com',
+	},
+	{
+		title: 'A List Apart',
+		url: 'https://alistapart.com',
 	},
 	{
 		title: '<div class="caps">LOW←TECH MAGAZINE</div>',
@@ -74,5 +86,9 @@ export default [
 	{
 		title: 'Sara Soueidan',
 		url: 'https://www.sarasoueidan.com/blog',
+	},
+	{
+		title: 'Wreckage/salvage',
+		url: 'https://www.wrecka.ge',
 	},
 ];
