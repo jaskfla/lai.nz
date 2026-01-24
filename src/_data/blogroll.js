@@ -28,16 +28,16 @@ export default [
 		url: 'https://csscade.com',
 	},
 	{
-		title: 'Daring Fireball',
-		url: 'https://daringfireball.net',
-	},
-	{
 		title: 'Dave Rupert',
 		url: 'https://daverupert.com',
 	},
 	{
 		title: 'Email is Good',
 		url: 'https://email-is-good.com',
+	},
+	{
+		title: 'Ethan Marcotte',
+		url: 'https://ethanmarcotte.com',
 	},
 	{
 		title: 'Heydon Pickering',
