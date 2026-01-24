@@ -64,7 +64,7 @@ export default [
 		url: 'https://alistapart.com',
 	},
 	{
-		title: '<div class="caps">LOW←TECH MAGAZINE</div>',
+		title: '<span class="caps">LOW←TECH MAGAZINE</span>',
 		url: 'https://solar.lowtechmagazine.com',
 	},
 	{
