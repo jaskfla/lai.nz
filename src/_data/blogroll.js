@@ -48,6 +48,10 @@ export default [
 		url: 'https://thehtml.review',
 	},
 	{
+		title: 'Infrequently Noted',
+		url: 'https://infrequently.org',
+	},
+	{
 		title: 'Jim Nielsen',
 		url: 'https://blog.jim-nielsen.com',
 	},
