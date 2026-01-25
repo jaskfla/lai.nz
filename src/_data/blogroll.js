@@ -11,9 +11,16 @@ function trimLeadingArticle(str) {
 	return str.replaceAll(/^(a|an|the)\b\s*/gi, '');
 }
 
+function sanitizeNbsp(str) {
+	return str.replaceAll('\u{00A0}', ' ');
+}
+
 function lexicalCompare(_a, _b) {
-	const [a, b] = [_a, _b].map(decodeHtml).map(trimLeadingArticle);
-	return a.localeCompare(b, {
+	const [a, b] = [_a, _b]
+		.map(decodeHtml)
+		.map(trimLeadingArticle)
+		.map(sanitizeNbsp);
+	return a.localeCompare(b, 'en', {
 		ignorePunctuation: true,
 		numeric: true,
 		sensitivity: 'base',
