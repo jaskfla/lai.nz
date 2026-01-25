@@ -99,7 +99,7 @@ K240 MKII</a>s (12&nbsp;years strong!)&mdash;or just AirPods,
 Padbury</a>’s
 <i><a href="https://web.archive.org/web/20140115195226/http://www.padbury.me/clock/" rel="external nofollow" target="_blank">Padbury
 Clock</a></i> saved my screens for a good eleven-ish years, but macOS Sequoia
-seems to have finally broken it. 🥲
+finally broke it. 🥲
 
 <i><a href="https://bauhausclock.com" rel="external nofollow" target="_blank">Bauhaus
 Clock</a></i> by
