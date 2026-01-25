@@ -1,3 +1,25 @@
+import { JSDOM } from 'jsdom';
+const { document } = new JSDOM().window;
+
+function decodeHtml(str) {
+	const el = document.createElement('span');
+	el.innerHTML = str;
+	return el.textContent;
+}
+
+function trimLeadingArticle(str) {
+	return str.replaceAll(/^(a|an|the)\b\s*/gi, '');
+}
+
+function lexicalCompare(_a, _b) {
+	const [a, b] = [_a, _b].map(decodeHtml).map(trimLeadingArticle);
+	return a.localeCompare(b, {
+		ignorePunctuation: true,
+		numeric: true,
+		sensitivity: 'base',
+	});
+}
+
 export default [
 	{
 		title: '5ives',
@@ -103,4 +125,4 @@ export default [
 		title: 'Wreckage/salvage',
 		url: 'https://www.wrecka.ge',
 	},
-];
+].sort((a, b) => lexicalCompare(a.title, b.title));
