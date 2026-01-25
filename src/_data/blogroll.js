@@ -48,6 +48,10 @@ export default [
 		url: 'https://thehtml.review',
 	},
 	{
+		title: 'Hypercritical',
+		url: 'https://hypercritical.co',
+	},
+	{
 		title: 'Infrequently Noted',
 		url: 'https://infrequently.org',
 	},
@@ -90,6 +94,10 @@ export default [
 	{
 		title: 'Sara Soueidan',
 		url: 'https://www.sarasoueidan.com/blog',
+	},
+	{
+		title: 'Unsung',
+		url: 'https://unsung.aresluna.org',
 	},
 	{
 		title: 'Wreckage/salvage',
