@@ -14,21 +14,12 @@ I write short-form prose in
 long-form in
 <a href="https://ia.net/writer" rel="external nofollow" target="_blank">iA&nbsp;Writer</a>.
 Coding is split between
-<a href="http://www.barebones.com/products/bbedit/index.html" rel="external nofollow" target="_blank">BBEdit</a>
-and
-<a href="https://code.visualstudio.com" rel="external nofollow" target="_blank">Visual
-Studio Code</a>. <span class="dim">(At work,
-<a href="https://www.cursor.com" rel="external nofollow" target="_blank">Cursor</a>
-takes <abbr
-title="Visual Studio Code">VSC</abbr>’s place, but I have complicated feelings
-about the <abbr title="Large Language Model">LLM</abbr>… _situation_.)</span>
-
-Honourable mention:
-<a href="https://zed.dev" rel="external nofollow" target="_blank">Zed</a>, but
-<a href="https://zed.dev/blog/nerd-sniped-project-search" rel="external nofollow" target=_blank>until
-recently</a> its global search was
-<a href="https://github.com/zed-industries/zed/issues/4560" rel="external nofollow" target="_blank">deal-breakingly
-slow</a>.
+<a href="http://www.barebones.com/products/bbedit/index.html" rel="external nofollow" target="_blank">BBEdit</a>,
+<a href="https://zed.dev" rel="external nofollow" target="_blank">Zed</a> and
+<a href="https://www.cursor.com" rel="external nofollow" target="_blank">Cursor</a>.
+<span class="dim">(I have complicated feelings about the
+<abbr title="Large Language Model">LLM</abbr>… _situation_, but putting that
+aside for now.)</span>
 
 Editor theme is
 <a href="https://stephango.com/flexoki" rel="external nofollow" target="_blank">Flexoki</a>,
