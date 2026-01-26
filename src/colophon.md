@@ -30,4 +30,15 @@ and <abbr title="Domain Name System">DNS</abbr> stuff runs through Cloudflare’
 pipes (though I anticipate switching to
 <a href="https://dns.kitchen" rel="external nofollow" target="_blank"><abbr title="Domain Name System">DNS</abbr> Kitchen</a>).
 
-This site has [no analytics](/privacy).
+This site is
+<a href="https://www.websitecarbon.com/website/lai-nz" rel="external nofollow" target=_blank>climate-friendly</a>
+and has [no analytics](/privacy).
+
+<small class='dim' style='text-wrap: balance'>Last built <time
+datetime='{{ 'now' | date: "%Y-%m-%dT%H:%M:%SZ" }}' style='font-variant-numeric:
+unset'>{{ 'now' | date: "%e&nbsp;%B %Y at %H:%M (%Z)" }}</time>, from revision
+<a
+		href='{{ metadata.repoUrl }}/commit/{{ metadata.commitHash }}'
+		rel="external nofollow"
+		target="_blank"
+	><code>{{ metadata.commitHashShort }}</code></a>.</small>
