@@ -1,0 +1,18 @@
+---
+permalink: /feeds/blogroll.opml
+eleventyExcludeFromCollections: true
+# 🚨 `decode_html` filter can wreak syntactic havoc
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+<head>
+	<title>Jasper’s top-shelf follows</title>
+</head>
+<body>
+	{%- for blog in blogroll %}
+	{%- if blog.feedUrl %}
+	<outline type="rss" text="{{ blog.title | decode_html }}" xmlUrl="{{ blog.feedUrl }}" htmlUrl="{{ blog.url }}" />
+	{%- endif %}
+	{%- endfor %}
+</body>
+</opml>

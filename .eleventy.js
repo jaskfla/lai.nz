@@ -41,6 +41,7 @@ export default function (eleventyConfig) {
 		collection.getFilteredByGlob(`${config.dir.input}/notes/*.md`),
 	);
 
+	eleventyConfig.addFilter('decode_html', decodeHtml);
 	eleventyConfig.addFilter('hostname', (url) => {
 		const hostname = new URL(url).hostname;
 		return hostname.startsWith('www.') ? hostname.slice(4) : hostname;

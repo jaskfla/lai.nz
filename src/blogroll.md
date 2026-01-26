@@ -10,7 +10,11 @@ interesting.)
 <ul>
 	{%- for blog in blogroll %}
 	<li>
-		<a href="{{ blog.url }}" rel="external" target="_blank">{{ blog.title }}</a>
+		<a href="{{ blog.url }}" rel="external nofollow" target="_blank">{{ blog.title }}</a>
 	</li>
 	{%- endfor %}
 </ul>
+
+Also available in the shape of an
+<a href="/feeds/blogroll.opml" target="_blank"><abbr title="Outline Processor Markup Language">OPML</abbr>
+file</a>.
