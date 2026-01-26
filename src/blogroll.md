@@ -15,6 +15,6 @@ interesting.)
 	{%- endfor %}
 </ul>
 
-Also available in the shape of an
+Also available as an
 <a href="/feeds/blogroll.opml" target="_blank"><abbr title="Outline Processor Markup Language">OPML</abbr>
-file</a>.
+file</a> (minus Not a Number, which I couldn’t find a feed for 🥲).
