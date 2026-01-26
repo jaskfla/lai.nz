@@ -21,7 +21,7 @@ export const config = {
 };
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
-export default (eleventyConfig) => {
+export default function (eleventyConfig) {
 	const staticFiles = [
 		'fonts/',
 		'images/',
@@ -83,4 +83,4 @@ export default (eleventyConfig) => {
 	});
 
 	eleventyConfig.setDataFileSuffixes(['.11tydata']);
-};
+}
