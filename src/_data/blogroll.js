@@ -29,10 +29,12 @@ function lexicalCompare(_a, _b) {
 
 export default [
 	{
+		author: 'Merlin Mann',
 		title: '5ives',
 		url: 'https://www.5ives.com',
 	},
 	{
+		author: 'Merlin Mann',
 		title: '43&nbsp;Folders',
 		url: 'http://www.43folders.com',
 	},
@@ -53,6 +55,7 @@ export default [
 		url: 'https://ciechanow.ski',
 	},
 	{
+		author: 'Robin Rendle',
 		title: 'The Cascade',
 		url: 'https://csscade.com',
 	},
@@ -61,6 +64,7 @@ export default [
 		url: 'https://daverupert.com',
 	},
 	{
+		author: 'Chris Coyier',
 		title: 'Email is Good',
 		url: 'https://email-is-good.com',
 	},
@@ -73,14 +77,17 @@ export default [
 		url: 'https://heydonworks.com/latest',
 	},
 	{
+		author: 'Shelby Wilson & Maxwell Neely-Cohen',
 		title: 'The <abbr title="Hypertext Markup Language">HTML</abbr> Review',
 		url: 'https://thehtml.review',
 	},
 	{
+		author: 'John Siracusa',
 		title: 'Hypercritical',
 		url: 'https://hypercritical.co',
 	},
 	{
+		author: 'Alex Russell',
 		title: 'Infrequently Noted',
 		url: 'https://infrequently.org',
 	},
@@ -105,14 +112,17 @@ export default [
 		url: 'https://solar.lowtechmagazine.com',
 	},
 	{
+		author: 'Nanda Syahrasyad',
 		title: 'Not a Number',
 		url: 'https://www.nan.fyi',
 	},
 	{
+		author: 'Set Studio',
 		title: 'Piccalilli',
 		url: 'https://piccalil.li/blog',
 	},
 	{
+		author: 'Nick Heer',
 		title: 'Pixel Envy',
 		url: 'https://pxlnv.com',
 	},
@@ -125,10 +135,12 @@ export default [
 		url: 'https://www.sarasoueidan.com/blog',
 	},
 	{
+		author: 'Marcin Wichary',
 		title: 'Unsung',
 		url: 'https://unsung.aresluna.org',
 	},
 	{
+		author: 'Erin Kissane',
 		title: 'Wreckage/salvage',
 		url: 'https://www.wrecka.ge',
 	},
