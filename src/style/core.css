@@ -236,7 +236,7 @@
 	}
 
 	code {
-		background-color: oklch(from var(--color-fg-2) l c h / 8%);
+		background-color: oklch(from var(--color-fg-2) l c h / 4.5%);
 		border-radius: 0.3em;
 		padding-block: 0.2em;
 		padding-inline: 0.3em;
