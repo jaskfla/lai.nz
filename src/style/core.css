@@ -10,7 +10,8 @@
 			'Concourse', system-ui, -apple-system, BlinkMacSystemFont, 'Inter',
 			'Segoe UI', 'Helvetica Neue', sans-serif;
 		--font-serif:
-			'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro', ui-serif, serif;
+			'Warbler Text', 'IBM Plex Serif', 'Source Serif Pro', ui-serif,
+			'BiauKaiTC', serif;
 		--font-display: 'Warbler Variable', var(--font-serif);
 		--font-mono:
 			ui-monospace, SFMono-Regular, 'SF Mono', 'IBM Plex Mono', monospace;
