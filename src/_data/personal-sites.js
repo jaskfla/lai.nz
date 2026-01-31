@@ -1,6 +1,6 @@
 function getHostname(url) {
 	const hostname = new URL(url).hostname;
-	const www = 'www';
+	const www = 'www.';
 	return hostname.startsWith(www) ? hostname.slice(www.length) : hostname;
 }
 
