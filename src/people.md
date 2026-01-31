@@ -28,8 +28,9 @@ people:
   - name: DeepBlueInk
     url: https://www.youtube.com/DeepBlueInk
   - raw:
-      <a href="https://mastodon.social/@bugcounter">Dr&nbsp;Don</a> & <a
-      href="https://x.com/benjaminchapman">Prof.&nbsp;Ben</a>
+      <a href="https://mastodon.social/@bugcounter" rel="external nofollow"
+      target="_blank">Dr&nbsp;Don</a> & <a href="https://x.com/benjaminchapman"
+      rel="external nofollow" target="_blank">Prof.&nbsp;Ben</a>
   - name: Emil Kowalski
     url: https://emilkowal.ski
   - name: Ethan Marcotte
