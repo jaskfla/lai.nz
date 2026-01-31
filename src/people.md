@@ -115,6 +115,8 @@ people:
     url: https://www.youtube.com/vlogbrothers
   - name: Vi Hart
     url: http://vihart.com
+  - name: Zach Leatherman
+    url: https://zachleat.com
   - name: Ze Frank
     url: https://www.youtube.com/zefrank1
 ---
