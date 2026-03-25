@@ -1,14 +1,4 @@
-function getHostname(url) {
-	const hostname = new URL(url).hostname;
-	const www = 'www.';
-	return hostname.startsWith(www) ? hostname.slice(www.length) : hostname;
-}
-
-function hostnameCompare(a, b) {
-	return getHostname(a).localeCompare(getHostname(b));
-}
-
-export default [
+const urls = [
 	'https://abandon.ie',
 	'https://alexandersandberg.com',
 	'https://anhvn.com',
@@ -55,4 +45,31 @@ export default [
 	'https://www.joshuawootonn.com',
 	'https://www.yasmins.site',
 	'https://yannglt.com',
-].sort(hostnameCompare);
+];
+
+function getHostname({ hostname }) {
+	const www = 'www.';
+	return hostname.startsWith(www) ? hostname.slice(www.length) : hostname;
+}
+
+function hostnameCompare(a, b) {
+	return getHostname(a).localeCompare(getHostname(b));
+}
+
+function appendUtmParams(url) {
+	const clone = new URL(url);
+	clone.searchParams.set('utm_source', 'lai.nz');
+	return clone.toString();
+}
+
+console.log(
+	urls
+		.map((str) => new URL(str))
+		.sort(hostnameCompare)
+		.map(appendUtmParams),
+);
+
+export default urls
+	.map((str) => new URL(str))
+	.sort(hostnameCompare)
+	.map(appendUtmParams);
