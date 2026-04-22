@@ -22,6 +22,7 @@ const urls = [
 	'https://kuntz.io',
 	'https://lisamariamarquis.com',
 	'https://lynnandtonic.com',
+	'https://marijanapav.com',
 	'https://medienbaecker.com',
 	'https://mifsud.org',
 	'https://miocene.io',
