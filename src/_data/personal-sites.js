@@ -34,6 +34,7 @@ const urls = [
 	'https://paulstamatiou.com',
 	'https://pham.codes',
 	'https://ribo.zone',
+	'https://rmv.fyi',
 	'https://robinrendle.com',
 	'https://ryanmulligan.dev',
 	'https://scottkellum.com',
