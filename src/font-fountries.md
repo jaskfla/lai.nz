@@ -156,11 +156,12 @@ Font</a>.
 	</li>
 </ul>
 
-These two are more _catalogue_ than _foundry_:
+These few are more _catalogue_ than _foundry_:
 
-- <a href="https://www.futurefonts.xyz" rel="external" target="_blank">Future
+- <a href="https://www.fonts.xyz" rel="external nofollow" target="_blank">fonts.xys</a>
+- <a href="https://www.futurefonts.xyz" rel="external nofollow" target="_blank">Future
   Fonts</a>
-- <a href="https://uncut.wtf" rel="external" target="_blank"><span class="caps">UNCUT</span>.wtf</a>
+- <a href="https://uncut.wtf" rel="external nofollow" target="_blank"><span class="caps">UNCUT</span>.wtf</a>
 
 {%- comment %}
 
