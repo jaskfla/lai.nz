@@ -5,7 +5,7 @@ permalink: font-foundries.html
 ---
 
 Buy from independent typeface designers. There’s no need to support
-<a href="https://qz.com/2068310/what-monotypes-purchase-of-hoeflerco-means-to-font-designers" rel="external" target="_blank" >Big
+<a href="https://qz.com/2068310/what-monotypes-purchase-of-hoeflerco-means-to-font-designers" rel="external nofollow" target="_blank" >Big
 Font</a>.
 
 <style>
@@ -21,138 +21,143 @@ Font</a>.
 	style="column-gap: var(--s0); columns: 2; max-inline-size: 30em"
 >
 	<li>
-		<a href="https://www.boldmonday.com" rel="external" target="_blank"
+		<a href="https://www.boldmonday.com" rel="external nofollow" target="_blank"
 			>Bold Monday</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://djr.com" rel="external" target="_blank"
+		<a href="https://www.btuttle.com" rel="external nofollow" target="_blank"
+			>Benjamin Tuttle</a
+		><span class="star-marker"></span>
+	</li>
+	<li>
+		<a href="https://djr.com" rel="external nofollow" target="_blank"
 			>David Jonathan Ross</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://displaay.net" rel="external" target="_blank">Displaay</a>
+		<a href="https://displaay.net" rel="external nofollow" target="_blank">Displaay</a>
 	</li>
 	<li>
-		<a href="https://fabiohaagtype.com/en" rel="external" target="_blank"
+		<a href="https://fabiohaagtype.com/en" rel="external nofollow" target="_blank"
 			>Fabio Haag Type</a
 		>
 	</li>
 	<li>
-		<a href="https://www.fonderiacavedoni.com" rel="external" target="_blank"
+		<a href="https://www.fonderiacavedoni.com" rel="external nofollow" target="_blank"
 			>Fonderia Cavedoni</a
 		>
 	</li>
 	<li>
-		<a href="https://www.wearegradient.net" rel="external" target="_blank"
+		<a href="https://www.wearegradient.net" rel="external nofollow" target="_blank"
 			>Gradient</a
 		>
 	</li>
 	<li>
-		<a href="https://www.grillitype.com" rel="external" target="_blank"
+		<a href="https://www.grillitype.com" rel="external nofollow" target="_blank"
 			>Grilli Type</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://www.harbortype.com" rel="external" target="_blank"
+		<a href="https://www.harbortype.com" rel="external nofollow" target="_blank"
 			>Harbour Type</a
 		>
 	</li>
 	<li>
-		<a href="https://huertatipografica.com" rel="external" target="_blank"
+		<a href="https://huertatipografica.com" rel="external nofollow" target="_blank"
 			>Huerta Tipografica</a
 		>
 	</li>
 	<li>
-		<a href="https://www.hvdfonts.com" rel="external" target="_blank">HvD</a>
+		<a href="https://www.hvdfonts.com" rel="external nofollow" target="_blank">HvD</a>
 	</li>
 	<li>
-		<a href="https://intervaltype.com" rel="external" target="_blank"
+		<a href="https://intervaltype.com" rel="external nofollow" target="_blank"
 			>Interval</a
 		>
 	</li>
 	<li>
-		<a href="https://kilotype.de" rel="external" target="_blank"
+		<a href="https://kilotype.de" rel="external nofollow" target="_blank"
 			>Kilotype</a
 		>
 	</li>
 	<li>
-		<a href="https://klim.co.nz" rel="external" target="_blank">Klim</a
+		<a href="https://klim.co.nz" rel="external nofollow" target="_blank">Klim</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://www.kometa.xyz" rel="external" target="_blank">Kometa</a>
+		<a href="https://www.kometa.xyz" rel="external nofollow" target="_blank">Kometa</a>
 	</li>
 	<li>
-		<a href="https://www.mass-driver.com" rel="external" target="_blank"
+		<a href="https://www.mass-driver.com" rel="external nofollow" target="_blank"
 			>Mass Driver</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://mbtype.com" rel="external" target="_blank"
+		<a href="https://mbtype.com" rel="external nofollow" target="_blank"
 			><span class="caps">MB</span> Type</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://monokrom.no" rel="external" target="_blank">Monokrom</a>
+		<a href="https://monokrom.no" rel="external nofollow" target="_blank">Monokrom</a>
 	</li>
-	<li><a href="https://www.nan.xyz" rel="external" target="_blank">NaN</a></li>
+	<li><a href="https://www.nan.xyz" rel="external nofollow" target="_blank">NaN</a></li>
 	<li>
-		<a href="https://ohnotype.co" rel="external" target="_blank"
+		<a href="https://ohnotype.co" rel="external nofollow" target="_blank"
 			><span class="caps">Oh</span>
 			<span style="text-transform: lowercase">No</span>
 			Type Co.</a
 		>
 	</li>
 	<li>
-		<a href="https://okaytype.com" rel="external" target="_blank">Okay Type</a>
+		<a href="https://okaytype.com" rel="external nofollow" target="_blank">Okay Type</a>
 	</li>
 	<li>
-		<a href="https://pangrampangram.com" rel="external" target="_blank"
+		<a href="https://pangrampangram.com" rel="external nofollow" target="_blank"
 			>Pangram Pangram</a
 		>
-		& <a href="https://off-type.com" rel="external" target="_blank">Off Type</a
+		& <a href="https://off-type.com" rel="external nofollow" target="_blank">Off Type</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://rosettatype.com" rel="external" target="_blank">Rosetta</a
+		<a href="https://rosettatype.com" rel="external nofollow" target="_blank">Rosetta</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://studiotriple.fr" rel="external" target="_blank"
+		<a href="https://studiotriple.fr" rel="external nofollow" target="_blank"
 			>Studio Triple</a
 		>
 	</li>
 	<li>
-		<a href="https://www.swisstypefaces.com" rel="external" target="_blank"
+		<a href="https://www.swisstypefaces.com" rel="external nofollow" target="_blank"
 			>Swiss Typefaces</a
 		>
 	</li>
 	<li>
-		<a href="https://tosche.net" rel="external" target="_blank"
+		<a href="https://tosche.net" rel="external nofollow" target="_blank"
 			>Toshi Omagari</a
 		>
 	</li>
 	<li>
-		<a href="https://typeverything.com" rel="external" target="_blank"
+		<a href="https://typeverything.com" rel="external nofollow" target="_blank"
 			>Type Everything</a
 		>
 	</li>
 	<li>
-		<a href="https://typejockeys.com" rel="external" target="_blank"
+		<a href="https://typejockeys.com" rel="external nofollow" target="_blank"
 			>Type Jockeys</a
 		><span class="star-marker"></span>
 	</li>
 	<li>
-		<a href="https://typetype.org" rel="external" target="_blank">TypeType</a>
+		<a href="https://typetype.org" rel="external nofollow" target="_blank">TypeType</a>
 	</li>
 	<li>
-		<a href="https://www.typotheque.com" rel="external" target="_blank"
+		<a href="https://www.typotheque.com" rel="external nofollow" target="_blank"
 			>Typotheque</a
 		>
 	</li>
 	<li>
-		<a href="https://wisetype.nl" rel="external" target="_blank">WiseType</a>
+		<a href="https://wisetype.nl" rel="external nofollow" target="_blank">WiseType</a>
 	</li>
 </ul>
 
