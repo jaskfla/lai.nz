@@ -71,6 +71,15 @@ export default [
 			'Alternatively, in the form of a <a href="https://www.webstock.org.nz/talks/the-webs-grain" rel="external nofollow">Webstock talk</a>.',
 	},
 	{
+		author: 'Bret Victor',
+		title: 'The Future of Programming',
+		link: 'https://worrydream.com/dbx',
+		media: 'talk',
+		pullquote:
+			'The most dangerous thought you can have as a creative person is to think you know what you’re doing.',
+		comment: null,
+	},
+	{
 		author: 'Marcin Wichary',
 		title: 'Crafting link underlines on Medium',
 		link: 'https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9',
