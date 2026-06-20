@@ -1,8 +1,11 @@
 ---
-title: Props and Paradigms
+title: Props and Paradigms (unfinished)
 layout: p-by-p.liquid
 permalink: writing/css-in-js.html
 excludeFromSitemap: true
+description:
+  The reports of <abbr title="Cascading Style Sheets">CSS</abbr>-in-<abbr
+  title="JavaScript">JS</abbr>’s death are greatly exaggerated.
 ---
 
 I am, [somewhat](https://briefs.video/videos/what-is-react)
@@ -10,7 +13,7 @@ I am, [somewhat](https://briefs.video/videos/what-is-react)
 React developer.
 
 I am
-not—[however _and thankfully_](https://heydonworks.com/article/what-is-utility-first-css)—a
+not—[however and thankfully](https://heydonworks.com/article/what-is-utility-first-css)—a
 Tailwind developer. In
 [my work at Beyond Essential Systems](https://github.com/beyondessential), I
 walk the
@@ -66,3 +69,5 @@ somehow tie this into using
 `attr()`</a> to solve the same problem as transient props.
 
 Might come back to this someday; but ta ta for now.
+
+[_Go back._](/writing)
