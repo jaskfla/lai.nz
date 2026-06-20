@@ -28,7 +28,7 @@ Font</a>.
 	<li>
 		<a href="https://www.btuttle.com" rel="external nofollow" target="_blank"
 			>Benjamin Tuttle</a
-		><span class="star-marker"></span>
+		>
 	</li>
 	<li>
 		<a href="https://djr.com" rel="external nofollow" target="_blank"
