@@ -21,6 +21,11 @@ Font</a>.
 	style="column-gap: var(--s0); columns: 2; max-inline-size: 30em"
 >
 	<li>
+		<a href="https://black-foundry.com" rel="external nofollow" target="_blank"
+			>Black[Foundry]</a
+		>
+	</li>
+	<li>
 		<a href="https://www.boldmonday.com" rel="external nofollow" target="_blank"
 			>Bold Monday</a
 		><span class="star-marker"></span>
@@ -46,6 +51,11 @@ Font</a>.
 	<li>
 		<a href="https://www.fonderiacavedoni.com" rel="external nofollow" target="_blank"
 			>Fonderia Cavedoni</a
+		>
+	</li>
+	<li>
+		<a href="https://www.generaltypestudio.com" rel="external nofollow" target="_blank"
+			>General Type Studio</a
 		>
 	</li>
 	<li>
