@@ -37,8 +37,8 @@ export default function (eleventyConfig) {
 		eleventyConfig.addPassthroughCopy(`${config.dir.input}/${file}`);
 	}
 
-	eleventyConfig.addCollection('notes', (collection) =>
-		collection.getFilteredByGlob(`${config.dir.input}/notes/*.md`),
+	eleventyConfig.addCollection('writing', (collection) =>
+		collection.getFilteredByGlob(`${config.dir.input}/writing/*.md`),
 	);
 
 	eleventyConfig.addFilter('decode_html', decodeHtml);
@@ -49,6 +49,16 @@ export default function (eleventyConfig) {
 	eleventyConfig.addFilter('iso_date_string', (date) =>
 		date.toISOString().slice(0, 10),
 	);
+	eleventyConfig.addFilter('month_and_year', (date) => {
+		console.log('month_and_year', date);
+		console.log(
+			date.toLocaleDateString(undefined, { month: 'short', year: 'numeric' }),
+		);
+		return date.toLocaleDateString(undefined, {
+			month: 'short',
+			year: 'numeric',
+		});
+	});
 	eleventyConfig.addFilter('slugify', (str) => slugify(decodeHtml(str))); // Shadow built-in slugify
 	eleventyConfig.addFilter('stringify', (o) => JSON.stringify(o, null, '\t'));
 

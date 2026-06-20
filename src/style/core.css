@@ -250,7 +250,7 @@
 	}
 
 	/* https://piccalil.li/blog/my-favourite-3-lines-of-css */
-	:is(article, .flow) > * + * {
+	:is(.flow) > * + * {
 		margin-block-start: var(--flow-space, 1lh);
 	}
 

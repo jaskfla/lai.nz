@@ -1,0 +1,104 @@
+---
+layout: main.liquid
+---
+<section class='essay'>
+	<style>
+		@layer template {
+			.essay {
+				--flow-space: 2em;
+				font-family: var(--font-serif);
+				padding-left: var(--safe-padding-left);
+				padding-right: var(--safe-padding-right);
+			}
+			.essay__safe-area {
+				font-size: 1.15rem;
+				inline-size: 100%;
+				line-height: 1.6;
+				margin-inline: auto;
+				max-inline-size: var(--content-width);
+				padding-block: 8rem;
+			}
+			.essay__header {
+				margin-block-end: 5em;
+			}
+			.essay__safe-area h1 {
+				font-size: 2rem;
+				font-weight: 400;
+				margin-block-end: 2rem;
+			}
+			.essay__safe-area h2,
+			.essay__safe-area h3,
+			.essay__safe-area h4,
+			.essay__safe-area h5,
+			.essay__safe-area h6 {
+				font-family: var(--font-sans);
+			}
+			.essay__safe-area h2,
+			.essay__safe-area h3,
+			.essay__safe-area h4 {
+				color: var(--color-accent);
+				font-weight: 400;
+				margin-block: 4rem 2rem;
+			}
+			.essay__safe-area h2 {
+				font-size: 1.65rem;
+			}
+			.essay__safe-area h3 {
+				font-size: 1.4rem;
+				font-variant-caps: all-small-caps;
+			}
+			.essay__safe-area h4 {
+				font-size: 1.4rem;
+			}
+			.essay__safe-area p {
+				margin-block-start: var(--flow-space);
+				max-inline-size: 35rem;
+			}
+			.essay__safe-area blockquote {
+				border-inline-start: var(--delineation);
+				font-family: var(--font-sans);
+				font-size: 95%;
+				padding-inline: 1em;
+			}
+			.essay__safe-area figcaption {
+				text-align: end;
+				text-wrap: balance;
+			}
+			.essay__date {
+				color: var(--color-fg-2);
+				font-family: var(--font-sans);
+				font-variant-numeric: unset;
+			}
+			.essay ul {
+				margin-block-end: 2rem;
+			}
+			.essay ul li {
+				margin-block-end: 1rem;
+			}
+			.essay ul li::marker {
+				color: var(--color-fg-2);
+			}
+			.essay__safe-area .essay__description {
+				font-family: var(--font-sans);
+			}
+		}
+	</style>
+	<article class='essay__safe-area flow'>
+		<header class='essay__header'>
+			<time class='essay__date' datetime='{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}'>
+				{{- page.date | date: "%d&nbsp;%B %Y" -}}
+			</time>
+			<h1>
+				{%- if link %}
+					<a href='{{ link }}' rel='external nofollow'>{{ title }}</a>
+				{%- else %}
+					{{ title }}
+				{%- endif %}
+			</h1>
+			{%- if description %}
+				<p class='essay__description'>{{ description }}</p>
+			{%- endif %}
+		</header>
+		{{ content }}
+	</article>
+</section>

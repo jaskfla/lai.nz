@@ -1,0 +1,77 @@
+---
+title: Writing
+layout: wordswordswords.liquid
+---
+<style>
+	.post-list {
+		display: grid;
+		grid-template-columns: auto minmax(1.5rem, 1fr) auto;
+		max-inline-size: unset;
+		row-gap: var(--s3);
+	}
+	.post-list li {
+		align-items: start;
+		display: grid;
+		grid-column: 1/-1;
+		grid-template-columns: subgrid;
+		transition-duration: 200ms;
+		transition-property: color, opacity;
+		transition-timing-function: ease;
+	}
+	.post-list__heading {
+		font-family: var(--font-serif);
+		color: var(--color-fg-1);
+	}
+	.post-list__hostname {
+		color: var(--color-fg-2);
+		font-size: var(--s0);
+		font-weight: 300;
+	}
+	.post-list__hostname::before {
+		content: ' › ';
+		content: ' → ';
+		content: ' ☞ ';
+		margin-inline-start: 0.3em;
+	}
+	.post-list li time {
+		color: var(--color-fg-2);
+		font-size: var(--s0);
+		font-style: normal;
+		font-variant-caps: all-small-caps;
+		font-variant-numeric: oldstyle-nums;
+		font-weight: 300;
+		text-align: end;
+	}
+	.post-list__description {
+		color: var(--color-fg-2);
+		font-size: var(--s0);
+	}
+	.tab-leader {
+		border: 0;
+	}
+</style>
+<p>Commentary, essays and sundry notes. This could reasonably be called my blog. Proceed with caution.</p>
+<ul class='post-list' role='list'>
+	{%- for post in collections.writing reversed %}
+		{%- if post.data.excludeFromSitemap -%}
+			{%- continue -%}
+		{%- endif -%}
+		<li>
+			<p>
+				<a class='post-list__heading' href='{{ post.url }}'>{{ post.data.title }}</a>
+				{%- if post.data.link -%}
+					<cite class='post-list__hostname'
+						><a href='{{ post.data.link }}'>{{ post.data.link | hostname }}</a></cite
+					>
+				{%- endif %}
+			</p>
+			<hr aria-hidden class='tab-leader'>
+			<a href='{{ post.url }}' title='{{ page.date }}'
+				><time datetime='{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}'>{{ page.date | date: "%b&nbsp;%Y" }}</time></a
+			>
+			{%- if post.data.description %}
+				<p class='post-list__description'>{{ post.data.description }}</p>
+			{%- endif %}
+		</li>
+	{% endfor %}
+</ul>
