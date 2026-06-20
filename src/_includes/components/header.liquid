@@ -1,6 +1,6 @@
-<header>
+<header class='site-header'>
 	<style>
-		header {
+		.site-header {
 			align-items: center;
 			font-weight: 400;
 			inline-size: 100%;
@@ -9,7 +9,7 @@
 			padding-right: var(--safe-padding-right);
 		}
 
-		.header__safe-area {
+		.site-header__safe-area {
 			display: flex;
 			flex-direction: row;
 			inline-size: var(--content-width);
@@ -17,32 +17,32 @@
 			margin-inline: auto;
 		}
 
-		.header__logo {
+		.site-header__logo {
 			transition: opacity var(--transition-dn-swift) var(--transition-fn);
 		}
-		.header__logo:hover {
+		.site-header__logo:hover {
 			opacity: 50%;
 		}
 
-		.header__navigation {
+		.site-header__navigation {
 			align-items: baseline;
 			display: block flex;
 			gap: var(--s0) var(--s3);
 		}
 
-		.header__navigation_link {
+		.site-header__navigation_link {
 			color: var(--color-fg);
 			text-decoration: none;
 		}
-		.header__navigation_link[unavailable] {
+		.site-header__navigation_link[unavailable] {
 			opacity: 50%;
 		}
-		.header__navigation_link:hover:not([unavailable]) {
+		.site-header__navigation_link:hover:not([unavailable]) {
 			color: var(--color-fg-2);
 		}
 	</style>
-	<div class='header__safe-area'>
-		<a class='header__logo' href='/'>
+	<div class='site-header__safe-area'>
+		<a class='site-header__logo' href='/'>
 			<picture>
 				<source
 					media='(prefers-color-scheme: light)'
@@ -70,12 +70,12 @@
 				>
 			</picture>
 		</a>
-		<nav class='header__navigation'>
-			{%- comment %} <a class="header__navigation_link" title="Still workin’ on this" unavailable>About</a> {%- endcomment %}
-			<a class='header__navigation_link' href='/now'>Now</a>
-			<a class='header__navigation_link' href='/collections'>Collections</a>
-			<a class='header__navigation_link' title='Under construction!' unavailable>Blog</a>
-			<a class='header__navigation_link' href='/work' hidden unavailable>Work</a>
+		<nav class='site-header__navigation'>
+			{%- comment %} <a class="site-header__navigation_link" title="Still workin’ on this" unavailable>About</a> {%- endcomment %}
+			<a class='site-header__navigation_link' href='/now'>Now</a>
+			<a class='site-header__navigation_link' href='/collections'>Collections</a>
+			<a class='site-header__navigation_link' title='Under construction!' unavailable>Blog</a>
+			<a class='site-header__navigation_link' href='/work' hidden unavailable>Work</a>
 		</nav>
 	</div>
 </header>
