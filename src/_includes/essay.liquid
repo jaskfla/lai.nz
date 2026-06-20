@@ -69,6 +69,10 @@ layout: main.liquid
 				font-family: var(--font-sans);
 				font-variant-numeric: unset;
 			}
+			.essay__footer {
+				font-family: var(--font-sans);
+				margin-block-start: 5em;
+			}
 			.essay ul {
 				margin-block-end: 2rem;
 			}
@@ -100,5 +104,14 @@ layout: main.liquid
 			{%- endif %}
 		</header>
 		{{ content }}
+		<footer class='essay__footer'>
+			{%- if link %}
+				<a href='{{ permalink }}'>Permalink ({{ metadata.domain }})</a>
+				&middot;
+				<a href='{{ link }}'>Visit site ({{ link | hostname }})</a>
+			{%- else %}
+				<a href='{{ permalink }}'>(Permalink)</a>
+			{%- endif %}
+		</footer>
 	</article>
 </section>
