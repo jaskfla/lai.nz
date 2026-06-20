@@ -21,23 +21,6 @@ Then install dependencies:
 deno install
 ```
 
-Make sure you’re using the right version of
-[Node](https://nodejs.org):[^runtime]
-
-[^runtime]:
-    To be completely honest, I don’t know whether my use of Deno in this project
-    makes runs the Eleventy build in a Deno runtime. This is a remnant from when
-    I
-    [used a different package manager](https://dbushell.com/notes/2025-09-10T12:08Z).
-    I’ll (eventually) delete either this section or footnote once I figure out
-    which bit is no longer relevant.
-
-```sh
-nvm use
-```
-
-This might prompt you to `nvm install`.
-
 ## 🚀 Deployment
 
 ### 🏗️ To build
