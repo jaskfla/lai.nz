@@ -26,3 +26,4 @@ People I like, and their blogs, podcasts, apps:
 Fonts, fonts, fonts:
 
 - [Indie font foundries](/font-foundries)
+- [Exceptional fonts](/exceptional-fonts)

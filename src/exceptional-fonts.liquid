@@ -1,0 +1,155 @@
+---
+title: Exceptional fonts
+layout: wordswordswords.liquid
+permalink: exceptional-fonts.html
+typefaces:
+  - name: Not free
+    items:
+      - name: Adapter
+        url: https://rosettatype.com/AdapterPE
+        foundry: Rosetta
+        commentary: Slightly squared forms, yet eminently legible.
+      - name: Baskerville Neo
+        url: https://www.stormtype.com/families/baskerville-original
+        foundry: Storm Type
+        commentary:
+          My preferred recreation of John Baskerville’s work. (Imperfect
+          substitute for LoveFrom, Serif, but we can’t all afford
+          Sir Jony’s services.)
+      - name: Caliste
+        url: https://aisforfonts.com/caliste
+        foundry: A is for fonts
+      - name: Decimal
+        url: https://www.typography.com/fonts/decimal
+        designers: Jonathan Hoefler & Sara Soskolne
+        commentary:
+          It’s hard to recommend anything from Monotype, but this is a nice nod
+          to vintage watch faces.
+      - name: Equity
+        url: https://mbtype.com/fonts/equity
+        designers: Matthew Butterick
+        commentary: No reason to use Times any more.
+      - name: Firelli
+        url: https://typejockeys.com/font/firelli
+        foundry: Type Jockeys
+        commentary: Old-timey slab serif with modern sensibilities.
+      - name: Highgate
+        url: https://www.daltonmaag.com/library/highgate
+        foundry: Dalton Maag
+        commentary:
+          Humanist with traditional roots. Open apertures and funky alternates.
+      - name: Ingeborg
+        url: https://typejockeys.com/font/ingeborg
+        foundry: Type Jockeys
+        commentary:
+          'Contemporary Scotch Roman, with historic flourishes. (Honourable
+          mention: <a href="https://mbtype.com/fonts/century-supra"
+          rel="external nofollow" target="_blank">Century Supra<a/>.)'
+      - name: Kormelink
+        url: https://wisetype.nl/typefaces/kormelink
+        foundry: WiseType
+        commentary:
+          'At first glance, just Times New Roman? But then: <em>fancy
+          italics</em>.'
+      - name: Lexicon
+        url: http://www.teff.nl/fonts/lexicon
+        foundry: The Enschedé Font Foundry
+        commentary:
+          Thrives at minute point sizes. Even the name is good. Though, it is
+          multi-thousand-euro family.
+      - name: Miller
+        url: https://carterandcone.com/font/miller-text
+        foundry: Carter & Cone
+        commentary:
+          I suppose it should come as no surprise that the designer of Georgia
+          is able to improve on it.
+      - name: Martina Plantijn
+        url: https://klim.co.nz/retail-fonts/martina-plantijn
+        foundry: Klim
+        commentary:
+          'Its <strong style="letter-spacing: 0.08em">fï</strong> ligature alone
+          could earn its place on this list.'
+      - name: '<span class="caps">MD IO</span>'
+        url: https://mass-driver.com/typefaces/md-io
+        designers: Rutherford Craze
+        commentary:
+          'Ink-trappy and highly legible monospace with <em>tasteful</em>
+          programming ligatures <a
+          href="https://practicaltypography.com/ligatures-in-programming-fonts-hell-no.html"
+          rel="external nofollow" target="_blank">which don’t ligate</a>.'
+      - name: Nitti
+        url: https://www.boldmonday.com/typeface/nitti
+        foundry: Bold Monday
+        commentary:
+          Grotesk monospace. The composition typeface from early days of
+          iA Writer.
+      - name: Söhne
+        url: https://klim.co.nz/retail-fonts/soehne
+        foundry: Klim
+        commentary:
+          '<q>Perfect and I use it everywhere, but I can’t really say why since
+          I mostly roll my eyes at big chunky neo-grotesques.</q> —<a
+          href="https://github.com/robinrendle/robinrendle.com/blob/a31c8ca7c82dab33b659aa075001e372d489b134/index.njk#L368"
+          rel="external nofollow" target="_blank">Robin Rendle</a>'
+      - name: Triplicate
+        url: https://mbtype.com/fonts/triplicate
+        designers: Matthew Butterick
+        commentary: Serifed monospace in a class of its own.
+      - name: Warbler
+        url: https://djr.com/warbler
+        designers: David Jonathan Ross
+        commentary: I mean, <em>look at it</em>.
+  - name: Free
+    items:
+      - name: '<abbr title="International Business Machines Corporation">IBM</abbr> Plex'
+        url: https://www.ibm.com/plex
+        foundry: '<abbr title="International Business Machines Corporation">IBM</abbr>'
+      - name: Piazolla
+        url: https://piazzolla.huertatipografica.com
+        foundry: Huerta Typografica
+        commentary:
+          Opinionated, variable, serif font. Works well at small (think
+          newspaper) point sizes.
+      - name: Redaction
+        url: https://www.redaction.us
+        designers: Jeremy Mickel & Forest Young
+        commentary: Typeface design is art.
+  - name: Somewhere in between
+    items:
+      - name: San Francisco
+        url: https://developer.apple.com/fonts
+        foundry: Apple
+        commentary:
+          Supported on the web on Apple platforms as <code>system-ui</code>.
+  - name: Not available
+    items:
+      - name: LoveFrom, Serif
+        url: https://www.wallpaper.com/design-interiors/corporate-design-branding/lovefrom-serif-a-modern-interpretation-of-baskerville-created-by-jony-ives-lovefrom
+        foundry: LoveFrom
+        commentary: Needs no introduction.
+---
+<p>Pardon the mediocre typography on this page. I’ll get to it.</p>
+{%- for category in typefaces %}
+	<h2>{{ category.name }}</h2>
+	<ul>
+		{%- for item in category.items %}
+			<li>
+				<a
+					href='{{ item.url }}'
+					rel='external nofollow'
+					target='_blank'
+				>
+					{{- item.name -}}</a
+				>.
+				{%- if item.designers %}
+					By {{ item.designers }}.
+				{%- else %}
+					From {{ item.foundry }}.
+				{%- endif %}
+				{%- if item.commentary %}
+					{{ item.commentary }}
+				{%- endif -%}
+			</li>
+		{%- endfor %}
+	</ul>
+{%- endfor %}
