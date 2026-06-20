@@ -190,8 +190,7 @@
 		text-underline-offset: 0;
 		transition: var(--transition-dn-swift) var(--transition-fn);
 		transition-property:
-			color, opacity, text-decoration-color, text-decoration-thickness,
-			text-underline-offset;
+			text-decoration-color, text-decoration-thickness, text-underline-offset;
 	}
 
 	a:not([unavailable]):where(:focus-visible, :hover) {
@@ -201,6 +200,9 @@
 		text-decoration-thickness: max(0.1em, 2px);
 		text-underline-offset: max(0.04em, 1px);
 		text-decoration-color: var(--color-accent);
+	}
+	a:not([unavailable]):where(:active) {
+		color: var(--color-accent);
 	}
 
 	a[unavailable] {
