@@ -1,6 +1,6 @@
 ---
 title: The first post is profound
-permalink: writing/first-post.html
+permalink: /writing/first-post.html
 link: https://www.kungfugrippe.com/post/7304393574/the-first-page-is-profound-via-nothing-doesnt
 tags:
   - link post

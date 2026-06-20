@@ -1,7 +1,6 @@
 ---
 title: A website to destroy all websites
-# layout: essay.liquid
-permalink: writing/a-website-to-destroy-all-websites.html
+permalink: /writing/a-website-to-destroy-all-websites.html
 tags:
   - link post
 
