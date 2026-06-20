@@ -64,13 +64,6 @@ function appendUtmParams(url) {
 	return clone.toString();
 }
 
-console.log(
-	urls
-		.map((str) => new URL(str))
-		.sort(hostnameCompare)
-		.map(appendUtmParams),
-);
-
 export default urls
 	.map((str) => new URL(str))
 	.sort(hostnameCompare)
