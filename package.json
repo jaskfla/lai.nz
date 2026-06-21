@@ -10,13 +10,13 @@
 		"url": "https://github.com/jaskfla/lai.nz.git"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^3.1.2",
+		"@11ty/eleventy": "^3.1.6",
 		"@11ty/eleventy-img": "^6.0.4",
-		"@biomejs/biome": "^2.3.12",
-		"@sindresorhus/slugify": "^2.2.1",
+		"@biomejs/biome": "^2.5.0",
+		"@sindresorhus/slugify": "^3.0.0",
 		"html-minifier-terser": "^7.2.0",
-		"jsdom": "^26.1.0",
-		"terser": "^5.46.0"
+		"jsdom": "^29.1.1",
+		"terser": "^5.48.0"
 	},
 	"bugs": {
 		"url": "https://github.com/jaskfla/lai.nz/issues",
