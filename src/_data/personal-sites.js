@@ -37,6 +37,7 @@ const urls = [
 	'https://rmv.fyi',
 	'https://robinrendle.com',
 	'https://ryanmulligan.dev',
+	'https://scott.is',
 	'https://scottkellum.com',
 	'https://tonsky.me',
 	'https://vhbelvadi.com',
