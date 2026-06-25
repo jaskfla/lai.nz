@@ -5,7 +5,7 @@ export default {
 	domain: 'lai.nz',
 	email: '&#106;&#64;&#108;&#97;&#105;&#46;&#110;&#122;',
 	description:
-		'Jasper is software engineering student at the University of Auckland, and a UX/UI design graduate.',
+		'Has annoying opinions about fonts. (Also: making healthcare software are Beyond Essential Systems.',
 	repoUrl: 'https://github.com/jaskfla/lai.nz',
 	/** @see https://stackoverflow.com/a/34518749/5323344 */
 	commitHash: execSync('git rev-parse HEAD').toString().trim(),
