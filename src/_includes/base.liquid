@@ -75,12 +75,12 @@
 		>
 
 		<link rel='canonical' href='{{ pkg.homepage }}{{ page.url }}'>
-		<meta name='description' content='{{ metadata.description }}'>
+		<meta name='description' content='{{ description | default: metadata.description }}'>
 		<meta property='og:type' content='website'>
 		<meta property='og:url' content='{{ pkg.homepage }}{{ page.url }}'>
 		<meta property='og:site_name' content='Jasper Lai'>
 		<meta property='og:title' content='{{ title }}'>
-		<meta property='og:description' content='{{ metadata.description }}'>
+		<meta property='og:description' content='{{ description | default: metadata.description }}'>
 		<meta property='og:image' content='/meta/open-graph-image.webp'>
 		<meta
 			property='og:image:alt'
