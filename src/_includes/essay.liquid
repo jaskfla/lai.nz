@@ -67,9 +67,11 @@ layout: main.liquid
 				text-align: end;
 				text-wrap: balance;
 			}
-			.essay__date {
+			.essay__meta {
 				color: var(--color-fg-2);
 				font-family: var(--font-sans);
+			}
+			.essay__meta time {
 				font-variant-numeric: unset;
 			}
 			.essay__hostname {
@@ -107,9 +109,20 @@ layout: main.liquid
 	</style>
 	<article class='essay__safe-area flow'>
 		<header class='essay__header'>
-			<time class='essay__date' datetime='{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}'>
-				{{- page.date | date: "%d&nbsp;%B %Y" -}}
-			</time>
+			<div class='essay__meta'>
+				<time datetime='{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}'>
+					{{- page.date | date: "%d&nbsp;%B %Y" -}}
+				</time>
+				&middot;
+				<span
+					>a
+					{%- if tags contains "link post" %}
+						link post
+					{%- else %}
+						post
+					{%- endif %}
+				</span>
+			</div>
 			<h1>
 				{%- if link %}
 					<a href='{{ link }}' rel='external nofollow'>{{ title }}</a>
