@@ -72,6 +72,17 @@ layout: main.liquid
 				font-family: var(--font-sans);
 				font-variant-numeric: unset;
 			}
+			.essay__hostname {
+				color: var(--color-fg-2);
+				font-family: var(--font-sans);
+				font-size: var(--s0);
+				font-weight: 300;
+				letter-spacing: 0.015em;
+				&::before {
+					content: ' → ';
+					color: var(--color-accent);
+				}
+			}
 			.essay__footer {
 				font-family: var(--font-sans);
 				margin-block-start: 5em;
@@ -102,6 +113,7 @@ layout: main.liquid
 			<h1>
 				{%- if link %}
 					<a href='{{ link }}' rel='external nofollow'>{{ title }}</a>
+					<cite class='essay__hostname'>{{ link | hostname }}</cite>
 				{%- else %}
 					{{ title }}
 				{%- endif %}
