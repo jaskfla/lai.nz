@@ -1,6 +1,7 @@
 ---
 title: Writing
 layout: wordswordswords.liquid
+description: Commentary, essays and sundry notes. This could reasonably be called my blog. Proceed with caution.
 ---
 <style>
 	.post-list {
@@ -50,7 +51,7 @@ layout: wordswordswords.liquid
 		border: 0;
 	}
 </style>
-<p>Commentary, essays and sundry notes. This could reasonably be called my blog. Proceed with caution.</p>
+<p>{{ description }}</p>
 <ul class='post-list' role='list'>
 	{%- for post in collections.writing reversed %}
 		{%- if post.data.excludeFromSitemap -%}
