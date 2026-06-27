@@ -26,6 +26,7 @@ const urls = [
 	'https://medienbaecker.com',
 	'https://mifsud.org',
 	'https://miocene.io',
+	'https://morrick.me',
 	'https://motherfuckingwebsite.com',
 	'https://nazhamid.com',
 	'https://nelson.co',
