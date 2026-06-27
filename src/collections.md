@@ -14,6 +14,7 @@ Essays, books, vlogs, lectures and whatever-it-may-be’s which have nestled in 
 brain:
 
 - [Required reading](/readings)
+- [Words to live by](/quotes)
 
 People I like, and their blogs, podcasts, apps:
 
