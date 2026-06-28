@@ -45,6 +45,8 @@ people:
     url: https://www.goodside.studio
   - name: Gordon Murray
     url: https://en.wikipedia.org/wiki/Gordon_Murray
+  - name: Grant Sanderson
+    url: https://www.3blue1brown.com
   - name: Henry Desroches
     url: https://henry.codes
   - name: Heydon Pickering
