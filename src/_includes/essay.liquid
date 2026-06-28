@@ -81,9 +81,12 @@ layout: main.liquid
 				font-weight: 300;
 				letter-spacing: 0.015em;
 				&::before {
-					content: ' → ';
+					content: ' → ' / '– links to';
 					color: var(--color-accent);
 				}
+			}
+			.essay__description {
+				font-family: var(--font-sans);
 			}
 			.essay__footer {
 				font-family: var(--font-sans);
@@ -102,15 +105,20 @@ layout: main.liquid
 			.essay ul li::marker {
 				color: var(--color-fg-2);
 			}
-			.essay__safe-area .essay__description {
-				font-family: var(--font-sans);
-			}
 		}
 	</style>
-	<article class='essay__safe-area flow'>
+	<article
+		class='essay__safe-area flow'
+		itemscope
+		itemtype='https://schema.org/BlogPosting'
+	>
 		<header class='essay__header'>
 			<div class='essay__meta'>
-				<time datetime='{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}'>
+				<div hidden itemprop='author'>{{ metadata.name }}</div>
+				<time
+					datetime='{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}'
+					itemprop='dateCreated datePublished pubdate'
+				>
 					{{- page.date | date: "%d&nbsp;%B %Y" -}}
 				</time>
 				&middot;
@@ -122,23 +130,33 @@ layout: main.liquid
 						post
 					{%- endif %}
 				</span>
-			</div>
-			<h1>
-				{%- if link %}
-					<a href='{{ link }}' rel='external nofollow'>{{ title }}</a>
-					<cite class='essay__hostname'>{{ link | hostname }}</cite>
-				{%- else %}
-					{{ title }}
+				&middot;
+				{%- if modified %}
+					updated
+					<time
+						datetime='{{ modified | date: "%Y-%m-%dT%H:%M:%SZ" }}'
+						itemprop='dateModified'
+					>
+						{{- modified | date: "%d&nbsp;%B %Y" -}}
+					</time>
 				{%- endif %}
-			</h1>
+			</div>
+			{%- if link %}
+				<h1>
+					<a href='{{ link }}' rel='external nofollow' itemprop='headline'>{{ title }}</a>
+					<cite class='essay__hostname'>{{ link | hostname }}</cite>
+				</h1>
+			{%- else %}
+				<h1 itemprop='headline'>{{ title }}</h1>
+			{%- endif %}
 			{%- if description %}
-				<p class='essay__description'>{{ description }}</p>
+				<p class='essay__description' itemprop='description'>{{ description }}</p>
 			{%- endif %}
 		</header>
 		{{ content }}
 		<footer class='essay__footer'>
 			{%- if link %}
-				<a href='{{ permalink }}'>Permalink ({{ metadata.domain }})</a>
+				<a href='{{ permalink }}' itemprop='url'>Permalink ({{ metadata.domain }})</a>
 				&middot;
 				<a href='{{ link }}'>Visit site ({{ link | hostname }})</a>
 			{%- else %}
