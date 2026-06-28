@@ -48,6 +48,7 @@ const urls = [
 	'https://www.alasdairmonk.com',
 	'https://www.iamrob.in',
 	'https://www.joshuawootonn.com',
+	'https://www.robinsloan.com',
 	'https://www.yasmins.site',
 	'https://yannglt.com',
 ];
