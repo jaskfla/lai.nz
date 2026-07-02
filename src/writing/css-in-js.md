@@ -15,8 +15,8 @@ React developer.
 I am
 not—[however and thankfully](https://heydonworks.com/article/what-is-utility-first-css)—a
 Tailwind developer. In
-[my work at Beyond Essential Systems](https://github.com/beyondessential), I
-walk the
+[my work at <abbr title="Beyond Essential Systems">BES</abbr> International](https://github.com/beyondessential),
+I walk the
 [styled-components Happy Path](https://www.joshwcomeau.com/css/styled-components).
 
 And it has, for the most part, been a happy path indeed.
