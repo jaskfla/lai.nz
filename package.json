@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.6",
 		"@11ty/eleventy-img": "^6.0.4",
-		"@biomejs/biome": "^2.5.0",
+		"@biomejs/biome": "^2.5.2",
 		"@sindresorhus/slugify": "^3.0.0",
 		"html-minifier-terser": "^7.2.0",
 		"jsdom": "^29.1.1",
