@@ -107,7 +107,7 @@ Taşkıran</a> has since settled in nicely.
 ## Email
 
 <a href="https://workspace.google.com/products/gmail" rel="external nofollow" target="_blank">Gmail</a>
-since <time datetime=2008>2008</time>
+since <time datetime="2008">2008</time>
 +&nbsp;<a href="https://www.notion.com/product/mail" rel="external nofollow" target="_blank">Notion
 Mail</a> for now, but happy about neither. <span class="dim">Notion Mail is
 exasperatingly unresponsive,
