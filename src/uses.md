@@ -32,9 +32,7 @@ of which have light and dark variants.
 And while I use none of its agentic ~~bullshit~~ _features_,
 <a href="https://www.warp.dev" rel="external nofollow" target="_blank">Warp</a>’s
 Mac-native text input keeps me from turning to
-<a href="https://ghostty.org" rel="external nofollow" target="_blank">Ghostty</a>
-or
-<a href="https://iterm2.com" rel="external nofollow" target="_blank">iTerm2</a>.
+<a href="https://ghostty.org" rel="external nofollow" target="_blank">Ghostty</a>.
 
 ## Writing fonts
 
