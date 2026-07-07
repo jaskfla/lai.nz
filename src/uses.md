@@ -118,10 +118,10 @@ perhaps?)</span>
 
 Previously, in descending order of satisfaction:
 <a href="https://web.archive.org/web/20150830160717/http://www.mailboxapp.com" rel="external nofollow" target="_blank">Mailbox</a>,
-<a href="https://mimestream.com" rel="external" target="_blank">Mimestream</a>,
-<a href="https://www.theverge.com/2014/10/22/7041227/google-inbox-hands-on-this-feels-like-the-future-of-email" rel="external" target="_blank">Inbox
+<a href="https://mimestream.com" rel="external nofollow" target="_blank">Mimestream</a>,
+<a href="https://www.theverge.com/2014/10/22/7041227/google-inbox-hands-on-this-feels-like-the-future-of-email" rel="external nofollow" target="_blank">Inbox
 by Gmail</a>, Gmail as a
-<a href="https://support.apple.com/en-nz/104996" rel="external" target="_blank">web
+<a href="https://support.apple.com/en-nz/104996" rel="external nofollow" target="_blank">web
 app</a>,
 <a href="https://en.wikipedia.org/wiki/Sparrow_%28email_client%29" rel="external nofollow" target="_blank">Sparrow</a>,
 <a href="https://sparkmailapp.com" rel="external nofollow" target="_blank">Spark</a>,
