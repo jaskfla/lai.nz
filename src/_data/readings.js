@@ -9,6 +9,15 @@ export default [
 			'I learned more about writing in these 80&nbsp;minutes than my entire schooling life, which conditioned me to believe writing is for demonstrating my own understanding. Bullshit.',
 	},
 	{
+		author: 'Benjamin Zander',
+		title: 'The transformative power of classical music',
+		link: 'https://youtu.be/r9LCwI5iErE',
+		media: '<abbr title="Technology, Entertainment, Design">TED</abbr> talk, 21&nbsp;min',
+		// pullquote: 'Like the bird who flies over the field and doesn’t care about the fences underneath.',
+		pullquote: 'Can we do that? No. … But it is a possibility to live into.',
+		comment: null,
+	},
+	{
 		author: 'Ze Frank',
 		title: 'An Invocation for Beginnings',
 		link: 'https://youtu.be/RYlCVwxoL_g',
