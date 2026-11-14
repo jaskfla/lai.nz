@@ -173,6 +173,7 @@ Font</a>.
 
 These few are more _catalogue_ than _foundry_:
 
+- <a href="https://facetypes.xyz" rel="external nofollow" target="_blank">FaceTypes</a>
 - <a href="https://www.fonts.xyz" rel="external nofollow" target="_blank">fonts.xys</a>
 - <a href="https://www.futurefonts.xyz" rel="external nofollow" target="_blank">Future
   Fonts</a>
